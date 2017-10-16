@@ -1,0 +1,52 @@
+<!-- <h6>site header partial (/partials/site-header.html) | <a href="{{ .Site.BaseURL }}">home</a></h6> -->
+
+<aside id="siteNavigation" class="site-navigation open">
+  <div class="marquee">
+    <div class="message">
+      <h1 class="title">{{ .Site.Title }}</h1>
+      <!-- <h5 class="subtitle">{{ .Site.Params.Subtitle }}</h5> -->
+      <h5 class="subtitle">FORMATS<br>THAT INFORM</h5>
+    </div>
+  </div>
+
+  <div class="menu-container">
+    <!-- Begining of primary menu -->
+    <div class="primary-menu">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="sub-menu {{if $currentPage.HasMenuCurrent "main" . }}active{{end}}">
+            <h3 class="main-section-name">{{ .Name }}</h3>
+            <ul class="sub-sections">
+              {{ range .Children }}
+              <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>
+                <a href="{{ .URL }}"> {{ .Name }} </a> 
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{else}}
+          <li>
+            <a href="{{ .URL }}">
+              <span>{{ .Name }}</span>
+            </a>
+          </li>
+          {{end}}
+        {{end}}
+      </ul>
+    </div>
+    <!-- End of primary menu -->
+    
+    <!-- Begining of secondary menu -->
+    <div class="secondary-menu">
+      <ul>
+        {{ range .Site.Menus.secondary }}
+        <li> <a href="{{.URL}}"> {{ .Name }} </a> </li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- End of secondary menu -->
+  </div>
+</aside>
+

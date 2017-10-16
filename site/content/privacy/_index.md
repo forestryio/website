@@ -1,6 +1,6 @@
 ---
-title: "CONTACT"
+title: "PRIVACY"
 menu: "secondary"
-weight: 1
+weight: 4
 draft: false
 ---

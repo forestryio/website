@@ -3,15 +3,13 @@
   {{ partial "head" . }}
 
   <body class="{{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-    {{ block "header" . }}{{ partial "site-header" .}}{{ end }}
+    {{ block "navigation" . }}{{ partial "site-navigation" .}}{{ end }}
 
-    <div class="block-main">
     <!-- beginning of "main" -->
     {{ block "main" . }}{{ end }}
     <!-- end of "main" -->
-    </div>
 
-    {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }}
+    <!-- {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }} -->
     {{ block "scripts" . }}{{ partial "site-scripts" . }}{{ end }}
   </body>
 </html>

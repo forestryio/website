@@ -1,9 +1,7 @@
 {{ define "main" }}
-  <h1>{{ .Title }} (/layout/index.html)</h1>
-  
-  {{ .Content }}
+  <div class="site-wrapper">
+    <!-- {{ .Content }} -->
 
-  {{ range .Site.Sections }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-  {{ end }}
+    <img class="humans" src='{{ "_images/man.new.jpg" | absURL }}'>
+  </div>
 {{ end }}

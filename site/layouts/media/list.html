@@ -5,9 +5,6 @@
     </li>
   {{ end }}
 
-  <!-- You can call .Site.GetPage with two arguments: kind and kind value. -->
-  {{ $selectedPage := .Site.GetPage "section" "writing" }}
-  <h6>Site.GetPage "section" "writing":  {{ $selectedPage.Title }} </h6>
 
   <h3>back <a href="{{ .Site.BaseURL }}">home</a></h3>
 {{ end }}

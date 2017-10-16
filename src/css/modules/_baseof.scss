@@ -19,11 +19,8 @@ body {
   text-align: center;
 }
 
-.block-main {
-  font-size: 1rem;
-  border: .125em solid green;
-  margin: 0 1em;
-  padding: 1em;
+.site-wrapper {
+  margin-left: 30em;
 }
 
 .summary-work {
@@ -37,7 +34,7 @@ body {
   box-sizing: border-box;
 
   .metadata {
-    color: color($pink lightness(40%));
+    /* color: color($pink lightness(40%)); */
     font-size:.75rem;
     margin: .5em; /* the margin is always half of the font size */
   }
