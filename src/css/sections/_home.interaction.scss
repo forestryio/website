@@ -1,0 +1,9 @@
+.hero-carousel {
+  .slick-dots li {
+    transition: background-color 600ms;
+
+    &.slick-active {
+      background-color: $tangerine;
+    }
+  }
+}

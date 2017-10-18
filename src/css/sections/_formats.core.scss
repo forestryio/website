@@ -1,0 +1,29 @@
+.section-formats {
+  background-color: $primary-white;
+  min-height: 100vh;
+  padding: 1.5em;
+
+  .super-header {
+    font-size: 5rem;
+    line-height: 1.1;
+    text-align: left;
+    width: 10em;
+    margin: .2em 0;
+    color: $grey;
+  }
+
+  .explanation {
+    background-color: $deep-blue;
+    color: $primary-white;
+    text-align: left;
+
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    height: 20em;
+    padding: 1.5em;
+    padding-left: 30em;
+    font-size: 1.2rem;
+  }
+}

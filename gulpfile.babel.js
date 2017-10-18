@@ -56,6 +56,10 @@ gulp.task("js", (cb) => {
     browserSync.reload();
     cb();
   });
+
+  gulp.src(["./src/js/plugins/*.js"])
+    .pipe(gulp.dest("./dist/js/plugins")) // put the bad boys to dist folder
+    .pipe(browserSync.stream())
 });
 
 // Development server with browsersync

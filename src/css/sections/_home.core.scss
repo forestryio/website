@@ -1,6 +1,107 @@
 .site-wrapper {
+  .hero-content,
+  .hero-carousel {
+    position: relative;
+    height: 100vh;
+  }
+
+  /* TODO: temp placeholder, to remove */
+  h3 {
+    font-size: 2.5em;
+    line-height: 100vh;
+  }
+}
+
+
+.hero-content {
   img.humans {
     /* width: 100%; */
+    height: 100%;
+  }
+
+  .arrow-down:after {      
+    content: $arrow-right;
+    font-size: 8rem;
+    font-weight: 100;
+    bottom: .1em;
+    color: color($primary-white blackness(30%));
+
+    @extend horizontal-align;
+    position: absolute;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.hero-carousel {
+  .slide-wrapper {
     height: 100vh;
+    position: relative;
+    background-color: $primary-white;
+
+    .main-cta {
+      position: absolute;
+      left: 2em;
+      top: 2em;
+    }
+
+    .main-message {
+      font-size: 1rem;
+      position: absolute;
+      right: 4em;
+      top: 4em;
+      text-align: left;
+      width: 28em;
+      color: $ocean-deep;
+
+      .description {
+        margin-top: 2em;
+        margin-right: 6em;
+        margin-bottom: 2em;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 3em;
+    margin: 0 auto;
+    @extend horizontal-align;
+
+    li {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0 .5em;
+      border: 2px solid $tangerine;
+      border-radius: 50%;
+
+      button {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Individual Slides
+   ========================================================================== */
+
+.hero-carousel .slide-marketplace {
+  .main-message {
+    right: auto;
+    top: 12em;
+    left: 8em;
+    z-index: 1;
   }
 }

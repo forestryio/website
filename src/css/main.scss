@@ -6,6 +6,10 @@
 @import "imports/_definitions.scss";
 
 
+/* ==========================================================================
+   import plugins
+   ========================================================================== */
+@import "plugins/slick.css";
 
 
 
@@ -15,6 +19,7 @@
 
 @import "modules/_baseof.scss";
 @import "modules/_navigation.scss";
+@import "modules/_components.scss";
 
 
 
@@ -24,8 +29,10 @@
    ========================================================================== */
 
 @import "sections/_home.core.scss";
-/* @import "sections/_home.interaction.scss"; */
+@import "sections/_home.interaction.scss";
 @import "sections/_home.responsive.scss";
 
-
+@import "sections/_formats.core.scss";
+/* @import "sections/_home.interaction.scss"; */
+/* @import "sections/_home.responsive.scss"; */
 

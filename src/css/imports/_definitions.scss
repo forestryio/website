@@ -10,7 +10,8 @@ $base-size: 16px; /* it's actually the popular default as well */
 $primary-white: rgb(255, 255, 255);
 $ocean-deep: rgb(30, 39, 45);
 $deep-blue: rgb(10, 82, 104);
-$tangerine: rgb(235, 250, 47);
+$tangerine: rgb(235, 150, 47);
+$grey: rgb(128, 128, 128);
 
 
 /* CSS custom properties (nicknamed CSS variables) */
@@ -38,6 +39,8 @@ $desktop-width: 1024px;
 @custom-media --mobile-l (width > 640px) and (width <= 1024px);
 @custom-media --desktop  (width >= 1024px);
 
+
+$arrow-right: '∟';
 
 /* ==========================================================================
    Mixins

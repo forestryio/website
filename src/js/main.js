@@ -2,14 +2,25 @@
 $(function() {
   var yieldmo = {
     modules: {
-      about: require('./modules/_about.js')
+      navigation: require('./modules/_navigation.js')
+    },
+
+    initSlickSlider: function() {
+      /* http://kenwheeler.github.io/slick/#settings */
+      $('.hero-carousel').slick({
+        dots: true,
+        arrows: false,
+        autoplay: false,
+        autoplaySpeed: 2000
+      });
     },
 
     init: function() {
-      var greetings = this.modules.about('new yieldmo');
+      this.modules.navigation();
 
-      // Say hello
-      console.log(greetings);
+      if (window.section === 'home') {
+        this.initSlickSlider();
+      }
     }
   };
 

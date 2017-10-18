@@ -1,9 +1,16 @@
 <!-- <h6>site header partial (/partials/site-header.html) | <a href="{{ .Site.BaseURL }}">home</a></h6> -->
 
-<aside id="siteNavigation" class="site-navigation open">
+<aside id="siteNavigation" class="site-navigation">
   <div class="marquee">
+    <div id="navIcon" class="nav-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="message">
-      <h1 class="title">{{ .Site.Title }}</h1>
+      <a href="{{ .Site.BaseURL }}" class="title">{{ .Site.Title }}</a>
       <!-- <h5 class="subtitle">{{ .Site.Params.Subtitle }}</h5> -->
       <h5 class="subtitle">FORMATS<br>THAT INFORM</h5>
     </div>
@@ -42,7 +49,7 @@
     <div class="secondary-menu">
       <ul>
         {{ range .Site.Menus.secondary }}
-        <li> <a href="{{.URL}}"> {{ .Name }} </a> </li>
+        <li> <a href="{{ .URL }}"> {{ .Name }} </a> </li>
         {{ end }}
       </ul>
     </div>

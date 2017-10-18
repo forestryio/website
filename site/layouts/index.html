@@ -1,7 +1,22 @@
 {{ define "main" }}
-  <div class="site-wrapper">
-    <!-- {{ .Content }} -->
+  <!-- {{ .Content }} -->
 
+  <div class="hero-content">
     <img class="humans" src='{{ "_images/man.new.jpg" | absURL }}'>
+
+    <span class="arrow-down"></span>
   </div>
+
+  <div class="hero-carousel">
+    <div>{{ partial "slide-formats" . }}</div>
+    <div>{{ partial "slide-insights" . }}</div>
+    <div>{{ partial "slide-marketplace" . }}</div>
+  </div>
+{{ end }}
+
+
+{{ define "scripts"}}
+  {{ partial "site-scripts" . }}
+  <script type="text/javascript"> window.section = "home" </script>
+  <script type="text/javascript" src='{{ "js/plugins/slick.min.js" | absURL }}'></script>
 {{ end }}

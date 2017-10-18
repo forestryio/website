@@ -1,0 +1,32 @@
+.main-cta {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .4em 1.2em;
+  color: $tangerine;
+  border: 1px dotted $tangerine;
+}
+
+.tagline-a {
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+}
+
+.tagline-b {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.inline-cta {
+  font-size: 1.1rem;
+  color: $ocean-deep;
+  font-weight: bold;
+  margin-left: .5em;
+
+  &:before {
+    content: '❯';
+    position: relative;
+    left: -.5em;
+  }
+}
