@@ -3,16 +3,26 @@
   min-height: 100vh;
   padding: 1.5em;
 
-  .super-header {
+  .headlines {
+    width: 32em;
+    margin-left: 4em;
+    margin-top: 2em;
+
+    .breadcrumbs {
+      margin-bottom: 5em;
+    }
+  }
+
+  .headline-cap {
     font-size: 5rem;
     line-height: 1.1;
     text-align: left;
-    width: 10em;
     margin: .2em 0;
     color: $grey;
   }
 
   .explanation {
+    font-family: $content-font;
     background-color: $deep-blue;
     color: $primary-white;
     text-align: left;

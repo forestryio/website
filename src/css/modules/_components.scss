@@ -1,4 +1,5 @@
 .main-cta {
+  font-family: $headline-cap;
   font-size: 1.5rem;
   font-weight: bold;
   padding: .4em 1.2em;
@@ -6,27 +7,41 @@
   border: 1px dotted $tangerine;
 }
 
-.tagline-a {
-  font-size: 2rem;
+.headline-cap {
+  font-family: $headline-cap;
+  font-size: 3rem;
   font-weight: 100;
-  font-style: italic;
   text-align: left;
 }
 
-.tagline-b {
-  font-size: 2rem;
+.headline-lean {
+  font-family: $headline-lean;
+  font-style: italic;
+  font-size: 3rem;
   text-align: left;
 }
 
 .inline-cta {
-  font-size: 1.1rem;
+  font-family: $headline-cap;
+  font-size: 1.3rem;
   color: $ocean-deep;
   font-weight: bold;
   margin-left: .5em;
+  color: $deep-blue;
 
   &:before {
     content: '❯';
     position: relative;
     left: -.5em;
+  }
+}
+
+.breadcrumbs {
+  text-align: left;
+  color: $tangerine;
+  font-family: $content-font;
+  text-transform: uppercase;
+
+  span {
   }
 }

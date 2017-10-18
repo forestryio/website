@@ -36,17 +36,20 @@
 
     .message {
       @extend vertical-align;
-      margin: 0 1.5em;
+      margin: 0 2em;
       text-align: left;
 
       .title {
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-family: $headline-cap;
+        font-size: 1.8rem;
+        font-weight: 100;
         text-decoration: none;
         color: $primary-white;
       }
 
       .subtitle {
+        font-family: $content-font;
+        font-size: .9rem;
         margin-top: .5em;
         line-height: 1.8;
       }
@@ -87,18 +90,19 @@
     }
 
     .main-section-name {
-      font-size: 1.3rem; 
+      font-family: $content-font;
+      font-size: 1.2rem;
       font-weight: 100;
-      font-style: italic; /* replace with intended font */
     }
 
     .sub-sections {
       margin-left: 1.5em;
 
       li {
+        font-family: $headline-cap;
         font-size: .9rem;
         font-weight: bold;
-        margin: .5em 0;
+        margin: .6em 0;
 
         &:before {
           content: '❯';
@@ -125,6 +129,7 @@
       padding: 4em 0;
 
       li {
+        font-family: $headline-cap;
         font-size: .8rem;
         font-weight: bold;
         margin: .25em 0;
@@ -143,7 +148,7 @@
 
 .site-navigation {
   width: 12em;
-  transition: width 300ms;
+  transition: width 300ms linear;
 
   .menu-container {
     opacity: 0.5;

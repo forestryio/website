@@ -14,16 +14,32 @@ $tangerine: rgb(235, 150, 47);
 $grey: rgb(128, 128, 128);
 
 
-/* CSS custom properties (nicknamed CSS variables) */
 
-/* they actually should be declared in responsive.scss since it's easier to refer to */
 
-:root {
-  /* --gutter: 8px; */
-  /* --column-num: 1; */
+/* ==========================================================================
+   fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: MrsEavesItalic;
+  src: url('../_fonts/MrsEavesItalic.ttf');
 }
 
+@font-face {
+  font-family: Caecilia-Heavy;
+  src: url('../_fonts/Caecilia-Heavy.ttf');
+}
 
+@font-face {
+  font-family: Caecilia-Light;
+  src: url('../_fonts/Caecilia-Light.ttf');
+}
+
+$headline-lean: MrsEavesItalic;
+$headline-cap: Caecilia-Heavy;
+$content-font: Caecilia-Light;
+
+$headline-cap: 'Anton', sans-serif;
 
 /* ==========================================================================
    Media Queries and custom media definitions
