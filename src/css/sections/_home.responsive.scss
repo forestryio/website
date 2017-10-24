@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Media Queries
+   Hero Section
    ========================================================================== */
 
 /* single-liner works like this */
@@ -15,8 +15,9 @@ body {
 
   .hero-content {
     img.humans {
-      top: 0;
-      left: 10em;
+      height: 130%;
+      top: -150px;
+      right: -300px;
     }
 
     .main-message {
@@ -39,7 +40,11 @@ body {
 
   .hero-content {
     img.humans {
-
+      height: 150%;
+      bottom: 0;
+      bottom: -450px;
+      right: 0;
+      right: -800px;
     }
 
     .main-message {
@@ -57,3 +62,114 @@ body {
     }
   }
 }
+
+
+
+
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero-carousel .slide-formats {
+}
+
+@media (--mobile-l) {
+  .hero-carousel {
+    .slide-wrapper {
+      .main-cta {
+        width: 8em;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: 1em auto;
+      }
+
+      .main-message {
+        z-index: 2;
+        top: 4em;
+        bottom: 4em;
+        margin: 2em 2em 4em 2em;
+
+        .more-info {
+          position: absolute;
+          bottom: 0;
+          color: $primary-white;
+
+          .description {
+            margin: 1.5em 3em 1.5em 0;
+          }
+
+          .inline-cta {
+            color: rgb(93, 178, 168);
+          }
+        }
+      }
+
+      .visual-pattern {
+        z-index: 1;
+        bottom: 0em;
+
+        img {
+          position: relative;
+          width: 300%;
+          left: -150%;
+        }
+      }
+    }
+
+    .slide-formats {
+
+
+      .main-message {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    .slick-dots {
+      bottom: .5em;
+    }
+  }
+}
+
+@media (--desktop) {
+  .hero-carousel {
+    .slide-wrapper {
+      .main-cta {
+        left: 1.5em;
+        top: 1.5em;
+      }
+
+      .main-message {
+        font-size: 1rem;
+      }
+    }
+
+    .slide-formats {
+      .main-message {
+        width: 36em;
+        right: 4em;
+        top: 4em;
+      }
+    }
+
+    .slide-insights {
+      .main-message {
+        width: 36em;
+        right: 4em;
+        top: 4em;
+      }
+    }
+
+    .slide-marketplace {
+      .main-message {
+        right: auto;
+        top: 12em;
+        left: 8em;
+      }
+    }
+  }
+}
+
+

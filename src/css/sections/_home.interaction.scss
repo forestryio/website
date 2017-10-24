@@ -7,3 +7,50 @@
     }
   }
 }
+
+
+
+
+
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.ex-wave {
+  background: url(http://tedmcdo.com/labs/wave.svg) repeat-x;  /* important to use background so you can repeat */
+  position: absolute;
+  top: -198px;
+  width: 6400px; /* just to make sure it's long enough */
+  height: 198px;
+  /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite; */
+  transform: translate3d(0, 0, 0);
+}
+
+/* .ex-wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+} */
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px; /* has to be the width of the shape */
+  }
+}
+
+/* @keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+} */

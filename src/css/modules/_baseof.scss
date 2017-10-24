@@ -18,9 +18,19 @@ body {
   font-family: sans-serif;
   font-size: $base-size;
   text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body.open {
+  height: 100%;
+  overflow: hidden;
 }
 
 .site-wrapper {
+  background-color: $primary-white;
   overflow: hidden;
   position: relative;
 }

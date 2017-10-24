@@ -1,9 +1,8 @@
 .site-navigation {
   position: fixed;
-  left: 0;
   top: 0;
   z-index: 1;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   color: $primary-white;
 
@@ -40,27 +39,27 @@
       }
     }
   }
+}
 
-  .menu-container {
-    position: absolute;
-    z-index: -1;
-    width: 18em;
-    height: 100%;
-    left: 0;
+.menu-container {
+  position: absolute;
+  z-index: -1;
+  width: 18em;
+  height: 100%;
+  left: 0;
 
-    background-color: $deep-blue;
-    color: $primary-white;
+  background-color: $deep-blue;
+  color: $primary-white;
 
-    ul {
-      padding: 0;
-      text-align: left;
-      list-style-type: none;
-    }
+  ul {
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+  }
 
-    a {
-      color: white;
-      text-decoration: none;
-    }
+  a {
+    color: white;
+    text-decoration: none;
   }
 
   .primary-menu {
@@ -125,25 +124,21 @@
 
 
 
-
-
 /* ==========================================================================
    Interactions
    ========================================================================== */
 
 .site-navigation {
   transition: width 300ms linear;
-
-  .menu-container {
-    opacity: 0.5;
-    transition: opacity 300ms;
-  }
 }
 
-.open .site-navigation {
-  .menu-container {
-    opacity: 1;
-  }
+.menu-container {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+
+.open .menu-container {
+  opacity: 1;
 }
 
 
@@ -166,31 +161,18 @@
 
 @media (--mobile-l) {
   .site-navigation {
-    .marquee {
-      transition: left 300ms linear;
-    }
-
-    .menu-container {
-      /* transition: visibility 0ms 300ms; */
-      visibility: hidden;
-    }
+    transition: left 300ms linear;
+    left: 0;
   }
 
   .open .site-navigation {
-    .marquee {
-      left: 18em;
-    }
-
-    .menu-container {
-      /* transition: none; */
-      visibility: visible;
-    }
+    left: 18em;
   }
-
 }
 
 @media (--desktop) {
   .site-navigation {
+    transition: width 300ms linear;
     width: 12em;
   }
 
@@ -212,11 +194,13 @@
     width: 100%;
 
     .marquee {
-      right: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
 
       .nav-icon {
-        float: left;
+        position: absolute;
+        left: 0;
         width: 2em;
         height: 2em;
         margin: 1em 2em;
@@ -225,8 +209,6 @@
       .message {
         text-align: center;
         padding: 0.7em 0;
-        width: 12em;
-        margin: 0 auto;
 
         .title {
           font-size: 1.3rem;

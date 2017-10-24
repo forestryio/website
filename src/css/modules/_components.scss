@@ -9,10 +9,8 @@
 
 .main-cta {
   font-family: $headline-cap;
-  font-size: 2rem;
   line-height: 1;
   font-weight: bold;
-  padding: .4em .6em .1em .6em;
   color: $tangerine;
   border: 1px dotted $tangerine;
 }
@@ -72,6 +70,11 @@
   .arrow-down:after {  
     font-size: 3rem;
   }
+
+  .main-cta {
+    font-size: 1rem;
+    padding: .5em .5em .3em .5em;
+  }
 }
 
 
@@ -82,6 +85,11 @@
 
   .arrow-down:after {  
     font-size: 8rem;
+  }
+
+  .main-cta {
+    font-size: 2rem;
+    padding: .4em .6em .1em .6em;
   }
 }
 
@@ -101,7 +109,7 @@
   }
 
   50% {
-    transform: translate3d(-50%,4px,0) rotate(-45deg);
+    transform: translate3d(-50%,.2em,0) rotate(-45deg);
     opacity: 0.8;
   }
 }

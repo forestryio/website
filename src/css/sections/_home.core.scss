@@ -15,11 +15,10 @@
 
 .hero-content {
   img.humans {
-    max-width: 100%;
-    max-height: 100%;
+    /* max-width: 100%;
+    max-height: 100%; */
     position: absolute;
-    bottom: 0;
-    right: 0;
+
   }
 
   .main-message {
@@ -47,19 +46,15 @@
 
     .main-cta {
       position: absolute;
-      left: 1.5em;
-      top: 1.5em;
       z-index: 1;
     }
 
     .main-message {
-      font-size: 1rem;
       position: absolute;
-      right: 4em;
-      top: 4em;
-      text-align: left;
-      width: 36em;
       color: $ocean-deep;
+      text-align: left;
+      z-index: 10;
+      background: transparent;
 
       .description {
         font-family: $content-font;
@@ -69,14 +64,14 @@
       }
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    img {
+    .visual-pattern {
       position: absolute;
       bottom: 0;
       width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -112,14 +107,7 @@
   }
 }
 
-.hero-carousel .slide-marketplace {
-  .main-message {
-    right: auto;
-    top: 12em;
-    left: 8em;
-    z-index: 1;
-  }
-}
+
 
 
 
@@ -159,8 +147,6 @@
     position: absolute;
     bottom: 25vh;
     width: 1600px;
-    /* transform: translate3d(0, 0, 0); */
-    /* animation:  */
   }
 
   .wave:nth-of-type(1) {
@@ -216,3 +202,56 @@
   }
 }
 
+
+
+@media (--mobile-l) {
+  .ocean {
+    height: 40vh;
+
+    .wave:nth-of-type(1) {
+      transform: translate3d(-50%, -65%, 0) scale(.5);
+      z-index: 4;
+    }
+
+    .wave:nth-of-type(2) {
+      transform: translate3d(-20%, -70%, 0) scale(.7);
+      z-index: 3;
+    }
+
+    .wave:nth-of-type(3) {
+      transform: translate3d(-30%, -80%, 0) scale(.9);
+      z-index: 2;
+    }
+
+    .wave:nth-of-type(4) {
+      transform: translate3d(-45%, -100%, 0) scale(1.4);
+      z-index: 1;
+    }
+
+    .wave:nth-of-type(1) svg.shape { animation: shift-right 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite  0s ; }
+    .wave:nth-of-type(2) svg.shape { animation: shift-left 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite  0s ; }
+    .wave:nth-of-type(3) svg.shape { animation: shift-right 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite  0s ; }
+    .wave:nth-of-type(4) svg.shape { animation: shift-left 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite  0s ; }
+  }
+
+
+
+  @keyframes shift-left {
+    0%, 100 {
+      transform: translate3d(0,0,0) scale(1);
+    }
+    50% {
+      transform: translate3d(250px, 0px,0) scale(1);
+    }
+  }
+
+  @keyframes shift-right {
+    0%, 100 {
+      transform: translate3d(0,0,0) scale(1);
+    }
+    50% {
+      transform: translate3d(250px, 0px,0) scale(1);
+    }
+  }
+
+}
