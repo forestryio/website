@@ -22,11 +22,11 @@ title = "NEW CO."
     identifier = "products"
     url = "/products/"
 [[menu.main]]
-    name = "Media"
+    name = "Resources"
     pre = "<i class='menu-media'></i>"
     weight = 3
-    identifier = "media"
-    url = "/media/"
+    identifier = "resources"
+    url = "/resources/"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 

@@ -10,7 +10,7 @@ $(function() {
       $('.hero-carousel').slick({
         dots: true,
         arrows: false,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000
       });
     },

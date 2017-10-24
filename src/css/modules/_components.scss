@@ -1,16 +1,24 @@
+.arrow-down:after {
+  transform: translateX(-50%) rotate(-45deg);
+  content: $arrow-right;
+  color: $tangerine;
+  font-weight: 100;
+}
+
+
+
 .main-cta {
   font-family: $headline-cap;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  line-height: 1;
   font-weight: bold;
-  padding: .4em 1.2em;
+  padding: .4em .6em .1em .6em;
   color: $tangerine;
   border: 1px dotted $tangerine;
 }
 
 .headline-cap {
   font-family: $headline-cap;
-  font-size: 3rem;
-  font-weight: 100;
   text-align: left;
 }
 
@@ -43,5 +51,57 @@
   text-transform: uppercase;
 
   span {
+  }
+}
+
+
+
+/* ==========================================================================
+   Responsiveness
+   ========================================================================== */
+
+@media (--mobile-l) {
+  .headline-cap {
+    font-size: 1.8rem;
+  }
+
+  .headline-lean {
+    font-size: 1.5em;
+  }
+
+  .arrow-down:after {  
+    font-size: 3rem;
+  }
+}
+
+
+@media (--desktop) {
+  .headline-cap {
+    font-size: 3rem;
+  }
+
+  .arrow-down:after {  
+    font-size: 8rem;
+  }
+}
+
+
+/* ==========================================================================
+   Interaction
+   ========================================================================== */
+
+.arrow-down:after {
+  animation: scroll-down 2s ease-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translate3d(-50%,0,0) rotate(-45deg);;
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(-50%,4px,0) rotate(-45deg);
+    opacity: 0.8;
   }
 }

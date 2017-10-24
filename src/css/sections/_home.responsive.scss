@@ -8,15 +8,52 @@ body {
 }
 
 @media (--mobile-l) {
-  .summary-work {
-    font-size: 1.25rem;
+  .hero-content,
+  .hero-carousel {
+    height: calc(100vh - 4em);
+  }
+
+  .hero-content {
+    img.humans {
+      top: 0;
+      left: 10em;
+    }
+
+    .main-message {
+      padding: 1.5em 1.5em 3em 1.5em;
+      background-color: $ocean-deep;
+      color: $primary-white;
+    }
+
+    .arrow-down:after {
+      bottom: .1em;
+    }
   }
 } 
 
 @media (--desktop) {
-  .summary-work {
-    --column-num: 2;
-    font-size: 1.5rem;
-    float: left;
+  .hero-content,
+  .hero-carousel {
+    height: 100vh;
+  }
+
+  .hero-content {
+    img.humans {
+
+    }
+
+    .main-message {
+      margin: 4em;
+      width: 32em;
+      @extend vertical-align;
+
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .arrow-down:after {
+      bottom: .5em;
+    }
   }
 }

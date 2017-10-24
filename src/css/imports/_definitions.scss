@@ -26,8 +26,8 @@ $grey: rgb(128, 128, 128);
 }
 
 @font-face {
-  font-family: Caecilia-Heavy;
-  src: url('../_fonts/Caecilia-Heavy.ttf');
+  font-family: Meltow;
+  src: url('../_fonts/MeltowSan300-Regular.ttf');
 }
 
 @font-face {
@@ -36,25 +36,22 @@ $grey: rgb(128, 128, 128);
 }
 
 $headline-lean: MrsEavesItalic;
-$headline-cap: Caecilia-Heavy;
+$headline-cap: Meltow;
 $content-font: Caecilia-Light;
-
-$headline-cap: 'Anton', sans-serif;
 
 /* ==========================================================================
    Media Queries and custom media definitions
    ========================================================================== */
 
-$mobile-s-width: 320px;
-$mobile-m-width: 480px;
-$mobile-l-width: 640px;
-$desktop-width: 1024px;
+$mobile-s-width: 280px;
+$mobile-m-width: 359px;
+$mobile-l-width: 480px;
+$desktop-width: 768px;
 
-@custom-media --mobile-s (width > 320px) and (width <= 480px);
-@custom-media --mobile-m (width > 480px) and (width <= 640px);
-@custom-media --mobile-l (width > 640px) and (width <= 1024px);
-@custom-media --desktop  (width >= 1024px);
-
+@custom-media --mobile-s (width > 280px) and (width <= 359px);
+@custom-media --mobile-m (width > 359px) and (width <= 408px);
+@custom-media --mobile-l (width > 408px) and (width <= 768px);
+@custom-media --desktop  (width >= 768px);
 
 $arrow-right: '∟';
 

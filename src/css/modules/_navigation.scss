@@ -1,28 +1,20 @@
 .site-navigation {
   position: fixed;
-  bottom: 0;
   left: 0;
   top: 0;
-  overflow: hidden;
+  z-index: 1;
+  /* overflow: hidden; */
 
-  font-size: 1rem;
   color: $primary-white;
 
   .marquee {
     position: absolute;
-    height: 100%;
     right: 0;
-    width: 12em;
 
     background-color: $ocean-deep;
 
-
     .nav-icon {
       position: relative;
-      height: 3em;
-      width: 3em;
-      top: 3em;
-      margin: 0 auto;
       text-align: center;
       cursor: pointer;
 
@@ -30,27 +22,20 @@
         background: $tangerine;
         display: block;
         position: absolute;
-        height: .4em;
+        height: .3em;
       }
     }
 
     .message {
-      @extend vertical-align;
-      margin: 0 2em;
-      text-align: left;
-
       .title {
         font-family: $headline-cap;
-        font-size: 1.8rem;
-        font-weight: 100;
         text-decoration: none;
         color: $primary-white;
       }
 
       .subtitle {
         font-family: $content-font;
-        font-size: .9rem;
-        margin-top: .5em;
+        font-size: .7rem;
         line-height: 1.8;
       }
     }
@@ -59,9 +44,9 @@
   .menu-container {
     position: absolute;
     z-index: -1;
+    width: 18em;
     height: 100%;
     left: 0;
-    width: 18em;
 
     background-color: $deep-blue;
     color: $primary-white;
@@ -100,7 +85,7 @@
 
       li {
         font-family: $headline-cap;
-        font-size: .9rem;
+        font-size: 1.1rem;
         font-weight: bold;
         margin: .6em 0;
 
@@ -130,7 +115,7 @@
 
       li {
         font-family: $headline-cap;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: bold;
         margin: .25em 0;
       }
@@ -147,7 +132,6 @@
    ========================================================================== */
 
 .site-navigation {
-  width: 12em;
   transition: width 300ms linear;
 
   .menu-container {
@@ -157,8 +141,6 @@
 }
 
 .open .site-navigation {
-  width: 30em;
-
   .menu-container {
     opacity: 1;
   }
@@ -167,9 +149,9 @@
 
 .marquee .nav-icon {
   span:nth-child(1) { top: 0px; left:0; width: 100%; transform: rotate(0deg); }
-  span:nth-child(2) { top: .9em; left:0; width: 100%; transform: rotate(0deg); }
-  span:nth-child(3) { top: .9em; left:0; width: 100%; transform: rotate(0deg); }
-  span:nth-child(4) { top: 1.8em; left:0; width: 100%; transform: rotate(0deg); }
+  span:nth-child(2) { top: .7em; left:0; width: 100%; transform: rotate(0deg); }
+  span:nth-child(3) { top: .7em; left:0; width: 100%; transform: rotate(0deg); }
+  span:nth-child(4) { top: 1.4em; left:0; width: 100%; transform: rotate(0deg); }
 
   span { transition: .3s ease-in-out; }
 }
@@ -179,4 +161,120 @@
   span:nth-child(2) { transform: rotate(45deg); }
   span:nth-child(3) { transform: rotate(-45deg); }
   span:nth-child(4) { top: 1em; left: 50%; width: 0%; }
+}
+
+
+@media (--mobile-l) {
+  .site-navigation {
+    .marquee {
+      transition: left 300ms linear;
+    }
+
+    .menu-container {
+      /* transition: visibility 0ms 300ms; */
+      visibility: hidden;
+    }
+  }
+
+  .open .site-navigation {
+    .marquee {
+      left: 18em;
+    }
+
+    .menu-container {
+      /* transition: none; */
+      visibility: visible;
+    }
+  }
+
+}
+
+@media (--desktop) {
+  .site-navigation {
+    width: 12em;
+  }
+
+  .open .site-navigation {
+    width: 30em;
+  }
+}
+
+
+/* ==========================================================================
+   Responsiveness
+   ========================================================================== */
+
+@media (--mobile-l) {
+  .site-navigation {
+    bottom: auto;
+    top: 0;
+    height: 4em;
+    width: 100%;
+
+    .marquee {
+      right: 0;
+      left: 0;
+
+      .nav-icon {
+        float: left;
+        width: 2em;
+        height: 2em;
+        margin: 1em 2em;
+      }
+
+      .message {
+        text-align: center;
+        padding: 0.7em 0;
+        width: 12em;
+        margin: 0 auto;
+
+        .title {
+          font-size: 1.3rem;
+        }
+
+        .subtitle {
+          line-height: 1;
+        }
+      }
+    }
+    
+    .menu-container {
+      height: 100vh;
+    }
+  }
+}
+
+
+@media (--desktop) {
+  .site-navigation {
+    overflow: hidden;
+    bottom: 0;
+
+    .marquee {
+      height: 100%;
+      width: 12em;
+
+      .nav-icon {
+        top: 3em;
+        width: 3em;
+        height: 3em;
+        margin: 0 auto;
+      }
+
+      .message {
+        @extend vertical-align; /* doesn't work in media query !? */
+        position: relative;
+        margin: 0 2em;
+        top: 50%;
+        text-align: left;
+
+        .title {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    .menu-container {
+    }
+  }
 }
