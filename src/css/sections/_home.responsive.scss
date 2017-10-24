@@ -14,10 +14,12 @@ body {
   }
 
   .hero-content {
-    img.humans {
-      height: 130%;
-      top: -150px;
-      right: -300px;
+    .humans {
+      img:nth-child(1) {
+        height: 120%;
+        top: -80px;
+        right: -250px;
+      }
     }
 
     .main-message {
@@ -39,12 +41,12 @@ body {
   }
 
   .hero-content {
-    img.humans {
-      height: 150%;
-      bottom: 0;
-      bottom: -450px;
-      right: 0;
-      right: -800px;
+    .humans {
+      img:nth-child(1) {
+        height: 150%;
+        right: -1000px;
+        top: -365px;
+      }
     }
 
     .main-message {
@@ -68,7 +70,7 @@ body {
 
 
 /* ==========================================================================
-   Hero Section
+   Carousel Section
    ========================================================================== */
 
 .hero-carousel .slide-formats {
