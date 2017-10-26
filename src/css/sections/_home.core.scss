@@ -30,7 +30,7 @@
     bottom: 0;
 
     .headline-lean {
-      margin-top: .5em;
+      margin-top: .2em;
     }
   }
 
@@ -60,11 +60,19 @@
       z-index: 10;
       background: transparent;
 
-      .description {
-        font-family: $content-font;
+      .headline-cap {
+        margin-top: .1em;
+      }
+
+      .more-info {
         margin-top: 2em;
-        margin-right: 6em;
-        margin-bottom: 2em;
+
+        .description {
+          font-family: $content-font;
+          font-size: 1.3rem;
+          line-height: 1.5;
+          margin-bottom: 2em;
+        }
       }
     }
 

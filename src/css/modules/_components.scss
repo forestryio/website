@@ -23,13 +23,15 @@
 .headline-lean {
   font-family: $headline-lean;
   font-style: italic;
-  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.1;
+  font-size: 3.7rem;
   text-align: left;
 }
 
 .inline-cta {
   font-family: $headline-cap;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: $ocean-deep;
   font-weight: bold;
   margin-left: .5em;
@@ -80,7 +82,8 @@
 
 @media (--desktop) {
   .headline-cap {
-    font-size: 3rem;
+    font-size: 3.6rem;
+    line-height: 1.1;
   }
 
   .arrow-down:after {  
@@ -89,7 +92,7 @@
 
   .main-cta {
     font-size: 2rem;
-    padding: .4em .6em .1em .6em;
+    padding: .3em .6em .1em .6em;
   }
 }
 

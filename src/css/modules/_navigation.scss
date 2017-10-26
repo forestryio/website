@@ -72,8 +72,13 @@
       @extend vertical-align;
     }
 
+    .sub-menu {
+      margin-top: 1em;
+    }
+
     .main-section-name {
       font-family: $content-font;
+      letter-spacing: 1px;
       font-size: 1.2rem;
       font-weight: 100;
     }
@@ -83,9 +88,11 @@
 
       li {
         font-family: $headline-cap;
-        font-size: 1.1rem;
+        font-family: MeltowSan100-Regular;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
         font-weight: bold;
-        margin: .6em 0;
+        margin: .3em 0;
 
         &:before {
           content: '❯';
@@ -109,11 +116,13 @@
 
     ul {
       border-top: 1px dotted $primary-white;
-      padding: 4em 0;
+      padding: 1em 0 4em 0;
 
       li {
         font-family: $headline-cap;
-        font-size: .9rem;
+        font-family: MeltowSan100-Regular;
+        letter-spacing: 1px;
+        font-size: 1rem;
         font-weight: bold;
         margin: .25em 0;
       }
@@ -221,7 +230,6 @@
       .nav-icon {
         top: 3em;
         width: 3em;
-        height: 3em;
         margin: 0 auto;
       }
 

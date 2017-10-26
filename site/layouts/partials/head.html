@@ -16,7 +16,6 @@
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
   {{ end }} -->
 
-  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <link rel='stylesheet' type="text/css" href='{{ "css/main.min.css" | absURL }}' />
 
   {{ if .RSSLink }}
@@ -27,4 +26,5 @@
  <!--  {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }} -->
+
 </head>

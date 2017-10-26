@@ -5,7 +5,6 @@
 /* CSS variables (not actually mutable) */
 $base-size: 16px; /* it's actually the popular default as well */
 
-
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
 $primary-white: rgb(255, 255, 255);
 $ocean-deep: rgb(30, 39, 45);
@@ -20,24 +19,23 @@ $grey: rgb(128, 128, 128);
    fonts
    ========================================================================== */
 
-@font-face {
-  font-family: MrsEavesItalic;
-  src: url('../_fonts/MrsEavesItalic.ttf');
-}
+/* Purchased web font: @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/34fcf3");
+@font-face {font-family: 'MeltowSan200-Regular';src: url('../_fonts/webfonts/34FCF3_0_0.eot');src: url('../_fonts/webfonts/34FCF3_0_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_0_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_0_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_0_0.ttf') format('truetype');}
+@font-face {font-family: 'MeltowSan100-Regular';src: url('../_fonts/webfonts/34FCF3_1_0.eot');src: url('../_fonts/webfonts/34FCF3_1_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_1_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_1_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_1_0.ttf') format('truetype');} 
 
-@font-face {
-  font-family: Meltow;
-  src: url('../_fonts/MeltowSan300-Regular.ttf');
-}
-
-@font-face {
-  font-family: Caecilia-Light;
-  src: url('../_fonts/Caecilia-Light.ttf');
-}
+/* hosted font */
+@font-face {font-family: MrsEavesItalic; src: url('../_fonts/MrsEavesItalic.ttf');}
+@font-face {font-family: Meltow; src: url('../_fonts/MeltowSan300-Regular.ttf');}
+@font-face {font-family: Caecilia-Light; src: url('../_fonts/Caecilia-Light.ttf');}
 
 $headline-lean: MrsEavesItalic;
 $headline-cap: Meltow;
+$menu-cap: MeltowSan100-Regular;
 $content-font: Caecilia-Light;
+
+
+
 
 /* ==========================================================================
    Media Queries and custom media definitions
@@ -54,6 +52,9 @@ $desktop-width: 768px;
 @custom-media --desktop  (width >= 768px);
 
 $arrow-right: '∟';
+
+
+
 
 /* ==========================================================================
    Mixins
