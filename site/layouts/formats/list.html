@@ -1,27 +1,85 @@
 {{ define "main" }}
-<div class="section-formats">
+<div id="sectionFormats" class="section-formats active-0" data-page="0">
+
+  {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+  {{ $.Scratch.Add "path" .Site.BaseURL }}
+  <ul class="breadcrumbs">
+    <span>Products</span>
+    {{ range $index, $element := split $url "/" }}
+      {{ $.Scratch.Add "path" $element }}
+        {{ if ne $element "" }}
+        <span>> {{ . }} </span>
+        {{ $.Scratch.Add "path" "/" }}
+        {{ end }}
+    {{ end }}
+  </ul>
 
   <div class="headlines">
-
-    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-    {{ $.Scratch.Add "path" .Site.BaseURL }}
-    <ul class="breadcrumbs">
-      <span>Products</span>
-      {{ range $index, $element := split $url "/" }}
-        {{ $.Scratch.Add "path" $element }}
-          {{ if ne $element "" }}
-          <span>> {{ . }} </span>
-          {{ $.Scratch.Add "path" "/" }}
-          {{ end }}
-      {{ end }}
-    </ul>
-
-    <h1 class="headline-cap">BREAKTHROUGH DESIGN</h1>
-    <h2 class="headline-lean">with your customer in mind.</h2>
+    <div class="headline-part page-0">
+      <h1 class="headline-cap">Breakthrough<br>Design</h1>
+      <h2 class="headline-lean">with your customer in mind.</h2>
+    </div>
+    <div class="headline-part page-1">
+      <h3 class="headline-cap">They aren’t just cool ad<br>formats, they are windows<br>into deep understanding.</h1>
+      <p class="info" data-role="content">Our formats are built to be unintrusive, easy-on-the-eye and—dare we<br>say—additive to the experience. As your customers interact with them,<br>we are collecting first-of-its-kind, proprietary engagement data—revealing<br>a deeper understanding of behavior, intent, and preferences.</p>
+    </div>
+    <div class="headline-part page-2">
+      <h3 class="headline-cap">Featured Formats</h1>
+      <p class="info" data-role="content">Every Newco format is informed by deep consumer<br>insight and rigorous A/B testing. Each format offers a<br>fully-optimized user experience.</p>
+    </div>
+    <div class="headline-part page-3">
+      <h3 class="headline-cap">Featured Formats</h1>
+      <a class="headline-cap active" href="#brand">Brand Formats</a>
+      <a class="headline-cap" href="#dr">DR Formats</a>
+      <a class="headline-cap" href="#consideration">Consideration Formats</a>
+      <a class="headline-cap" href="#explore">Explore Full Portfolio</a>
+    </div>
   </div>
 
-  <p class="explanation">
-     The seductive click baits and relentless pop-ups are bred from a old, view-and-click desktop world. Our goal is to help you produce advertising that doesn’t interfere with the content your customers seek. Our formats are built to be unintrusive, easy-on-the-eye and—dare we say—additive to the experience.
-  </p>
+  <div class="elaboration">
+    <div class="elaboration-part page-0">
+      <p class="explanation">
+         The seductive click baits and relentless pop-ups are bred from a old, view-and-click desktop world. Our goal is to help you produce advertising that doesn’t interfere with the content your customers seek.
+      </p>
+    </div>
+
+    <div class="elaboration-part page-1">
+      <img class="pie-chart" src='{{ "_images/formats-pie-chart.png" | absURL }}'>
+      <img class="chart-legend" src='{{ "_images/formats-pie-chart-legend.png" | absURL }}'>
+    </div>
+
+    <div class="elaboration-part page-2">
+      <a class="headline-cap" href="#brand">Brand Formats</a>
+      <a class="headline-cap" href="#dr">DR Formats</a>
+      <a class="headline-cap" href="#consideration">Consideration Formats</a>
+      <a class="headline-cap" href="#explore">Explore Full Portfolio</a>
+    </div>
+
+    <div class="elaboration-part page-3">
+      <div class="header">
+        <h2 class="headline-lean">Brand formats: Get noticed.</h2>
+        <h1 class="headline-cap">Grow Awareness</h1>
+      </div>
+
+      <div class="video-container">
+        <p class="label">FEATURED BRAND FORMATS</p>
+        <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
+        <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
+      </div>    
+    </div>
+  </div>
+
+  <div class="content-meter">
+    <div class="placeholder-page"></div>
+    <div class="placeholder-page"></div>
+    <div class="placeholder-page"></div>
+    <div class="placeholder-page"></div>
+
+    <!-- <div class="placeholder-page"></div>
+    <div class="placeholder-page"></div>
+    <div class="placeholder-page"></div> -->
+  </div>
 </div>
+
+
 {{ end }}

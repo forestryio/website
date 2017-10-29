@@ -1,8 +1,9 @@
-.arrow-down:after {
+.arrow-down {
   transform: translateX(-50%) rotate(-45deg);
-  content: $arrow-right;
   color: $tangerine;
   font-weight: 100;
+  line-height: 1;
+  margin: 0;
 }
 
 
@@ -69,7 +70,7 @@
     font-size: 1.5em;
   }
 
-  .arrow-down:after {  
+  .arrow-down {  
     font-size: 3rem;
   }
 
@@ -86,7 +87,7 @@
     line-height: 1.1;
   }
 
-  .arrow-down:after {  
+  .arrow-down {  
     font-size: 8rem;
   }
 
@@ -101,7 +102,7 @@
    Interaction
    ========================================================================== */
 
-.arrow-down:after {
+.arrow-down {
   animation: scroll-down 2s ease-out infinite;
 }
 

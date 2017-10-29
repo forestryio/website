@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: $content-font;
+  /* font-family: $content-font; */
   font-family: sans-serif;
   font-size: $base-size;
   text-align: center;
@@ -22,11 +22,20 @@ body {
   a {
     text-decoration: none;
   }
+
+  [data-role="content"] {
+    font-family: $content-font;
+    text-align: left;
+  }
 }
 
 body.open {
   height: 100%;
   overflow: hidden;
+
+  .arrow-down:after {
+    display: none;
+  }
 }
 
 .site-wrapper {

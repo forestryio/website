@@ -7,10 +7,13 @@ $base-size: 16px; /* it's actually the popular default as well */
 
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
 $primary-white: rgb(255, 255, 255);
+$primary-black: rgb(0, 0, 0);
 $ocean-deep: rgb(30, 39, 45);
 $deep-blue: rgb(10, 82, 104);
 $tangerine: rgb(235, 150, 47);
-$grey: rgb(128, 128, 128);
+$light-green: rgb(150, 205, 198);
+$medium-green: rgb(93, 178, 168);
+$gray: rgb(228, 228, 228);
 
 
 

@@ -28,7 +28,7 @@ body {
       color: $primary-white;
     }
 
-    .arrow-down:after {
+    .arrow-down {
       bottom: .1em;
     }
   }
@@ -134,8 +134,8 @@ body {
       transform: translateY(-50%);
     }
 
-    .arrow-down:after {
-      bottom: .5em;
+    .arrow-down {
+      bottom: 1em;
     }
   }
 }
