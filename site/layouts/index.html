@@ -1,7 +1,7 @@
 {{ define "main" }}
   <!-- {{ .Content }} -->
 
-  <div class="hero-content">
+  <div class="section hero-content">
     <div class="humans">
       <img class="tokponwey" src='{{ "_images/portraits/_A_Tokponwey_00046.jpg" | absURL }}'>
       <!-- <img class="rachel" src='{{ "_shoots/_Rachel_Oremland_01131.jpg" | absURL }}'> -->
@@ -16,7 +16,7 @@
     <p id="arrowDown" class="arrow-down">∟</p>
   </div>
 
-  <div id="heroCarousel" class="hero-carousel">
+  <div id="heroCarousel" class="section hero-carousel">
     <div>{{ partial "slide-formats" . }}</div>
     <div>{{ partial "slide-insights" . }}</div>
     <div>{{ partial "slide-marketplace" . }}</div>

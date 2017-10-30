@@ -7,34 +7,28 @@ $(function() {
 
     registerEvents: function() {
       $("#arrowDown").on("click", this.onArrowClick);
-      $("#sectionFormats").on("scroll", this.onScroll);
-    },
-
-    initSlickSlider: function() {
-      /* http://kenwheeler.github.io/slick/#settings */
-      $('#heroCarousel').slick({
-        dots: true,
-        arrows: false,
-        // autoplay: true,
-        autoplaySpeed: 2000
-      });
     },
 
     onArrowClick: function() {
       $("html, body").animate({ scrollTop: $("#heroCarousel").position().top }, 600);
     },
 
-    onScroll: function() {
-      var currentScrollTop = $(this).scrollTop();
-      var viewportHeight = $(this).height();
-      var pageNumber = parseInt((currentScrollTop)/viewportHeight);
+    updateActivePage: function(element, index) {
+      var commandingElement = document.body;
+      var pageNumber = index;
 
-      // console.log(currentScrollTop, pageNumber);
+      $(commandingElement).removeClass('stage-intro stage-showcase');
 
-      if (pageNumber !== Number(this.dataset.page)) {
-        $(this).removeClass('active-' + this.dataset.page);
-        $(this).addClass('active-' + pageNumber);
-        $(this).attr("data-page", pageNumber);
+      if (pageNumber !== Number(element.dataset.page)) {
+        $(commandingElement).removeClass('active-' + commandingElement.dataset.page);
+        $(commandingElement).addClass('active-' + pageNumber);
+        $(commandingElement).attr("data-page", pageNumber);
+      }
+
+      if (index <= 3) {
+        $(commandingElement).addClass('stage-intro');
+      } else {
+        $(commandingElement).addClass('stage-showcase');
       }
     },
 
@@ -43,7 +37,35 @@ $(function() {
       this.registerEvents();
 
       if (window.section === 'home') {
-        this.initSlickSlider();
+        /* http://kenwheeler.github.io/slick/#settings */
+        $('#heroCarousel').slick({
+          dots: true,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 2000
+        });
+
+        // $('#siteWrapper').fullpage();
+      }
+
+      if (window.section === 'formats') {
+        $('#sectionFormats').fullpage({
+          afterLoad: function(anchorLink, index) {
+            // console.log('anchorLink', anchorLink, index);
+
+            if (index >= 4) {
+              document.querySelector('.fp-section.active video').play();
+            }
+          },
+
+          onLeave: function(index, nextIndex, direction) {
+            this.updateActivePage(document.body, nextIndex);
+          }.bind(this),
+
+          afterRender: function() {
+            // document.querySelector('')
+          }
+        });
       }
     }
   };

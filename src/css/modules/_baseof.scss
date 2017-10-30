@@ -23,25 +23,17 @@ body {
     text-decoration: none;
   }
 
+  p,
   [data-role="content"] {
     font-family: $content-font;
     text-align: left;
   }
 }
 
-body.open {
-  height: 100%;
-  overflow: hidden;
-
-  .arrow-down:after {
-    display: none;
-  }
-}
-
 .site-wrapper {
-  background-color: $primary-white;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 
@@ -69,24 +61,12 @@ body.open {
 
 
 
-
-
-
-
-
-
 /* ==========================================================================
    Interactions
    ========================================================================== */
 
-.site-wrapper {
-  transform: translateX(0em);
-  transition: transform 300ms linear;
-}
 
-.open .site-wrapper {
-  transform: translateX(18em);
-}
+
 
 
 /* ==========================================================================

@@ -1,0 +1,17 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+<ul class="breadcrumbs">
+  <span>Products</span>
+  {{ range $index, $element := split $url "/" }}
+    {{ $.Scratch.Add "path" $element }}
+      {{ if ne $element "" }}
+      <span>> {{ . }} </span>
+      {{ $.Scratch.Add "path" "/" }}
+      {{ end }}
+  {{ end }}
+</ul>
+
+<div id="fixedFrame" class="fixed-frame">
+  <div class="part-light"></div>
+  <div class="part-dark"></div>
+</div>

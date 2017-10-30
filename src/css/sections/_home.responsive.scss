@@ -7,7 +7,7 @@ body {
   opacity: 1 ?if media (min-width: $mobile-m-width);
 }
 
-@media (--mobile-l) {
+@media (--mobile-s) {
   .hero-content,
   .hero-carousel {
     height: calc(100vh - 4em);
@@ -136,6 +136,10 @@ body {
 
     .arrow-down {
       bottom: 1em;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

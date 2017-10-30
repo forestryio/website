@@ -3,35 +3,47 @@
    ========================================================================== */
 
 .section-formats {
-  .headline-part,
-  .elaboration-part {
-    transition: opacity 300ms ease-out, visibility 0ms ease-out 300ms;
-    visibility: hidden;
+  .interior-page {
+    transition: opacity 300ms ease-out 300ms;
     opacity: 0;
   }
 }
 
-.active-0 .page-0,
-.active-1 .page-1,
-.active-2 .page-2,
-.active-3 .page-3,
-.active-4 .page-4,
-.active-5 .page-5,
-.active-6 .page-6 {
-  transition: opacity 600ms ease-in 300ms;
-  visibility: visible;
+.interior-page.active {
+  /* transition: opacity 600ms ease-in 300ms; */
   opacity: 1;
 }
 
-.active-2 .page-3 {
-  transition: none;
+
+/* .stage-showcase  */
+.fixed-frame .part-dark {
+  transition: width 600ms;
 }
 
-.active-3 .page-2 {
-  transition: opacity 300ms ease-out;
-
-  .headline-part,
-  .elaboration-part {
-    transition: none;
-  }  
+.formats-category {
+  transition: opacity 300ms;
 }
+
+.stage-intro {
+  .page-3 .formats-category {
+    opacity: 1;
+  }
+
+  .page-4 .formats-category {
+    opacity: 0;
+  }
+}
+
+/* from page 3 to page 4 */
+.stage-showcase {
+  .page-3 .formats-category {
+    opacity: 0;
+  }
+
+  .page-4 .formats-category {
+    opacity: 1;
+  }
+}
+
+
+

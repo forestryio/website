@@ -11,6 +11,8 @@
     </div>
     <!-- end of "main" -->
 
+    {{ block "frame" . }}{{ end }}
+
     <!-- {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }} -->
     {{ block "scripts" . }}{{ partial "site-scripts" . }}{{ end }}
   </body>
