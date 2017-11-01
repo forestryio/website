@@ -9,7 +9,7 @@
 /* ==========================================================================
    import plugins
    ========================================================================== */
-@import "plugins/slick.css";
+/* @import "plugins/slick.css"; */
 @import "plugins/jquery.fullpage.min.css";
 
 
@@ -35,5 +35,5 @@
 
 @import "sections/_formats.core.scss";
 @import "sections/_formats.interaction.scss";
-/* @import "sections/_home.responsive.scss"; */
+@import "sections/_formats.responsive.scss";
 

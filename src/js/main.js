@@ -5,12 +5,18 @@ $(function() {
       navigation: require('./modules/_navigation.js')
     },
 
+    props: {
+      mobileThreshold: 768,
+      scrollingSpeed: 600
+    },
+
     registerEvents: function() {
       $("#arrowDown").on("click", this.onArrowClick);
     },
 
     onArrowClick: function() {
-      $("html, body").animate({ scrollTop: $("#heroCarousel").position().top }, 600);
+      // $("html, body").animate({ scrollTop: $("#heroCarousel").position().top }, 600);
+      $.fn.fullpage.moveSectionDown();
     },
 
     updateActivePage: function(element, index) {
@@ -37,22 +43,20 @@ $(function() {
       this.registerEvents();
 
       if (window.section === 'home') {
-        /* http://kenwheeler.github.io/slick/#settings */
-        $('#heroCarousel').slick({
-          dots: true,
-          arrows: false,
-          // autoplay: true,
-          autoplaySpeed: 2000
+        $('#landingPage').fullpage({
+          scrollingSpeed: this.props.scrollingSpeed,
+          controlArrows: false,
+          slidesNavigation: true,
+          autoScrolling: true,
+          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em'
         });
-
-        // $('#siteWrapper').fullpage();
       }
 
       if (window.section === 'formats') {
         $('#sectionFormats').fullpage({
+          scrollingSpeed: this.props.scrollingSpeed,
+          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
           afterLoad: function(anchorLink, index) {
-            // console.log('anchorLink', anchorLink, index);
-
             if (index >= 4) {
               document.querySelector('.fp-section.active video').play();
             }

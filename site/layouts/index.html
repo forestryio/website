@@ -1,26 +1,29 @@
 {{ define "main" }}
   <!-- {{ .Content }} -->
 
-  <div class="section hero-content">
-    <div class="humans">
-      <img class="tokponwey" src='{{ "_images/portraits/_A_Tokponwey_00046.jpg" | absURL }}'>
-      <!-- <img class="rachel" src='{{ "_shoots/_Rachel_Oremland_01131.jpg" | absURL }}'> -->
-      <!-- <img class="rene" src='{{ "_shoots/_Rene_01371.jpg" | absURL }}'> -->
+  <div id="landingPage" class="landingPage">
+    <div class="section hero-content">
+      <div class="humans">
+        <img class="tokponwey" src='{{ "_images/portraits/tokponwey.jpg" | absURL }}'>
+        <!-- <img class="rachel" src='{{ "_shoots/_Rachel_Oremland_01131.jpg" | absURL }}'> -->
+        <!-- <img class="rene" src='{{ "_shoots/_Rene_01371.jpg" | absURL }}'> -->
+      </div>
+
+      <div class="main-message">
+        <h2 class="headline-cap">GET CLOSER<br>TO YOUR CUSTOMERS.</h2>
+        <h2 class="headline-lean">Our data-rich ad formats<br>provide unprecendented customer<br>insights that drive performance.</h2>
+      </div>
+
+      <p id="arrowDown" class="arrow-down">∟</p>
     </div>
 
-    <div class="main-message">
-      <h2 class="headline-cap">GET CLOSER<br>TO YOUR CUSTOMERS.</h2>
-      <h2 class="headline-lean">Our data-rich ad formats<br>provide unprecendented customer<br>insights that drive performance.</h2>
-    </div>
-
-    <p id="arrowDown" class="arrow-down">∟</p>
+    <div id="heroCarousel" class="section hero-carousel">
+      <div class="slide">{{ partial "slide-formats" . }}</div>
+      <div class="slide">{{ partial "slide-insights" . }}</div>
+      <div class="slide">{{ partial "slide-marketplace" . }}</div>
+    </div>    
   </div>
 
-  <div id="heroCarousel" class="section hero-carousel">
-    <div>{{ partial "slide-formats" . }}</div>
-    <div>{{ partial "slide-insights" . }}</div>
-    <div>{{ partial "slide-marketplace" . }}</div>
-  </div>
 {{ end }}
 
 

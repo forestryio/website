@@ -14,50 +14,28 @@
 }
 
 body {
-  /* font-family: $content-font; */
-  font-family: sans-serif;
   font-size: $base-size;
-  text-align: center;
 
   a {
     text-decoration: none;
   }
 
-  p,
-  [data-role="content"] {
+  p {
     font-family: $content-font;
     text-align: left;
   }
+
+  [data-role="headline-cap"] { font-family: $headline-cap; }
+  [data-role="headline-lean"] { font-family: $headline-lean; }
+  [data-role="content"] { font-family: $content-font; }
 }
 
 .site-wrapper {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  margin: 0; /* the fullPage plugin will create padding for fixed header */
   z-index: 1;
 }
-
-
-
-
-.summary-work {
-  --column-num: 1;
-  font-size: 1rem;
-  border: .125em solid black;
-  margin: 1em .5em;
-  padding: 1em;
-  width: calc(((100 / var(--column-num)) * 1%) - 1em); /* niiiiice */
-
-  box-sizing: border-box;
-
-  .metadata {
-    /* color: color($pink lightness(40%)); */
-    font-size:.75rem;
-    margin: .5em; /* the margin is always half of the font size */
-  }
-}
-
-
-
 
 
 
@@ -75,19 +53,14 @@ body {
 
 
 
-@media (--mobile-l) {
+@media (--mobile-m) {
   .site-wrapper {
-    bottom: auto;
-    /* margin-top: 4em; */
-    top: 4em;
-    margin-left: 0;
-    transform: translateY(4em;)
   }
 }
 
 
 @media (--desktop) {
   .site-wrapper {
-    margin-left: 12em;  
+    margin: 0 0 0 10em;
   }
 }

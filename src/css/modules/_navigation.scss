@@ -1,52 +1,59 @@
 .site-navigation {
   position: fixed;
   top: 0;
-  z-index: 1;
+  left: 0;
+  height: 4em;
+  width: 100%;
+  z-index: 999;
   overflow: hidden;
-
   color: $primary-white;
+  background-color: $ocean-deep;
 
-  .marquee {
+
+  .nav-icon {
     position: absolute;
-    right: 0;
+    text-align: center;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    width: 2em;
+    height: 1.2em;
+    margin: 1.4em;
 
-    background-color: $ocean-deep;
+    span {
+      position: absolute;
+      width: 100%;
+      height: .2em;
+      left: 0;
+      background: $tangerine;
+    }
+  }
 
-    .nav-icon {
-      position: relative;
-      text-align: center;
-      cursor: pointer;
+  .message {
+    height: 4em;
+    padding: .5em 0;
+    text-align: center;
 
-      span {
-        background: $tangerine;
-        display: block;
-        position: absolute;
-        height: .3em;
-      }
+    .title {
+      text-decoration: none;
+      color: $primary-white;
+      font-size: 1.2rem;
     }
 
-    .message {
-      .title {
-        font-family: $headline-cap;
-        text-decoration: none;
-        color: $primary-white;
-      }
-
-      .subtitle {
-        font-family: $content-font;
-        font-size: .7rem;
-        line-height: 1.8;
-      }
+    .subtitle {
+      font-family: $content-font;
+      font-size: .7rem;
+      line-height: 1.8;
     }
   }
 }
 
 .menu-container {
   position: fixed;
-  width: 18em;
+  width: 15em;
   height: 100%;
   left: 0;
-
+  top: 0;
   background-color: $deep-blue;
   color: $primary-white;
 
@@ -54,11 +61,8 @@
     padding: 0;
     text-align: left;
     list-style-type: none;
-  }
 
-  a {
-    color: white;
-    text-decoration: none;
+    a { color: $primary-white;  }
   }
 
   .primary-menu {
@@ -66,7 +70,7 @@
     width: 100%;
     bottom: 14em;
     top: 0;
-    padding: 0 2.5em;
+    padding: 0 2em;
 
     > ul {
       @extend vertical-align;
@@ -87,17 +91,16 @@
       margin-left: 1.5em;
 
       li {
-        font-family: $headline-cap;
         font-family: MeltowSan100-Regular;
-        font-size: 1.2rem;
         letter-spacing: 1px;
-        font-weight: bold;
         margin: .3em 0;
 
         &:before {
           content: '❯';
           position: relative;
-          left: -.5em;
+          left: -0.5em;
+          font-weight: 100;
+          font-size: 0.8rem;
         }
 
         &.active:before,
@@ -112,19 +115,59 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 0 2.5em;
+    padding: 0 2em;
 
     ul {
       border-top: 1px dotted $primary-white;
       padding: 1em 0 4em 0;
 
       li {
-        font-family: $headline-cap;
         font-family: MeltowSan100-Regular;
         letter-spacing: 1px;
-        font-size: 1rem;
-        font-weight: bold;
+        font-size: .8rem;
         margin: .25em 0;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Responsiveness
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .site-navigation {
+  }
+}
+
+
+@media (--desktop) {
+  .site-navigation {
+    overflow: hidden;
+    width: 10em;
+    height: 100%;
+
+    .nav-icon {
+      top: 3em;
+      left: 0;
+      right: 0;
+      width: 3em;
+      height: 2em;
+      margin: 0 auto;
+    }
+
+    .message {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: left;
+      height: auto;
+      margin: 0 1em;
+      padding: 0;
+
+      .title {
+        font-size: 1.8rem;
       }
     }
   }
@@ -149,20 +192,21 @@ body.open {
   transition: left 300ms linear;
   left: 0;
 
-  .marquee .nav-icon {
-    span:nth-child(1) { top: 0px; left:0; width: 100%; transform: rotate(0deg); }
-    span:nth-child(2) { top: .7em; left:0; width: 100%; transform: rotate(0deg); }
-    span:nth-child(3) { top: .7em; left:0; width: 100%; transform: rotate(0deg); }
-    span:nth-child(4) { top: 1.4em; left:0; width: 100%; transform: rotate(0deg); }
+  /* .marquee  */
+  .nav-icon {
+    span:nth-child(1) { top: 0; left:0; width: 100%; transform: rotate(0deg); }
+    span:nth-child(2) { top: .5em; left:0; width: 100%; transform: rotate(0deg); }
+    span:nth-child(3) { top: .5em; left:0; width: 100%; transform: rotate(0deg); }
+    span:nth-child(4) { top: 1em; left:0; width: 100%; transform: rotate(0deg); }
 
     span { transition: .3s ease-in-out; }
   }
 }
 
 .open .site-navigation {
-  left: 18em;
+  left: 15em;
 
-  .marquee .nav-icon {
+  .nav-icon {
     span:nth-child(1) { top: 1em; left: 50%; width: 0%; }
     span:nth-child(2) { transform: rotate(45deg); }
     span:nth-child(3) { transform: rotate(-45deg); }
@@ -180,95 +224,12 @@ body.open {
 }
 
 .site-wrapper,
-.breadcrumbs,
 .fixed-frame {
   transform: translateX(0em);
   transition: transform 300ms linear;
 }
 
 .open .site-wrapper,
-.open .breadcrumbs,
 .open .fixed-frame {
-  transform: translateX(18em);
-}
-
-
-/* ==========================================================================
-   Responsiveness
-   ========================================================================== */
-
-@media (--mobile-l) {
-  .site-navigation {
-    bottom: auto;
-    top: 0;
-    height: 4em;
-    width: 100%;
-
-    .marquee {
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      .nav-icon {
-        position: absolute;
-        left: 0;
-        width: 2em;
-        height: 2em;
-        margin: 1em 2em;
-      }
-
-      .message {
-        text-align: center;
-        padding: 0.7em 0;
-
-        .title {
-          font-size: 1.3rem;
-        }
-
-        .subtitle {
-          line-height: 1;
-        }
-      }
-    }
-    
-    .menu-container {
-      height: 100vh;
-    }
-  }
-}
-
-
-@media (--desktop) {
-  .site-navigation {
-    overflow: hidden;
-    width: 12em;
-    bottom: 0;
-
-    .marquee {
-      height: 100%;
-      width: 12em;
-
-      .nav-icon {
-        top: 3em;
-        width: 3em;
-        height: 2em;
-        margin: 0 auto;
-      }
-
-      .message {
-        @extend vertical-align; /* doesn't work in media query !? */
-        position: relative;
-        margin: 0 2em;
-        top: 50%;
-        text-align: left;
-
-        .title {
-          font-size: 1.8rem;
-        }
-      }
-    }
-
-    .menu-container {
-    }
-  }
+  transform: translateX(15em);
 }

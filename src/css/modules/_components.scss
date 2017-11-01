@@ -6,14 +6,13 @@
   margin: 0;
 }
 
-
-
 .main-cta {
   font-family: $headline-cap;
   line-height: 1;
-  font-weight: bold;
-  color: $tangerine;
+  padding: .3em .3em .1em .3em;
   border: 1px dotted $tangerine;
+  color: $tangerine;
+  text-align: center;
 }
 
 .headline-cap {
@@ -23,25 +22,21 @@
 
 .headline-lean {
   font-family: $headline-lean;
-  font-style: italic;
   font-weight: 100;
   line-height: 1.1;
-  font-size: 3.7rem;
   text-align: left;
 }
 
 .inline-cta {
   font-family: $headline-cap;
-  font-size: 1.6rem;
-  color: $ocean-deep;
-  font-weight: bold;
   margin-left: .5em;
-  color: $deep-blue;
 
   &:before {
     content: '❯';
     position: relative;
+    top: 0;
     left: -.5em;
+    font-size: 0.8em;
   }
 }
 
@@ -62,37 +57,18 @@
    ========================================================================== */
 
 @media (--mobile-l) {
-  .headline-cap {
-    font-size: 1.8rem;
-  }
-
-  .headline-lean {
-    font-size: 1.5em;
-  }
-
-  .arrow-down {  
-    font-size: 3rem;
-  }
-
-  .main-cta {
-    font-size: 1rem;
-    padding: .5em .5em .3em .5em;
-  }
 }
 
 
 @media (--desktop) {
   .headline-cap {
-    font-size: 3.6rem;
-    line-height: 1.1;
   }
 
-  .arrow-down {  
-    font-size: 8rem;
+  .arrow-down {
   }
 
   .main-cta {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: .3em .6em .1em .6em;
   }
 }

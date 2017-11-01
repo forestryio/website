@@ -1,0 +1,179 @@
+
+
+@media (--desktop) {
+  .fixed-frame {
+    left: 10em;
+
+    .breadcrumbs {
+      font-size: .8rem;
+      top: 2em;
+      left: 2em;
+    }
+  }
+
+  body.stage-showcase .fixed-frame {
+    .part-dark {
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 20em;
+
+      .formats-category {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+
+        h3.headline-cap {
+          margin-bottom: .5em;
+        }
+
+        a.headline-cap {
+          font-size: 1rem;
+          margin: .5em 0;
+        }
+      }
+    }
+
+    .part-light {
+      height: 100%;
+      width: auto;
+      left: 20em;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .interior-page {
+    &.page-1,
+    &.page-2,
+    &.page-3 {
+      .match-light {
+        padding-top: 0;
+
+        .headlines {
+          position: absolute;
+          padding: 0;
+          top: 5em;
+          left: 3em;
+        }
+      }
+
+      .match-dark {
+      }
+    }
+
+    &.page-4,
+    &.page-5 {
+      .match-dark {
+        height: 100%;
+        width: 20em;
+        left: 0;
+        top: 0;
+      }
+
+      .match-light {
+        height: 100%;
+        left: 20em;
+        right: 0;
+        top: 0;
+        width: auto;
+
+        .format-elaboration {
+          height: calc(100% - 4em);
+          margin: 2em;
+          width: auto;
+          position: relative;
+
+          .header {
+            position: absolute;
+            left: 0;
+            margin: 0;
+
+            .headline-lean {
+              font-size: 2rem;
+            }
+
+            .headline-cap {
+              font-size: 2.5rem;
+            }
+          }
+
+          .video-container {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            margin: 0;
+
+            .label { font-size: .8rem; margin: 1em 0; }
+            .name { font-size: .8rem; margin: 1em 0; }
+          }
+        }
+      }    
+    }    
+  }
+
+  .interior-page.page-1 {
+    .match-light .headlines {
+      .headline-cap { font-size: 4rem; }
+      .headline-lean { font-size: 3rem; }
+    }
+
+    .match-dark .explanation {
+      width: 24em;
+      margin: 0;
+      left: 3em;
+    }
+  }
+
+  .interior-page.page-2 {
+    .match-light .headlines {
+      width: 32em;
+
+      .headline-cap { font-size: 2rem; }
+      .info { font-size: .9rem; }
+    }
+
+    .match-dark {
+      text-align: left;
+
+      .pie-chart {
+        display: block;
+        width: 300px;
+        right: 4em;
+        top: -10em;
+      }
+
+      .chart-legend {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .interior-page.page-3 {
+    .match-light .headlines {
+      right: 3em;
+
+      .headline-cap { font-size: 3rem; }
+      .info { font-size: .9rem; }
+      .headline-lean { font-size: 2.3rem; }
+    }
+
+    .match-dark .formats-category {
+      .headline-cap {
+        float: left;
+        width: calc(50% - 2em);
+        height: 8em;
+        margin: 1em;
+        padding: 0;
+        line-height: 8em;
+      }
+
+      /* .headline-cap:nth-child(3),
+      .headline-cap:nth-child(4) {
+        padding: .5em 1.5em .2em 1.5em;
+      } */
+    }
+  }
+}

@@ -2,24 +2,25 @@
    Fixed frame that persists throughout the interaction
    ========================================================================== */
 
-.breadcrumbs {
-  position: fixed;
-  top: 3.5em;
-  left: 15em;
-  z-index: 100;
-}
-
 .fixed-frame {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 100vh;
   top: 0;
-  left: 12em;
-  z-index: 0;
+  left: 0;
+  background-color: $primary-white; /* insurance */
+
+  .breadcrumbs {
+    position: absolute;
+    z-index: 1;
+    font-size: .7rem;
+    left: 1em;
+    top: 7.5em;
+  }
 
   .part-light {
     position: absolute;
-    height: 50%;
+    height: 50vh;
     width: 100%;
     left: 0;
     top: 0;
@@ -28,107 +29,94 @@
 
   .part-dark {
     position: absolute;
+    height: 50vh;
+    width: 100%;
     bottom: 0;
     left: 0;
-    height: 50%;
-    width: 100%;
     background-color: $gray;
+
+    .formats-category {
+      visibility: hidden;
+      margin-top: 6em;
+      padding: 1em 3em;
+      height: calc(40vh - 6em);
+
+      a.headline-cap { 
+        display: block;
+        color: $primary-black;
+        font-size: .9em;
+
+        &:before {
+          content: '❯';
+          position: relative;
+          left: -0.5em;
+          font-weight: 100;
+          font-size: 0.8rem;
+          margin-left: .5em;
+        }
+      }
+    }
   }
 }
 
-body.stage-showcase .fixed-frame {
-  .part-dark {
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 30em;
+body.active-3 .fixed-frame {
+  .part-light { height: calc(40vh + 2em); }
+  .part-dark { height: calc(60vh - 2em); }
+}
+
+body.active-4 .fixed-frame,
+body.active-5 .fixed-frame {
+  .part-dark { 
+    height: 40vh;
+    bottom: 60vh;
+
+    .formats-category {
+      visibility: visible;
+    }
   }
 
   .part-light {
-    height: 100%;
-    left: 30em;
-    right: 0;
-    top: 0;
+    height: 60vh;
+    top: 40vh;
   }
 }
 
+body.active-4 .for-page-4,
+body.active-5 .for-page-5 {
+  color: $tangerine !important;
+}
 
 /* ==========================================================================
    Section in site wrapper (.site-wrapper -> .section-formats)
    ========================================================================== */
 
-.section-formats .interior-page {
+.interior-page {
   position: relative;
-  height: 100vh;
 
   .match-light,
   .match-dark {
     position: absolute;
+    width: 100%;
   }
 
   &.page-1,
   &.page-2,
   &.page-3 {
     .match-light {
-      height: 50%;
-      width: 100%;
-      left: 0;
+      height: 50vh;
+      padding-top: 4em;
       top: 0;
+      left: 0;
 
       .headlines {
-        position: absolute;
-        top: 8em;
-        left: 3.5em;
-
-        .info {
-          font-size: 1.2rem;
-        }  
+        padding: 3em 2em 0 2em;
       }
     }
 
     .match-dark {
-      height: 50%;
-      width: 100%;
-      left: 0;
-      top: 50%;
-    }    
-  }
-
-  &.page-4,
-  &.page-5 {
-    .match-dark {
-      height: 100%;
-      width: 30em;
-      left: 0;
-      top: 0;
+      height: 50vh;
+      top: 50vh;
     }
-
-    .match-light {
-      height: 100%;
-      left: 30em;
-      right: 0;
-      top: 0;
-
-      .format-elaboration {
-        height: calc(100% - 8em);
-        margin: 4em;
-        position: relative;
-
-        .header {
-          position: absolute;
-          top: 4em;
-          left: 0;
-
-          .headline-lean {
-            font-size: 3rem;
-          }
-
-          .headline-cap {
-            font-size: 5rem;
-          }
-        }
-      }
-    }    
   }
 }
 
@@ -137,11 +125,15 @@ body.stage-showcase .fixed-frame {
    Pages
    ========================================================================== */
 
-.page-1 {
+.interior-page.page-1 {
   .match-light .headlines {
     .headline-cap {
-      font-size: 7rem;
+      font-size: 2rem;
       line-height: .9;
+    }
+
+    .headline-lean {
+      font-size: 1.8rem;
     }
 
     .info {
@@ -152,168 +144,132 @@ body.stage-showcase .fixed-frame {
 
   .match-dark .explanation {
     position: absolute;
-    width: 19em;
-    right: 3em;
-    top: -3.5em;
+    margin: 0 2em;
+    top: -3em;
 
     background-color: $light-green;
-    font-family: $content-font;
     color: $primary-black;
     padding: 1.5em;
-    font-size: 2rem;
     text-align: left;
   }
 }
 
-.page-2 {
+.interior-page.page-2 {
   .match-light .headlines {
     .headline-cap {
-      font-size: 3rem;
+      font-size: 1.1rem;
+      line-height: 1;
     }
 
     .info {
       margin-top: 1em;
+      font-size: .6rem;
     }
   }
 
   .match-dark {
     .pie-chart {
+      display: none;
       position: absolute;
-      height: 600px;
-      top: -300px;
-      right: 8em;
+      top: -7em;
     }
 
     .chart-legend {
       position: absolute;
-      left: 0;
-      top: 0;
-      height: 80%;
+      width: 100%;
+      bottom: 0;
     } 
   }
 }
 
-.page-3 {
+.interior-page.page-3 {
+  .match-light {
+    height: calc(40vh + 2em);
+  }
+
+  .match-dark {
+    top: calc(40vh + 2em);
+    height: calc(60vh - 2em);
+  }
+
   .match-light .headlines {
     .headline-cap {
-      margin: 1em 0 .5em 0;
+      font-size: 1.6rem;
+      line-height: 1;
     }
 
-    .headline-cap:nth-child(3),
-    .headline-cap:nth-child(4) {
-      padding: .5em 1.5em .2em 1.5em;
+    .info {
+      margin-top: 1em;
+      font-size: .6em;
+    }
+
+    .headline-lean {
+      font-size: 1.5em;
+      margin-top: 1em;
+      text-align: center;
     }
   }
 
   .match-dark .formats-category {
-    padding: 4em 20em;
+    padding: 1em 2em;
 
     .headline-cap {
-      float: left;
       text-align: center;
-      width: calc(50% - 1em);
-      font-size: 2.4rem;
+      width: calc(100%);
       display: inline-block;
-      color: $medium-green;
       background-color: $primary-white;
       padding: 1em .5em .7em .5em;
-      margin: .5em .5em;;
+      margin: .5em 0;
+      color: $primary-white;
     }
+
+    .headline-cap:nth-child(1) { background-color: $deep-blue; }
+    .headline-cap:nth-child(2) { background-color: $ocean-deep; }
+    .headline-cap:nth-child(3) { background-color: $deep-blue; }
+    .headline-cap:nth-child(4) { background-color: $ocean-deep; }
   }
 }
 
-.page-4,
-.page-5 {
-  .match-dark .formats-category {
-    @extend vertical-align;
-    margin: 0 4em;
+.interior-page.page-4,
+.interior-page.page-5 {
+  .match-light {
+    top: 40vh;
+    height: 60vh;
 
-    h3.headline-cap {
-      font-size: 1.8rem;
-      margin-bottom: .8em;
-    }
-
-    a.headline-cap {
-      display: block;
-      font-size: 1.3rem;
-      margin: 1em .5em;
-
-      &:before {
-        content: '❯';
-        position: relative;
-        left: -.5em;
-      }
-
-      &.active,
-      &.active:before {
-        color: $tangerine !important;
-      }
-    }    
-  }
-
-  .video-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    .label {
-      text-align: left;
-      margin: .5em 0;
-      font-family: Caecilia-Light;
-    }
-
-    video {
+    .format-elaboration {
+      position: absolute;
       width: 100%;
-    }
+      bottom: 0;
 
-    .name {
-      text-align: left;
-      margin: .5em 0;
+      .header {
+        margin: 1em;
 
-      strong {
-        font-family: Meltow;
-        font-size: 1.2rem;
+        .headline-lean { font-size: 1.2rem; }
+        .headline-cap { font-size: 1.6rem; }
+      }
+
+      .video-container {
+        margin: 0 1em;
+
+        .label {
+          margin: .5em 0;
+          font-size: .7rem;
+        }
+        
+        video {
+          width: 100%;
+        }
+
+        .name {
+          margin: 2em 0;
+          font-size: .5rem;
+
+          strong {
+            font-family: Meltow;
+            font-size: 1.2em;
+          }
+        }
       }
     }
   }
 }
-
-
-
-/* .active-3,
-.active-4 {
-  .breadcrumbs {
-    z-index: 10;
-  }
-
-  .headlines {
-    top: 0;
-    left: 0;
-    width: 30em;
-    bottom: 0;
-    z-index: 1;
-    background-color: $gray;
-
-    .headline-part {
-      top: 40vh;
-      bottom: 0;
-      left: 5em;
-      right: 5em;
-      background-color: $gray;
-    }
-  }
-
-  .elaboration {
-    height: 100vh;
-    left: 30em !important;
-    background-color: $primary-white;
-  }
-
-} */
-
-
-
-
-
-
