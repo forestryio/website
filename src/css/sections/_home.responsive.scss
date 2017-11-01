@@ -107,6 +107,12 @@ body {
       right: 2em;
       top: 10em;
     }
+
+    .visual-pattern {
+      height: 0;
+
+      video { bottom: 0; }
+    }
   }
 
   .hero-carousel .slide-insights {
@@ -121,6 +127,12 @@ body {
       width: 30em;
       right: 2em;
       top: 10em;
+    }
+
+    .visual-pattern {
+      height: 0;
+
+      video { bottom: 0; }
     }
   }
 

@@ -11,12 +11,41 @@ $(function() {
     },
 
     registerEvents: function() {
-      $("#arrowDown").on("click", this.onArrowClick);
+      $('#arrowDown').on('click', this.onArrowClick.bind(this));
     },
 
     onArrowClick: function() {
       // $("html, body").animate({ scrollTop: $("#heroCarousel").position().top }, 600);
       $.fn.fullpage.moveSectionDown();
+    },
+
+    jumpToFormat: function(e) {
+      console.log(e.target.dataset.index);
+
+      $("html, body").animate({ scrollTop: $(".page-4").position().top }, 600);
+      this.updateActiveFormat(e);
+    },
+
+    updateActiveFormat: function(e) {
+      var chosenTarget;
+      var chosenIndex;
+
+      if (e.target.tagName === 'SPAN') {
+        chosenTarget = e.target.parentNode;
+      } else {
+        chosenTarget = e.target;
+      }
+
+      chosenIndex = chosenTarget.dataset.index;
+
+      if (chosenIndex) {
+        $('#innerNav .headline-cap').removeClass('active');
+        $('#formatsElaboration .format').removeClass('active');
+
+        // $(chosenTarget).addClass('active');
+        $('#innerNav .headline-cap:nth-child(' + chosenIndex + ')').addClass('active');       
+        $('#formatsElaboration .format:nth-child(' + chosenIndex + ')').addClass('active');        
+      }
     },
 
     updateActivePage: function(element, index) {
@@ -48,28 +77,37 @@ $(function() {
           controlArrows: false,
           slidesNavigation: true,
           autoScrolling: true,
-          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em'
+          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
+          afterLoad: function(anchorLink, index) {
+            // if (index >= 4) {
+            document.querySelector('.visual-pattern.formats video').play();
+            document.querySelector('.visual-pattern.insights video').play();
+            // }
+          },
         });
       }
 
       if (window.section === 'formats') {
-        $('#sectionFormats').fullpage({
-          scrollingSpeed: this.props.scrollingSpeed,
-          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
-          afterLoad: function(anchorLink, index) {
-            if (index >= 4) {
-              document.querySelector('.fp-section.active video').play();
-            }
-          },
+        // $('#sectionFormats').fullpage({
+        //   scrollingSpeed: 1200,
+        //   paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
+        //   afterLoad: function(anchorLink, index) {
+        //     if (index >= 4) {
+        //       document.querySelector('.fp-section.active video').play();
+        //     }
+        //   },
 
-          onLeave: function(index, nextIndex, direction) {
-            this.updateActivePage(document.body, nextIndex);
-          }.bind(this),
+        //   onLeave: function(index, nextIndex, direction) {
+        //     this.updateActivePage(document.body, nextIndex);
+        //   }.bind(this),
 
-          afterRender: function() {
-            // document.querySelector('')
-          }
-        });
+        //   afterRender: function() {
+        //     // document.querySelector('')
+        //   }
+        // });
+
+        $('#innerNav').on('click', this.updateActiveFormat.bind(this));
+        $('#formatsCategory').on('click', this.jumpToFormat.bind(this));
       }
     }
   };

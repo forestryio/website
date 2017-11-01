@@ -2,32 +2,20 @@
    Interaction
    ========================================================================== */
 
-.section-formats {
-  .interior-page {
-    transition: opacity 300ms ease-out 300ms;
+.interior-page .match-light .formats-elaboration {
+  .format {
     opacity: 0;
+    visibility: hidden;
+  }
 
-    /* .match-dark {
-      transition: transform 600ms ease-out 300ms;
-      transform: translateY(80px);
-    }
-
-    .match-light {
-      transition: transform 900ms ease-out 300ms;
-      transform: translateY(120px);
-    } */
+  .format.active {
+    transition: opacity 500ms ease-in 100ms;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
-.interior-page.active {
-  /* transition: opacity 600ms ease-in 300ms; */
-  opacity: 1;
 
-  /* .match-dark,
-  .match-light {
-    transform: translateY(0px);
-  } */
-}
 
 
 /* .stage-showcase  */

@@ -47,12 +47,12 @@ $content-font: Caecilia-Light;
 $mobile-s-width: 280px;
 $mobile-m-width: 359px;
 $mobile-l-width: 480px;
-$desktop-width: 768px;
+$desktop-width: 1024px;
 
 @custom-media --mobile-s (width > 280px) and (width <= 359px);
 @custom-media --mobile-m (width > 359px) and (width <= 408px);
-@custom-media --mobile-l (width > 408px) and (width <= 768px);
-@custom-media --desktop  (width >= 768px);
+@custom-media --mobile-l (width > 408px) and (width < 1024px);
+@custom-media --desktop  (width >= 1024px);
 
 $arrow-right: '∟';
 

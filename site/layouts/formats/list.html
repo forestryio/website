@@ -1,6 +1,8 @@
 {{ define "main" }}
 <div id="sectionFormats" class="section-formats">
   <div class="section interior-page page-1" data-anchor="page-intro">
+    <ul class="breadcrumbs"><span>Products</span><span> > Formats</span></ul>
+
     <div class="match-light">
       <div class="headlines">
         <h1 class="headline-cap">Breakthrough<br>Design</h1>
@@ -16,6 +18,8 @@
   </div>
 
   <div class="section interior-page page-2" data-anchor="page-chart">
+    <ul class="breadcrumbs"><span>Products</span><span> > Formats</span></ul>
+
     <div class="match-light">
       <div class="headlines">
         <h3 class="headline-cap">They aren’t just cool ad formats, they are windows<br>into deep understanding.</h3>
@@ -29,6 +33,8 @@
   </div>
 
   <div class="section interior-page page-3" data-anchor="page-format-list">
+    <ul class="breadcrumbs"><span>Products</span><span> > Formats</span></ul>
+
     <div class="match-light">
       <div class="headlines">
         <h3 class="headline-cap">Featured Formats</h3>
@@ -37,51 +43,74 @@
       </div>
     </div>
     <div class="match-dark">
-      <div class="formats-category clearfix">
-        <a class="headline-cap" href="#page-format-brand">Brand Formats</a>
-        <a class="headline-cap" href="#page-format-consideration">Consideration Formats</a>
-        <a class="headline-cap" href="#dr">Spur Action</a>
+      <div id="formatsCategory" class="formats-category clearfix">
+        <a class="headline-cap" data-index="1" href="#page-format-brand">Brand Formats</a>
+        <a class="headline-cap" data-index="2" href="#page-format-consideration">Consideration Formats</a>
+        <a class="headline-cap" data-index="3" href="#dr">Spur Action</a>
         <a class="headline-cap" href="#explore">Explore Full Portfolio</a>
       </div>
     </div>
   </div>
 
-  <div class="section interior-page page-4" data-anchor="page-format-brand">
-    <div class="match-dark"></div>
+  <div class="section interior-page page-4" data-anchor="page-formats-showcase">
+    <div class="match-dark">
+      <div class="formats-category">
+        <h3 class="main-cta">Featured Formats</h3>
+        <div id="innerNav" class="inner-nav">
+          <div class="x-scroll-container clearfix">
+            <a class="headline-cap active" data-index="1" href="#page-format-brand">Grow <span>Awareness</span></a>
+            <a class="headline-cap" data-index="2" href="#page-format-consideration">Drive <span>Consideration</span></a>
+            <a class="headline-cap" data-index="3" href="#dr">Spur <span>Action</span></a>
+            <a class="headline-cap" target="_blank" href="https://formats.yieldmo.com/">Explore <span>Full Portfolio</span></a>
+          </div>
+        </div>
+      </div>      
+    </div>
+
     <div class="match-light">
-      <div class="format-elaboration">
-        <div class="header">
-          <h2 class="headline-lean">Brand formats: Get noticed.</h2>
-          <h1 class="headline-cap">Grow Awareness</h1>
+      <div id="formatsElaboration" class="formats-elaboration">
+        <div class="format brand active">
+          <div class="header">
+            <h2 class="headline-lean">Brand formats: Get noticed.</h2>
+            <h1 class="headline-cap">Grow Awareness</h1>
+          </div>
+
+          <div class="video-container">
+            <p class="label">FEATURED BRAND FORMATS:</p>
+            <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
+            <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
+          </div>          
         </div>
 
-        <div class="video-container">
-          <p class="label">FEATURED BRAND FORMATS:</p>
-          <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
-          <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
+        <div class="format consideration">
+          <div class="header">
+            <h2 class="headline-lean">Consideration formats: Encourage exploration.</h2>
+            <h1 class="headline-cap">Drive Consideration.</h1>
+          </div>
+
+          <div class="video-container">
+            <p class="label">FEATURED CONSIDERATION FORMATS:</p>
+            <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
+            <p class="name"><strong>PULL:</strong> An interactive format with three scrollable, sequential creatives.</p>
+          </div>
+        </div>
+
+        <div class="format dr">
+          <div class="header">
+            <h2 class="headline-lean">Direct response formats: Spur action.</h2>
+            <h1 class="headline-cap">Drive Conversions.</h1>
+          </div>
+
+          <div class="video-container">
+            <p class="label">FEATURED DIRECT RESPONSE FORMATS:</p>
+            <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
+            <p class="name"><strong>TICKER:</strong>A countdown format creating urgency and driving action.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="section interior-page page-5" data-anchor="page-format-consideration">
-    <div class="match-dark"></div>
-    <div class="match-light">
-      <div class="format-elaboration">
-        <div class="header">
-          <h2 class="headline-lean">Consideration formats: Encourage exploration.</h2>
-          <h1 class="headline-cap">Drive Consideration.</h1>
-        </div>
-
-        <div class="video-container">
-          <p class="label">FEATURED CONSIDERATION FORMATS:</p>
-          <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
-          <p class="name"><strong>PULL:</strong> An interactive format with three scrollable, sequential creatives.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <!-- end of page 4 -->
 </div>
 
 
