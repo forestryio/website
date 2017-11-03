@@ -39,6 +39,14 @@
           </li>
           {{end}}
         {{end}}
+        <li class="sub-menu">
+          <h3 class="main-section-name">Tools</h3>
+          <ul class="sub-sections">
+            <li>
+              <a target="_blank" href="https://formats.yieldmo.com/"> Ad Builder </a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
     <!-- End of primary menu -->
@@ -46,6 +54,7 @@
     <!-- Begining of secondary menu -->
     <div class="secondary-menu">
       <ul>
+        <li> <a target="_blank" href="https://admin.yieldmo.com/"> Login </a></li>
         {{ range .Site.Menus.secondary }}
         <li> <a href="{{ .URL }}"> {{ .Name }} </a> </li>
         {{ end }}

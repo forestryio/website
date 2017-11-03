@@ -16,6 +16,8 @@ $medium-green: rgb(93, 178, 168);
 $gray: rgb(228, 228, 228);
 
 
+$first: rgb(159, 190, 192);
+$second: rgb(64, 153, 143);
 
 
 /* ==========================================================================
@@ -52,6 +54,7 @@ $desktop-width: 1024px;
 @custom-media --mobile-s (width > 280px) and (width <= 359px);
 @custom-media --mobile-m (width > 359px) and (width <= 408px);
 @custom-media --mobile-l (width > 408px) and (width < 1024px);
+@custom-media --desktop  (width >= 1024px);
 @custom-media --desktop  (width >= 1024px);
 
 $arrow-right: '∟';

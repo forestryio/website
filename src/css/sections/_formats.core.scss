@@ -93,12 +93,13 @@ body.active-4 .for-page-4 {
 .interior-page {
   position: relative;
   height: 100vh;
-  padding-top: 4em;
 
   .match-light {
     background-color: $primary-white;
     position: absolute;
     width: 100%;
+
+    .info { text-align: center; }
   }
 
   .match-dark {
@@ -112,12 +113,17 @@ body.active-4 .for-page-4 {
   &.page-3 {
     .match-light {
       height: 50vh;
-      padding-top: 4em;
       top: 0;
       left: 0;
 
       .headlines {
-        padding: 3em 2em 0 2em;
+        padding: 2em 2em 0 2em;
+
+        .info {
+          margin-top: 1.3em;
+          font-size: .75rem;
+          line-height: 1.5;          
+        }
       }
     }
 
@@ -134,31 +140,48 @@ body.active-4 .for-page-4 {
    ========================================================================== */
 
 .interior-page.page-1 {
-  .match-light .headlines {
-    .headline-cap {
-      font-size: 2rem;
-      line-height: .9;
-    }
+  .match-light {
+    padding-top: 4em;
 
-    .headline-lean {
-      font-size: 1.8rem;
-    }
+    .headlines {
+      padding-top: 4em;
 
-    .info {
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
+      .headline-cap {
+        font-size: 2rem;
+        line-height: .9;
+      }
+
+      .headline-lean {
+        font-size: 1.8rem;
+      }
+
+      .info {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    }    
   }
 
-  .match-dark .explanation {
-    position: absolute;
-    margin: 0 2em;
-    top: -3em;
+  .match-dark {
+    .explanation {
+      position: absolute;
+      margin: 0 2em;
+      top: -3em;
 
-    background-color: $light-green;
-    color: $primary-black;
-    padding: 1.5em;
-    text-align: left;
+      background-color: $light-green;
+      background-color: rgba(150,205,198, 0.7);
+      color: $primary-black;
+      padding: 1.5em;
+      text-align: center;
+    }
+
+    img.hand-held {
+      position: absolute;
+      width: 45%;
+      bottom: 0;
+      right: -1em;
+      display: none;
+    }
   }
 }
 
@@ -174,8 +197,6 @@ body.active-4 .for-page-4 {
     }
 
     .info {
-      margin-top: 1em;
-      font-size: .6rem;
     }
   }
 
@@ -200,12 +221,29 @@ body.active-4 .for-page-4 {
   }
 
   .match-light {
-    height: calc(40vh + 2em);
+    .question {
+      position: absolute;
+      bottom: .5em;
+      left: 1.5em;
+      right: 1.5em;
+      height: 3.4em;
+
+      .headline-lean {
+        text-align: center;
+        font-size: 1.4rem;        
+      }
+
+      img.parenthesis {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+    }
   }
 
   .match-dark {
-    top: calc(40vh + 2em);
-    height: calc(60vh - 2em);
+    background-color: $primary-white;
   }
 
   .match-light .headlines {
@@ -216,7 +254,6 @@ body.active-4 .for-page-4 {
 
     .info {
       margin-top: 1em;
-      font-size: .6em;
     }
 
     .headline-lean {
@@ -227,7 +264,10 @@ body.active-4 .for-page-4 {
   }
 
   .match-dark .formats-category {
-    padding: 1em 2em;
+    padding: 0 2em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
     .headline-cap {
       text-align: center;
@@ -239,8 +279,8 @@ body.active-4 .for-page-4 {
       color: $primary-white;
     }
 
-    .headline-cap:nth-child(1) { background-color: $deep-blue; }
-    .headline-cap:nth-child(2) { background-color: $ocean-deep; }
+    .headline-cap:nth-child(1) { background-color: $first; }
+    .headline-cap:nth-child(2) { background-color: $second; }
     .headline-cap:nth-child(3) { background-color: $deep-blue; }
     .headline-cap:nth-child(4) { background-color: $ocean-deep; }
   }
@@ -251,6 +291,8 @@ body.active-4 .for-page-4 {
     top: 0;
     height: 30vh;
     padding-top: 4em;
+    background-color: $gray;
+    /* border-right: 1px solid $ocean-deep; */
 
     .formats-category {
       position: absolute;
@@ -271,7 +313,8 @@ body.active-4 .for-page-4 {
         overflow-x: scroll;
 
         .x-scroll-container {
-          width: 40em;
+          width: 30em;
+          margin: 0 auto;
           position: relative;
           top: 50%;
           transform: translateY(-50%);
@@ -319,35 +362,40 @@ body.active-4 .for-page-4 {
         }
 
         .header {
-          margin: 2em 1em;
+          margin: 2.5em 1em;
 
-          .headline-lean { font-size: 1.2rem; }
-          .headline-cap { font-size: 1.6rem; }
-        }
-
-        .video-container {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          margin: 1em;
-
+          .headline-lean { font-size: 1.2rem; text-align: center; }
+          .headline-cap { font-size: 1.6rem; text-align: center; }
           .label {
-            margin: .5em 0;
+            margin: 2em 0 0 0;
             font-size: .7rem;
           }
-          
-          video {
-            width: 100%;
-          }
+        }
 
-          .name {
-            margin: 2em 0;
-            font-size: .5rem;
+        .videos {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          top: 9em;
+          padding: 0 1em 1em 1em;
+          overflow-y: scroll;
 
-            strong {
-              font-family: Meltow;
-              font-size: 1.2em;
+          .video-container {
+            margin: 0 0 3em 0;
+
+            video {
+              width: 100%;
+            }
+
+            .name {
+              margin: 1em 0 2em 0;
+              font-size: .7rem;
+
+              strong {
+                font-family: Meltow;
+                font-size: 1.2em;
+              }
             }
           }
         }

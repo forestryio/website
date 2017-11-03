@@ -34,10 +34,12 @@ body {
       .headline-cap {
         font-size: 3rem;
         line-height: 1;
+        text-align: left;
       }
 
       .headline-lean {
         font-size: 2.5rem;
+        text-align: left;
       }
     }
 
@@ -86,10 +88,12 @@ body {
       left: auto;
       bottom: auto;
       padding: 0;
+      text-align: left;
 
       .description {
         color: $ocean-deep;
         font-size: .9rem;
+        text-align: left;
       }
     }
   }

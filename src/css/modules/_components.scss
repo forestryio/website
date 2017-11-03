@@ -17,14 +17,14 @@
 
 .headline-cap {
   font-family: $headline-cap;
-  text-align: left;
+  text-align: center;
 }
 
 .headline-lean {
   font-family: $headline-lean;
   font-weight: 100;
   line-height: 1.1;
-  text-align: left;
+  text-align: center;
 }
 
 .inline-cta {
@@ -44,6 +44,7 @@
   text-align: left;
   color: $tangerine;
   font-family: $content-font;
+  font-family: $menu-cap;
   text-transform: uppercase;
 
   span {
@@ -61,8 +62,8 @@
 
 
 @media (--desktop) {
-  .headline-cap {
-  }
+  .headline-cap { text-align: left; }
+  .headline-lean { text-align: left; }
 
   .arrow-down {
   }

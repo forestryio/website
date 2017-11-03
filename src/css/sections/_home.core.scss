@@ -77,7 +77,9 @@
     .headlines {
       position: absolute;
       top: 6em;
-      left: 2em;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       color: $ocean-deep;
       z-index: 10;
       background: transparent;
@@ -101,14 +103,16 @@
     .more-info {
       position: absolute;
       width: 100%;
-      bottom: 0;
+      bottom: 3em;
       left: 0;
-      padding: 2em;
+      padding: 0 2em;
       z-index: 1;
+      text-align: center;
 
       .description {
         color: $primary-white;
         line-height: 1.5;
+        text-align: center;
       }
 
       .inline-cta {
