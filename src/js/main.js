@@ -71,6 +71,7 @@ $(function() {
       this.modules.navigation();
       this.registerEvents();
 
+      // TODO: re-initiate on resize
       if (window.section === 'home') {
         $('#landingPage').fullpage({
           scrollingSpeed: this.props.scrollingSpeed,
@@ -78,12 +79,15 @@ $(function() {
           slidesNavigation: true,
           autoScrolling: true,
           paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
-          afterLoad: function(anchorLink, index) {
-            // if (index >= 4) {
+          afterLoad: function(anchorLink, index) { },
+          afterRender: function() {
             document.querySelector('.visual-pattern.formats video').play();
-            document.querySelector('.visual-pattern.insights video').play();
-            // }
           },
+          onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+            var currentSlide = document.querySelectorAll('.slide-inner')[nextSlideIndex];
+            
+            currentSlide.querySelector('video').play();
+          }
         });
       }
 

@@ -2,88 +2,16 @@
    Fixed frame that persists throughout the interaction
    ========================================================================== */
 
-.fixed-frame {
-  /* display: none; */
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: $primary-white; /* insurance */
-
-  .part-light {
-    position: absolute;
-    height: 50vh;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: $primary-white;
-  }
-
-  .part-dark {
-    position: absolute;
-    height: 50vh;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: $gray;
-
-    .formats-category {
-      visibility: hidden;
-      margin-top: 6em;
-      padding: 1em 3em;
-      height: calc(40vh - 6em);
-
-      a.headline-cap { 
-        display: block;
-        color: $primary-black;
-        font-size: .9em;
-
-        &:before {
-          content: '❯';
-          position: relative;
-          left: -0.5em;
-          font-weight: 100;
-          font-size: 0.8rem;
-          margin-left: .5em;
-        }
-      }
-    }
-  }
-}
-
-body.active-3 .fixed-frame {
-  .part-light { height: calc(40vh + 2em); }
-  .part-dark { height: calc(60vh - 2em); }
-}
-
-body.active-4 .fixed-frame {
-  .part-dark { 
-    height: 25vh;
-    bottom: 75vh;
-
-    .formats-category {
-      visibility: visible;
-    }
-  }
-
-  .part-light {
-    height: 75vh;
-    top: 25vh;
-  }
-}
-
-body.active-4 .for-page-4 {
-  color: $tangerine !important;
-}
-
-
 .breadcrumbs {
   position: absolute;
   z-index: 1;
-  font-size: .6rem;
   left: 2em;
-  top: 8.5em;
+  top: 2em;
+}
+
+.section-formats {
+  background-color: $primary-white;
+  margin-top: 4em;
 }
 
 /* ==========================================================================
@@ -92,7 +20,8 @@ body.active-4 .for-page-4 {
 
 .interior-page {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 4em);
+  overflow: hidden;
 
   .match-light {
     background-color: $primary-white;
@@ -112,7 +41,7 @@ body.active-4 .for-page-4 {
   &.page-2,
   &.page-3 {
     .match-light {
-      height: 50vh;
+      height: calc(50vh - 2em);
       top: 0;
       left: 0;
 
@@ -128,8 +57,8 @@ body.active-4 .for-page-4 {
     }
 
     .match-dark {
-      height: 50vh;
-      top: 50vh;
+      height: calc(50vh - 2em);
+      top: calc(50vh - 2em);
     }
   }
 }
@@ -141,7 +70,6 @@ body.active-4 .for-page-4 {
 
 .interior-page.page-1 {
   .match-light {
-    padding-top: 4em;
 
     .headlines {
       padding-top: 4em;
@@ -178,6 +106,7 @@ body.active-4 .for-page-4 {
     img.hand-held {
       position: absolute;
       width: 45%;
+      max-width: 800px;
       bottom: 0;
       right: -1em;
       display: none;
@@ -186,18 +115,33 @@ body.active-4 .for-page-4 {
 }
 
 .interior-page.page-2 {
-  .breadcrumbs {
+  .breadcrumbs { display: none; }
+
+  .ceros-content-desktop {
     display: none;
+    top: 50% !important;
+    transform: translateY(-50%);
+    z-index: 1;
   }
 
-  .match-light .headlines {
-    .headline-cap {
-      font-size: 1.1rem;
-      line-height: 1;
-    }
+  .ceros-content-mobile {
+    top: 50% !important;
+    transform: translateY(-40%);
+    display: block;
+    z-index: 1;
+  }
 
-    .info {
-    }
+  .match-light {
+    background-color: transparent;
+    z-index: 2;
+
+    .headlines {
+      padding: 1.5em 1em 0 1em;
+      .headline-cap {
+        font-size: 1.1rem;
+        line-height: 1;
+      }
+    } 
   }
 
   .match-dark {
@@ -208,6 +152,7 @@ body.active-4 .for-page-4 {
     }
 
     .chart-legend {
+      display: none;
       position: absolute;
       width: 100%;
       bottom: 0;
@@ -271,12 +216,13 @@ body.active-4 .for-page-4 {
 
     .headline-cap {
       text-align: center;
-      width: calc(100%);
+      width: 100%;
       display: inline-block;
       background-color: $primary-white;
       padding: 1em .5em .7em .5em;
       margin: .5em 0;
       color: $primary-white;
+      font-size: 0.8rem;
     }
 
     .headline-cap:nth-child(1) { background-color: $first; }
@@ -289,8 +235,7 @@ body.active-4 .for-page-4 {
 .interior-page.page-4 {
   .match-dark {
     top: 0;
-    height: 30vh;
-    padding-top: 4em;
+    height: calc(30vh - 4em);
     background-color: $gray;
     /* border-right: 1px solid $ocean-deep; */
 
@@ -298,7 +243,7 @@ body.active-4 .for-page-4 {
       position: absolute;
       width: 100%;
       left: 0;
-      top: 4em;
+      top: 0;
       bottom: 0;
       text-align: center;
 
@@ -339,7 +284,7 @@ body.active-4 .for-page-4 {
   }
 
   .match-light {
-    top: 30vh;
+    top: calc(30vh - 4em);
     height: 70vh;
 
     .formats-elaboration {
@@ -362,7 +307,7 @@ body.active-4 .for-page-4 {
         }
 
         .header {
-          margin: 2.5em 1em;
+          margin: 2em 1em;
 
           .headline-lean { font-size: 1.2rem; text-align: center; }
           .headline-cap { font-size: 1.6rem; text-align: center; }
@@ -384,9 +329,8 @@ body.active-4 .for-page-4 {
           .video-container {
             margin: 0 0 3em 0;
 
-            video {
-              width: 100%;
-            }
+            video { width: 100%; display: none; }
+            img { width: 100%; display: block; }
 
             .name {
               margin: 1em 0 2em 0;

@@ -23,8 +23,6 @@
 @import "modules/_components.scss";
 
 
-
-
 /* ==========================================================================
    different sections
    ========================================================================== */
@@ -37,3 +35,5 @@
 @import "sections/_formats.interaction.scss";
 @import "sections/_formats.responsive.scss";
 
+@import "sections/_insights.core.scss";
+@import "sections/_insights.responsive.scss";

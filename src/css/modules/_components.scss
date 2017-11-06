@@ -1,9 +1,24 @@
+/* ==========================================================================
+   For components, Media Queries are defined within the component
+   ========================================================================== */
+
 .arrow-down {
   transform: translateX(-50%) rotate(-45deg);
   color: $tangerine;
   font-weight: 100;
   line-height: 1;
   margin: 0;
+}
+
+.breadcrumbs {
+  font-size: .6rem;
+  text-align: left;
+  color: $tangerine;
+  font-family: $content-font;
+  font-family: $menu-cap;
+  text-transform: uppercase;
+
+  @media (--desktop-s) { font-size: .8rem; }
 }
 
 .main-cta {
@@ -13,11 +28,17 @@
   border: 1px dotted $tangerine;
   color: $tangerine;
   text-align: center;
+
+  @media (--mobile-m) { font-size: 1.2rem; }
+  @media (--mobile-l) { font-size: 1.5rem; }
+  @media (--desktop-s) { font-size: 1.8rem; padding: .3em .6em .1em .6em; }
 }
 
 .headline-cap {
   font-family: $headline-cap;
   text-align: center;
+
+  @media (--desktop-s) { text-align: left; }
 }
 
 .headline-lean {
@@ -25,6 +46,8 @@
   font-weight: 100;
   line-height: 1.1;
   text-align: center;
+
+  @media (--desktop-s) { text-align: left; }
 }
 
 .inline-cta {
@@ -40,39 +63,6 @@
   }
 }
 
-.breadcrumbs {
-  text-align: left;
-  color: $tangerine;
-  font-family: $content-font;
-  font-family: $menu-cap;
-  text-transform: uppercase;
-
-  span {
-  }
-}
-
-
-
-/* ==========================================================================
-   Responsiveness
-   ========================================================================== */
-
-@media (--mobile-l) {
-}
-
-
-@media (--desktop) {
-  .headline-cap { text-align: left; }
-  .headline-lean { text-align: left; }
-
-  .arrow-down {
-  }
-
-  .main-cta {
-    font-size: 1.8rem;
-    padding: .3em .6em .1em .6em;
-  }
-}
 
 
 /* ==========================================================================
@@ -94,16 +84,6 @@
     opacity: 0.8;
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================

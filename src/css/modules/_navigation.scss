@@ -67,6 +67,7 @@
   top: 0;
   background-color: $deep-blue;
   color: $primary-white;
+  font-size: 1rem;
 
   ul {
     padding: 0;
@@ -79,7 +80,8 @@
   .primary-menu {
     position: absolute;
     width: 100%;
-    bottom: 14em;
+    height: 75vh;
+    left: 0;
     top: 0;
     padding: 0 2em;
 
@@ -91,10 +93,12 @@
       margin-top: 1em;
     }
 
+    .sub-menu:nth-child(1) { margin-top: 0; }
+
     .main-section-name {
       font-family: $content-font;
       letter-spacing: 1px;
-      font-size: 1.2rem;
+      font-size: 1.1em;
       font-weight: 100;
     }
 
@@ -124,18 +128,20 @@
 
   .secondary-menu {
     position: absolute;
-    bottom: 0;
     width: 100%;
+    height: 25vh;
+    bottom: 0;
+    left: 0;
     padding: 0 2em;
 
     ul {
       border-top: 1px dotted $primary-white;
-      padding: 1em 0 4em 0;
+      padding-top: 1em;
 
       li {
         font-family: MeltowSan100-Regular;
         letter-spacing: 1px;
-        font-size: .8rem;
+        font-size: .8em;
         margin: .25em 0;
       }
     }
@@ -147,13 +153,11 @@
    Responsiveness
    ========================================================================== */
 
-@media (--mobile-m) {
-  .site-navigation {
-  }
+@media (--mobile-l) {
 }
 
 
-@media (--desktop) {
+@media (--desktop-s) {
   .site-navigation {
     overflow: hidden;
     width: 10em;

@@ -22,16 +22,18 @@
   <div class="section interior-page page-2" data-anchor="page-chart">
     <ul class="breadcrumbs"><span>Products</span><span> > Formats</span></ul>
 
+    <div class="ceros-content-mobile" style="position:relative;width:auto;padding:0 0 141.15%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59fca6e76754a"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div>
+
+    <div class="ceros-content-desktop" style="position:relative;width:auto;padding:0 0 56.25%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59f77d551eb47"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div><script type="text/javascript" src="//view.ceros.com/scroll-proxy.min.js"></script>
+
     <div class="match-light">
       <div class="headlines">
         <h3 class="headline-cap">They aren’t just cool ad formats, they are windows into deep understanding.</h3>
         <p class="info" data-role="content">Our formats are built to be unintrusive, easy-on-the-eye and—dare we say — additive to the experience. As your customers interact with them, we are collecting first-of-its-kind, proprietary engagement data—revealing a deeper understanding of behavior, intent, and preferences.</p>        
       </div>
     </div>
-    <div class="match-dark">
-      <img class="pie-chart" src='{{ "_images/formats-pie-chart.png" | absURL }}'>
-      <img class="chart-legend" src='{{ "_images/formats-pie-chart-legend.png" | absURL }}'>      
-    </div>
+
+    <div class="match-dark"></div>
   </div>
 
   <div class="section interior-page page-3" data-anchor="page-format-list">
@@ -67,7 +69,6 @@
             <a class="headline-cap active" data-index="1" href="#page-format-brand">Grow <span>Awareness</span></a>
             <a class="headline-cap" data-index="2" href="#page-format-consideration">Drive <span>Consideration</span></a>
             <a class="headline-cap" data-index="3" href="#dr">Spur <span>Action</span></a>
-            <!-- <a class="headline-cap" target="_blank" href="https://formats.yieldmo.com/">Explore <span>Full Portfolio</span></a> -->
           </div>
         </div>
       </div>      
@@ -84,14 +85,17 @@
 
           <div class="videos">
             <div class="video-container">
+              <img src='{{ "_videos/hyperscroller.png" | absURL }}'>
               <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
               <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
             </div>
             <div class="video-container">
+              <img src='{{ "_videos/flexcard.png" | absURL }}'>
               <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
               <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
             </div>
             <div class="video-container">
+              <img src='{{ "_videos/hyperscroller.png" | absURL }}'>
               <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
               <p class="name"><strong>WRAPPER:</strong> A non-intrusive mobile sponsorship takeover format.</p>
             </div>  
@@ -107,11 +111,13 @@
 
           <div class="videos">
             <div class="video-container">
+              <img src='{{ "_videos/flexcard.png" | absURL }}'>
               <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
               <p class="name"><strong>PULL:</strong> An interactive format with three scrollable, sequential creatives.</p>
             </div>
             <div class="video-container">
-              <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
+              <img src='{{ "_videos/hyperscroller.png" | absURL }}'>
+              <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
               <p class="name"><strong>PULL:</strong> An interactive format with three scrollable, sequential creatives.</p>
             </div>
           </div>
@@ -126,11 +132,13 @@
 
           <div class="videos">
             <div class="video-container">
+              <img src='{{ "_videos/hyperscroller.png" | absURL }}'>
               <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
               <p class="name"><strong>TICKER:</strong>A countdown format creating urgency and driving action.</p>
             </div>
             <div class="video-container">
-              <video autoplay loop src='{{ "_videos/hyperscroller.mp4" | absURL }}'></video>
+              <img src='{{ "_videos/flexcard.png" | absURL }}'>
+              <video autoplay loop src='{{ "_videos/flexcard.mp4" | absURL }}'></video>
               <p class="name"><strong>TICKER:</strong>A countdown format creating urgency and driving action.</p>
             </div>            
           </div>
@@ -140,12 +148,6 @@
   </div>
   <!-- end of page 4 -->
 </div>
-
-
-{{ end }}
-
-{{ define "frame" }}
-  {{ partial "fixed-frame" .}}
 {{ end }}
 
 {{ define "scripts"}}
