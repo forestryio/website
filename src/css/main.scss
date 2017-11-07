@@ -27,6 +27,8 @@
    different sections
    ========================================================================== */
 
+@import "sections/_common.scss";
+
 @import "sections/_home.core.scss";
 @import "sections/_home.interaction.scss";
 @import "sections/_home.responsive.scss";
@@ -37,3 +39,5 @@
 
 @import "sections/_insights.core.scss";
 @import "sections/_insights.responsive.scss";
+
+@import "sections/_marketplace.core.scss";

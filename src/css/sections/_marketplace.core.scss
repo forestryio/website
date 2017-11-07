@@ -2,7 +2,7 @@
    Pages
    ========================================================================== */
 
-.section-insights .page-1 {
+.section-marketplace .page-1 {
   .match-light {
   }
 
@@ -12,7 +12,7 @@
       margin: 0 2em;
       top: -3em;
 
-      background-color: rgba(41, 105, 132, 0.95);
+      background-color: rgba(91, 164, 156, 0.95);
       color: $primary-white;
       padding: 1.5em;
       text-align: center;
@@ -22,6 +22,17 @@
         font-size: 1.5em;
         line-height: 1;
       }
+
+
+      i {
+        font-size: 0.6em;
+      }
+    }
+
+    .footnote {
+      font-size: 0.6rem;
+      margin: 12em 3em 0 3em;
+      text-align: center;
     }
   }
 }
