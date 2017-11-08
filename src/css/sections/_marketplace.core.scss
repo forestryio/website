@@ -3,19 +3,11 @@
    ========================================================================== */
 
 .section-marketplace .page-1 {
-  .match-light {
-  }
-
   .match-dark {
     .explanation {
-      position: absolute;
-      margin: 0 2em;
-      top: -3em;
-
       background-color: rgba(91, 164, 156, 0.95);
       color: $primary-white;
       padding: 1.5em;
-      text-align: center;
 
       span {
         font-family: MeltowSan200-Regular;
@@ -31,8 +23,92 @@
 
     .footnote {
       font-size: 0.6rem;
-      margin: 12em 3em 0 3em;
+      padding: 12em 3em 0 3em;
       text-align: center;
+    }
+  }
+}
+
+.section-marketplace .page-2 {
+  .match-dark {
+    min-height: calc(50vh - 2em);
+
+    .statline {
+      width: 12em;
+      padding: 2em 0 0 0;
+      margin: 0 auto;
+
+      .headline-lean {
+        text-align: center;
+        font-size: 1.4em;        
+      }
+
+      svg { margin-top: -1em; }
+    }
+
+    .info {
+      text-align: center;
+      font-size: .8em;
+
+      strong {
+        display: block;
+        font-family: $headline-cap;
+        font-size: 4em;
+        line-height: .8;
+        margin-top: .4em;
+        color: $medium-green;
+      }
+    }
+  }
+
+  .match-light {
+    min-height: calc(50vh - 2em);
+
+    .marketplace-desc {
+      padding: 2em 1em;
+
+      .headline-cap {
+        line-height: 1;
+      }
+
+      .explanation {
+        font-size: 0.8rem;
+        margin: 1em 0;
+        text-align: center;
+      }
+
+      .notes {
+        margin: 2em 0;
+        font-size: 1rem; /* component basis */
+
+        ul {
+          list-style: none;
+
+          li {
+            font-family: $content-font;
+            font-size: .6em;
+            margin-bottom: 1em;
+
+            strong {
+              display: block;
+              font-family: $menu-cap;
+              margin-left: .6em;
+              color: $medium-blue;
+              font-size: 1.3em;
+
+              &:before {
+                content: '❯❯';
+                position: relative;
+                top: 0;
+                left: -0.6em;
+                font-size: 0.8em;
+              }
+            }
+
+            span { display: block; }        
+          }
+        }
+      }
     }
   }
 }

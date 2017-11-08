@@ -4,15 +4,9 @@
 
 .section-formats .page-1 {
   .match-light {
-    height: calc(50vh - 2em);
-    top: 0;
-    left: 0;
-
     .headlines {
       .info {
         margin-top: 1.3em;
-        font-size: .75rem;
-        line-height: 1.5;
         font-size: 1.2rem;
         line-height: 1.5;
       }
@@ -20,18 +14,13 @@
   }
 
   .match-dark {
-    height: calc(50vh - 2em);
-    top: calc(50vh - 2em);
-
     .explanation {
       position: absolute;
-      margin: 0 2em;
       top: -3em;
 
       background-color: rgba(150,205,198, 0.7);
       color: $primary-black;
       padding: 1.5em;
-      text-align: center;
     }
 
     img.hand-held {
@@ -54,47 +43,38 @@
   }
 
   .ceros-content-mobile {
-    top: 50% !important;
-    transform: translateY(-40%);
-    display: block;
     z-index: 1;
+    margin-top: 6em !important;
   }
 
   .match-light {
     background-color: transparent;
+    position: absolute;
     height: calc(50vh - 2em);
     top: 0;
     left: 0;
     z-index: 2;
 
     .headlines {
-      padding: 2em 2em 0 2em;
       padding: 1.5em 1em 0 1em;
 
       .headline-cap {
-        font-size: 1.1rem;
+        font-size: 1.1em;
         line-height: 1;
       }
 
       .info {
         margin-top: 1.3em;
-        font-size: .75rem;
+        font-size: .75em;
         line-height: 1.5;        
       }
     } 
-  }
-
-  .match-dark {
-    height: calc(50vh - 2em);
-    top: calc(50vh - 2em);
   }
 }
 
 .section-formats .page-3 {
   .match-light {
     height: calc(50vh - 2em);
-    top: 0;
-    left: 0;
 
     .headlines { 
       padding: 2em 2em 0 2em;
@@ -121,29 +101,24 @@
 
     .question {
       position: absolute;
-      bottom: .5em;
-      left: 1.5em;
-      right: 1.5em;
-      height: 3.4em;
+      width: 18em;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
 
       .headline-lean {
         text-align: center;
-        font-size: 1.4rem;        
+        font-size: 1.4em;        
       }
 
-      img.parenthesis {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-      }
+      svg { margin-top: -1em; }
     }
   }
 
   .match-dark {
     background-color: $primary-white;
     height: calc(50vh - 2em);
-    top: calc(50vh - 2em);
 
     .formats-category {
       padding: 0 2em;
@@ -172,10 +147,8 @@
 
 .section-formats .page-4 {
   .match-dark {
-    top: 0;
-    height: calc(30vh - 4em);
+    height: 8em;
     background-color: $gray;
-    /* border-right: 1px solid $ocean-deep; */
 
     .formats-category {
       position: absolute;
@@ -192,7 +165,7 @@
       }
 
       .inner-nav {
-        height: calc(100% - 3em);
+        height: 5em;
         overflow-x: scroll;
 
         .x-scroll-container {
@@ -222,8 +195,7 @@
   }
 
   .match-light {
-    top: calc(30vh - 4em);
-    height: 70vh;
+    height: calc(100vh - 9em);
 
     .formats-elaboration {
       position: absolute;

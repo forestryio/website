@@ -1,7 +1,9 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
 @media (--mobile-m) {
   .section-formats .page-2 {
-    .ceros-content-mobile { transform: translateY(-45%); }
-
     .match-light .headlines {
       padding: 2em 2em 0 2em;
     }
@@ -9,13 +11,12 @@
 
   .section-formats .page-3 {
     .match-light {
-      height: 40vh;
+      .question {
+        margin-top: 4em;
+      }
     }
 
     .match-dark {
-      top: 40vh;
-      height: calc(60vh - 4em);
-
       .formats-category .headline-cap { font-size: 1rem; }
     }
   }
@@ -31,72 +32,72 @@
         height: calc(100% - 4em);
       }
     }
+
+    .match-light {
+      height: calc(100vh - 8em);
+    }
   }
 }
 
 @media (--mobile-l) {
   .section-formats .page-2 {
-    .ceros-content-mobile { transform: translateY(-50%); }
+    .match-light .headlines { font-size: 1.1rem; }
   }
 
   .section-formats .page-3 {
-    .match-light .question {
-      height: 4em;
+    .match-light {
+      .headlines {
+        font-size: 1.2rem;
+      }
+
+      .question {
+        font-size: 1.2rem;
+        height: 4em;
+        margin-top: 6em;
+      }
     }
   }
 
   .section-formats .page-4 {
-    .match-dark .formats-category {
-      .main-cta {
-        padding: .75em .75em .45em .75em;
-        margin: 1.25em;
-      }
+    .match-dark {
+      height: 10em;
 
-      .inner-nav {
-        height: calc(100% - 5em);
+      .formats-category {
+        .main-cta {
+          padding: .75em .75em .45em .75em;
+          margin: 1em;
+        }
+
+        .inner-nav {
+          height: 6em;
+        }
       }
+    }
+
+    .match-light {
+      height: calc(100vh - 10em);
     }
   }
 }
 
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
 
 @media (--desktop-s) {
   .section-formats {
     .interior-page {
       height: 100vh;
 
-      .match-light {
-        padding-top: 0;
-        height: 50vh;
-      }
-
-      .match-dark {
-        top: 50vh;
-        height: 50vh;
-      }
+      .match-light { height: 50vh; }
+      .match-dark { height: 50vh; }
     }
   }
 
   .section-formats .page-1 {
-    .match-light .headlines {
-      position: absolute;
-      margin: 0;
-      top: 50%;
-      left: 3em;
-      transform: translateY(-50%);
-
-      .headline-cap { font-size: 4rem; }
-      .headline-lean { font-size: 3rem; }
-      .info { text-align: left; }
-    }
-
     .match-dark {
       .explanation {
-        width: 19em;
-        margin: 0;
-        left: 2.7em;
-        font-size: 1.3rem;
-        text-align: left;
       }
 
       img.hand-held {

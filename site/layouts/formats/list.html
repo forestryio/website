@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div id="sectionFormats" class="section-wrapper section-formats">
-  <div class="section interior-page page-1" data-anchor="page-intro">
+  <div class="interior-page page-1" data-anchor="page-intro">
     <ul class="breadcrumbs"><span>Products</span><span> > Formats</span></ul>
 
     <div class="match-light">
@@ -15,15 +15,11 @@
          The seductive click baits and relentless pop-ups are bred from a old, view-and-click desktop world. Our goal is to help you produce advertising that doesn’t interfere with the content your customers seek.
       </p>
 
-      <img class="hand-held" src='{{ "_images/hand-held.png" | absURL }}'>     
+      <img class="hand-held" src='{{ "_images/hand-held.png" | absURL }}'>
     </div>
   </div>
 
-  <div class="section interior-page page-2" data-anchor="page-chart">
-    <div class="ceros-content-mobile" style="position:relative;width:auto;padding:0 0 141.15%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59fca6e76754a"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div>
-
-    <div class="ceros-content-desktop" style="position:relative;width:auto;padding:0 0 56.25%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59f77d551eb47"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div><script type="text/javascript" src="//view.ceros.com/scroll-proxy.min.js"></script>
-
+  <div class="interior-page page-2" data-anchor="page-chart">
     <div class="match-light">
       <div class="headlines">
         <h3 class="headline-cap">They aren’t just cool ad formats, they are windows into deep understanding.</h3>
@@ -31,10 +27,14 @@
       </div>
     </div>
 
+    <div class="ceros-content-mobile" style="position:relative;width:auto;padding:0 0 141.15%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59fca6e76754a"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div>
+
+    <div class="ceros-content-desktop" style="position:relative;width:auto;padding:0 0 56.25%;height:0;top:0;left:0;bottom:0;right:0;margin:0;border:0 none" id="experience-59f77d551eb47"><iframe allowfullscreen src="//view.ceros.com/yieldmo/chart-1" style="position:absolute;top:0;left:0;bottom:0;right:0;margin:0;padding:0;border:0 none;height:1px;width:1px;min-height:100%;min-width:100%" frameborder="0" class="ceros-experience"  scrolling="no"></iframe></div><script type="text/javascript" src="//view.ceros.com/scroll-proxy.min.js"></script>
+
     <div class="match-dark"></div>
   </div>
 
-  <div class="section interior-page page-3" data-anchor="page-format-list">
+  <div class="interior-page page-3" data-anchor="page-format-list">
     <div class="match-light">
       <div class="headlines">
         <h3 class="headline-cap">Featured Formats</h3>
@@ -42,7 +42,7 @@
       </div>
       <div class="question">
         <h3 class="headline-lean">What's your marketing objective?</h3>
-        <img class="parenthesis" src='{{ "_images/parenthesis.png" | absURL }}'>
+        {{ partial "svg/parenthesis.svg" . }}
       </div>
       
     </div>
@@ -56,7 +56,7 @@
     </div>
   </div>
 
-  <div class="section interior-page page-4" data-anchor="page-formats-showcase">
+  <div class="interior-page page-4" data-anchor="page-formats-showcase">
     <div class="match-dark">
       <div class="formats-category">
         <h3 class="main-cta">Featured Formats</h3>

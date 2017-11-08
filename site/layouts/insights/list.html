@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div id="sectionInsights" class="section-wrapper section-insights">
-  <div class="section interior-page page-1">
+  <div class="interior-page page-1">
     <ul class="breadcrumbs"><span>Products</span><span> > Insights</span></ul>
 
     <div class="match-light">
       <div class="headlines">
-        <h1 class="headline-cap">BEHIND<br>EVERY GREAT AD</h1>
+        <h1 class="headline-cap">BEHIND EVERY GREAT AD</h1>
         <h2 class="headline-lean">is great data.</h2>        
       </div>
     </div>
@@ -15,11 +15,105 @@
          <span>58 BILLION DATA POINTS</span> is the data equivalent of what the Hubble Telescrope captures in a year.
       </p>
 
-      <!-- <img class="hand-held" src='{{ "_images/hand-held.png" | absURL }}'>    -->
+      <p class="notes">
+        The secrets to buyer intent are hidden in the engagement metrics our ad formats trigger. It’s in the swiping, scrolling, tilting, and playing that gives us a picture of behavioral interaction that was previously unavailable.        
+      </p>
+    </div>
+  </div>
+
+  <div class="interior-page page-2">
+    <div class="match-light">
+      <div class="headlines">
+        <h2 class="headline-lean">truth revealed</h2>
+        <h6>INSIGHT I</h6>
+        <p class="info">Fast food giants see supersized traction from 5am to 9am - up to <strong>67%</strong>higher mobile engagement.</p>
+      </div>
+    </div>
+
+    <div class="match-dark">
+      <div class="data-desc">
+        <h1 class="headline-cap">REVEALING COUNTLESS PATHS TO THE TRUTH</h1>
+        <p class="explanation">Your data is thoroughly mined for actionable insights. These insights will provide answers to questions like “Which audience spent the most time scrolling?” Or “How much brand lift do I achieve with each scroll?” You’ll have infinite ways to parse the data, and infinite windows to the answers.</p>
+        <div class="notes">
+          <h5>DATA APPLICATIONS:</h5>
+          <ul>
+            <li><strong>CAMPAIGN INSIGHTS</strong> Go beyond views and clicks to learn how customers actually engaged with your campaign and what drove that performance.</li>
+            <li><strong>AUDIENCE SEGMENTS</strong>  Learn which audiences drive the highest performance and then connect with them directly.</li>
+            <li><strong>CAMPAIGN OPTIMIZATION</strong> Powered by our massive dataset, our fully-auto- mated ad server optimizes your campaign to drive toward your campaign KPIs.</li>
+          </ul>
+        </div>
+      </div>
     </div>    
   </div>
 
-  <img class="placeholder" src='{{ "_images/insights-2.png" | absURL }}'>
-  <img class="placeholder" src='{{ "_images/insights-3.png" | absURL }}'>
+  <div class="interior-page page-3">
+    <div class="match-light">
+      <div class="callout">
+        <h3 class="headline-cap">HERE IS <i>WHAT</i> WE MEASURE</h3>
+        {{ partial "svg/parenthesis.svg" . }}
+      </div>
+    </div>
+    <div class="match-dark">
+      <div class="whatwemeasure">
+        <span>VIEWABILITY</span>
+        <span>PIXELS IN-VIEW</span>
+        <span>TIME SPENT</span>
+        <span>SCROLLS</span>
+        <span>SWIPES</span>
+        <span>TILTS</span>
+        <span>EXPANDS</span>
+        <span>PLAYS</span>
+        <span>REPEATS</span>
+        <span>CLICKS</span>
+        <span>USER LOCATION</span>
+        <span>USER TIME ZONE</span>
+        <span>DEVICE CONNECTION</span>
+        <span>PUBLISHER NAME</span>
+        <span>PAGE URL</span>
+        <span>REFERRAL IP ADDRESS</span>
+        <span>UNIQUE DEVICE ID</span>
+        <span>DEVICE MAKE</span>
+        <span>DEVICE MODEL</span>
+        <span>DEVICE OS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="interior-page page-4">
+    <div class="match-dark">
+      <div class="headlines">
+        <h1 class="headline-cap">WE MAKE GREAT PARTNERS</h1>
+        <p class="explanation">In addition to our own proprietary data targeting and campaign analytics technologies, we integrate with others to make sure your campaign is a success.</p>
+      </div>
+    </div>
+    <div class="match-light">
+      <div class="partners-info">
+        <h1 class="headline-cap">DATA / TARGETING PARTNERS</h1>
+        <div class="logos-data-partners">
+          <img src='{{ "_images/logos/Oracle.png" | absURL }}'>     
+          <img src='{{ "_images/logos/LiveRamp.png" | absURL }}'>
+        </div>
+        <h1 class="headline-cap">MEASUREMENT PARTNERS</h1>
+        <div class="logos-measurement-partners">
+          <h3>CAMPAIGN ANALYTICS</h3>
+          <div>            
+            <img src='{{ "_images/logos/Moat.png" | absURL }}'>
+            <img src='{{ "_images/logos/Integral_Ad_Science.png" | absURL }}'>
+          </div>
+          <h3>IN-STORE ATTRIBUTION</h3>
+          <div>            
+            <img src='{{ "_images/logos/Placed.png" | absURL }}'>
+            <img src='{{ "_images/logos/Foursquare.png" | absURL }}'>
+          </div>
+          <h3>BRAND SURVEY / BRAND LIFT TESTING</h3>
+          <div>            
+            <img src='{{ "_images/logos/Nielsen.png" | absURL }}'>
+            <img src='{{ "_images/logos/Millward_Brown.jpg" | absURL }}'>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+
 </div>
 {{ end }}

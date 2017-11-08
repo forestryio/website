@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-marketplace .page-1 {
+    .match-dark {
+      .footnote {
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-marketplace .page-1 {
+    .match-light {
+      .headlines { }
+    }
+
+    .match-dark {
+      .explanation {
+        left: auto;
+        right: 2em;
+      }
+
+      .footnote {
+        display: block;
+        width: 24em;
+        margin: 2em;
+        padding: 0;
+        font-size: 1rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .section-marketplace .page-2 {
+    .match-light {
+      width: 50%;
+      height: 100vh;
+
+      .marketplace-desc {
+        padding: 2.5em;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .explanation {
+          text-align: left;
+        }
+
+        .notes {
+          font-size: 1.5rem;
+
+          strong { margin-bottom: .5em; }
+          li span { margin-left: 1.8em; }
+        }
+      }
+    }
+
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+      top: auto;
+
+      .stat-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .statline { font-size: 1.5rem; padding: 0; }
+        .info { font-size: 1.8rem; }
+      }
+    }
+  }
+}

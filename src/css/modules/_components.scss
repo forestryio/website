@@ -111,3 +111,8 @@
 .clearfix:after {
   clear: both;
 }
+
+.v-align {
+  top: 50%;
+  transform: translateY(-50%);
+}

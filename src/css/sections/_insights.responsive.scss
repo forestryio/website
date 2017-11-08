@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-insights .page-2 {
+    .match-light {
+      .headlines {
+        font-size: 1.2rem;
+      }
+    }
+
+    .match-dark {
+      padding: 1.5em;
+      font-size: 1.1rem;
+    }
+  }
+
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-insights .page-1 {
+    .match-light {
+      .headlines {
+        width: 15em;
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        left: auto;
+        right: 3em;
+      }
+
+      .notes {
+        display: block;
+        width: 20em;
+        margin: 2em;
+      }
+    }
+  }
+
+  .section-insights .page-2 {
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      top: auto;
+      font-size: 1.5rem;
+
+
+      .data-desc {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .headline-cap { font-size: 2em; }
+
+        .explanation {
+          text-align: left;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .match-light {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+
+      .headlines {
+        position: absolute;
+        width: 12em;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-size: 1.8rem;
+
+        .headline-lean { text-align: center; }
+        .info { 
+          text-align: center; 
+
+          strong { font-size: 6em; }
+        }
+      }
+    }
+  }
+
+  .section-insights .page-3 {
+    .match-light {
+      width: 50%;
+      height: 100vh;
+
+      .callout {
+        padding: 0 2em;
+
+        .headline-cap {
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        svg {
+          position: absolute;
+          transform: rotateZ(-90deg);
+          top: 50%;
+        }
+      }
+    }
+
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+      top: auto;
+
+      .whatwemeasure {
+        font-size: 1.5rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);        
+      }
+    }
+  }
+
+  .section-insights .page-4 {
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      top: auto;
+
+      .headlines {
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 0;
+        margin: 0 auto;
+        width: 15em;
+        font-size: 1.5em;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        .explanation { text-align: left; }
+      }
+    }
+
+    .match-light {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+
+      .partners-info {
+        position: relative;
+        font-size: 1.2rem;
+        width: 20em;
+        padding: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

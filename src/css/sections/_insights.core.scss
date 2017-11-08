@@ -4,24 +4,219 @@
 
 .section-insights .page-1 {
   .match-light {
+    .headlines {
+      padding: 4em 2em 0 2em;
+    }
   }
 
   .match-dark {
     .explanation {
-      position: absolute;
-      margin: 0 2em;
-      top: -3em;
-
-      background-color: rgba(41, 105, 132, 0.95);
+      background-color: rgba(8, 84, 115, 0.95);
       color: $primary-white;
       padding: 1.5em;
-      text-align: center;
 
       span {
         font-family: MeltowSan200-Regular;
         font-size: 1.5em;
         line-height: 1;
       }
+    }
+
+    .notes { display: none; }
+  }
+}
+
+.section-insights .page-2 {
+  .match-light {
+    min-height: calc(40vh - 2em);
+
+    .headlines {
+      padding: 1em 3em 0 3em;
+      text-align: center;
+
+      h6 { font-family: $content-font; font-size: 0.6em; line-height: 2; }
+
+      .info {
+        font-size: .8em;
+        margin-top: 1em;
+
+        strong {
+          display: block;
+          font-family: $headline-cap;
+          font-size: 4em;
+          line-height: .8;
+          color: $medium-green;
+          margin-top: .2em;
+        }
+      }
+    }
+  }
+
+  .match-dark {
+    min-height: calc(60vh - 2em);
+    padding: 1em;
+    background-color: $medium-blue;
+    color: $primary-white;
+
+    .headline-cap {
+      line-height: 1;
+      font-size: 1.5em;
+    }
+
+    .explanation {
+      margin: 2em 1em;
+      font-size: .6em;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .notes {
+      padding: .5em 1em;
+      border: 1px dotted $primary-white;
+
+      h5 {
+        font-family: $content-font;
+        font-size: .6em;
+      }
+
+      ul {
+        list-style: none;
+        margin: .5em 0;
+
+        li {
+          font-size: .5em;
+          font-family: $content-font;
+          margin: 1em 0;
+
+          strong {
+            font-family: $menu-cap;
+            margin-left: .6em;
+            color: rgb(93, 178, 164);
+            font-size: 1.3em;
+
+            &:before {
+              content: '❯❯';
+              position: relative;
+              top: 0;
+              left: -0.6em;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-insights .page-3 {
+  .match-light {
+    height: 14em;
+
+    .callout {
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .headline-cap {
+        font-size: 2em;
+        line-height: 1;
+
+        i { display: block; }
+      }
+
+      svg {
+        width: 18em;
+      }
+    }
+  }
+
+  .match-dark {
+    min-height: calc(100vh - 18em);
+
+    .whatwemeasure {
+      padding: 1em;
+      text-align: center;
+
+      span {
+        display: block;
+        font-family: $headline-cap;
+      }
+    }
+  }
+}
+
+.section-insights .page-4 {
+  .match-dark {
+    background-color: $medium-blue;
+    height: 14em;
+
+    .headlines {
+      padding: 2em 2em 0 2em;
+      color: $primary-white;
+
+      .headline-cap { line-height: 1; }
+      .explanation {
+        font-size: .8em;
+        margin-top: 1em;
+        text-align: center;
+      }
+    }
+  }
+
+  .match-light {
+    min-height: calc(100vh - 18em);
+
+    .partners-info {
+      padding: 2em;
+      font-size: 1rem;
+      color: $medium-blue;
+
+      .headline-cap {
+        font-size: 1.4em;
+        font-size: 1.1em;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: .5em;
+      }
+
+      .logos-data-partners {
+        margin: 0 0 1em 0;
+
+        img {
+          height: 1.5em;
+          margin: .5em;
+        }
+      }
+
+      .logos-measurement-partners {
+        padding-left: 1em;
+
+        h3 {
+          font-family: $headline-cap;
+          font-size: .8em;
+          margin-left: .6em;
+
+          &:before {
+            content: '❯❯';
+            position: relative;
+            top: 0;
+            left: -0.6em;
+            font-size: 0.8em;
+          }
+        }
+
+        > div {
+          margin-bottom: 1em;
+
+          img {
+            height: 1.5em;
+            margin: .5em .5em 0 .5em;
+          }
+        }
+      }
+
+   
     }
   }
 }

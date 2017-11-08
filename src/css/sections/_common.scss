@@ -9,57 +9,130 @@
   .breadcrumbs {
     position: absolute;
     z-index: 1;
-    left: 2em;
-    top: 2em;
+    left: 1.5rem;
+    top: 1.5rem;
   }
 
-  .page-1 .match-light .headlines {
-    margin: 4em 0 0 0;
+  .interior-page {
+    min-height: calc(100vh - 4em);
+    position: relative;
+    overflow: hidden;
 
-    .headline-cap {
-      font-size: 2rem;
-      line-height: .9;
+    .match-light {
+      background-color: $primary-white;
+      position: relative;
+
+      .info { text-align: center; }
     }
 
-    .headline-lean {
-      font-size: 1.8rem;
+    .match-dark {
+      background-color: $gray;
+      position: relative;
     }
   }
-}
 
-.interior-page {
-  position: relative;
-  height: calc(100vh - 4em);
-  overflow: hidden;
+  .page-1 {
+    .match-light {
+      height: calc(50vh - 2em);
 
-  .match-light {
-    background-color: $primary-white;
-    position: absolute;
-    width: 100%;
-    height: calc(50vh - 2em);
-    top: 0;
-    left: 0;
+      .headlines {
+        padding: 4em 0 0 0;
+        left: 1.5em;
 
-    .info { text-align: center; }
-  }
+        .headline-cap {
+          font-size: 2em;
+          line-height: .9;
+        }
 
-  .match-dark {
-    background-color: $gray;
-    position: absolute;
-    width: 100%;
-    height: calc(50vh - 2em);
-    top: calc(50vh - 2em);
-    left: 0;
+        .headline-lean {
+          font-size: 1.8em;
+        }
+      }
+    }
+
+    .match-dark {
+      height: calc(50vh - 2em);
+
+      .explanation {
+        position: absolute;
+        margin: 0 2em;
+        top: -3em;
+        margin: 0 2em;
+        text-align: center;
+      }
+    }
   }
 }
 
 .placeholder { width: 100%; }
 
+
+
+@media (--mobile-m) {
+  .breadcrumbs { font-size: .8rem; }
+  .page-1 .match-light .headlines { font-size: 1.2rem; }
+}
+
+@media (--mobile-l) {
+  .breadcrumbs { font-size: 1rem; }
+  .page-1 .match-light .headlines { font-size: 1.5rem; }
+}
+
+
 /* ==========================================================================
    Small desktop view
    ========================================================================== */
-
+   
 @media (--desktop-s) {
+  .section-wrapper {
+    margin-top: 0;
+
+    .interior-page {
+      min-height: 100vh;
+
+      .match-light {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 0;
+        left: 0;
+
+        .info { text-align: left; }
+      }
+
+      .match-dark {
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        top: 50vh;
+        left: 0;
+      }
+    }
+
+    .page-1 {
+      .match-light {
+        .headlines { 
+          position: absolute;
+          padding: 0 !important;
+          margin: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 2rem;
+        }
+      }
+
+      .match-dark {
+        .explanation {
+          text-align: left;
+          width: 19em;
+          margin: 0;
+          left: 2.7em;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
   .section-formats {
 
     .breadcrumbs { }

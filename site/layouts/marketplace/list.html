@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div id="sectionMarketplace" class="section-wrapper section-marketplace">
-  <div class="section interior-page page-1">
+  <div class="interior-page page-1">
     <ul class="breadcrumbs"><span>Products</span><span> > Marketplace</span></ul>
 
     <div class="match-light">
@@ -20,7 +20,49 @@
       </p>
     </div>    
   </div>
+  <div class="interior-page page-2">
+    <div class="match-dark">
+      <div class="stat-container">
+        <div class="statline">
+          <h3 class="headline-lean">add stat headline</h3>
+          {{ partial "svg/parenthesis.svg" . }}
+        </div>      
+        <p class="info">
+          <strong>80%</strong>
+          U.S. smartphone users <i>(comscore)</i>
+          <strong>99.4%</strong>
+          Fraud-free <i>(MOAT)</i>
+        </p>
+        <h1 style="text-align: center; padding: 20px;">Logo Rotating</h1>        
+      </div>
+    </div>
 
-  <img class="placeholder" src='{{ "_images/marketplace-2.png" | absURL }}'>  
+    <div class="match-light">
+      <div class="marketplace-desc">
+        <h1 class="headline-cap">YIELDMO<br><i>MARKETPLACE</i> IS:</h1>
+        <p class="explanation">Effortessly access Yieldmo’s formats, inventory and data in whichever way is most convenient for you: managed, programmatic, programmatic private marketplace.</p>
+        <div class="notes">
+          <ul>
+            <li>
+              <strong>MANAGED</strong> 
+              <span>White-glove account management that constantly optimizes your campaign to maximize spend.</span>
+            </li>
+            <li>
+              <strong>PROGRAMMATIC</strong>
+              <span>The Trade Desk</span>
+              <span>Google DBM</span>
+              <span>AppNexus</span>
+              <span>DataXu</span>
+              <span>MediaMath</span>
+            </li>
+            <li>
+              <strong>PMP: HIGHLY VIEWABLE</strong>
+              <span>Brand-lit, highly-viewable placements (vs. cluttered, click-baity sites where your ad will get lost in the mess)</span>
+            </li>
+          </ul>
+        </div>        
+      </div>
+    </div>    
+  </div>
 </div>
 {{ end }}
