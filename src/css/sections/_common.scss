@@ -33,7 +33,7 @@
 
   .page-1 {
     .match-light {
-      height: calc(50vh - 2em);
+      min-height: calc(50vh - 2em);
 
       .headlines {
         padding: 4em 0 0 0;
@@ -51,7 +51,7 @@
     }
 
     .match-dark {
-      height: calc(50vh - 2em);
+      min-height: calc(50vh - 2em);
 
       .explanation {
         position: absolute;

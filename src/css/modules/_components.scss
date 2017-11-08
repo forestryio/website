@@ -37,6 +37,7 @@
 .headline-cap {
   font-family: $headline-cap;
   text-align: center;
+  line-height: 1;
 
   @media (--desktop-s) { text-align: left; }
 }

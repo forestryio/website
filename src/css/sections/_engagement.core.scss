@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Pages
+   ========================================================================== */
+
+.section-engagement .page-1 {
+  .headlines {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4em;
+    margin: auto;
+    width: 16em;
+    font-size: 1rem;
+    z-index: 1;
+
+    .headline-cap {
+      font-size: 2em;
+    }
+
+    .explanation {
+      font-size: .8em;
+      margin-top: .5em;
+    }
+  }
+
+  .hand-held {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+  }
+}

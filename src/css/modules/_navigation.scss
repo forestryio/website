@@ -84,6 +84,7 @@
     left: 0;
     top: 0;
     padding: 0 2em;
+    font-size: 0.9rem;
 
     > ul {
       @extend vertical-align;
@@ -154,6 +155,11 @@
    ========================================================================== */
 
 @media (--mobile-l) {
+  .menu-container {
+    .primary-menu {
+      font-size: 1rem;
+    }
+  }
 }
 
 
@@ -208,7 +214,7 @@ body.open {
 }
 
 .site-navigation {
-  transition: left 300ms linear;
+  transition: transform 300ms linear;
   left: 0;
 
   /* .marquee  */
@@ -223,7 +229,8 @@ body.open {
 }
 
 .open .site-navigation {
-  left: 15em;
+  /* left: 15em; */
+  transform: translateX(15em);
 
   .nav-icon {
     span:nth-child(1) { top: 1em; left: 50%; width: 0%; }
@@ -234,11 +241,14 @@ body.open {
 }
 
 .menu-container {
-  transition: opacity 300ms;
+  transition: opacity 300ms, visibility 0ms ease-out 300ms;
+  visibility: hidden;
   opacity: 0.5;
 }
 
 .open .menu-container {
+  transition: opacity 300ms, visibility 0ms ease-out 0ms;
+  visibility: visible;
   opacity: 1;
 }
 

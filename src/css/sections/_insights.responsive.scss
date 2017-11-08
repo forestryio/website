@@ -121,11 +121,11 @@
       left: 50%; 
       top: auto;
 
-      .whatwemeasure {
-        font-size: 1.5rem;
+      .credit-mask {
         position: relative;
         top: 50%;
-        transform: translateY(-50%);        
+        transform: translateY(-50%);
+        font-size: 1.2rem;
       }
     }
   }

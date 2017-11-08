@@ -1,0 +1,20 @@
+
+
+.section-insights .page-3 {
+  .match-dark {
+    .credit-mask {
+      .credit-roll {
+        animation: creditRoll 8s linear 0s infinite;
+      }
+    }
+  }
+}
+
+
+@keyframes creditRoll {
+  0% {
+    transform: translateY(0);
+  } 100% {
+    transform: translateY(-50%);
+  }
+}

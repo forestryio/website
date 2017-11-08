@@ -134,13 +134,21 @@
   .match-dark {
     min-height: calc(100vh - 18em);
 
-    .whatwemeasure {
-      padding: 1em;
-      text-align: center;
+    .credit-mask {
+      margin: 1em;
+      height: 30em;
+      overflow: hidden;
 
-      span {
-        display: block;
-        font-family: $headline-cap;
+      .credit-roll {
+        .whatwemeasure {
+          text-align: center;
+
+          span {
+            display: block;
+            font-family: $headline-cap;
+            line-height: 1.5;
+          }
+        }
       }
     }
   }
