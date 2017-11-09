@@ -45,7 +45,8 @@
       height: 100vh;
 
       .marketplace-desc {
-        padding: 2.5em;
+        padding: 0;
+        width: $desktop-s-content-width;
         position: relative;
         top: 50%;
         transform: translateY(-50%);

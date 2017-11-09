@@ -20,9 +20,9 @@ $(function() {
     },
 
     jumpToFormat: function(e) {
-      console.log(e.target.dataset.index);
+      var extraPadding = ($(window).width() > this.props.mobileThreshold) ? 0 : '64';
 
-      $("html, body").animate({ scrollTop: $(".page-4").position().top }, 600);
+      $("html, body").animate({ scrollTop: ($(".page-4").position().top - extraPadding) }, 600);
       this.updateActiveFormat(e);
     },
 

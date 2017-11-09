@@ -5,22 +5,15 @@
 .section-formats .page-1 {
   .match-light {
     .headlines {
-      .info {
-        margin-top: 1.3em;
-        font-size: 1.2rem;
-        line-height: 1.5;
-      }
+      top: 5em;
     }    
   }
 
   .match-dark {
     .explanation {
-      position: absolute;
-      top: -3em;
-
       background-color: rgba(150,205,198, 0.7);
       color: $primary-black;
-      padding: 1.5em;
+      transform: translateY(-20%);
     }
 
     img.hand-held {
@@ -44,7 +37,7 @@
 
   .ceros-content-mobile {
     z-index: 1;
-    margin-top: 6em !important;
+    margin-top: 7em !important;
   }
 
   .match-light {
@@ -53,20 +46,27 @@
     height: calc(50vh - 2em);
     top: 0;
     left: 0;
+    right: 0;
     z-index: 2;
 
     .headlines {
-      padding: 1.5em 1em 0 1em;
+      position: absolute;
+      width: $mobile-s-content-width;
+      right: 0;
+      left: 0;
+      margin: auto;
+      top: 2em;
 
       .headline-cap {
-        font-size: 1.1em;
+        font-size: 1.3em;
         line-height: 1;
       }
 
       .info {
-        margin-top: 1.3em;
+        margin-top: 1em;
         font-size: .75em;
-        line-height: 1.5;        
+        line-height: 1.5;
+        text-align: left;
       }
     } 
   }
@@ -76,32 +76,30 @@
   .match-light {
     height: calc(50vh - 2em);
 
-    .headlines { 
-      padding: 2em 2em 0 2em;
+    .headlines {
+      position: absolute;
+      top: 2em;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: $mobile-s-content-width;
 
       .headline-cap {
-        font-size: 1.6rem;
+        font-size: 2em;
         line-height: 1;
       }
 
       .info {
         margin-top: 1.3em;
-        font-size: .75rem;
+        font-size: .75em;
         line-height: 1.5;
         margin-top: 1em;
-
-      }
-
-      .headline-lean {
-        font-size: 1.5em;
-        margin-top: 1em;
-        text-align: center;
       }
     }
 
     .question {
       position: absolute;
-      width: 18em;
+      width: $mobile-s-content-width;
       bottom: 0;
       right: 0;
       left: 0;
@@ -121,8 +119,11 @@
     height: calc(50vh - 2em);
 
     .formats-category {
-      padding: 0 2em;
-      position: relative;
+      position: absolute;
+      width: $mobile-s-content-width;
+      right: 0;
+      left: 0;
+      margin: auto;
       top: 50%;
       transform: translateY(-50%);
 
@@ -147,8 +148,7 @@
 
 .section-formats .page-4 {
   .match-dark {
-    height: 8em;
-    background-color: $gray;
+    display: none;
 
     .formats-category {
       position: absolute;
@@ -195,29 +195,23 @@
   }
 
   .match-light {
-    height: calc(100vh - 9em);
+    min-height: calc(100vh - 4em);
 
     .formats-elaboration {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      bottom: 0;
-      left: 0;
 
       .format {
         visibility: hidden;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
+        height: 0;
+        width: 18em; /* anomaly */
+        margin: 0 auto;
 
         &.active {
           visibility: visible;
+          height: auto;
         }
 
         .header {
-          margin: 2em 1em;
+          padding-top: 1em;
 
           .headline-lean { font-size: 1.2rem; text-align: center; }
           .headline-cap { font-size: 1.6rem; text-align: center; }
@@ -228,16 +222,10 @@
         }
 
         .videos {
-          position: absolute;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          top: 9em;
-          padding: 0 1em 1em 1em;
-          overflow-y: scroll;
+          padding: .5em 0 1em 0;
 
           .video-container {
-            margin: 0 0 3em 0;
+            margin: 0 0 1em 0;
 
             video { width: 100%; display: none; }
             img { width: 100%; display: block; }

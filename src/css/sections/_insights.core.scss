@@ -5,7 +5,6 @@
 .section-insights .page-1 {
   .match-light {
     .headlines {
-      padding: 4em 2em 0 2em;
     }
   }
 
@@ -31,7 +30,9 @@
     min-height: calc(40vh - 2em);
 
     .headlines {
-      padding: 1em 3em 0 3em;
+      padding: 1em 0 0 0;
+      width: $mobile-s-content-width;
+      margin: 0 auto;
       text-align: center;
 
       h6 { font-family: $content-font; font-size: 0.6em; line-height: 2; }
@@ -39,6 +40,7 @@
       .info {
         font-size: .8em;
         margin-top: 1em;
+        text-align: center;
 
         strong {
           display: block;
@@ -54,9 +56,14 @@
 
   .match-dark {
     min-height: calc(60vh - 2em);
-    padding: 1em;
     background-color: $medium-blue;
     color: $primary-white;
+
+    .data-desc {
+      width: $mobile-s-content-width;
+      padding: 2em 0;
+      margin: 0 auto;
+    }
 
     .headline-cap {
       line-height: 1;
@@ -64,10 +71,10 @@
     }
 
     .explanation {
-      margin: 2em 1em;
+      margin: 2em 0;
       font-size: .6em;
       line-height: 1.5;
-      text-align: center;
+      text-align: left;
     }
 
     .notes {
@@ -115,6 +122,8 @@
     .callout {
       position: relative;
       text-align: center;
+      width: $mobile-s-content-width;
+      margin: 0 auto;
       top: 50%;
       transform: translateY(-50%);
 
@@ -123,10 +132,6 @@
         line-height: 1;
 
         i { display: block; }
-      }
-
-      svg {
-        width: 18em;
       }
     }
   }
@@ -160,14 +165,16 @@
     height: 14em;
 
     .headlines {
-      padding: 2em 2em 0 2em;
+      padding: 2em 0 0 0;
+      margin: 0 auto;
+      width: $mobile-s-content-width;
       color: $primary-white;
 
       .headline-cap { line-height: 1; }
       .explanation {
         font-size: .8em;
         margin-top: 1em;
-        text-align: center;
+        text-align: left;
       }
     }
   }
@@ -176,7 +183,9 @@
     min-height: calc(100vh - 18em);
 
     .partners-info {
-      padding: 2em;
+      padding: 2em 0;
+      width: $mobile-s-content-width;
+      margin: 0 auto;
       font-size: 1rem;
       color: $medium-blue;
 

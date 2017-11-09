@@ -10,7 +10,7 @@
     position: absolute;
     z-index: 1;
     left: 1.5rem;
-    top: 1.5rem;
+    top: 2rem;
   }
 
   .interior-page {
@@ -22,7 +22,7 @@
       background-color: $primary-white;
       position: relative;
 
-      .info { text-align: center; }
+      .info { text-align: left; }
     }
 
     .match-dark {
@@ -36,8 +36,12 @@
       min-height: calc(50vh - 2em);
 
       .headlines {
-        padding: 4em 0 0 0;
-        left: 1.5em;
+        position: absolute;
+        top: 4em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: $mobile-s-content-width;
 
         .headline-cap {
           font-size: 2em;
@@ -45,7 +49,7 @@
         }
 
         .headline-lean {
-          font-size: 1.8em;
+          font-size: 1.2em;
         }
       }
     }
@@ -55,27 +59,29 @@
 
       .explanation {
         position: absolute;
-        margin: 0 2em;
-        top: -3em;
-        margin: 0 2em;
-        text-align: center;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: $mobile-s-content-width;
+        text-align: left;
+        padding: 1em;
+        transform: translateY(-50%);
       }
     }
   }
 }
 
-.placeholder { width: 100%; }
-
-
 
 @media (--mobile-m) {
   .breadcrumbs { font-size: .8rem; }
-  .page-1 .match-light .headlines { font-size: 1.2rem; }
+  .page-1 .match-light .headlines { font-size: 1.1rem; }
+  .page-1 .match-dark .explanation { font-size: 1.1rem; }
 }
 
 @media (--mobile-l) {
   .breadcrumbs { font-size: 1rem; }
-  .page-1 .match-light .headlines { font-size: 1.5rem; }
+  .page-1 .match-light .headlines { font-size: 1.2rem; }
+  .page-1 .match-dark .explanation { font-size: 1.2rem; }
 }
 
 
@@ -115,8 +121,9 @@
           position: absolute;
           padding: 0 !important;
           margin: 0;
-          top: 50%;
+          top: 50% !important;
           transform: translateY(-50%);
+          left: 3rem;
           font-size: 2rem;
         }
       }
@@ -126,7 +133,7 @@
           text-align: left;
           width: 19em;
           margin: 0;
-          left: 2.7em;
+          left: 3rem;
           font-size: 1.3rem;
         }
       }

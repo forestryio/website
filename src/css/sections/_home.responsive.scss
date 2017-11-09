@@ -22,7 +22,6 @@ body {
       transform: translateY(-50%);
       top: 50%;
       left: 4em;
-      width: auto;
       padding: 0;
       background-color: transparent;
       color: $primary-black;
@@ -121,11 +120,11 @@ body {
       left: auto;
       right: 2em;
       top: 4em;
-      width: 23em;
+      width: $desktop-s-content-width;
     }
 
     .more-info {
-      width: 23em;
+      width: $desktop-s-content-width;
       right: 2em;
       top: 10em;
     }

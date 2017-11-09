@@ -114,13 +114,14 @@
       .description {
         color: $primary-white;
         line-height: 1.5;
-        text-align: center;
+        text-align: left;
       }
 
       .inline-cta {
         display: inline-block;
         color: $medium-green;
         margin: 1em .5em;
+        float: left;
       }
     }
 

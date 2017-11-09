@@ -3,79 +3,58 @@
    ========================================================================== */
 
 @media (--mobile-m) {
+  .section-formats .page-1 {
+    .match-light .headlines { width: $mobile-m-content-width; }
+    .match-dark .explanation { width: $mobile-m-content-width; }
+  }
+
   .section-formats .page-2 {
-    .match-light .headlines {
-      padding: 2em 2em 0 2em;
-    }
+    .match-light .headlines { width: $mobile-m-content-width; }
   }
 
   .section-formats .page-3 {
     .match-light {
-      .question {
-        margin-top: 4em;
-      }
+      .headlines { width: $mobile-m-content-width; }
+      .question { width: $mobile-m-content-width; }
     }
 
     .match-dark {
+      .formats-category { width: $mobile-m-content-width; }
       .formats-category .headline-cap { font-size: 1rem; }
     }
   }
 
   .section-formats .page-4 {
-    .match-dark .formats-category {
-      .main-cta {
-        padding: .6em .6em .3em .6em;
-        margin: 1em;
-      }
-
-      .inner-nav {
-        height: calc(100% - 4em);
-      }
-    }
-
     .match-light {
-      height: calc(100vh - 8em);
+      .formats-elaboration .format { width: $mobile-m-content-width; }
     }
   }
 }
 
 @media (--mobile-l) {
+  .section-formats .page-1 {
+    .match-light .headlines { width: $mobile-l-content-width; }
+    .match-dark .explanation { width: $mobile-l-content-width; }
+  }
+
   .section-formats .page-2 {
-    .match-light .headlines { font-size: 1.1rem; }
+    .match-light .headlines { font-size: 1.1rem; width: $mobile-l-content-width; }
   }
 
   .section-formats .page-3 {
     .match-light {
-      .headlines {
-        font-size: 1.2rem;
-      }
+      .headlines { width: $mobile-l-content-width; }
+      .question { width: $mobile-l-content-width; }
+    }
 
-      .question {
-        font-size: 1.2rem;
-        height: 4em;
-        margin-top: 6em;
-      }
+    .match-dark {
+      .formats-category { width: $mobile-l-content-width; }
     }
   }
 
   .section-formats .page-4 {
-    .match-dark {
-      height: 10em;
-
-      .formats-category {
-        .main-cta {
-          padding: .75em .75em .45em .75em;
-          margin: 1em;
-        }
-
-        .inner-nav {
-          height: 6em;
-        }
-      }
-    }
-
     .match-light {
-      height: calc(100vh - 10em);
+      .formats-elaboration .format { width: $mobile-l-content-width; }      
     }
   }
 }
@@ -96,8 +75,16 @@
   }
 
   .section-formats .page-1 {
+    .match-light {
+      .headlines {
+        width: auto;
+        right: auto;
+      }
+    }
+
     .match-dark {
       .explanation {
+        width: $desktop-s-content-width;
       }
 
       img.hand-held {
@@ -113,67 +100,34 @@
     .match-light .headlines {
       position: absolute;
       padding: 0;
+      right: auto;
+      left: 3rem;
       top: 50%;
-      left: 3em;
       transform: translateY(-50%);
-      width: 28em;
-
-      .headline-cap { font-size: 4rem; }
-      .headline-lean { font-size: 3rem; }
-      .info { text-align: left; }
-
-      .headline-cap { font-size: 2rem; }
-      .info {
-        width: 87%;
-      }
-    }
-
-    .match-dark {
-      text-align: left;
-
-      .pie-chart {
-        display: block;
-        width: 300px;
-        right: 4em;
-        top: -10em;
-      }
-
-      .chart-legend {
-        height: 100%;
-        width: auto;
-        display: none;
-      }
+      width: 28rem;
+      font-size: 1.2rem;
     }
   }
 
   .section-formats .page-3 {
     .match-light {
-
       .headlines {
         position: absolute;
         padding: 0;
         top: 50%;
-        left: 3em;
+        left: 3rem;
+        right: auto;
         transform: translateY(-50%);
-        width: 28em;
-
-        .headline-cap { font-size: 4rem; }
-        .headline-lean { font-size: 3rem; }
-        .info { text-align: left; }
-
-        .headline-cap { font-size: 3rem; }
-        .headline-lean { font-size: 2.3rem; }
-        .info { width: 70%; }
+        width: 24rem;
+        font-size: 1.2rem;
       }
 
       .question {
-        width: 20em;
         margin: 0 auto;
-        height: 4.3em;
+        width: 20em;
         bottom: 1em;
 
         .headline-lean { font-size: 1.6rem; }
-        /* img.parenthesis { transform: scale(0.8); } */
       }
         
     }
@@ -182,6 +136,8 @@
       background-color: $gray;
 
       .formats-category {
+        width: 48em;
+
         .headline-cap {
           float: left;
           width: calc(50% - 2em);
@@ -196,6 +152,7 @@
 
   .section-formats .page-4 {
     .match-dark {
+      display: block;
       height: 100%;
       width: 18em;
       left: 0;
@@ -262,14 +219,9 @@
         position: relative;
 
         .format {
+          width: auto;
 
           .header {
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin: 1em;
-
-
             .headline-lean {
               font-size: 2rem;
               text-align: left;
@@ -286,7 +238,12 @@
           }
 
           .videos {
-            top: 10em;
+            position: absolute;
+            left: 0;
+            top: 9em;
+            bottom: 0;
+            padding: 0;
+            overflow-y: scroll;
 
             .video-container {
               margin-bottom: 2em;
@@ -302,4 +259,27 @@
       }
     }    
   }
+}
+
+@media (--desktop-m) {
+  .section-formats .page-2 {
+    .match-light {
+      .headlines { font-size: 1.5rem; width: 40rem; }
+    }
+  }
+
+  .section-formats .page-3 {
+    .match-light {
+      .headlines { font-size: 1.5rem; width: 40rem; }
+      .question { font-size: 1.2rem; }
+    }
+
+    .match-dark {
+      .formats-category {
+        width: 64em;
+        
+        .headline-cap { font-size: 1.2rem; }       
+      }
+    }
+  }  
 }
