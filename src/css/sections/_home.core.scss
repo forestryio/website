@@ -134,10 +134,11 @@
 
       video { 
         position: absolute;
-        z-index: -1;
-        /* display: none; 
+        /* z-index: -1; */
+        /* display: none;  */
+        top: -10000px;
         width: 0;
-        height: 0; */
+        height: 0;
       }
       img {
         position: absolute;
