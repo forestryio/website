@@ -5,12 +5,16 @@
 .section-wrapper {
   background-color: $primary-white;
   margin-top: 4em;
+  min-height: 100vh;
+  position: relative;
 
   .breadcrumbs {
     position: absolute;
     z-index: 1;
     left: 1.5rem;
     top: 2rem;
+    top: 1rem; 
+    left: 1rem;
   }
 
   .interior-page {
@@ -68,6 +72,16 @@
         transform: translateY(-50%);
       }
     }
+  }
+
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+
+  &:after {
+    clear: both;
   }
 }
 

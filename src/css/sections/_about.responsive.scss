@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-about {
+    .headlines {
+      width: $mobile-m-content-width;
+    }
+
+    .explanation {
+      width: $mobile-m-content-width;
+    }
+  }
+}
+
+
+@media (--mobile-l) {
+  .section-about {
+    .headlines {
+      width: $mobile-l-content-width;
+    }
+
+    .explanation {
+      width: $mobile-l-content-width;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-about {
+    padding: 6em 4em;
+
+    .headlines {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      float: left;
+      font-size: 1.5rem;
+    }
+
+    .explanation {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      float: left;  
+      font-size: 1.1rem;    
+    }
+  }
+}

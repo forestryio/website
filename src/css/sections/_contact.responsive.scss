@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-contact {
+    .headlines-container {
+      .headlines {
+        width: $mobile-m-content-width;
+      }
+    }
+
+    .form-container {
+      form {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
+}
+
+
+@media (--mobile-l) {
+  .section-contact {
+    .headlines-container {
+      .headlines {
+        width: $mobile-l-content-width;
+      }
+    }
+
+    .form-container {
+      form {
+        width: $mobile-l-content-width;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-contact {
+    .headlines-container {
+      position: relative;
+      height: 20rem;
+
+      .headlines {
+        position: absolute;
+        width: auto;
+        padding: 0;
+        left: 3em;
+        font-size: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .form-container {
+      min-height: calc(100vh - 20rem);
+
+      form {
+        width: 40rem;
+
+        .row:nth-child(2) {
+          .left { margin-top: .5em; }
+          .right {
+            label {
+              display: block;
+              width: calc(0.333 * (100% - 2em));
+              float: left;
+              font-size: 1rem;
+              margin: 0 0 1em 0;
+
+              &:nth-of-type(2) { margin: 0 1em 1em 1em; }
+            }
+          }
+        }
+
+        .row:nth-child(4) {
+          .right select {
+            padding: .5em .5em .75em .5em;
+          }
+        }
+      }
+    }
+  }
+}
