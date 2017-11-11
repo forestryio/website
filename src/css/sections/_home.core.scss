@@ -133,7 +133,6 @@
       left: 0;
 
       video {
-        /* display: none; */
         position: absolute;
         z-index: -1;
         width: 0;
@@ -142,8 +141,8 @@
 
       img {
         position: absolute;
-        bottom: 50vh;
         width: 100%;
+        top: 0;
       }
     }
   }
@@ -187,12 +186,16 @@
 .hero-carousel .slide-formats {
   .visual-pattern {
     background-color: #161e2b;
+
+    img { transform: translateY(-25%); }
   }
 }
 
 .hero-carousel .slide-insights {
   .visual-pattern {
     background-color: #161e2b;
+
+    img { transform: translateY(-15%); }
   }
 }
 
@@ -204,8 +207,6 @@
   .visual-pattern {
     background-color: #eaeaea;
 
-    img {
-      transform: translateY(50%);
-    }
+    img { transform: translateY(-50%); }
   }
 }
