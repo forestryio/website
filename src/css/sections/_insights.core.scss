@@ -21,7 +21,15 @@
       }
     }
 
-    .notes { display: none; }
+    .notes { 
+      width: $mobile-s-content-width;
+      margin: auto;
+      position: absolute;
+      bottom: 1em;
+      left: 0;
+      right: 0;
+      font-size: .9em;
+    }
   }
 }
 
