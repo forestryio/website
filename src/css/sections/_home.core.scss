@@ -10,12 +10,26 @@
    ========================================================================== */
 
 .hero-content {
+  .news {
+    background-color: $light-green;
+    position: absolute;
+    padding: 1em;
+    width: 100%;
+    top: 4rem;
+    z-index: 1;
+    font-family: MeltowSan200-Regular;
+    line-height: 1;
+    font-size: .85em;
+
+    a { color: $primary-black; }
+  }
+
   .humans {
     position: absolute;
     bottom: 15em;;
     right: 0;
     left: 0;
-    top: 0;
+    top: 6rem;
 
     img { 
       position: absolute;
