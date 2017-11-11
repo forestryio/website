@@ -19,26 +19,27 @@
 
 /**
  * each fade lasts 4 seconds, so each animation takes 8 seconds (fade in + fade out)
- * 
+ * but each new animation enters 2s early, so the total animation should be 
+ * (2*4)*11 - 2*11 = 66s, divide 4s by this number and we get the percentage (6%)
  */
 
 .humans {
   img {
     opacity: 0;
     visibility: hidden;
-    animation: truth 88s ease-in-out 0s infinite;
+    animation: truth 66s ease-in-out 0s infinite;
   }
 
-  img:nth-child(2) { animation-delay: 8s; }
-  img:nth-child(3) { animation-delay: 16s; }
-  img:nth-child(4) { animation-delay: 24s; }
-  img:nth-child(5) { animation-delay: 32s; }
-  img:nth-child(6) { animation-delay: 40s; }
-  img:nth-child(7) { animation-delay: 48s; }
-  img:nth-child(8) { animation-delay: 56s; }
-  img:nth-child(9) { animation-delay: 64s; }
-  img:nth-child(10) { animation-delay: 72s; }
-  img:nth-child(11) { animation-delay: 80s; }
+  img:nth-child(2) { animation-delay: 6s; }
+  img:nth-child(3) { animation-delay: 12s; }
+  img:nth-child(4) { animation-delay: 18s; }
+  img:nth-child(5) { animation-delay: 24s; }
+  img:nth-child(6) { animation-delay: 30s; }
+  img:nth-child(7) { animation-delay: 36s; }
+  img:nth-child(8) { animation-delay: 42s; }
+  img:nth-child(9) { animation-delay: 48s; }
+  img:nth-child(10) { animation-delay: 54s; }
+  img:nth-child(11) { animation-delay: 60s; }
 }
 
 @keyframes truth {
@@ -47,11 +48,11 @@
     visibility: visible;
   }
 
-  4.5% {
+  6% {
     opacity: 1;
   }
 
-  9% {
+  12% {
     opacity: 0;
     visibility: hidden;
   }

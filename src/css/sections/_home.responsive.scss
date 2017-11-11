@@ -12,7 +12,12 @@ body {
   .hero-content {
     .main-message {
       .headlines {
-        .headline-lean { margin-top: .25em; }
+        margin-top: 2em;
+        font-size: 1rem;
+
+        .headline-lean { 
+          margin-top: .25em; 
+        }
       }
     }
   }
@@ -77,6 +82,7 @@ body {
     .news {
       width: $desktop-s-content-width;
       left: $desk-s-side-margin;
+      padding: 1em;
       bottom: 6rem;
       top: auto;
     }
