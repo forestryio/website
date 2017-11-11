@@ -76,8 +76,9 @@
     width: $mobile-s-content-width;
     margin: 0 auto;
 
+    div,
     a { 
-      display: block;
+      /* display: block; */
 
       .headline-cap {
         padding: 1em 0;
