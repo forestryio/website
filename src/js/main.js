@@ -133,6 +133,13 @@ $(function() {
           $("html, body").animate({ scrollTop: ($(selector).position().top - 0) }, 600);
         });
       }
+
+      if (window.section === 'contact') {
+        $('.contact-form .row:nth-of-type(2) label').on('click', function(e) {
+          $('.contact-form .row:nth-of-type(2) label').removeClass('active');
+          $(e.target).addClass('active');
+        });
+      }
     }
   };
 
