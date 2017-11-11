@@ -6,7 +6,8 @@
   .section-marketplace .page-1 {
     .match-dark {
       .footnote {
-        font-size: .8rem;
+        width:  $mobile-m-content-width;
+        font-size: .75rem;
       }
     }
   }
@@ -18,8 +19,41 @@
         padding: 2em 0;
       }
     }
+
+    .match-dark {
+      .publishers-mask {
+        width:  $mobile-m-content-width;
+      }
+    }
   }
 }
+
+
+@media (--mobile-m) {
+  .section-marketplace .page-1 {
+    .match-dark {
+      .footnote {
+        width:  $mobile-l-content-width;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .section-marketplace .page-2 {
+    .match-light {
+      .marketplace-desc {
+        width: $mobile-l-content-width;
+      }
+    }
+
+    .match-dark {
+      .publishers-mask {
+        width:  $mobile-l-content-width;
+      }
+    }
+  }
+}
+
 
 /* ==========================================================================
    iPad Landscape and Beyond
@@ -38,12 +72,15 @@
       }
 
       .footnote {
-        display: block;
-        width: 24em;
-        margin: 2em;
+        position: absolute;
+        width: $desktop-s-content-width;
         padding: 0;
-        font-size: 1rem;
-        text-align: left;
+        font-size: .9rem;
+        right: auto;
+        bottom: auto;
+        left: $desk-s-side-margin;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
@@ -86,7 +123,20 @@
 
         .statline { font-size: 1.5rem; padding: 0; }
         .info { font-size: 1.8rem; }
+        .publishers-mask { margin: 3em auto; }
       }
     }
   }
 }
+
+@media (--desktop-m) {
+  .section-marketplace .page-1 {
+    .match-dark {
+      .footnote {
+        width: $desktop-m-content-width;
+
+      }
+    }
+  }
+}
+

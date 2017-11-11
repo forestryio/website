@@ -4,6 +4,8 @@
 
 .section-marketplace .page-1 {
   .match-dark {
+    min-height: calc(50vh + 2em);
+
     .explanation {
       background-color: rgba(91, 164, 156, 0.95);
       color: $primary-white;
@@ -23,9 +25,13 @@
     }
 
     .footnote {
-      font-size: 0.6rem;
-      padding: 12em 3em 3em 3em;
-      text-align: left;
+      font-size: 0.65rem;
+      width: $mobile-s-content-width;
+      right: 0;
+      left: 0;
+      bottom: 2em;
+      margin: auto;
+      position: absolute;
     }
   }
 }
@@ -37,7 +43,7 @@
     color: $primary-white;
 
     .statline {
-      width: 12em;
+      width: calc($mobile-s-content-width - 2rem);
       padding: 2em 0 0 0;
       margin: 0 auto;
 
@@ -71,6 +77,31 @@
       i {
         display: block;
         font-size: .5em;
+      }
+    }
+
+    .publishers-mask {
+      width: $mobile-s-content-width;
+      position: relative;
+      margin: 2em auto;
+      height: 2.5rem;
+      overflow: hidden;
+
+      .credit-roll {
+        position: absolute;
+        height: 100%;
+        width: 23600px;
+      }
+
+      .whoweworkwith {
+        height: 100%;
+        float: left;
+
+        img {
+          height: 100%;
+          float: left;
+          margin: 0 12px;
+        }
       }
     }
   }
