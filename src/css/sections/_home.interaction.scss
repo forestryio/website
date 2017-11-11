@@ -17,46 +17,45 @@
 
 
 
+/**
+ * each fade lasts 4 seconds, so each animation takes 8 seconds (fade in + fade out)
+ * 
+ */
 
-.ocean { 
-  /* height: 5%; */
-  width:100%;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background: #015871;
+.humans {
+  img {
+    opacity: 0;
+    visibility: hidden;
+    animation: truth 88s ease-in-out 0s infinite;
+  }
+
+  img:nth-child(2) { animation-delay: 8s; }
+  img:nth-child(3) { animation-delay: 16s; }
+  img:nth-child(4) { animation-delay: 24s; }
+  img:nth-child(5) { animation-delay: 32s; }
+  img:nth-child(6) { animation-delay: 40s; }
+  img:nth-child(7) { animation-delay: 48s; }
+  img:nth-child(8) { animation-delay: 56s; }
+  img:nth-child(9) { animation-delay: 64s; }
+  img:nth-child(10) { animation-delay: 72s; }
+  img:nth-child(11) { animation-delay: 80s; }
 }
 
-.ex-wave {
-  background: url(http://tedmcdo.com/labs/wave.svg) repeat-x;  /* important to use background so you can repeat */
-  position: absolute;
-  top: -198px;
-  width: 6400px; /* just to make sure it's long enough */
-  height: 198px;
-  /* animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite; */
-  transform: translate3d(0, 0, 0);
-}
-
-/* .ex-wave:nth-of-type(2) {
-  top: -175px;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-} */
-
-@keyframes wave {
+@keyframes truth {
   0% {
-    margin-left: 0;
+    opacity: 0;
+    visibility: visible;
   }
-  100% {
-    margin-left: -1600px; /* has to be the width of the shape */
+
+  4.5% {
+    opacity: 1;
+  }
+
+  9% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
-/* @keyframes swell {
-  0%, 100% {
-    transform: translate3d(0,-25px,0);
-  }
-  50% {
-    transform: translate3d(0,5px,0);
-  }
-} */
+
+
