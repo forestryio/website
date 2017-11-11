@@ -132,14 +132,14 @@
       bottom: 0;
       left: 0;
 
-      video { 
+      video {
+        /* display: none; */
         position: absolute;
-        /* z-index: -1; */
-        /* display: none;  */
-        top: -10000px;
+        z-index: -1;
         width: 0;
         height: 0;
       }
+
       img {
         position: absolute;
         bottom: 50vh;

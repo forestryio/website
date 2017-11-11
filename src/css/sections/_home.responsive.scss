@@ -102,7 +102,6 @@ body {
 
     .visual-pattern {
       background: none;
-      /* height: 100%; */
       img { display: none; }
 
       video {
@@ -112,6 +111,7 @@ body {
         height: auto;
         top: 0;
         left: 0;
+        z-index: 1;
       }
     }
   }

@@ -87,6 +87,15 @@ $(function() {
             var currentSlide = document.querySelectorAll('.slide-inner')[nextSlideIndex];
             
             currentSlide.querySelector('video').play();
+
+            // console.log('slide leaving, next is: ', nextSlideIndex);
+
+            document.body.classList.add('sliding');
+          },
+          afterSlideLoad: function(index, slideIndex) {
+            // console.log('after slide loaded', index, slideIndex);
+
+            document.body.classList.remove('sliding');
           }
         });
       }
