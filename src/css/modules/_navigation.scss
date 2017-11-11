@@ -80,17 +80,8 @@
   }
 
   .primary-menu {
-    position: absolute;
-    width: 100%;
-    height: 75vh;
-    left: 0;
-    top: 0;
-    padding: 0 2em;
+    padding: 4em 2em 0 2em;
     font-size: 0.9rem;
-
-    > ul {
-      @extend vertical-align;
-    }
 
     .sub-menu {
       margin-top: 1em;
@@ -160,6 +151,12 @@
   .menu-container {
     .primary-menu {
       font-size: 1rem;
+      position: absolute;
+      width: 100%;
+      height: 75vh;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
