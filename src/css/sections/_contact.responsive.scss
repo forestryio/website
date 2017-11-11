@@ -61,10 +61,10 @@
       min-height: calc(100vh - 20rem);
 
       form {
-        width: 40rem;
+        width: 42rem;
 
-        .row:nth-child(2) {
-          .left { margin-top: .5em; }
+        .row:nth-of-type(2) {
+          .left { margin-top: .3em; }
           .right {
             label {
               display: block;
