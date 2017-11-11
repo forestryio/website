@@ -3,9 +3,29 @@
    ========================================================================== */
 
 @media (--mobile-m) {
+  .section-engagement .page-1 {
+    .headlines {
+      width: $mobile-m-content-width;
+    }
+  }
+
   .section-engagement .page-2 {
     min-height: calc(100vh - 4em);
+
+    .headlines {
+      width: $mobile-m-content-width;
+    }
   }
+
+  .section-engagement .page-3 {
+    .match-light .headlines {
+      width: $mobile-m-content-width;
+    }
+
+    .match-dark .explanation {
+      width: $mobile-m-content-width;
+    }
+  }  
 }
 
 

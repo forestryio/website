@@ -122,6 +122,17 @@ $(function() {
         $('#innerNav').on('click', this.updateActiveFormat.bind(this));
         $('#formatsCategory').on('click', this.jumpToFormat.bind(this));
       }
+
+      if (window.section === 'leadership') {
+        var self = this;
+
+        $('.team-list a').on('click', function(e) {
+          var extraPadding = ($(window).width() > self.props.mobileThreshold) ? 0 : '64';
+          var selector = '.team-bios a[name="' + e.target.parentNode.dataset.anchor + '"]';
+
+          $("html, body").animate({ scrollTop: ($(selector).position().top - 0) }, 600);
+        });
+      }
     }
   };
 

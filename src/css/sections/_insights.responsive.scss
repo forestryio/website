@@ -6,6 +6,7 @@
   .section-insights .page-1 {
     .match-dark {
       .notes {
+        width: $mobile-m-content-width;
         bottom: 2em;
       }      
     }
@@ -15,14 +16,34 @@
     .match-light {
       .headlines {
         font-size: 1.2rem;
+        width: $mobile-m-content-width;
       }
     }
 
     .match-dark {
       font-size: 1.1rem;
+
+      .data-desc {
+        width: $mobile-m-content-width;
+      }
     }
   }
 
+  .section-insights .page-4 {
+    .match-dark {
+      font-size: 1.1rem;
+
+      .headlines {
+        width: $mobile-m-content-width;
+      }
+    }
+
+    .match-light {
+      .partners-info {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
 }
 
 

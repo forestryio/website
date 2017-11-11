@@ -87,9 +87,11 @@
 
 
 @media (--mobile-m) {
-  .breadcrumbs { font-size: .8rem; }
-  .page-1 .match-light .headlines { font-size: 1.1rem; }
-  .page-1 .match-dark .explanation { font-size: 1.1rem; }
+  .section-wrapper {
+    .breadcrumbs { font-size: .8rem; }
+    .page-1 .match-light .headlines { font-size: 1.1rem; width: $mobile-m-content-width; }
+    .page-1 .match-dark .explanation { font-size: 1.1rem; width: $mobile-m-content-width; }    
+  }
 }
 
 @media (--mobile-l) {

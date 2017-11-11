@@ -1,6 +1,19 @@
 /* ==========================================================================
    Medium to Large Phones
    ========================================================================== */
+
+@media (--mobile-m) {
+  .section-leadership {
+    .team-bios {
+      .more-info {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
+}
+
+
+
 @media (--desktop-s) {
   .section-leadership {
     .breadcrumbs { top: 2rem; left: 2rem; }
