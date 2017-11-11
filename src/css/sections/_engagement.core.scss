@@ -95,7 +95,7 @@
     background-color: $ocean-deep;
 
     .explanation {
-      background-color: rgb(93,178,168, 0.8);
+      background-color: color($medium-green a(80%)); 
       color: $primary-white;
       position: absolute;
       padding: 1em;
@@ -106,7 +106,8 @@
       margin: auto;
 
       strong {
-        font-family: MeltowSan200-Regular;
+        font-family: $headline-cap;
+        font-weight: 200;
         line-height: 1;
         font-size: 1.5em;
         display: inline-block;

@@ -33,7 +33,7 @@
 
         .left {
           .headline-cap {
-            font-family: MeltowSan200-Regular;
+            font-weight: 200;
             font-size: 1.1em;
             text-align: right;
           }          
@@ -80,7 +80,8 @@
           }
 
           input[type="submit"] {
-            font-family: MeltowSan200-Regular;
+            font-family: $headline-cap;
+            font-weight: 200;
             text-align: center;
             padding: .5em 1em .4em 1em;
             border: 1px solid $primary-white;
@@ -93,7 +94,8 @@
             border: 1px solid $primary-white;
             background-color: $medium-blue;
             border-radius: 0;
-            font-family: MeltowSan200-Regular;
+            font-family: $headline-cap;
+            font-weight: 200;
             font-size: .8em;
             width: 100%;
             padding: .25em 0 .5em 0;
@@ -110,7 +112,7 @@
             margin: 1em 0;
 
             .headline-cap { 
-              font-family: MeltowSan200-Regular;
+              font-weight: 200;
               text-align: left;
               color: $medium-green;
               font-size: 1.1em;

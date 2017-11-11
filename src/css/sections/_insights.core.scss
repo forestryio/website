@@ -15,7 +15,8 @@
       padding: 1.5em;
 
       span {
-        font-family: MeltowSan200-Regular;
+        font-family: $headline-cap;
+        font-weight: 300;
         font-size: 1.5em;
         line-height: 1;
       }

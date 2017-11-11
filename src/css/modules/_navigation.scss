@@ -100,7 +100,8 @@
       margin-left: 1.5em;
 
       li {
-        font-family: MeltowSan100-Regular;
+        font-family: $headline-cap;
+        font-weight: 200;
         letter-spacing: 1px;
         margin: .3em 0;
 
@@ -133,7 +134,8 @@
       padding-top: 1em;
 
       li {
-        font-family: MeltowSan100-Regular;
+        font-family: $headline-cap;
+        font-weight: 200;
         letter-spacing: 1px;
         font-size: .8em;
         margin: .25em 0;

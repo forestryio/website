@@ -10,11 +10,11 @@
       padding: 1.5em;
 
       span {
-        font-family: MeltowSan200-Regular;
+        font-family: $headline-cap;
+        font-weight: 300;
         font-size: 1.5em;
         line-height: 1;
       }
-
 
       i {
         font-size: 0.6em;
@@ -61,7 +61,8 @@
 
       strong {
         display: block;
-        font-family: MeltowSan200-Regular;
+        font-family: $headline-cap;
+        font-weight: 200;
         font-size: 4em;
         line-height: .8;
         margin-top: .4em;

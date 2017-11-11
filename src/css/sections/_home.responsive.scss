@@ -1,11 +1,71 @@
 /* ==========================================================================
-   Hero Section
+   Medium to Large Phones
    ========================================================================== */
 
 /* single-liner works like this */
 body {
   opacity: 1 ?if media (min-width: $mobile-m-width);
 }
+
+
+@media (--mobile-m) {
+  .hero-content {
+    .main-message {
+      .headlines {
+        .headline-lean { margin-top: .25em; }
+      }
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        .headlines {
+          font-size: 1.3rem;
+
+          .headline-cap { margin-top: .25em; }
+        }
+
+        .more-info {
+          width: $mobile-m-content-width;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (--mobile-l) {
+  .hero-content {
+    .main-message {
+      .headlines {
+        margin-top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        .headlines {
+          font-size: 1.5rem;
+        }
+
+        .more-info {
+          width: $mobile-l-content-width;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
 
 @media (--desktop-s) {
   .hero-content,
@@ -15,34 +75,30 @@ body {
 
   .hero-content {
     .news {
-      width: 24em;
-      left: 4em;
+      width: $desktop-s-content-width;
+      left: $desk-s-side-margin;
       bottom: 6rem;
       top: auto;
     }
 
     .humans {
-      bottom: 0;
+      height: 100vh;
+      width: 50%;
+      left: auto;
+      right: 0;
+      top: 0;
+
+      img {
+        height: 100%;
+        max-width: none;
+      }
     }
 
     .main-message {
-      transform: translateY(-50%);
-      top: 50%;
-      left: 4em;
-      padding: 0;
+      height: 100vh;
+      width: 50%;
       background-color: transparent;
       color: $primary-black;
-
-      .headline-cap {
-        font-size: 3rem;
-        line-height: 1;
-        text-align: left;
-      }
-
-      .headline-lean {
-        font-size: 2.5rem;
-        text-align: left;
-      }
     }
 
     .arrow-down {
@@ -54,156 +110,104 @@ body {
       }
     }
   }
-}
 
-
-/* ==========================================================================
-   Carousel Section
-   ========================================================================== */
-
-@media (--mobile-m) {
-  .hero-carousel .slide-inner .headlines {
-    top: 5em;
-  }
-}
-
-@media (--mobile-l) {
-  .hero-carousel .slide-inner .headlines {
-    top: 6em;
-  }
-}
-
-@media (--desktop-s) {
-  .hero-carousel .slide-inner {
-    .main-cta {
-      right: auto;
-      left: 1em;
-      width: auto;
-    }
-
-    .headlines {
-      .headline-lean {
-        font-size: 2.5rem;
+  .hero-carousel {
+    .slide-inner {
+      .main-cta {
+        width: auto;
+        right: auto;
+        top: calc( $desk-s-side-margin / 2 );
+        left: calc( $desk-s-side-margin / 2 );
       }
 
-      .headline-cap {
-        font-size: 2.5rem;
-        line-height: 1.2;
-        margin: 0;
+      .main-content {
+        bottom: auto;
+        width: auto;
+        right: $desk-s-side-margin;
+        top: 25%;
+        transform: translateY(-50%);
+
+        .headlines { position: static; }
+        .more-info {
+          position: static; 
+          width: $desktop-s-content-width;
+          margin-top: 1em;
+
+          .description { color: $ocean-deep; }
+        }
       }
-    }
 
-    .more-info {
-      width: auto;
-      left: auto;
-      bottom: auto;
-      padding: 0;
-      text-align: left;
+      .visual-pattern {
+        img { display: none; }
 
-      .description {
-        color: $ocean-deep;
-        font-size: .9rem;
-        text-align: left;
+        video {
+          display: block;
+          width: 100%;
+          height: auto;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
       }
     }
 
-    .visual-pattern {
-      background: none;
-      img { display: none; }
-
-      video {
-        display: block;
-        /* position: absolute; */
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: 0;
-        z-index: 1;
+    .slide-formats {
+      .visual-pattern {
+        video {
+          transform: translateY(-25%);
+        }
       }
     }
-  }
 
-  .hero-carousel .slide-formats {
-    .headlines {
-      left: auto;
-      right: 2em;
-      top: 4em;
-      width: $desktop-s-content-width;
-    }
+    .slide-insights {
+      .main-content {
+        .headlines,
+        .more-info {
+          font-size: 1.2rem; /* too much text for this so make font smaller */
+        }
+      }
 
-    .more-info {
-      width: $desktop-s-content-width;
-      right: 2em;
-      top: 10em;
-    }
-
-    .visual-pattern {
-      video {
-        transform: translateY(-25%);
+      .visual-pattern {
+        video {
+          transform: translateY(-45%);        
+        }
       }
     }
-  }
 
-  .hero-carousel .slide-insights {
-    .headlines {
-      left: auto;
-      right: 2em;
-      top: 4em;
-      width: 30em;
-    }
-
-    .more-info {
-      width: 30em;
-      right: 2em;
-      top: 10em;
-    }
-
-    .visual-pattern {
-      video {
-        transform: translateY(-50%);        
+    .slide-marketplace {
+      .main-content {
+        left: $desk-s-side-margin;
+        right: auto;
+        top: calc(25% + 2rem);
       }
-    }
-  }
 
-  .hero-carousel .slide-marketplace {
-    .headlines {
-      left: 4em;
-      width: 30em;
-      right: auto;
-    }
-
-    .more-info {
-      top: 10em;
-      left: 4em;
-      width: 30em;
-    }
-
-    .visual-pattern {
-      video {
-        top: auto;
-        bottom: 0;
+      .visual-pattern {
+        video {
+          top: auto;
+          bottom: 0;
+        }
       }
     }
   }
 }
 
-
-@media (--desktop-l) {  
-  .hero-carousel .slide-formats {
-    .visual-pattern video {
-      transform: translateY(50%);      
+@media (--desktop-m) {  
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        .more-info {
+          width: $desktop-m-content-width;
+        }
+      }
     }
-  }
 
-  .hero-carousel .slide-insights {
-    .visual-pattern video {
-      transform: translateY(45%);      
-    }
-  }
-
-  .hero-carousel .slide-marketplace {
-    .visual-pattern video {
-      transform: translateY(5%);
+    .slide-insights {
+      .main-content {
+        .headlines,
+        .more-info {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 }

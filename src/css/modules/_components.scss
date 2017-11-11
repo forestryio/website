@@ -28,6 +28,7 @@
   border: 1px dotted $tangerine;
   color: $tangerine;
   text-align: center;
+  width: 8em;
 
   @media (--mobile-m) { font-size: 1.2rem; }
   @media (--mobile-l) { font-size: 1.5rem; }
@@ -51,9 +52,31 @@
   @media (--desktop-s) { text-align: left; }
 }
 
+.headlines {
+  width: $mobile-s-content-width;
+  margin: 0 auto;
+
+  .headline-cap { font-size: 1.7em; }
+  .headline-lean { font-size: 1.4em; }
+
+  @media (--mobile-m) { width: $mobile-m-content-width; }
+  @media (--mobile-l) { width: $mobile-l-content-width; font-size: 1.1rem; }
+
+  @media (--desktop-s) { 
+    width: $desktop-s-content-width;
+    position: absolute;
+    margin: 0;
+    left: $desk-s-side-margin;
+    font-size: 1.6rem;
+  }
+
+  @media (--desktop-m) { width: $desktop-m-content-width; font-size: 2rem; }
+}
+
 .inline-cta {
   font-family: $headline-cap;
-  margin-left: .5em;
+  display: inline-block;
+  margin: 1em .5em;
 
   &:before {
     content: '❯';
