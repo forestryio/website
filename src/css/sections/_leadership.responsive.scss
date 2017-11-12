@@ -12,7 +12,15 @@
   }
 }
 
-
+@media (--mobile-l) {
+  .section-leadership {
+    .team-bios {
+      .more-info {
+        width: $mobile-l-content-width;
+      }
+    }
+  }
+}
 
 @media (--desktop-s) {
   .section-leadership {

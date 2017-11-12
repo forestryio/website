@@ -13,7 +13,9 @@
   </div>
 
   <div class="visual-pattern formats">
-    <video playsinline autoplay loop src='{{ "_videos/waves-square.mp4" | absURL }}'></video>
+    <video playsinline autoplay loop crossorigin="anonymous" preload="auto">
+      <source src='{{ "_videos/waves-square.mp4" | absURL }}' type='video/mp4'>
+    </video>
     <img src='{{ "_videos/waves.gif" | absURL }}'>
   </div>
 </div>

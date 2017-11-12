@@ -88,9 +88,10 @@
 
     .match-dark {
       .explanation {
+        width: $desktop-m-content-width;
         left: auto;
         right: 2em;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
   }

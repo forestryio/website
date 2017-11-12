@@ -13,8 +13,10 @@
   </div>
 
   <div class="visual-pattern marketplace">
-    <video playsinline autoplay loop src='{{ "_videos/spotlight-square.mp4" | absURL }}'></video>
-    <img src='{{ "_videos/spotlight.png" | absURL }}'>
+    <video playsinline autoplay loop crossorigin="anonymous" preload="auto">
+      <source src='{{ "_videos/spotlight-square.mp4" | absURL }}' type='video/mp4'>
+    </video>
+    <img src='{{ "_images/spotlight.png" | absURL }}'>
   </div>
   
 </div>
