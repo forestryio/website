@@ -2,14 +2,14 @@
   .match-dark {
     .publishers-mask {
       .credit-roll {
-        animation: creditRoll 180s linear 0s infinite;
+        animation: publisherRoll 180s linear 0s infinite;
       }
     }
   }
 }
 
 
-@keyframes creditRoll {
+@keyframes publisherRoll {
   0% {
     transform: translateX(0);
   } 100% {
