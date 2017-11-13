@@ -97,6 +97,14 @@
   }
 }
 
+.anchor-locator {
+  display: block;
+  position: relative;
+  top: -4rem;
+
+  @media (--desktop-s) { top: 0; }
+}
+
 
 
 /* ==========================================================================
