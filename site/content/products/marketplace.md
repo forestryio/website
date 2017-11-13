@@ -1,5 +1,5 @@
 ---
-title: "MARKETPLACE"
+title: "Marketplace"
 menu:
   main:
     parent: "products"

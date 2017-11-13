@@ -1,5 +1,5 @@
 ---
-title: ON ENGAGEMENT
+title: On Engagement
 menu:
   main:
     parent: "resources"

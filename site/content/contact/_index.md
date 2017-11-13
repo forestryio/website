@@ -1,5 +1,5 @@
 ---
-title: "CONTACT"
+title: "Contact"
 menu: "secondary"
 weight: 1
 code: contact

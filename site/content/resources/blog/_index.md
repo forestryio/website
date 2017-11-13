@@ -1,5 +1,5 @@
 ---
-title: BLOG
+title: Blog
 menu:
   main:
     parent: "resources"

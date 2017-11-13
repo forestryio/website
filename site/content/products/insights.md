@@ -1,5 +1,5 @@
 ---
-title: "INSIGHTS"
+title: "Insights"
 menu:
   main:
     parent: "products"
