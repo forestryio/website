@@ -1,9 +1,11 @@
 ---
 title: "Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in the U.S."
 layout: "blog"
-category: "case-studies"
+category: "update"
 images:
-  - "gdtography-310706.jpg"
+  - "wave.jpg"
+author: Susan Lietz, CMO
+weight: 2
 draft: false
 ---
 

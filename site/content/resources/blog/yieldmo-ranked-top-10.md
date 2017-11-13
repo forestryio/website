@@ -3,7 +3,9 @@ title: "Yieldmo Ranked in the Top 10% of Fastest Growing North American Companie
 layout: "blog"
 category: "updates"
 images:
-  - "asoggetti-413830.jpg"
+  - "au-deloitte-logo-black.jpg"
+author: Mike Yavonditte, Founder and CEO
+weight: 1
 draft: false
 ---
 

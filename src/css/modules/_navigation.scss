@@ -31,7 +31,7 @@
 
   .message {
     height: 4em;
-    padding: .5em 0;
+    padding: .6em 0;
     text-align: center;
 
     .title {
@@ -41,14 +41,12 @@
     }
 
     .subtitle {
-      font-family: $content-font;
-      font-size: .7rem;
-      line-height: 1.8;
+      font-size: .85rem;
+      text-align: center;
     }
 
     a {
       width: 80px;
-      padding: 11px 0;
       margin: 0 auto;
       display: block;
 
@@ -191,6 +189,10 @@
 
       .title {
         font-size: 1.8rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
       }
 
       a {

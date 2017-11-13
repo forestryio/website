@@ -4,8 +4,9 @@ date: 2017-11-13
 layout: "blog"
 category: "perspectives"
 images:
-  - "luke-chesser-50.jpg"
+  - "measuring.jpg"
 author: "Teddy Jawde, Head of Product"
+weight: 3
 draft: false
 ---
 
