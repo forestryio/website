@@ -1,21 +1,6 @@
-.hero-carousel {
-  .slick-dots li {
-    transition: background-color 600ms;
-
-    &.slick-active {
-      background-color: $tangerine;
-    }
-  }
-
-  .fp-slidesNav ul {
-    li a span {
-      /* transition: all 300ms; */
-    }
-  }
-}
-
-
-
+/* ==========================================================================
+   Hero First Impression Animation
+   ========================================================================== */
 
 /**
  * each fade lasts 4 seconds, so each animation takes 8 seconds (fade in + fade out)
@@ -56,6 +41,44 @@
     opacity: 0;
     visibility: hidden;
   }
+}
+
+
+/* ==========================================================================
+   Hero Carousel Better Transition
+   ========================================================================== */
+
+.hero-carousel {
+  .slick-dots li {
+    transition: background-color 600ms;
+
+    &.slick-active {
+      background-color: $tangerine;
+    }
+  }
+
+  .fp-slidesNav ul {
+    li a span {
+      /* transition: all 300ms; */
+    }
+  }
+}
+
+
+.hero-carousel .slide {
+  .main-cta,
+  .main-content {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+
+
+body.in-carousel .hero-carousel .slide.active {
+  .main-cta,
+  .main-content {
+    opacity: 1;
+  }  
 }
 
 

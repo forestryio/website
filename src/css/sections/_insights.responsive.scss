@@ -31,8 +31,6 @@
 
   .section-insights .page-4 {
     .match-dark {
-      font-size: 1.1rem;
-
       .headlines {
         width: $mobile-m-content-width;
       }
@@ -86,16 +84,16 @@
       width: 50%;
       height: 100vh;
       top: auto;
-      font-size: 1.5rem;
 
 
       .data-desc {
+        font-size: 1.3rem;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         width: $desktop-s-content-width;
 
-        .headline-cap { font-size: 2em; }
+        .headline-cap { font-size: 1.8em; }
 
         .explanation {
           text-align: left;
@@ -166,6 +164,7 @@
         top: 50%;
         transform: translateY(-50%);
         font-size: 1.2rem;
+        margin: 0;
       }
     }
   }
@@ -183,7 +182,6 @@
         padding: 0;
         margin: 0 auto;
         width: $desktop-s-content-width;
-        font-size: 1.5em;
         top: 50%;
         transform: translateY(-50%);
         
@@ -208,3 +206,16 @@
     }
   }
 }
+
+
+@media (--desktop-m) {
+  .section-insights .page-2 {
+    .match-dark {
+      .data-desc {
+        width: $desktop-m-content-width;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+

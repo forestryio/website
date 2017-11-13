@@ -10,7 +10,7 @@ weight: 3
 draft: false
 ---
 
-Yieldmo DragonflyTM enables more accurate campaign measurement and efficiency by powering our ability to attribute conversions (via a Yieldmo pixel placed on check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to analyze which audience segments drove the largest share of performance. Together, this information drives stronger campaign performance by making optimizations possible at multiple levels—audience, ad format, ad creative, specific ad placement, etc.
+Yieldmo Dragonfly&trade; enables more accurate campaign measurement and efficiency by powering our ability to attribute conversions (via a Yieldmo pixel placed on check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to analyze which audience segments drove the largest share of performance. Together, this information drives stronger campaign performance by making optimizations possible at multiple levels—audience, ad format, ad creative, specific ad placement, etc.
 
 This technology is powered by a combination of mobile device identification techniques. For in-app advertising, it uses Apple’s Identifier for Advertisers (IDFA) and Android’s Advertiser ID. The process for mobile web advertising is more complicated. In the mobile web, Dragonfly utilizes third-party cookies when possible, in combination with the user’s mobile web browser cache.
 

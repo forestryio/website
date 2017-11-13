@@ -13,8 +13,6 @@ body {
     .main-message {
       .headlines {
         margin-top: 2em;
-
-        .headline-lean { margin-top: .25em; }
       }
     }
   }
@@ -22,10 +20,6 @@ body {
   .hero-carousel {
     .slide-inner {
       .main-content {
-        .headlines {
-          .headline-cap { margin-top: .25em; }
-        }
-
         .more-info {
           width: $mobile-m-content-width;
           font-size: 1.2rem;
@@ -60,6 +54,14 @@ body {
   }
 }
 
+
+@media (--mobile-l) {
+  .hero-content {
+    .news {
+      line-height: 1.4;
+    }
+  }
+}
 
 /* ==========================================================================
    iPad Landscape and Beyond
@@ -125,7 +127,7 @@ body {
         .more-info {
           position: static; 
           width: $desktop-s-content-width;
-          margin-top: 1em;
+          margin-top: .5em;
 
           .description { color: $ocean-deep; }
         }

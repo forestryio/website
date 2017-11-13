@@ -57,24 +57,28 @@
     }
 
     .explanation-container {
-      position: absolute;
+      position: relative;
       width: 50%;
       min-height: 100vh;
       margin: 0;
-      padding: 6em 8em 6em 0;
+      padding: 6em 4em 6em 0;
       left: 50%;
       top: 0; 
     }
   }
 }
 
-@media (--desktop-s) {
+@media (--desktop-m) {
   .section-about {
     .headlines-container {
       .headlines {
         width: 24rem;
         font-size: 3rem;
       }
+    }
+
+    .explanation-container {
+      padding-right: 8em;
     }
   }
 }
