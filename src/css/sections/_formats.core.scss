@@ -51,11 +51,10 @@
 
     .headlines {
       position: absolute;
-      width: $mobile-s-content-width;
       right: 0;
       left: 0;
-      margin: auto;
-      top: 2em;
+      top: 50%;
+      transform: translateY(-50%);
 
       .headline-cap {
         font-size: 1.3em;
@@ -73,16 +72,18 @@
 }
 
 .section-formats .page-3 {
+  min-height: 0;
+  padding-bottom: 4em;
+
   .match-light {
-    height: calc(50vh - 2em);
+    height: 50vh;
 
     .headlines {
       position: absolute;
-      top: 2em;
       left: 0;
       right: 0;
-      margin: auto;
-      width: $mobile-s-content-width;
+      top: 50%;
+      transform: translateY(-70%);
 
       .headline-cap {
         font-size: 2em;
@@ -116,16 +117,11 @@
 
   .match-dark {
     background-color: $primary-white;
-    height: calc(50vh - 2em);
 
     .formats-category {
-      position: absolute;
       width: $mobile-s-content-width;
-      right: 0;
-      left: 0;
-      margin: auto;
-      top: 50%;
-      transform: translateY(-50%);
+      margin: 0 auto;
+      padding: 1em 0 0 0;
 
       .headline-cap {
         text-align: center;
@@ -214,8 +210,14 @@
         .header {
           padding-top: 1em;
 
-          .headline-lean { font-size: 1.2rem; text-align: center; }
-          .headline-cap { font-size: 1.6rem; text-align: center; }
+          .headlines {
+            font-size: .8rem;
+
+            .headline-cap {
+              margin-top: .25em;
+            }
+          }
+
           .label {
             margin: 2em 0 0 0;
             font-size: .7rem;

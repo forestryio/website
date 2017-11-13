@@ -4,7 +4,8 @@ menu:
   main:
     parent: "resources"
 layout: blog
+code: blog
 weight: 1
 ---
 
-At ....
+BLOG LIST PAGE

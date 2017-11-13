@@ -35,13 +35,11 @@
 }
 
 .section-insights .page-2 {
-  .match-light {
-    min-height: calc(40vh - 2em);
+  min-height: 0;
 
+  .match-light {
     .headlines {
-      padding: 1em 0 0 0;
-      width: $mobile-s-content-width;
-      margin: 0 auto;
+      padding: 3em 0;
       text-align: center;
 
       h6 { font-family: $content-font; font-size: 0.6em; line-height: 2; }
@@ -74,13 +72,12 @@
   }
 
   .match-dark {
-    min-height: calc(60vh - 2em);
     background-color: $medium-blue;
     color: $primary-white;
 
     .data-desc {
       width: $mobile-s-content-width;
-      padding: 2em 0;
+      padding: 4em 0;
       margin: 0 auto;
     }
 
@@ -135,8 +132,10 @@
 }
 
 .section-insights .page-3 {
+  min-height: 0;
+
   .match-light {
-    height: 14em;
+    height: 16em;
 
     .callout {
       position: relative;
@@ -156,10 +155,8 @@
   }
 
   .match-dark {
-    min-height: calc(100vh - 18em);
-
     .credit-mask {
-      margin: 1em;
+      margin: 3em 1em;
       height: 30em;
       overflow: hidden;
 
@@ -181,12 +178,9 @@
 .section-insights .page-4 {
   .match-dark {
     background-color: $medium-blue;
-    height: 14em;
 
     .headlines {
-      padding: 2em 0 0 0;
-      margin: 0 auto;
-      width: $mobile-s-content-width;
+      padding: 4em 0;
       color: $primary-white;
 
       .headline-cap { line-height: 1; }
@@ -199,10 +193,8 @@
   }
 
   .match-light {
-    min-height: calc(100vh - 18em);
-
     .partners-info {
-      padding: 2em 0;
+      padding: 3em 0;
       width: $mobile-s-content-width;
       margin: 0 auto;
       font-size: 1rem;

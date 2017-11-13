@@ -29,7 +29,16 @@
 }
 
 
-
+@media (--mobile-l) {
+  .section-engagement .page-3 {
+    .match-light {
+      .headlines {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }  
+}
 
 
 
@@ -88,7 +97,7 @@
 
     .match-dark {
       .explanation {
-        width: $desktop-m-content-width;
+        width: $desktop-s-content-width;
         left: auto;
         right: 2em;
         font-size: 1.4rem;

@@ -3,23 +3,26 @@
    ========================================================================== */
 
 .section-about {
-  .headlines {
+  .headlines-container {
+    padding-top: 4em;
     width: $mobile-s-content-width;
     margin: 0 auto;
-    padding-top: 4em;
 
-    .headline-cap { font-size: 3em; }
-    .headline-lean { font-size: 2em; }
+    .headlines {
+      font-size: 1.5rem;
+    }
   }
 
-  .explanation {
+  .explanation-container {
     width: $mobile-s-content-width;
     margin: 2em auto;
 
-    p { 
-      font-size: .8em; 
-      line-height: 1.4;
-      margin: 0 0 1em 0;
-    }    
+    .explanation {
+      p { 
+        font-size: .8em; 
+        line-height: 1.4;
+        margin: 0 0 1em 0;
+      }    
+    }
   }
 }

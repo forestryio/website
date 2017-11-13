@@ -5,5 +5,6 @@ menu:
   main:
     parent: "products"
 layout: formats
+code: formats
 draft: false
 ---

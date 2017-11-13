@@ -32,6 +32,8 @@
 @media (--mobile-l) {
   .section-marketplace .page-1 {
     .match-dark {
+      min-height: calc(50vh - 2rem);
+      
       .footnote {
         width:  $mobile-l-content-width;
         font-size: .75rem;

@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Blog List Page
+   ========================================================================== */
+
+.section-blog {
+  padding: 2rem 0 0 0;
+
+  .blog-tabs {
+    width: $mobile-s-content-width;
+    margin: 1em auto;
+
+    .tab {
+      padding: 0 1em;
+      border-right: 1px solid $gray;
+      color: $gray;
+      font-weight: 200;
+      font-size: .9em;
+      cursor: pointer;
+
+      &.active { color: $medium-green; }
+      &:first-child { padding-left: 0; }
+      &:last-child { padding-right: 0; border: none; }
+    }
+  }
+
+  .blog-previews {
+    width: $mobile-s-content-width;
+    margin: 1em auto;
+
+    .blog-excerpt {
+      margin-bottom: 2em;
+
+      img { width: 100%; }
+
+      .headline-cap {
+        display: block;
+        color: $primary-black;
+        text-align: left;
+        margin: 1em 0;
+        font-size: 1.2em;
+      }
+
+      .summary { 
+        font-size: .8em;
+
+        &:after {
+          content: "...";
+        }
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Blog Article Page
+   ========================================================================== */
+
+.blog-page {
+  width: $mobile-s-content-width;
+  margin: 4rem auto 2rem auto;
+
+  .category {
+    font-family: $content-font;
+    font-size: .7rem;
+    color: $medium-green;
+    text-transform: uppercase;
+    margin: 1.5em 0;
+  }
+
+  img.cover {
+    width: 100%;
+  }
+
+  .title {
+    text-align: left;
+    margin: 1em 0;
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: .9em;
+    margin: 1em 0;
+  }
+
+  .meta-info {
+    font-family: $content-font;
+  }
+}
+
+
+

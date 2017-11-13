@@ -74,8 +74,11 @@
       <div id="formatsElaboration" class="formats-elaboration">
         <div class="format brand active">
           <div class="header">
-            <h2 class="headline-lean">Brand formats: Get noticed.</h2>
-            <h1 class="headline-cap">Grow Awareness</h1>
+            <div class="headlines">
+              <h2 class="headline-lean">Brand formats: Get noticed.</h2>
+              <h1 class="headline-cap">Grow Awareness</h1>
+            </div>
+
             <p class="label">FEATURED BRAND FORMATS:</p>
           </div>
 
@@ -106,8 +109,10 @@
 
         <div class="format consideration">
           <div class="header">
-            <h2 class="headline-lean">Consideration formats: Encourage exploration.</h2>
-            <h1 class="headline-cap">Drive Consideration.</h1>
+            <div class="headlines">
+              <h2 class="headline-lean">Consideration formats: Encourage exploration.</h2>
+              <h1 class="headline-cap">Drive Consideration.</h1>
+            </div>
             <p class="label">FEATURED CONSIDERATION FORMATS:</p>
           </div>
 
@@ -131,8 +136,10 @@
 
         <div class="format dr">
           <div class="header">
-            <h2 class="headline-lean">Direct Response formats: Spur action.</h2>
-            <h1 class="headline-cap">Drive Conversions.</h1>
+            <div class="headlines">
+              <h2 class="headline-lean">Direct Response formats: Spur action.</h2>
+              <h1 class="headline-cap">Drive Conversions.</h1>
+            </div>
             <p class="label">FEATURED DIRECT RESPONSE FORMATS:</p>
           </div>
 
@@ -158,10 +165,4 @@
   </div>
   <!-- end of page 4 -->
 </div>
-{{ end }}
-
-{{ define "scripts"}}
-  {{ partial "site-scripts" . }}
-  <script type="text/javascript"> window.section = "formats" </script>
-  <!-- <script type="text/javascript" src='{{ "js/plugins/slick.min.js" | absURL }}'></script> -->
 {{ end }}

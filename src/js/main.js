@@ -6,7 +6,7 @@ $(function() {
     },
 
     props: {
-      mobileThreshold: 768,
+      mobileThreshold: 960,
       scrollingSpeed: 600
     },
 
@@ -140,6 +140,16 @@ $(function() {
           $(e.target).addClass('active');
         });
       }
+
+      if (window.section === 'blog') {
+        $('#blogTabs').on('click', function(e) {
+          $('#blogTabs > a').removeClass('active');
+          $(e.target).addClass('active');
+
+          $('.section-blog').attr('class', 'section-wrapper section-blog');
+          $('.section-blog').addClass('activate-' + e.target.dataset.category);
+        })
+      }      
     }
   };
 

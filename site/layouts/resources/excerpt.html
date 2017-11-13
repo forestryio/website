@@ -1,0 +1,10 @@
+<!-- this goes inside of a range .Data.Pages loop -->
+<div class="blog-excerpt {{ .Params.category }}">
+  {{ with .Params.images }}
+    {{ $featureImageURL := index . 0 }}
+     <img src="/_images/blog/{{ $featureImageURL }}">
+  {{ end }}
+
+  <a class="headline-cap" href="{{ .Permalink }}">{{.Title}}</a>
+  <p class="summary">{{ .Summary }}</p>
+</div>

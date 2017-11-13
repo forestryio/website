@@ -4,7 +4,7 @@
 
 .section-marketplace .page-1 {
   .match-dark {
-    min-height: calc(50vh + 2em);
+    min-height: calc(50vh + 2rem);
 
     .explanation {
       background-color: rgba(91, 164, 156, 0.95);
@@ -39,8 +39,8 @@
 .section-marketplace .page-2 {
   .match-dark {
     background-color: $medium-green;
-    min-height: calc(50vh - 2em);
     color: $primary-white;
+    padding: 2em 0;
 
     .statline {
       width: calc($mobile-s-content-width - 2rem);

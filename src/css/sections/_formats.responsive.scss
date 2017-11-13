@@ -26,7 +26,14 @@
 
   .section-formats .page-4 {
     .match-light {
-      .formats-elaboration .format { width: $mobile-m-content-width; }
+      .formats-elaboration .format { 
+        width: $mobile-m-content-width; 
+
+        .header {
+          .label { margin-top: 3em; }
+          .headlines { font-size: .9rem; }
+        } 
+      }
     }
   }
 }
@@ -54,7 +61,30 @@
 
   .section-formats .page-4 {
     .match-light {
-      .formats-elaboration .format { width: $mobile-l-content-width; }      
+      .formats-elaboration .format { 
+        width: $mobile-l-content-width; 
+
+        .header {
+          .label { margin-top: 4em; }
+          .headlines { font-size: 1rem; }
+        } 
+      } 
+    }
+  }
+}
+
+
+@media (--tablet) {
+  .section-formats .page-4 {
+    .match-light {
+      .formats-elaboration .format { 
+        .header {
+          .headlines { 
+            /* TODO: incease width for tablet section in general */
+            font-size: 1rem; 
+          }
+        } 
+      } 
     }
   }
 }
@@ -102,8 +132,6 @@
       padding: 0;
       right: auto;
       left: 3rem;
-      top: 50%;
-      transform: translateY(-50%);
       width: 28rem;
       font-size: 1.2rem;
     }
@@ -136,7 +164,13 @@
       background-color: $gray;
 
       .formats-category {
+        position: absolute;
         width: 48em;
+        left: 0;
+        right: 0;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
 
         .headline-cap {
           float: left;
@@ -222,14 +256,10 @@
           width: auto;
 
           .header {
-            .headline-lean {
-              font-size: 2rem;
-              text-align: left;
-            }
-
-            .headline-cap {
-              font-size: 2.5rem;
-              text-align: left;
+            .headlines {
+              position: static;
+              width: auto;
+              font-size: 1.4rem;
             }
 
             .label {

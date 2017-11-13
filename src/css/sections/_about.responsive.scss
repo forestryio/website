@@ -4,11 +4,11 @@
 
 @media (--mobile-m) {
   .section-about {
-    .headlines {
+    .headlines-container {
       width: $mobile-m-content-width;
     }
 
-    .explanation {
+    .explanation-container {
       width: $mobile-m-content-width;
     }
   }
@@ -17,11 +17,15 @@
 
 @media (--mobile-l) {
   .section-about {
-    .headlines {
+    .headlines-container {
       width: $mobile-l-content-width;
+
+      .headlines {
+        font-size: 1.8rem;
+      }
     }
 
-    .explanation {
+    .explanation-container {
       width: $mobile-l-content-width;
       font-size: 1.1rem;
     }
@@ -35,23 +39,42 @@
 
 @media (--desktop-s) {
   .section-about {
-    padding: 6em 4em;
-
-    .headlines {
-      position: static;
+    .headlines-container {
+      position: absolute;
       width: 50%;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
-      float: left;
-      font-size: 1.5rem;
+      left: 0;
+      top: 0;
+      padding: 6em 4em;
+
+      .headlines {
+        width: 18rem; /* override component style to force line break */
+        font-size: 2.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
-    .explanation {
+    .explanation-container {
+      position: absolute;
       width: 50%;
+      min-height: 100vh;
       margin: 0;
-      padding: 0;
-      float: left;  
-      font-size: 1.1rem;    
+      padding: 6em 8em 6em 0;
+      left: 50%;
+      top: 0; 
+    }
+  }
+}
+
+@media (--desktop-s) {
+  .section-about {
+    .headlines-container {
+      .headlines {
+        width: 24rem;
+        font-size: 3rem;
+      }
     }
   }
 }

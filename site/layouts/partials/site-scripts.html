@@ -7,8 +7,12 @@
 
   gtag('config', 'UA-65004035-7');
 </script>
+
+<!-- Setting section identifier -->
+<script> window.section = {{ .Params.code }} </script>
+
+<!-- Author scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
         crossorigin="anonymous"></script>
-<script src='{{ "js/plugins/jquery.fullpage.min.js" | absURL }}'></script>
 <script src='{{ "js/main.min.js" | absURL }}'></script>

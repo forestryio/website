@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+@media (--mobile-m) {
+  .section-blog {
+    .blog-tabs {
+      width: $mobile-m-content-width;
+    }
+
+    .blog-previews {
+      width: $mobile-m-content-width;
+    }    
+  }
+
+  .blog-page {
+    width: $mobile-m-content-width;
+  }  
+}
+
+@media (--mobile-l) {
+  .section-blog {
+    .blog-tabs {
+      width: $mobile-l-content-width;
+    }
+
+    .blog-previews {
+      width: $mobile-l-content-width;
+    }    
+  }
+
+  .blog-page {
+    width: $mobile-l-content-width;
+  }  
+}
+
+@media (--tablet) {
+  .section-blog {
+    padding: 3rem 3rem 0 3rem;
+
+    .blog-tabs {
+      width: auto;
+      font-size: 1.3rem;
+    }
+
+    .blog-previews {
+      width: auto;
+
+      .blog-excerpt {
+        font-size: 1.2rem;
+      }
+    }    
+  }
+
+  .blog-page {
+    width: auto;
+    padding: 0 3rem;
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-blog {
+    .blog-previews {
+      .blog-excerpt {
+        width: 50%;
+        float: left;
+
+        &:nth-child(2n) { padding-left: 1em; }
+        &:nth-child(2n+1) { padding-right: 1em; }
+      }
+    }
+  }
+
+  .blog-page {
+    margin: 0 0 2em 0;
+    font-size: 1.2rem;
+
+    .category {
+      margin: 3em 0 2em 0;
+    }
+  }
+}
+
+
+@media (--desktop-m) {
+  .section-blog {
+    .blog-previews {
+      .blog-excerpt {
+        width: 33.333%;
+        float: left;
+
+        &:nth-child(3n) { padding-left: 1em; }
+        &:nth-child(3n+1) { padding-right: 1em; }
+        &:nth-child(3n+2) { padding: 0 .5em; }
+      }
+    }
+  }
+
+  .blog-page {
+    max-width: 72rem;
+  }
+}
+
+

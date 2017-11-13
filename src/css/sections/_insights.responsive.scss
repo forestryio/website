@@ -66,10 +66,15 @@
       }
 
       .notes {
-        position: static;
-        display: block;
-        width: 20em;
-        margin: 2em;
+        position: absolute;
+        width: $desktop-s-content-width;
+        padding: 0;
+        font-size: .8rem;
+        right: auto;
+        bottom: auto;
+        left: $desk-s-side-margin;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }

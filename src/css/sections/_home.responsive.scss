@@ -13,11 +13,8 @@ body {
     .main-message {
       .headlines {
         margin-top: 2em;
-        font-size: 1rem;
 
-        .headline-lean { 
-          margin-top: .25em; 
-        }
+        .headline-lean { margin-top: .25em; }
       }
     }
   }
@@ -26,8 +23,6 @@ body {
     .slide-inner {
       .main-content {
         .headlines {
-          font-size: 1.3rem;
-
           .headline-cap { margin-top: .25em; }
         }
 
@@ -54,9 +49,7 @@ body {
   .hero-carousel {
     .slide-inner {
       .main-content {
-        .headlines {
-          font-size: 1.5rem;
-        }
+        top: 6rem;
 
         .more-info {
           width: $mobile-l-content-width;
@@ -100,10 +93,6 @@ body {
       width: 50%;
       background-color: transparent;
       color: $primary-black;
-
-      .headlines {
-        font-size: 1.6rem;
-      }
     }
 
     .arrow-down {

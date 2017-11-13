@@ -1,7 +1,6 @@
 ---
 title: "Home"
-date: 2017-09-27
+code: "home"
+date: 2017-11-13
 draft: false
 ---
-
-Content in content/_index.md
