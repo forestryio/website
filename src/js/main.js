@@ -89,8 +89,11 @@ $(function() {
 
       if (window.section === 'contact') {
         $('.contact-form .row:nth-of-type(2) label').on('click', function(e) {
+          var selectedType = document.getElementById(e.target.getAttribute('for'));
+
           $('.contact-form .row:nth-of-type(2) label').removeClass('active');
           $(e.target).addClass('active');
+          $(selectedType).prop("checked", true);
         });
       }
 
