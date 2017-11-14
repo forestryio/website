@@ -20,7 +20,12 @@
 
     .content {
       width: $mobile-m-content-width;
-    }   
+    }
+
+    .privacy-opt-container {
+      width: $mobile-m-content-width;
+      margin: 0 auto;
+    }    
   }
 }
 
@@ -40,6 +45,11 @@
     .toc {
       width: $mobile-l-content-width;
     }    
+
+    .privacy-opt-container {
+      width: $mobile-l-content-width;
+      margin: 0 auto;
+    }  
   }
 }
 

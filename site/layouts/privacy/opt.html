@@ -1,3 +1,22 @@
 {{ define "main" }}
-  <h1>NOTHING HERE</h1>
+<div class="section-wrapper section-privacy">
+  <div class="privacy-opt-container clearfix">
+    <h3 class="headline-cap">User Opt Page</h3>
+      <p>If you want to opt out of receiving interest based ads from Yieldmo, please use the button below. Note that you may still receive advertisements from Yieldmo, opting out will only exclude your browser from interest based ads.  </p>
+
+    <form action = "#">
+      <input style = "display:none" id = "ym-opt-out" type = "button" name = "ym-opt-out" value = "Opt out of Yieldmo enabled interest based ads">
+      <input style = "display:none" id = "ym-opt-in" type = "button" name = "ym-opt-in" value = "Opt in to Yieldmo enabled interest based ads">
+      <input style = "display:none" id = "ym-storage-disabled" type = "button" name = "ym-storage-disabled" disabled = "true" value = "Opted out, your cookies are disabled">
+    </form>
+
+    <p>Also, please understand that Yieldmo will set an opt out cookie on your browser to save your preference. Note that if you delete your cookies or view content on a different browser, you could still receive interest based ads from Yieldmo.</p>
+
+    <p>To opt out of interest based ads from Yieldmo on mobile applications, please follow the instructions for <a href="https://support.google.com/googleplay/answer/3405269">Android</a> and <a href="https://support.apple.com/en-us/HT202074">iOS</a></p>
+  </div>
+</div>
+{{ end }}
+
+{{ define "section-scripts"}}
+  <script src="https://static.yieldmo.com/ym.optout.button.min.js"></script>
 {{ end }}

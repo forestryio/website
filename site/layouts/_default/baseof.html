@@ -7,13 +7,16 @@
 
     <!-- beginning of "main" -->
     <div id="siteWrapper" class="site-wrapper">
-    {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
     </div>
     <!-- end of "main" -->
 
     {{ block "frame" . }}{{ end }}
 
     <!-- {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }} -->
-    {{ block "scripts" . }}{{ partial "site-scripts" . }}{{ end }}
+
+    <!-- site-wide scripts and optional scripts -->
+    {{ partial "site-scripts" . }}
+    {{ block "section-scripts" . }}{{ end }}
   </body>
 </html>
