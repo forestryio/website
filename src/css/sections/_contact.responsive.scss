@@ -13,6 +13,12 @@
     .form-container {
       form {
         width: $mobile-m-content-width;
+
+        .row:nth-of-type(4) {
+          .right select {
+            padding: .5em .5em .75em .5em;
+          }
+        }
       }
     }
   }
@@ -78,9 +84,9 @@
           }
         }
 
-        .row:nth-child(4) {
-          .right select {
-            padding: .5em .5em .75em .5em;
+        .row:nth-of-type(3) {
+          .left {
+            margin-top: .5em;
           }
         }
       }
