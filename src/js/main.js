@@ -5,24 +5,19 @@ $(function() {
       navigation: require('./modules/_navigation.js')
     },
 
+    sections: {
+      home: require('./sections/_home')
+    },
+
     props: {
       mobileThreshold: 960,
       scrollingSpeed: 600
     },
 
-    registerEvents: function() {
-      $('#arrowDown').on('click', this.onArrowClick.bind(this));
-    },
-
-    onArrowClick: function() {
-      // $("html, body").animate({ scrollTop: $("#heroCarousel").position().top }, 600);
-      $.fn.fullpage.moveSectionDown();
-    },
-
     jumpToFormat: function(e) {
       var extraPadding = ($(window).width() > this.props.mobileThreshold) ? 0 : '64';
 
-      $("html, body").animate({ scrollTop: ($(".page-4").position().top - extraPadding) }, 600);
+      $("html, body").animate({ scrollTop: ($(".page-4").position().top - 0) }, 600);
       this.updateActiveFormat(e);
     },
 
@@ -68,49 +63,13 @@ $(function() {
     },
 
     init: function() {
+      // global modules
       this.modules.navigation();
-      this.registerEvents();
 
-      // TODO: re-initiate on resize
-      if (window.section === 'home') {
-        $('#landingPage').fullpage({
-          scrollingSpeed: this.props.scrollingSpeed,
-          controlArrows: false,
-          slidesNavigation: true,
-          autoScrolling: true,
-          paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
-          afterRender: function() {
-            document.querySelector('.visual-pattern.formats video').play();
-          },
-          onLeave: function(index, nextIndex) { 
-            // homepage heros
-            if (nextIndex === 1) {
-              document.body.classList.remove('in-carousel');
-            }
-
-            // homepage carousel
-            if (nextIndex === 2) {
-              document.body.classList.add('in-carousel');
-            }
-          },
-          onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-            var currentSlide = document.querySelectorAll('.slide-inner')[nextSlideIndex];
-            
-            currentSlide.querySelector('video').play();
-
-            // console.log('slide leaving, next is: ', nextSlideIndex);
-
-            document.body.classList.add('sliding');
-          },
-          afterSlideLoad: function(index, slideIndex) {
-            // console.log('after slide loaded', index, slideIndex);
-
-            document.body.classList.remove('sliding');
-          }
-        });
-
-        // TODO: "sorry, please increase your browser window height"
-      }
+      // invoke section module if the current section has one
+      if (this.sections[window.section]) {
+        this.sections[window.section].init();
+      }      
 
       if (window.section === 'formats') {
         $('#innerNav').on('click', this.updateActiveFormat.bind(this));
