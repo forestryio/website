@@ -131,10 +131,12 @@
 
       video {
         position: absolute;
+        top: 0;
+        left: 0;
         z-index: -1;
         width: 100%;
         height: auto;
-        visibility: hidden;
+        display: none;
       }
 
       img {
@@ -143,6 +145,7 @@
         top: 0;
       }
 
+      /* experimental technique */
       .canvas-container {
         position: absolute;
         width: 100%;
@@ -155,7 +158,7 @@
           height: 100%;
           z-index: 999;
           top: 0;
-          transform: translateY(-25%);
+          transform: translateY(-33%);
         }
       }
     }
@@ -179,7 +182,7 @@
   .visual-pattern {
     background-color: #161e2b;
 
-    img { transform: translateY(-25%); }
+    img { transform: translateY(-30%); }
   }
 }
 

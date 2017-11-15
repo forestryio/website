@@ -135,14 +135,7 @@ body {
 
       .visual-pattern {
         img { display: none; }
-
-        video {
-          display: block;
-          top: 0;
-          left: 0;
-          z-index: 1;
-          visibility: visible;
-        }
+        video { display: block; z-index: 1; }
 
         .canvas-container {
           display: none;

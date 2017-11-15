@@ -66,7 +66,7 @@ var home = {
   init: function() {
     this.registerEvents();
     this.activateFullPage();
-    this.canvasPLay();
+    // this.canvasPLay();
   }
 }
 
