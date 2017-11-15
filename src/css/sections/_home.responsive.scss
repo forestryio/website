@@ -10,7 +10,13 @@ body {
 
 @media (--mobile-m) {
   .hero-content {
+    .humans {
+      height: 18rem;
+    }
+
     .main-message {
+      height: calc(100vh - 24rem);
+
       .headlines {
         margin-top: 2em;
       }
@@ -31,7 +37,17 @@ body {
 
 @media (--mobile-l) {
   .hero-content {
+    .news {
+      line-height: 1.4;
+    }
+
+    .humans {
+      height: 22rem;
+    }
+
     .main-message {
+      height: calc(100vh - 28rem);
+
       .headlines {
         margin-top: 0;
         top: 50%;
@@ -55,10 +71,14 @@ body {
 }
 
 
-@media (--mobile-l) {
+@media (--tablet) {
   .hero-content {
-    .news {
-      line-height: 1.4;
+    .humans {
+      height: 26rem;
+    }
+
+    .main-message {
+      height: calc(100vh - 32rem);
     }
   }
 }

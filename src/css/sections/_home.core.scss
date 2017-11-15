@@ -28,7 +28,7 @@
 
   .humans {
     position: absolute;
-    height: calc(50vh - 2rem);
+    height: 14rem;
     width: 100%;
     top: 6rem;
     left: 0;
@@ -47,7 +47,7 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: calc(50vh - 4rem);
+    height: calc(100vh - 20rem);
     bottom: 0;
     left: 0;
 
@@ -124,7 +124,7 @@
     .visual-pattern { 
       position: absolute;
       width: 100%;
-      height: calc(50vh - 2rem);
+      height: 50vh;
       bottom: 0;
       left: 0;
       z-index: 0;
