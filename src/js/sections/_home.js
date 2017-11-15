@@ -1,5 +1,9 @@
 // implementation of the module
 var home = {
+  modules: {
+    canvasPLay: require('../modules/_canvasPlay'),
+  },
+
   props: {
     mobileThreshold: 960,
     scrollingSpeed: 600
@@ -22,6 +26,8 @@ var home = {
       paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
       afterRender: function() {
         document.querySelector('.visual-pattern.formats video').play();
+
+        console.log('playing formats pattern video');
       },
       onLeave: function(index, nextIndex) { 
         // homepage heros
@@ -52,7 +58,10 @@ var home = {
   },
 
   canvasPLay: function() {
-    // console.log('trying out some canvas stuff');
+    var videoElement = document.querySelector('.visual-pattern.formats video');
+    var canvasElement = document.getElementById('waves');
+
+    this.modules.canvasPLay(videoElement, canvasElement);
   },
 
   init: function() {
