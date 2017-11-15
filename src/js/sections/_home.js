@@ -26,8 +26,6 @@ var home = {
       paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
       afterRender: function() {
         document.querySelector('.visual-pattern.formats video').play();
-
-        console.log('playing formats pattern video');
       },
       onLeave: function(index, nextIndex) { 
         // homepage heros
@@ -43,6 +41,7 @@ var home = {
       onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
         var currentSlide = document.querySelectorAll('.slide-inner')[nextSlideIndex];
         
+        currentSlide.querySelector('video').load();
         currentSlide.querySelector('video').play();
 
         // console.log('slide leaving, next is: ', nextSlideIndex);
