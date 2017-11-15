@@ -69,7 +69,8 @@
 
 .section-engagement .page-3 {
   .match-light {
-    min-height: calc(60vh);
+    height: calc(60vh - 2rem);
+    min-height: 20rem;
 
     .headlines {
       position: absolute;
@@ -93,7 +94,7 @@
   }
 
   .match-dark {
-    min-height: calc(40vh - 2em);
+    min-height: 16rem;
     background-color: $ocean-deep;
 
     .explanation {

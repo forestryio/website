@@ -31,8 +31,12 @@
 
 @media (--mobile-l) {
   .section-marketplace .page-1 {
+    .match-light {
+      min-height: 18rem;
+    }
+
     .match-dark {
-      min-height: calc(50vh - 2rem);
+      min-height: 20rem;
       
       .footnote {
         width:  $mobile-l-content-width;

@@ -3,8 +3,10 @@
    ========================================================================== */
 
 .section-marketplace .page-1 {
+  height: auto;
+
   .match-dark {
-    min-height: calc(50vh + 2rem);
+    height: calc(50vh + 2rem);
 
     .explanation {
       background-color: rgba(91, 164, 156, 0.95);

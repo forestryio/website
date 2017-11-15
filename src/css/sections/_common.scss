@@ -16,6 +16,7 @@
     .match-light {
       background-color: $primary-white;
       position: relative;
+      min-height: 16rem;
 
       .info { text-align: left; }
     }
@@ -23,12 +24,17 @@
     .match-dark {
       background-color: $gray;
       position: relative;
+      min-height: 16rem;
     }
   }
 
   .page-1 {
+    height: calc(100vh - 4rem);
+    min-height: 28rem;
+
     .match-light {
-      min-height: calc(50vh - 2rem);
+      height: calc(50vh - 2rem);
+      min-height: 14rem;
 
       .headlines {
         position: absolute;
@@ -39,7 +45,8 @@
     }
 
     .match-dark {
-      min-height: calc(50vh - 2rem);
+      height: calc(50vh - 2rem);
+      min-height: 14rem;
 
       .explanation {
         position: absolute;
@@ -73,8 +80,18 @@
 }
 
 @media (--mobile-l) {
-  .section-wrapper {
-    .page-1 .match-dark .explanation { font-size: 1.2rem; width: $mobile-l-content-width; }
+  .section-wrapper .page-1 {
+    min-height: 38rem;
+
+    .match-light {
+      min-height: 18rem;
+    }
+
+    .match-dark {
+      min-height: 20rem;
+
+      .explanation { font-size: 1.2rem; width: $mobile-l-content-width; }
+    }
   }
 }
 
