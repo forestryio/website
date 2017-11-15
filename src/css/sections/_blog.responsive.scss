@@ -65,11 +65,13 @@
   .section-blog {
     .blog-previews {
       .blog-excerpt {
-        width: 50%;
+        width: 33.333%;
         float: left;
+        font-size: 1rem;
 
-        &:nth-child(2n) { padding-left: 1em; }
-        &:nth-child(2n+1) { padding-right: 1em; }
+        &:nth-child(3n) { padding-left: 1em; }
+        &:nth-child(3n+1) { padding-right: 1em; }
+        &:nth-child(3n+2) { padding: 0 .5em; }
       }
     }
   }
@@ -89,12 +91,7 @@
   .section-blog {
     .blog-previews {
       .blog-excerpt {
-        width: 33.333%;
-        float: left;
-
-        &:nth-child(3n) { padding-left: 1em; }
-        &:nth-child(3n+1) { padding-right: 1em; }
-        &:nth-child(3n+2) { padding: 0 .5em; }
+        font-size: 1.2rem;
       }
     }
   }
