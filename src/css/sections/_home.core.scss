@@ -5,6 +5,10 @@
   background-color: $primary-white;
 }
 
+.fp-tableCell {
+  position: relative;
+}
+
 /* ==========================================================================
    Hero Landing Page
    ========================================================================== */
@@ -15,7 +19,7 @@
     position: absolute;
     padding: .5em 1em;
     width: 100%;
-    top: 4rem;
+    top: 0;
     z-index: 1;
     font-family: $headline-cap;
     font-weight: 200;
@@ -30,7 +34,7 @@
     position: absolute;
     height: 14rem;
     width: 100%;
-    top: 6rem;
+    top: 2rem;
     left: 0;
 
     img { 
