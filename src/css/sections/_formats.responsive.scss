@@ -78,6 +78,8 @@
   .section-formats .page-4 {
     .match-light {
       .formats-elaboration .format { 
+        width: $tablet-content-width;
+
         .header {
           .headlines { 
             /* TODO: incease width for tablet section in general */

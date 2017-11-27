@@ -2,11 +2,12 @@
 <div class="section-wrapper section-privacy">
   <div class="privacy-opt-container clearfix">
     <h3 class="headline-cap">User Opt Page</h3>
-      <p>If you want to opt out of receiving interest based ads from Yieldmo, please use the button below. Note that you may still receive advertisements from Yieldmo, opting out will only exclude your browser from interest based ads.  </p>
+    
+    <p>If you want to opt out of receiving interest based ads from Yieldmo, please use the button below. Note that you may still receive advertisements from Yieldmo, opting out will only exclude your browser from interest based ads.</p>
 
     <form action = "#">
-      <input style = "display:none" id = "ym-opt-out" type = "button" name = "ym-opt-out" value = "Opt out of Yieldmo enabled interest based ads">
-      <input style = "display:none" id = "ym-opt-in" type = "button" name = "ym-opt-in" value = "Opt in to Yieldmo enabled interest based ads">
+      <input style = "display:none" id = "ym-opt-out" type = "button" name = "ym-opt-out" value = "Opt out of Yieldmo enabled interest based ads" onclick="ga('send', 'event', 'click', 'optout');">
+      <input style = "display:none" id = "ym-opt-in" type = "button" name = "ym-opt-in" value = "Opt in to Yieldmo enabled interest based ads" onclick="ga('send', 'event', 'click', 'optin');">
       <input style = "display:none" id = "ym-storage-disabled" type = "button" name = "ym-storage-disabled" disabled = "true" value = "Opted out, your cookies are disabled">
     </form>
 
