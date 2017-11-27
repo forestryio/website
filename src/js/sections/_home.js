@@ -23,7 +23,7 @@ var home = {
       controlArrows: false,
       slidesNavigation: true,
       autoScrolling: true,
-      paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4em',
+      paddingTop: ($(window).width() > this.props.mobileThreshold) ? 0 : '4rem',
       afterRender: function() {
         document.querySelector('.visual-pattern.formats video').play();
       },
