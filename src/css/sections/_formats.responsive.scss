@@ -280,7 +280,10 @@
             .video-container {
               margin-bottom: 2em;
 
-              img { display: none; }
+              img {
+                position: absolute;
+                top: -100000px;
+              }
               video { display: block; }
               .name { font-size: .8rem; }
             }               
