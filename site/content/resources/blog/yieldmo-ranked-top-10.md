@@ -22,3 +22,8 @@ Yieldmo also offers marketers placement within its premium mobile marketplace, t
 “Emerging growth companies are powering innovation in the broader economy. The growth rates delivered by the companies on this year’s North America Technology Fast 500 ranking are a bright spot for the capital markets and a strong indicator that the emerging growth technology sector will continue to deliver a strong return on investment,” said Heather Gates, national managing director of Deloitte & Touche LLP’s emerging growth company practice. “Deloitte is dedicated to supporting the best and brightest companies of the future in the emerging growth company sector. We are proud to acknowledge the significant accomplishments of this year’s Fast 500 winners.”
 
 Overall, 2017 Technology Fast 500™ companies achieved revenue growth ranging from 135 percent to 59,093 percent from 2013 to 2016, with median growth of 380 percent.
+
+
+
+
+
