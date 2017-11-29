@@ -53,6 +53,11 @@
   }
 }
 
+div.blog-excerpt:last-child {
+  display: none !important;
+}
+
+
 
 /* ==========================================================================
    Blog Article Page
@@ -89,6 +94,5 @@
     font-family: $content-font;
   }
 }
-
 
 
