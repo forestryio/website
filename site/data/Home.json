@@ -1,0 +1,35 @@
+{
+  "mainHeadLineCap": "GET CLOSER<br>TO YOUR CUSTOMERS.",
+  "mainHeadlineLean": "Our data-rich ad formats<br>provide unprecendented customer<br>insights that drive performance.",
+  "portraits": [
+    "_images/portraits/1_a_tokponwey.jpg",
+    "_images/portraits/2_daniel.jpg",
+    "_images/portraits/3_logan.jpg",
+    "_images/portraits/4_ashely.jpg",
+    "_images/portraits/5_freddie.jpg",
+    "_images/portraits/6_rene.jpg",
+    "_images/portraits/7_rachel.jpg",
+    "_images/portraits/8_julia.jpg",
+    "_images/portraits/9_kelvin.jpg",
+    "_images/portraits/10_sydney.jpg",
+    "_images/portraits/11_c_strong.jpg"
+  ],
+  "slideFormats": {
+    "headlineLean": "Don't just attract customers,",
+    "headlineCap": "KEEP THEM.",
+    "description": "Our ad formats cultivate interaction, not irritation.",
+    "cta": "LEARN MORE"
+  },
+  "slideInsights": {
+    "headlineLean": "The truth lives inside our",
+    "headlineCap": "230 BILLION DATA POINTS.",
+    "description": "We measure micro-interactions—the lingers, hovers, swipes, scrolls—to understand what matters to your customers.",
+    "cta": "LEARN MORE"
+  },
+  "slideMarketplace": {
+    "headlineLean": "",
+    "headlineCap": "SEE AND BE SEEN.",
+    "description": "Invest in the largest independent mobile marketplace in the U.S. behind Google, Facebook, and Amazon.",
+    "cta": "LEARN MORE"
+  }
+}

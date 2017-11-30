@@ -2,28 +2,20 @@
 <div id="landingPage" class="landingPage">
   <div class="section hero-content">
     <div class="news">
-      <a target="_blank" href="http://www.google.com/url?q=http%3A%2F%2Fwww.businesswire.com%2Fnews%2Fhome%2F20171109005875%2Fen%2FYieldmo-Ranked-Top-10-Fastest-Growing-North&sa=D&sntz=1&usg=AFQjCNE7B1Xu1mKsT82V-uJmTsYsPtQl3w">
-       >> YIELDMO IN TOP 10% OF FASTEST-GROWING TECH CO'S IN NORTH AMERICA - <i>DELOITTE</i></a>
+      <a target="_blank" href="{{ .Site.Data.News.link }}">
+       >> {{ .Site.Data.News.headline | safeHTML }}</a>
      </div>
 
     <div id="humans" class="humans">
-      <img src='{{ "_images/portraits/1_a_tokponwey.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/2_daniel.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/3_logan.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/4_ashely.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/5_freddie.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/6_rene.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/7_rachel.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/8_julia.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/9_kelvin.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/10_sydney.jpg" | absURL }}'>
-      <img src='{{ "_images/portraits/11_c_strong.jpg" | absURL }}'>
+      {{ range .Site.Data.Home.portraits }}
+        <img src='{{ . | absURL }}'>
+      {{ end }}
     </div>
 
     <div class="main-message">
       <div class="headlines">
-        <h2 class="headline-cap">GET CLOSER<br>TO YOUR CUSTOMERS.</h2>
-        <h2 class="headline-lean">Our data-rich ad formats<br>provide unprecendented customer<br>insights that drive performance.</h2>        
+        <h2 class="headline-cap">{{ .Site.Data.Home.mainHeadLineCap | safeHTML }}</h2>
+        <h2 class="headline-lean">{{ .Site.Data.Home.mainHeadlineLean | safeHTML }}</h2>
       </div>
     </div>
 
