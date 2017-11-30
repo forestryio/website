@@ -1,6 +1,7 @@
 ---
-title: Yieldmo Ranked in the Top 10% of Fastest Growing North American Companies on Deloitte’s 2017 Technology Fast 500™
 layout: blog
+title: Yieldmo Ranked in the Top 10% of Fastest Growing North American Companies on Deloitte’s 2017 Technology Fast 500™
+date: 2017-11-13
 category: updates
 images:
   - au-deloitte-logo-black.jpg

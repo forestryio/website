@@ -1,5 +1,6 @@
 ---
 title: "Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in the U.S."
+date: 2016-04-13
 layout: "blog"
 category: "updates"
 images:

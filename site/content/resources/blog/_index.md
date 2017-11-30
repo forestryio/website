@@ -1,5 +1,6 @@
 ---
 title: Blog
+date: 2017-11-29
 menu:
   main:
     parent: "resources"
