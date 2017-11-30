@@ -1,15 +1,15 @@
 ---
-title: "Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in the U.S."
-date: 2016-04-13
-layout: "blog"
-category: "updates"
+title: Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in
+  the U.S.
+date: 2016-04-12 20:00:00 -0400
+layout: blog
+category: updates
 images:
-  - "wave.jpg"
+- wave.jpg
 author: Susan Lietz, CMO
 weight: 2
-draft: false
----
 
+---
 NEW YORK--(BUSINESS WIRE)--Recently forged partnerships with publishers such as Intermarkets and tronc have furthered Yieldmo’s lead as the largest independent mobile marketplace in the U.S. Yieldmo’s premium inventory is comprised of more than 1,400 of the top mobile destinations that span e-commerce, sports, news, lifestyle and entertainment.
 
 Recent publisher partnerships further Yieldmo’s lead as the largest independent mobile marketplace in the U.S.
