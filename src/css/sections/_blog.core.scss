@@ -28,6 +28,7 @@
     margin: 1em auto;
 
     .blog-excerpt {
+      height: 32rem;
       margin-bottom: 2em;
 
       img { 
@@ -53,11 +54,6 @@
   }
 }
 
-div.blog-excerpt:last-child {
-  display: none !important;
-}
-
-
 
 /* ==========================================================================
    Blog Article Page
@@ -66,6 +62,8 @@ div.blog-excerpt:last-child {
 .blog-page {
   width: $mobile-s-content-width;
   margin: 4rem auto 2rem auto;
+
+  .desktop { display: none; }
 
   .category {
     font-family: $content-font;

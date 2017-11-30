@@ -1,6 +1,7 @@
 /* ==========================================================================
    Medium to Large Phones
    ========================================================================== */
+
 @media (--mobile-m) {
   .section-blog {
     .blog-tabs {
@@ -54,6 +55,9 @@
   .blog-page {
     width: auto;
     padding: 0 3rem;
+
+    .mobile { display: none; }
+    .desktop { display: block; }
   }
 }
 

@@ -6,6 +6,7 @@ category: perspectives
 images:
 - mobile-shoppers.jpg
 author: Lucas Piazza, Director of Marketing
+blurb: The 2017 holiday shopping season is already breaking records, with mobile accounting for 33.1% of the $6.59B spent on Cyber Monday—a 39.2% increase from 2016. To understand this behavior, we dug deep into our extensive engagement database to reveal the truth behind what drives mobile shopping.  
 weight: 1
 
 ---
