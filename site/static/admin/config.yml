@@ -18,8 +18,3 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - name: images
-        label: Images
-        widget: list
-        fields:
-          { label: Image, widget: "image" }
