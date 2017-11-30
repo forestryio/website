@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Yieldmo</title>
+    <link>/resources/blog/</link>
+    <description>Recent content in Blog on Yieldmo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/resources/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Yieldmo Ranked in the Top 10% of Fastest Growing North American Companies on Deloitte’s 2017 Technology Fast 500™</title>
+      <link>/resources/blog/yieldmo-ranked-top-10/</link>
+      <pubDate>Mon, 13 Nov 2017 19:00:00 -0500</pubDate>
+      
+      <guid>/resources/blog/yieldmo-ranked-top-10/</guid>
+      <description>Yieldmo ranked number 45 on Deloitte’s Technology Fast 500™, the 500 fastest growing technology, media, telecommunications, life sciences and energy tech companies in North America. Yieldmo grew 3,657% between 2013 and 2016.
+Yieldmo’s Founder and Chief Executive Officer, Michael Yavonditte credits this extraordinary growth to Yieldmo’s highly-engaging, customer-centric approach to advertising. Driven by the world’s only engagement analytics system, Yieldmo delivers its customers deep insights derived from proprietary, user-preferred ad formats.</description>
+    </item>
+    
+    <item>
+      <title>Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in the U.S.</title>
+      <link>/resources/blog/yieldmo-further-lead-mobile-marketplace/</link>
+      <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/blog/yieldmo-further-lead-mobile-marketplace/</guid>
+      <description>NEW YORK&amp;ndash;(BUSINESS WIRE)&amp;ndash;Recently forged partnerships with publishers such as Intermarkets and tronc have furthered Yieldmo’s lead as the largest independent mobile marketplace in the U.S. Yieldmo’s premium inventory is comprised of more than 1,400 of the top mobile destinations that span e-commerce, sports, news, lifestyle and entertainment.
+Recent publisher partnerships further Yieldmo’s lead as the largest independent mobile marketplace in the U.S.
+According to comScore, Yieldmo has a verified actual reach of more than 141 million unique mobile visitors - roughly 80% of the addressable market in the U.</description>
+    </item>
+    
+    <item>
+      <title>Measuring Outcomes and Audiences in a (Mostly) Cookieless Mobile World</title>
+      <link>/resources/blog/measuring-outcomes-and-audiences/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/blog/measuring-outcomes-and-audiences/</guid>
+      <description>Yieldmo Dragonfly&amp;trade; enables more accurate campaign measurement and efficiency by powering our ability to attribute conversions (via a Yieldmo pixel placed on check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to analyze which audience segments drove the largest share of performance. Together, this information drives stronger campaign performance by making optimizations possible at multiple levels—audience, ad format, ad creative, specific ad placement, etc.
+This technology is powered by a combination of mobile device identification techniques.</description>
+    </item>
+    
+    <item>
+      <title>Mobile Shoppers: Who Are They?</title>
+      <link>/resources/blog/mobile-shoppers-who-are-they/</link>
+      <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/resources/blog/mobile-shoppers-who-are-they/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
