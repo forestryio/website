@@ -1,21 +1,24 @@
 ---
 title: Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in
   the U.S.
-date: 2016-04-12
+date: 2016-04-12 20:00:00 -0400
 layout: blog
 category: updates
 images:
 - wave.jpg
 author: Susan Lietz, CMO
-blurb: According to comScore, Yieldmo has a verified actual reach of more than 141 million unique mobile visitors - roughly 80% of the addressable market in the U.S. - making it the largest independent network in the U.S. behind Google, Facebook, Amazon and Yahoo
 weight: 2
+blurb: According to comScore, Yieldmo has a verified actual reach of more than 141
+  million unique mobile visitors - roughly 80% of the addressable market in the U.S.
+  - making it the largest independent network in the U.S. behind Google, Facebook,
+  Amazon...
 
 ---
 NEW YORK--(BUSINESS WIRE)--Recently forged partnerships with publishers such as Intermarkets and tronc have furthered Yieldmo’s lead as the largest independent mobile marketplace in the U.S. Yieldmo’s premium inventory is comprised of more than 1,400 of the top mobile destinations that span e-commerce, sports, news, lifestyle and entertainment.
 
 Recent publisher partnerships further Yieldmo’s lead as the largest independent mobile marketplace in the U.S.
 
-According to comScore, Yieldmo has a verified actual reach of more than 141 million unique mobile visitors - roughly 80% of the addressable market in the U.S. - making it the largest independent network in the U.S. behind Google, Facebook, Amazon and Yahoo!. With its proprietary, user-preferred ad formats and premium publisher relationships, Yieldmo serves more than seven billion mobile impressions per month on behalf of the world’s largest brands and their agencies.
+According to comScore, Yieldmo has a verified actual reach of more than 141 million unique mobile visitors - roughly 80% of the addressable market in the U.S. - making it the largest independent network in the U.S. behind Google, Facebook, Amazon and Yahoo1. With its proprietary, user-preferred ad formats and premium publisher relationships, Yieldmo serves more than seven billion mobile impressions per month on behalf of the world’s largest brands and their agencies.
 
 “As a Publisher, Yieldmo provides a mobile solution to let us create a truly engaging ad experience,” said Victor Lim, Director of Strategy at tronc. “As we rethink the future of a consumer-first experience on our sites, Yieldmo provides advertising that doesn’t disrupt but instead complements our content.”
 
