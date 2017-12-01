@@ -1,6 +1,6 @@
 ---
 title: "Jobs"
-menu: "secondary"
-weight: 100
+layout: jobs
+url: /jobs/
 draft: false
 ---
