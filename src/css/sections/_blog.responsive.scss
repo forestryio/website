@@ -76,6 +76,11 @@
         &:nth-child(3n) { padding-left: 1em; }
         &:nth-child(3n+1) { padding-right: 1em; }
         &:nth-child(3n+2) { padding: 0 .5em; }
+
+        .preview {
+          height: 16rem;
+          overflow: hidden;
+        }
       }
     }
   }
@@ -94,8 +99,12 @@
 @media (--desktop-m) {
   .section-blog {
     .blog-previews {
+      max-width: 72rem;
+      margin: 1em 0;
+
       .blog-excerpt {
         font-size: 1.2rem;
+        height: 41rem;
       }
     }
   }

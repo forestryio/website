@@ -5,6 +5,8 @@
      <img src="/_images/blog/{{ $featureImageURL }}">
   {{ end }}
 
-  <a class="headline-cap" href="{{ .Permalink }}">{{.Title}}</a>
-  <p class="summary">{{ .Params.blurb }}</p>
+  <div class="preview">
+    <a class="headline-cap" href="{{ .Permalink }}">{{.Title}}</a>
+    <p class="summary">{{ .Params.blurb }}</p>    
+  </div>
 </div>

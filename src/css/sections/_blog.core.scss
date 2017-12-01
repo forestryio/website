@@ -28,26 +28,25 @@
     margin: 1em auto;
 
     .blog-excerpt {
-      height: 32rem;
       margin-bottom: 2em;
 
-      img { 
-        width: 100%; 
-      }
+      img { width: 100%; }
 
-      .headline-cap {
-        display: block;
-        color: $primary-black;
-        text-align: left;
-        margin: 1em 0;
-        font-size: 1.2em;
-      }
+      .preview {
+        .headline-cap {
+          display: block;
+          color: $primary-black;
+          text-align: left;
+          margin: 1em 0;
+          font-size: 1.2em;
+        }
 
-      .summary { 
-        font-size: .8em;
+        .summary { 
+          font-size: .8em;
 
-        &:after {
-          content: "...";
+          &:after {
+            content: "...";
+          }
         }
       }
     }
