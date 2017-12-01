@@ -7,7 +7,7 @@ images:
 - au-deloitte-logo-black.jpg
 author: Mike Yavonditte, Founder and CEO
 weight: 1
-date: Invalid date
+date: 2017-11-13 00:00:00 -0500
 blurb: Yieldmo ranked number 45 on Deloitte’s Technology Fast 500™, the 500 fastest
   growing technology, media, telecommunications, life sciences and energy tech companies
   in North America. Yieldmo grew 3,657%...
