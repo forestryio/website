@@ -205,6 +205,12 @@ body {
 }
 
 @media (--desktop-m) {  
+  .hero-content {
+    .news {
+      bottom: 4rem;
+    }
+  }
+
   .hero-carousel {
     .slide-inner {
       .main-content {
