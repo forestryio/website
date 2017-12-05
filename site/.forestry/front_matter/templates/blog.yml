@@ -51,3 +51,9 @@ fields:
   type: boolean
   hidden: false
   default: true
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
