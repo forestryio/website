@@ -65,6 +65,7 @@ gulp.task("css", (cb) => {
   const development = gulp.src(src)
     .pipe(gulpif(!isProduction, postcss({env: "development"})
       .on("error", (err) => log(err, err.toString(), "PostCSS"))))
+    .pipe(gulpif(!isProduction, rename({extname: ".min.css"})))  // rename
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/css"))))
     .pipe(gulpif(!isProduction, browserSync.stream()))
 
@@ -89,9 +90,10 @@ gulp.task("js", (cb) => {
   // Generate development JS, send to .tmp/
   const development = gulp.src(src)
     .pipe(gulpif(!isProduction, named()))
-    .pipe((!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval-source-maps"}), null, (err, stats) => {
+    .pipe(gulpif(!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval-source-maps"}), null, (err, stats) => {
       log(err, stats.toString({colors: true, errors: true}), "webpack")
     })))
+    .pipe(gulpif(!isProduction, rename({extname: ".min.js"})))  // rename
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/js"))))
     .pipe(gulpif(!isProduction, browserSync.stream()))
 
