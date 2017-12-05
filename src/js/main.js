@@ -1,3 +1,4 @@
+import * as $ from "jquery"
 // JS Goes here - ES6 supported
 $(function() {
   var yieldmo = {

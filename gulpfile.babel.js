@@ -1,90 +1,150 @@
-import gulp from "gulp";
-import {spawn} from "child_process";
-import hugoBin from "hugo-bin";
-import gutil from "gulp-util";
-import postcss from "gulp-postcss";
-import precss from "precss";
-import cleancss from "gulp-clean-css";
-import cssnext from "postcss-cssnext";
-import ifmedia from "postcss-if-media";
-import sourcemaps from "gulp-sourcemaps";
+import BrowserSync from "browser-sync"
+import del from "del"
+import gulp from "gulp"
+import gutil from "gulp-util"
+import gulpif from "gulp-if"
+import hugo from "hugo-bin"
+import merge from "merge-stream"
+import named from "vinyl-named"
+import path from "path"
+import postcss from "gulp-postcss"
 import rename from "gulp-rename";
-import BrowserSync from "browser-sync";
-import webpack from "webpack";
-import webpackConfig from "./webpack.conf";
+import {spawnSync} from "child_process"
+import webpack from "webpack-stream"
+import webpackConfig from "./webpack.config"
 
-const browserSync = BrowserSync.create();
+/**
+ * Configuration
+ */
 
-// Hugo arguments
-const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
-const hugoArgsPreview = ["--buildDrafts", "--buildFuture"];
+// Directories
+const srcDir = "src/"
+const hugoDir = "hugo/"
+const tmpDir = ".tmp/"
+const buildDir = "dist/"
 
-// Development tasks
-gulp.task("hugo", (cb) => buildSite(cb));
-gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
+// Build Arguments
+const argsDefault = ["-v", "--source", path.resolve(hugoDir), "--destination", (isProduction) ? path.resolve(buildDir) : path.resolve(tmpDir)]
+const argsDevelopment = ["--buildDrafts", "--buildFuture", "--buildExpired"]
 
-// Build/production tasks
-gulp.task("build", ["css", "js"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+// Conditionals
+const env = (process.env.NODE_ENV) ? process.env.NODE_ENV : "development"
+const isProduction = (env === "production")
+
+// Make env available to Hugo
+process.env.HUGO_ENV = env
+
+/**
+ * Gulp tasks
+ */
+
+// Initialize BrowserSync
+const browserSync = BrowserSync.create()
+
+// Run Hugo
+gulp.task("hugo", ["clean", "css", "js"], (cb) => build(cb))
+
+// Remove build directories
+gulp.task("clean", (cb) => {
+  return del([tmpDir, buildDir])
+})
 
 // Compile CSS with PostCSS
-gulp.task("css", () => (
-  gulp.src(["./src/css/*.css", "./src/css/*.scss"])
-    .pipe(sourcemaps.init())
-    .pipe(postcss([
-      precss(), // SaSS-like
-      cssnext(), // all future cool stuff,
-      ifmedia() // one line media query, this has to go last (order matters)
-     ]))
-    .pipe(cleancss({compatibility: 'ie8'}))  // minify
-    .pipe(rename({extname: '.min.css'}))  // rename
-    .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
-    .pipe(gulp.dest("./dist/css")) // put the bad boys to dist folder
-    .pipe(browserSync.stream())
-));
+gulp.task("css", (cb) => {
+  const src = path.normalize(srcDir + "/css/*.{css,scss,sass}")
 
-// Compile Javascript
+  // Generate production CSS, send to hugo/
+  const production = gulp.src(src)
+    .pipe(postcss({env: "production"}).on("error", (err) => log(err, err.toString(), "PostCSS")))
+    .pipe(gulp.dest(path.normalize(hugoDir + "/css")))
+    .pipe(rename({extname: ".min.css"}))  // rename
+    .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/css"))))
+    .pipe(gulpif(isProduction, browserSync.stream()))
+
+  // Generate development CSS, send to .tmp/
+  const development = gulp.src(src)
+    .pipe(gulpif(!isProduction, postcss({env: "development"})
+      .on("error", (err) => log(err, err.toString(), "PostCSS"))))
+    .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/css"))))
+    .pipe(gulpif(!isProduction, browserSync.stream()))
+
+  return merge(production, development)
+})
+
+// Compile JS with webpack
 gulp.task("js", (cb) => {
-  const myConfig = Object.assign({}, webpackConfig);
+  const src = path.normalize(srcDir + "/js/*.js")
 
-  webpack(myConfig, (err, stats) => {
-    if (err) throw new gutil.PluginError("webpack", err);
-    gutil.log("[webpack]", stats.toString({
-      colors: true,
-      progress: true
-    }));
-    browserSync.reload();
-    cb();
-  });
-});
+  // Generate production JS, send to hugo/
+  const production = gulp.src(src)
+    .pipe(named())
+    .pipe(webpack(Object.assign(webpackConfig, {devtool: "nosource-source-maps"}), null, (err, stats) => {
+      log(err, stats.toString({colors: true, errors: true}), "webpack")
+    }))
+    .pipe(rename({extname: ".min.js"}))  // rename
+    .pipe(gulp.dest(path.normalize(hugoDir + "/js")))
+    .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/js"))))
+    .pipe(gulpif(isProduction, browserSync.stream()))
 
-// Development server with browsersync
+  // Generate development JS, send to .tmp/
+  const development = gulp.src(src)
+    .pipe(gulpif(!isProduction, named()))
+    .pipe((!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval-source-maps"}), null, (err, stats) => {
+      log(err, stats.toString({colors: true, errors: true}), "webpack")
+    })))
+    .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/js"))))
+    .pipe(gulpif(!isProduction, browserSync.stream()))
+
+  return merge(production, development)
+})
+
+// Run development server with BrowserSync
 gulp.task("server", ["hugo", "css", "js"], () => {
   browserSync.init({
     server: {
-      baseDir: "./dist"
+      baseDir: (isProduction) ? buildDir : tmpDir
     }
-  });
-  gulp.watch("./src/js/**/*.js", ["js"]);
-  gulp.watch("./src/css/**/*.scss", ["css"]);
-  gulp.watch(["./site/**/*", "./site/**/**/*"], ["hugo"]);
-});
+  })
+
+  gulp.watch(path.normalize(srcDir + "/js/**/*.js"), ["js"])
+  gulp.watch(path.normalize(srcDir + "/css/**/*.css"), ["css"])
+  gulp.watch([path.normalize(hugoDir + "/**/*"), "!" + path.normalize(hugoDir + "/{js,css}/**/*")], ["hugo"])
+})
 
 /**
- * Run hugo and build the site
+ * Helper functions
  */
-function buildSite(cb, options, environment = "development") {
-  const args = options ? hugoArgsDefault.concat(options) : hugoArgsDefault;
 
-  process.env.NODE_ENV = environment;
+// Execute Hugo with Build Arguments
+function build(cb) {
+  const args = (isProduction) ? argsDefault : argsDefault.concat(argsDevelopment)
+  const Hugo = spawnSync(hugo, args, {stdio: "pipe", encoding: "utf-8"})
 
-  return spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
-    if (code === 0) {
-      browserSync.reload();
-      cb();
+  if (Hugo.error) {
+    log(Hugo.error, Hugo.error.toString(), "Hugo")
+    browserSync.notify("Build Failed")
+    return cb("Build failed")
+  }
+
+  if (Hugo.output) {
+    log(null, Hugo.output.toString(), "Hugo")
+  }
+
+  return cb()
+}
+
+// Handle logging & errors
+function log(err, log, name) {
+  const messages = log.replace(/^,|,$/g, "").split("\n") // Get rid leading/trailing commas
+  const spacer = " ".repeat(name.length + 2) // Indent additional lines
+
+  if (err) throw new gutil.PluginError(name, err)
+
+  messages.forEach((message, i) => {
+    if (i === 0) {
+      gutil.log("[" + gutil.colors.blue(name) + "]", message)
     } else {
-      browserSync.notify("Hugo build failed :(");
-      cb("Hugo build failed");
+      gutil.log(spacer, message)
     }
-  });
+  })
 }

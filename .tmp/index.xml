@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on New Yieldmo</title>
+    <link>/</link>
+    <description>Recent content in Home on New Yieldmo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>idLab</title>
+      <link>/work/idlab/</link>
+      <pubDate>Thu, 28 Sep 2017 15:27:59 -0400</pubDate>
+      
+      <guid>/work/idlab/</guid>
+      <description>Content in /work/b.md, this has special &amp;ldquo;type&amp;rdquo; and &amp;ldquo;layout&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>360 video</title>
+      <link>/work/yieldmo-360-video/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/yieldmo-360-video/</guid>
+      <description>&lt;p&gt;A new take on 360 video&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>first post</title>
+      <link>/writing/first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writing/first-post/</guid>
+      <description>first post</description>
+    </item>
+    
+    <item>
+      <title>hyperplay &amp; windowplay</title>
+      <link>/work/hyperplay--windowplay/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/hyperplay--windowplay/</guid>
+      <description>&lt;p&gt;Hyperplay &amp;amp; Windowplay&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mobile commerce research</title>
+      <link>/work/mobile-commerce-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/mobile-commerce-research/</guid>
+      <description>&lt;p&gt;How do people shop on mobile?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>second post</title>
+      <link>/writing/second-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/writing/second-post/</guid>
+      <description>second post</description>
+    </item>
+    
+    <item>
+      <title>spray</title>
+      <link>/work/spray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/spray/</guid>
+      <description>&lt;p&gt;Systematically Prototyping Responsive Animation in Yieldmo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>the &#34;Rapt&#34; Demo </title>
+      <link>/work/rapt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/rapt/</guid>
+      <description>&lt;p&gt;We want to give sales people a visual, mobile way to show that we capture a lot of human interactions before the click, and show the potential to tie that data to insights and more elemental advertiser goals (like brand lift). The demo needs to be conducive to an advertiser client looking at it on their own phone during Cannes social events (Yieldmo Yacht, etc.), and needs to be reliable in low connection speed environments.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>wrapper</title>
+      <link>/work/wrapper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/wrapper/</guid>
+      <description>&lt;p&gt;the full page take over solution for mobile&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>zine</title>
+      <link>/work/zine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/work/zine/</guid>
+      <description>&lt;p&gt;A total experience (Zine full page)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
