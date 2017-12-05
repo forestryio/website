@@ -8,11 +8,22 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: date
+- type: datetime
+  name: date
   label: Date
-  type: text
-  hidden: false
-  default: 
+  config:
+    required: true
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    options:
+    - Tutorials
+    - Perspectives
+    - Case Studies
+    - Updates
+  label: Category
 - name: author
   label: Author
   type: text
@@ -22,6 +33,12 @@ fields:
   name: cover
   hidden: false
   label: Cover image
+- type: textarea
+  name: blurb
+  label: Blurb
+  config:
+    wysiwyg: true
+    required: true
 - type: number
   label: Weight (left empty is not prioritized)
   name: weight
