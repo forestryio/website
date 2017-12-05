@@ -98,6 +98,10 @@
   </url>
   
   <url>
+    <loc>/docs/pub_guidelines/</loc>
+  </url>
+  
+  <url>
     <loc>/resources/</loc>
     <priority>0</priority>
   </url>
