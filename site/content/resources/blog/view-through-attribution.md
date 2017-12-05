@@ -1,16 +1,21 @@
 ---
 title: The Case for View-through Attribution
 layout: blog
-category: perspectives
+category: Tutorials
 images:
 - attribution-101.png
 author: Lucas Piazza, Director of Marketing
 date: 2017-12-13 00:00:00 -0500
 weight: 1
-blurb: With 4-out-of-5 consumers relying on their mobile phone to shop for products, mobile devices remain a critical research tool. Mobile-optimized sites have increased the ease of mobile shopping, leading to higher percentages of eCommerce revenue coming from mobile each year. But while mobile has certainly enabled
+blurb: With 4-out-of-5 consumers relying on their mobile phone to shop for products,
+  mobile devices remain a critical research tool. Mobile-optimized sites have increased
+  the ease of mobile shopping, leading to higher percentages of eCommerce revenue
+  coming from mobile each year. But while mobile has certainly enabled
+type: default
 draft: true
----
+cover: ''
 
+---
 With 4-out-of-5 consumers relying on their mobile phone to shop for products, mobile devices remain a critical research tool. Mobile-optimized sites have increased the ease of mobile shopping, leading to higher percentages of eCommerce revenue coming from mobile each year. But while mobile has certainly enabled shopping to occur anywhere at any time, the consumer path-to-purchase remains non-linear and comprised of multiple touchpoints.
 
 Consumers live in an omnichannel world that may expose them to a brand via a desktop display ad, allow them to explore that brand’s products on their mobile phone as they commute to work, and then complete the checkout process on their tablet two weeks later. 
