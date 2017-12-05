@@ -20,4 +20,4 @@ fields:
   label: Author
   type: text
   hidden: false
-  default: mr. bo
+  default:
