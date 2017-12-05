@@ -13,13 +13,24 @@ fields:
   type: text
   hidden: false
   default: 
-- name: draft
-  label: Draft
-  type: boolean
-  hidden: false
-  default: true
 - name: author
   label: Author
   type: text
   hidden: false
   default: mr. bo
+- type: file
+  name: cover
+  hidden: false
+  label: Cover image
+- type: number
+  label: Weight (left empty is not prioritized)
+  name: weight
+  config:
+    min: '1'
+    step: '1'
+    required: false
+- name: draft
+  label: Draft
+  type: boolean
+  hidden: false
+  default: true
