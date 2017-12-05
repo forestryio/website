@@ -23,13 +23,13 @@ const hugoDir = "hugo/"
 const tmpDir = ".tmp/"
 const buildDir = "dist/"
 
-// Build Arguments
-const argsDefault = ["-v", "--source", path.resolve(hugoDir), "--destination", (isProduction) ? path.resolve(buildDir) : path.resolve(tmpDir)]
-const argsDevelopment = ["--buildDrafts", "--buildFuture", "--buildExpired"]
-
 // Conditionals
 const env = (process.env.NODE_ENV) ? process.env.NODE_ENV : "development"
 const isProduction = (env === "production")
+
+// Build Arguments
+const argsDefault = ["-v", "--source", path.resolve(hugoDir), "--destination", (isProduction) ? path.resolve(buildDir) : path.resolve(tmpDir)]
+const argsDevelopment = ["--buildDrafts", "--buildFuture", "--buildExpired"]
 
 // Make env available to Hugo
 process.env.HUGO_ENV = env
