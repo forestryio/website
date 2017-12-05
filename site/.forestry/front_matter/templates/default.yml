@@ -1,4 +1,6 @@
 ---
+pages:
+- resources/blog/the-case-for-view-through-attribution.md
 hide_body: false
 fields:
 - name: title

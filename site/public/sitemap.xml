@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/resources/blog/mobile-shoppers-who-are-they/</loc>
-    <lastmod>2017-11-30T19:00:00-05:00</lastmod>
+    <loc>/resources/blog/view-through-attribution/</loc>
+    <lastmod>2017-12-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -14,12 +14,7 @@
   
   <url>
     <loc>/resources/blog/yieldmo-ranked-top-10/</loc>
-    <lastmod>2017-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/resources/blog/yieldmo-further-lead-mobile-marketplace/</loc>
-    <lastmod>2016-04-12T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -31,11 +26,6 @@
   </url>
   
   <url>
-    <loc>/resources/blog/measuring-outcomes-and-audiences/</loc>
-    <lastmod>2017-11-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/contact/</loc>
   </url>
   
@@ -44,7 +34,8 @@
   </url>
   
   <url>
-    <loc>/jobs/</loc>
+    <loc>/resources/blog/mobile-shoppers-who-are-they/</loc>
+    <lastmod>2017-11-30T19:00:00-05:00</lastmod>
   </url>
   
   <url>
@@ -53,8 +44,18 @@
   </url>
   
   <url>
+    <loc>/resources/blog/measuring-outcomes-and-audiences/</loc>
+    <lastmod>2017-11-12T19:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/products/formats/</loc>
     <lastmod>2017-10-02T17:51:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resources/blog/yieldmo-further-lead-mobile-marketplace/</loc>
+    <lastmod>2016-04-12T20:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -71,7 +72,15 @@
   </url>
   
   <url>
+    <loc>/jobs/</loc>
+  </url>
+  
+  <url>
     <loc>/company/leadership/</loc>
+  </url>
+  
+  <url>
+    <loc>/licensedformats/</loc>
   </url>
   
   <url>
@@ -95,6 +104,11 @@
   
   <url>
     <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/_singular/</loc>
     <priority>0</priority>
   </url>
   
