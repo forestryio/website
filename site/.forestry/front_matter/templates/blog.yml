@@ -57,3 +57,4 @@ fields:
   hidden: true
   config:
     required: true
+  default: blog
