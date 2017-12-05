@@ -4,7 +4,6 @@ blurb = "With 4-out-of-5 consumers relying on their mobile phone to shop for pro
 category = "perspectives"
 cover = "/uploads/attribution-101.png"
 date = "2017-12-05T00:00:00-05:00"
-draft = true
 layout = "blog"
 title = "The Case for View-through Attribution"
 weight = 1
