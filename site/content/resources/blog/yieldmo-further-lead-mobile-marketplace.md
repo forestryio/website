@@ -7,11 +7,10 @@ category: updates
 images:
 - wave.jpg
 author: Susan Lietz, CMO
-weight: 2
 blurb: According to comScore, Yieldmo has a verified actual reach of more than 141
   million unique mobile visitors - roughly 80% of the addressable market in the U.S.
   - making it the largest independent network in the U.S. behind Google, Facebook,
-  Amazon...
+  Amazon
 
 ---
 NEW YORK--(BUSINESS WIRE)--Recently forged partnerships with publishers such as Intermarkets and tronc have furthered Yieldmo’s lead as the largest independent mobile marketplace in the U.S. Yieldmo’s premium inventory is comprised of more than 1,400 of the top mobile destinations that span e-commerce, sports, news, lifestyle and entertainment.
