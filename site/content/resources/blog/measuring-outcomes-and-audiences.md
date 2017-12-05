@@ -3,8 +3,7 @@ title: Measuring Outcomes and Audiences in a (Mostly) Cookieless Mobile World
 date: 2017-11-12 19:00:00 -0500
 layout: blog
 category: perspectives
-images:
-- measuring.jpg
+cover: _images/blog/measuring.jpg
 author: Teddy Jawde, Head of Product
 blurb: Yieldmo Dragonfly™ enables more accurate campaign measurement and efficiency
   by powering our ability to attribute conversions (via a Yieldmo pixel placed on

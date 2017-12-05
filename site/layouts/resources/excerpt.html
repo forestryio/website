@@ -1,8 +1,7 @@
 <!-- this goes inside of a range .Data.Pages loop -->
 <div class="blog-excerpt {{ .Params.category }}">
-  {{ with .Params.images }}
-    {{ $featureImageURL := index . 0 }}
-     <img src="/_images/blog/{{ $featureImageURL }}">
+  {{ with .Params.cover }}
+     <img src='{{ . | absURL }}'>
   {{ end }}
 
   <div class="preview">

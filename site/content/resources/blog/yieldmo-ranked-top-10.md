@@ -3,8 +3,7 @@ title: Yieldmo Ranked in the Top 10% of Fastest Growing North American Companies
   Deloitte’s 2017 Technology Fast 500™
 layout: blog
 category: updates
-images:
-- au-deloitte-logo-black.jpg
+cover: _images/blog/au-deloitte-logo-black.jpg
 author: Mike Yavonditte, Founder and CEO
 weight: 1
 date: 2017-11-13 00:00:00 -0500

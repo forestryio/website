@@ -4,8 +4,7 @@ title: Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace i
 date: 2016-04-12 20:00:00 -0400
 layout: blog
 category: updates
-images:
-- wave.jpg
+cover: _images/blog/wave.jpg
 author: Susan Lietz, CMO
 blurb: According to comScore, Yieldmo has a verified actual reach of more than 141
   million unique mobile visitors - roughly 80% of the addressable market in the U.S.
