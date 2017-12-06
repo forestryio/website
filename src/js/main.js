@@ -1,3 +1,8 @@
+import $ from "jquery";
+
+// Make jQuery available to other scripts
+window.$ = window.jQuery = $;
+
 // JS Goes here - ES6 supported
 $(function() {
   var yieldmo = {

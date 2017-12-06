@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <h3>list page defined in /work/list.html | {{ .Title }}</h3>
+
+  {{ range .Data.Pages }}
+    {{ .Render "summary"}}
+  {{ end }}
+
+  {{ .Content }}
+
+{{ end }}

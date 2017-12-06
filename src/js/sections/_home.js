@@ -1,3 +1,6 @@
+import "../plugins/jquery.fullpage.min"
+import "../plugins/jquery.fullpage.extensions.min"
+
 // implementation of the module
 var home = {
   modules: {
