@@ -56,8 +56,8 @@ gulp.task("css", (cb) => {
   // Generate production CSS, send to hugo/
   const production = gulp.src(src)
     .pipe(postcss({env: "production"}).on("error", (err) => log(err, err.toString(), "PostCSS")))
-    .pipe(gulp.dest(path.normalize(hugoDir + "/css")))
     .pipe(rename({extname: ".min.css"}))  // rename
+    .pipe(gulp.dest(path.normalize(hugoDir + "/css")))
     .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/css"))))
     .pipe(gulpif(isProduction, browserSync.stream()))
 
