@@ -4,7 +4,7 @@ date: 2017-11-29
 menu:
   main:
     parent: "resources"
-layout: blog
+_layout: blog
 code: blog
 weight: 1
 ---
