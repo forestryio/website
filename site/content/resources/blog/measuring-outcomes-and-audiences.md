@@ -6,7 +6,6 @@ category: perspectives
 images:
 - measuring.jpg
 author: Teddy Jawde, Head of Product
-type: default
 blurb: Yieldmo Dragonfly™ enables more accurate campaign measurement and efficiency
   by powering our ability to attribute conversions (via a Yieldmo pixel placed on
   check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to
