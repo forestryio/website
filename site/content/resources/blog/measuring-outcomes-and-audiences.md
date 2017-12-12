@@ -3,12 +3,17 @@ title: Measuring Outcomes and Audiences in a (Mostly) Cookieless Mobile World
 date: 2017-11-12 19:00:00 -0500
 layout: blog
 category: perspectives
-cover: _images/blog/measuring.jpg
+images:
+- measuring.jpg
 author: Teddy Jawde, Head of Product
+type: default
 blurb: Yieldmo Dragonfly™ enables more accurate campaign measurement and efficiency
   by powering our ability to attribute conversions (via a Yieldmo pixel placed on
   check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to
-  analyze which audience segments
+  analyze which audience segments...
+cover: "/_images/blog/measuring.jpg"
+description: ''
+weight: ''
 
 ---
 Yieldmo Dragonfly&trade; enables more accurate campaign measurement and efficiency by powering our ability to attribute conversions (via a Yieldmo pixel placed on check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to analyze which audience segments drove the largest share of performance. Together, this information drives stronger campaign performance by making optimizations possible at multiple levels—audience, ad format, ad creative, specific ad placement, etc.
