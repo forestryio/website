@@ -8,7 +8,7 @@ description = ""
 draft = true
 layout = "blog"
 title = "Engagement on the iPhone X"
-weight = 1
+weight = 2
 
 +++
 Despite its $1,000+ price tag, Apple’s iPhone X is flying off the shelves. From the moment it launched, Apple sold close to [3 million iPhone X devices in just 20 minutes](https://www.computerworld.com/article/3236414/apple-ios/this-is-why-iphone-x-is-apples-most-important-product.html), 2,500 units per second. With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers. 
