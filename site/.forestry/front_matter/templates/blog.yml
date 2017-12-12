@@ -47,13 +47,13 @@ fields:
     name: keywords
     label: keywords
     config:
-      required: true
+      required: false
   - type: textarea
     name: description
     label: Description
     config:
       wysiwyg: false
-      required: true
+      required: false
 - type: number
   label: Weight (left empty is not prioritized)
   name: weight
