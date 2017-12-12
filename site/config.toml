@@ -5,6 +5,7 @@ title = "Yieldmo"
 
 [params]
     subtitle = "FORMATS THAT INFORM"
+    description = "Elevate the digital advertising experience for consumers, advertisers, and publishers."
 
 [taxonomies]
   tag = "tags"
