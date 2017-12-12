@@ -5,6 +5,7 @@ category = "perspectives"
 cover = "/_images/team/generic.jpg"
 date = "2017-12-12T15:11:39+00:00"
 description = ""
+draft = true
 layout = "blog"
 title = "Engagement on the iPhone X"
 weight = 2
