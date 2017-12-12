@@ -4,10 +4,13 @@ blurb = "With 4-out-of-5 consumers relying on their mobile phone to shop for pro
 category = "perspectives"
 cover = "/uploads/attribution-101-cover.png"
 date = "2017-12-05T00:00:00-05:00"
+description = ""
 layout = "blog"
 title = "The Case for View-through Attribution"
-weight = 1
+weight = ""
+[metadata]
 description = "Mobile-optimized sites have increased the ease of mobile shopping, leading to higher percentages of eCommerce revenue coming from mobile each year."
+keywords = "Attibution, Commerce"
 
 +++
 With 4-out-of-5 consumers relying on their mobile phone to shop for products, mobile devices remain a critical research tool. Mobile-optimized sites have increased the ease of mobile shopping, leading to higher percentages of eCommerce revenue coming from mobile each year. But while mobile has certainly enabled shopping to occur anywhere at any time, the consumer path-to-purchase remains non-linear and comprised of multiple touchpoints.
