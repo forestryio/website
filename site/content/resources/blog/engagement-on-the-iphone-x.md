@@ -2,7 +2,7 @@
 author = "Alex Fu, Sr. Director of Advertising & Marketing Insights"
 blurb = "With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers. Are iPhone X users engaging more or less with ads, compared to users on older iPhone models?"
 category = "perspectives"
-cover = "/uploads/iPhoneXEngagementRate2.png"
+cover = "/uploads/iPhoneXEngagementRate2.jpg"
 date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
 layout = "blog"
