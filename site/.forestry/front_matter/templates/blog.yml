@@ -49,12 +49,13 @@ fields:
   label: Description
   description: Metadata Information
 - type: number
-  label: Weight (left empty is not prioritized)
+  label: Weight
   name: weight
   config:
     min: '1'
     step: '1'
     required: false
+  description: " Leave this field empty if the content is not prioritized"
 - name: draft
   label: Draft
   type: boolean
