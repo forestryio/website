@@ -39,6 +39,21 @@ fields:
   config:
     wysiwyg: true
     required: true
+- type: field_group
+  name: metadata
+  label: Metadata
+  fields:
+  - type: text
+    name: keywords
+    label: keywords
+    config:
+      required: true
+  - type: textarea
+    name: description
+    label: Description
+    config:
+      wysiwyg: false
+      required: true
 - type: number
   label: Weight (left empty is not prioritized)
   name: weight
