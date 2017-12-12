@@ -60,6 +60,13 @@ fields:
   hidden: false
   default: true
 - type: text
+  hidden: true
+  config:
+    required: true
+  label: Type
+  name: type
+  default: resources
+- type: text
   name: layout
   label: Layout
   hidden: true
