@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .section-privacy {
+  font-family: $content-font;  
+
   .front-page {
     .headlines {
       width: $mobile-s-content-width;
@@ -15,13 +17,13 @@
 
     .explanation-container {
       background-color: $gray;
+      font-size: .8em;
 
       .explanation {
         width: $mobile-s-content-width;
         margin: 2em auto;
 
         p { 
-          font-size: .8em; 
           line-height: 1.4;
           margin: 0 0 1em 0;
         }
