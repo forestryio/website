@@ -1,5 +1,5 @@
 +++
-author = "mr. bo"
+author = "BO WANG"
 date = "2017-12-12T14:25:36+00:00"
 draft = true
 layout = "blog"
