@@ -28,29 +28,24 @@ Marketers that want to reach these highly technologically-savvy iPhone X custome
 
 Methodology
 
-> * _Time Frame: 11/3/17-12/3/17_ 
-> * _Scope:_
->   * _All scroll-enabled Yieldmo formats_
->
->
->   * _Apple smartphones only (iPhone 5 or higher)_
->
->
->   * _iOS 8, 9, 10 and 11_
-> * _Engagement Metrics:_
->   * _Scroll Rate - defined by a vertical change in direction of at least 5% of the ad height_
-> * _Total Impressions Analyzed: 6126194_
-> * _Impressions, by device_
->   * _iPhone 5 / 5s / SE: 3.9%_
->
->
->   * _iPhone 6 / 6s / 6 Plus: 8.1%_
->
->
->   * _iPhone 7 / 7 Plus: 34.0%_
->
->
->   * _iPhone 8 / 8 Plus: 44.7%_
->
->
->   * _iPhone X: 9.3%_
+_Time Frame: 11/3/17-12/3/17_ 
+
+_Scope:_
+
+* _All scroll-enabled Yieldmo formats_
+* _Apple smartphones only (iPhone 5 or higher)_
+* _iOS 8, 9, 10 and 11_
+
+_Engagement Metrics:_
+
+* _Scroll Rate - defined by a vertical change in direction of at least 5% of the ad height_
+
+_Total Impressions Analyzed: 6126194_
+
+_Impressions, by device_
+
+* _iPhone 5 / 5s / SE: 3.9%_
+* _iPhone 6 / 6s / 6 Plus: 8.1%_
+* _iPhone 7 / 7 Plus: 34.0%_
+* _iPhone 8 / 8 Plus: 44.7%_
+* _iPhone X: 9.3%_
