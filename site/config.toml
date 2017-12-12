@@ -2,34 +2,26 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Yieldmo"
-
+[[menu.main]]
+identifier = "resources"
+name = "Resources"
+pre = "<i class='menu-media'></i>"
+url = "/resources/"
+weight = 3
+[[menu.main]]
+identifier = "products"
+name = "Products"
+pre = "<i class='menu-products'></i>"
+url = "/products/"
+weight = 2
+[[menu.main]]
+identifier = "company"
+name = "Company"
+pre = "<i class='menu-company'></i>"
+url = "/company/"
+weight = 1
 [params]
-    subtitle = "FORMATS THAT INFORM"
-    description = "Elevate the digital advertising experience for consumers, advertisers, and publishers."
-
+description = "Elevate the digital advertising experience for consumers, advertisers, and publishers."
+subtitle = "DATA BY DESIGN."
 [taxonomies]
-  tag = "tags"
-
-[[menu.main]]
-    name = "Company"
-    pre = "<i class='menu-company'></i>"
-    weight = 1
-    identifier = "company"
-    url = "/company/"
-[[menu.main]]
-    name = "Products"
-    pre = "<i class='menu-products'></i>"
-    weight = 2
-    identifier = "products"
-    url = "/products/"
-[[menu.main]]
-    name = "Resources"
-    pre = "<i class='menu-media'></i>"
-    weight = 3
-    identifier = "resources"
-    url = "/resources/"
-
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+tag = "tags"
