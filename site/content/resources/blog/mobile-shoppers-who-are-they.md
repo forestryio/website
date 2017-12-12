@@ -10,7 +10,7 @@ blurb: The 2017 holiday shopping season is already breaking records, with mobil
   truth behind what drives mobile shopping. 
 cover: "/_images/blog/mobile-shoppers.jpg"
 description: ''
-weight: ''
+weight: 2
 
 ---
 The 2017 holiday shopping season is already breaking records, with mobile accounting for [33.1% of the $6.59B spent on Cyber Monday](http://news.adobe.com/press-release/experience-cloud/adobe-data-shows-cyber-monday-largest-online-sales-day-history-659) —a 39.2% increase from 2016. To understand this behavior, we dug deep into our extensive engagement database to reveal the truth behind what drives mobile shopping.
