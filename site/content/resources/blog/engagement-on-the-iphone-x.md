@@ -1,11 +1,10 @@
 +++
-author = "Lucas Piazza, Director of Marketing"
+author = "Alex Fu, Sr. Director of Advertising & Marketing Insights"
 blurb = "With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers."
 category = "perspectives"
 cover = "/uploads/iPhoneXEngagementRate.png"
 date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
-draft = true
 layout = "blog"
 title = "iPhone X: Engaging or Not?"
 weight = 2
