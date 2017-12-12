@@ -28,7 +28,7 @@ fields:
   label: Author
   type: text
   hidden: false
-  default: mr. bo
+  default: ''
 - type: file
   name: cover
   hidden: false
@@ -39,21 +39,10 @@ fields:
   config:
     wysiwyg: true
     required: true
-- type: field_group
-  name: metadata
-  label: Metadata
-  fields:
-  - type: text
-    name: keywords
-    label: keywords
-    config:
-      required: false
-  - type: textarea
-    name: description
-    label: Description
-    config:
-      wysiwyg: false
-      required: false
+- type: textarea
+  name: description
+  label: Description
+  description: Metadata Information
 - type: number
   label: Weight (left empty is not prioritized)
   name: weight
