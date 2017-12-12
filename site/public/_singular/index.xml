@@ -11,6 +11,34 @@
     
     
     <item>
+      <title>Advertiser Guidelines</title>
+      <link>/docs/ad_guidelines/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/ad_guidelines/</guid>
+      <description>Yieldmo strives to provide advertisements that add value to the user experience and that advertise quality products or services that are relevant to the audience of the websites participating in the Yieldmo network.
+All advertisements must adhere to these guidelines, which are intended to preserve the integrity of the Yieldmo service. Adherence to these guidelines does not constitute approval for participation of advertising on the Yieldmo Service, as Yieldmo may amend these guidelines or remove advertisements at its sole discretion.</description>
+    </item>
+    
+    <item>
+      <title>Copyright Policy</title>
+      <link>/docs/copyright_policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/copyright_policy/</guid>
+      <description>Yieldmo will respond to properly submitted notices of alleged copyright infringement that comply with applicable law. In the event that a person or entity has a good faith belief that its content is being displayed on or through the Yieldmo Service in a manner that constitutes copyright infringement</description>
+    </item>
+    
+    <item>
+      <title>Electronic Payment Terms</title>
+      <link>/docs/payment_terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/payment_terms/</guid>
+      <description>Agency agrees to pay Media Company for all charges to Agency&amp;rsquo;s account for any campaign which Agency commences through the User Interface and/or via any applicable IO, in accordance with this Agreement and with any Payment Plan selected by Agency as described below. Agency agrees to: (i) promptly update all information to keep Agency&amp;rsquo;s account and Payment Account (defined below) current, complete and accurate (such as a change in billing address or e-mail), (ii) promptly notify Media Company in writing if Agency becomes aware of a potential breach of security, such as the unauthorized disclosure or use of Agency&amp;rsquo;s user name or password, and (iii) to comply with the agreements between Agency and the financial institution providing the Payment Account.</description>
+    </item>
+    
+    <item>
       <title>Jobs</title>
       <link>/jobs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -34,8 +62,26 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/pub_guidelines/</guid>
-      <description>( a ) Publisher must not obscure or reduce the visibility of (including by applying similar colors to font and background) any Ad.
-( b ) Publisher shall not: (i) sell, rent, lease, sublicense, transfer or otherwise provide access to the Yieldmo Service, Ads or any portion(s) thereof or provide any copies thereof to any third party; (ii) alter, modify, copy, translate, reverse engineer, decompile or disassemble the Yieldmo Service, Ads or any portion(s) thereof, or create derivative works therefrom; (iii) breach, disable, modify, tamper with, develop or use any workaround to interfere with the proper working of the Yieldmo Service or any security measure used by the Yieldmo Service, or attempt to do any of the foregoing; or (iv) use a third party ad server to serve any Ads.</description>
+      <description>(a) Publisher must not obscure or reduce the visibility of (including by applying similar colors to font and background) any Ad.
+(b) Publisher shall not: (i) sell, rent, lease, sublicense, transfer or otherwise provide access to the Yieldmo Service, Ads or any portion(s) thereof or provide any copies thereof to any third party; (ii) alter, modify, copy, translate, reverse engineer, decompile or disassemble the Yieldmo Service, Ads or any portion(s) thereof, or create derivative works therefrom; (iii) breach, disable, modify, tamper with, develop or use any workaround to interfere with the proper working of the Yieldmo Service or any security measure used by the Yieldmo Service, or attempt to do any of the foregoing; or (iv) use a third party ad server to serve any Ads.</description>
+    </item>
+    
+    <item>
+      <title>Retargeting Service Addendum</title>
+      <link>/docs/retargeting_addendum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/retargeting_addendum/</guid>
+      <description>In the event that Advertiser has selected the Yieldmo Retargeting Service, the following additional terms shall apply:</description>
+    </item>
+    
+    <item>
+      <title>Site Terms of Use</title>
+      <link>/docs/siteterms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/siteterms/</guid>
+      <description>These Site Terms of Use, together with the Privacy Policy set forth</description>
     </item>
     
   </channel>
