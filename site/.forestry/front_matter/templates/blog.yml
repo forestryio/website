@@ -56,11 +56,6 @@ fields:
     step: '1'
     required: false
   description: " Leave this field empty if the content is not prioritized"
-- name: draft
-  label: Draft
-  type: boolean
-  hidden: false
-  default: true
 - type: text
   hidden: true
   config:
