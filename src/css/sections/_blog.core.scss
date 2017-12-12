@@ -59,13 +59,13 @@
    ========================================================================== */
 
 .blog-page {
+  font-family: $content-font;
   width: $mobile-s-content-width;
   margin: 4rem auto 2rem auto;
 
   .desktop { display: none; }
 
   .category {
-    font-family: $content-font;
     font-size: .7rem;
     color: $medium-green;
     text-transform: uppercase;
@@ -87,10 +87,6 @@
   p {
     font-size: .9em;
     margin: 1em 0;
-  }
-
-  .meta-info {
-    font-family: $content-font;
   }
 }
 
