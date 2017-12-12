@@ -5,7 +5,6 @@ category = "perspectives"
 cover = "/_images/team/generic.jpg"
 date = "2017-12-12T14:46:50+00:00"
 description = "Hello again from the Yieldmo A|B Testing Lab! We just love how much brand marketers like our..."
-draft = true
 layout = "blog"
 title = "Pull up a Side of Meatballs"
 weight = ""
