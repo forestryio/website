@@ -1,12 +1,12 @@
 +++
 author = "Alex Fu, Sr. Director of Advertising & Marketing Insights"
-blurb = "With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers."
+blurb = "With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers. Are iPhone X users engaging more or less with ads, compared to users on older iPhone models?"
 category = "perspectives"
-cover = "/uploads/iPhoneXEngagementRate.png"
+cover = "/uploads/iPhoneXEngagementRate2.png"
 date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
 layout = "blog"
-title = "iPhone X: Engaging or Not?"
+title = "Just How Engaging Is The iPhone X?"
 weight = 2
 
 +++
@@ -29,12 +29,16 @@ Marketers that want to reach these highly technologically-savvy iPhone X custome
   * All scroll-enabled Yieldmo formats
   * Apple smartphones only (iPhone 5 or higher)
   * iOS 8, 9, 10 and 11
-* Engagement Metrics:
+
+  Engagement Metrics:
   * Scroll Rate - defined by a vertical change in direction of at least 5% of the ad height
-* Total Impressions Analyzed: 6,126,194
+
+  Total Impressions Analyzed: 6,126,194
   * Impressions, by device
     * iPhone 5 / 5s / SE: 3.9%
     * iPhone 6 / 6s / 6 Plus: 8.1%
     * iPhone 7 / 7 Plus: 34.0%
     * iPhone 8 / 8 Plus: 44.7%
-    * iPhone X: 9.3%</font>
+    * iPhone X: 9.3%
+
+      </font>
