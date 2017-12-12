@@ -33,7 +33,7 @@ fields:
   label: Author
   type: text
   hidden: false
-  default: ''
+  default: Lucas Piazza, Director of Marketing
 - type: file
   name: cover
   hidden: false
