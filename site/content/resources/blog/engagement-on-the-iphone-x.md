@@ -5,6 +5,7 @@ category = "perspectives"
 cover = "/uploads/iPhoneXEngagementRate2.jpg"
 date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
+draft = true
 layout = "blog"
 title = "Just How Engaging Is The iPhone X?"
 weight = 2
