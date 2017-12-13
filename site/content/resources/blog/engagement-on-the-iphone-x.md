@@ -5,7 +5,7 @@ category = "perspectives"
 cover = "/uploads/iPhoneXEngagementRate2.jpg"
 date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
-draft = true
+draft = false
 layout = "blog"
 title = "Just How Engaging Is The iPhone X?"
 weight = 2
@@ -24,8 +24,6 @@ Let's examine some of the possible explanations. First, the early adopters of th
 Marketers that want to reach these highly technologically-savvy iPhone X customers should use this higher level of engagement to their advantage. One way is with ad formats that animate as the user scrolls. Yieldmo’s [Hyperscroller](https://formats.yieldmo.com/#/format/hyperplay) is one example of this type of format that will ensure the ad experience is just as engaging as their shiny new device.
 
 Methodology
-
-<div class="formulate">
 
 _Time Frame: 11/3/17-12/3/17_
 
@@ -48,5 +46,3 @@ _Impressions, by device_
 * _iPhone 7 / 7 Plus: 34.0%_
 * _iPhone 8 / 8 Plus: 44.7%_
 * _iPhone X: 9.3%_
-
-</div>
