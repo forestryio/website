@@ -23,11 +23,32 @@ Let's examine some of the possible explanations. First, the early adopters of th
 
 Marketers that want to reach these highly technologically-savvy iPhone X customers should use this higher level of engagement to their advantage. One way is with ad formats that animate as the user scrolls. Yieldmo’s [Hyperscroller](https://formats.yieldmo.com/#/format/hyperplay) is one example of this type of format that will ensure the ad experience is just as engaging as their shiny new device.
 
+Methodology
+
+    Time Frame: 11/3/17-12/3/17
+    
+    Scope:
+    
+    - All scroll-enabled Yieldmo formats
+    - Apple smartphones only (iPhone 5 or higher)
+    - iOS 8, 9, 10 and 11
+    
+    Engagement Metrics:
+    
+    - Scroll Rate - defined by a vertical change in direction of at least 5% of the ad height
+    - Total Impressions Analyzed: 6126194
+    
+    Impressions, by device
+    
+    - iPhone 5 / 5s / SE: 3.9%
+    - iPhone 6 / 6s / 6 Plus: 8.1%
+    - iPhone 7 / 7 Plus: 34.0%
+    - iPhone 8 / 8 Plus: 44.7%
+    - iPhone X: 9.3%
 
 Methodology
 
-
-_Time Frame: 11/3/17-12/3/17_ 
+_Time Frame: 11/3/17-12/3/17_
 
 _Scope:_
 
