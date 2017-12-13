@@ -1,6 +1,6 @@
 ---
 title: "Yieldmo"
 layout: redirecthome
-url: /landing/
+url: /l/
 draft: false
 ---
