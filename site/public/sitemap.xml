@@ -137,6 +137,10 @@
   </url>
   
   <url>
+    <loc>/landing/</loc>
+  </url>
+  
+  <url>
     <loc>/_singular/</loc>
     <priority>0</priority>
   </url>
