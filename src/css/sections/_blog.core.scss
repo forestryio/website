@@ -93,6 +93,14 @@
     margin-left: 1.5rem;
   }
 
+  h6 {
+    margin: .5em 0;
+
+    & + ul {
+      font-size: .67em;
+    }
+  }
+
   .meta-info {
     margin-top: 2em;
   }
