@@ -1,1 +1,20 @@
-<h3>sorry, the page does not exist</h3>
+{{ define "main" }}
+
+<style type="text/css">
+  .section-404 {
+    position: relative;
+  }
+
+  .section-404 .headline-cap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;;
+  }
+</style>
+
+<div class="section-wrapper section-404">
+  <h1 class="headline-cap">sorry, the page does not exist</h1>
+</div>
+{{ end }}
