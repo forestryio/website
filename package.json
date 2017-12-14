@@ -56,5 +56,8 @@
     "webpack": "3.6.0",
     "webpack-stream": "^4.0.0",
     "whatwg-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0"
   }
 }

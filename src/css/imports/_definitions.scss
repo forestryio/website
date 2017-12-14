@@ -1,9 +1,27 @@
 /* ==========================================================================
-   variables (SaSS & CSS custom properties)
+   fonts
    ========================================================================== */
+
+/* Purchased web font: @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/34fcf3");
+@font-face {font-family: Meltow; src: url('../_fonts/webfonts/34FCF3_0_0.eot');src: url('../_fonts/webfonts/34FCF3_0_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_0_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_0_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_0_0.ttf') format('truetype'); font-weight: 200;}
+@font-face {font-family: Meltow;src: url('../_fonts/webfonts/34FCF3_1_0.eot');src: url('../_fonts/webfonts/34FCF3_1_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_1_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_1_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_1_0.ttf') format('truetype'); font-weight: 100;} 
+@font-face {font-family: Meltow; src: url('../_fonts/MeltowSan300-Regular.ttf'); font-weight: 300;}
+@font-face {font-family: MrsEavesItalic; src: url('../_fonts/MrsEavesItalic.ttf');}
+@font-face {font-family: Caecilia-Light; src: url('../_fonts/Caecilia-Light.ttf');}
 
 /* CSS variables (not actually mutable) */
 $base-size: 16px; /* it's actually the popular default as well */
+
+$headline-cap: Meltow;
+$headline-lean: MrsEavesItalic;
+$content-font: Caecilia-Light;
+
+
+
+/* ==========================================================================
+   Brand Color
+   ========================================================================== */
 
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
 $primary-white: rgb(255, 255, 255);
@@ -22,22 +40,6 @@ $deep-blue: rgb(10, 82, 104);
 $first: rgb(159, 190, 192);
 $second: rgb(64, 153, 143);
 
-
-/* ==========================================================================
-   fonts
-   ========================================================================== */
-
-/* Purchased web font: @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/34fcf3");
-@font-face {font-family: Meltow; src: url('../_fonts/webfonts/34FCF3_0_0.eot');src: url('../_fonts/webfonts/34FCF3_0_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_0_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_0_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_0_0.ttf') format('truetype'); font-weight: 200;}
-@font-face {font-family: Meltow;src: url('../_fonts/webfonts/34FCF3_1_0.eot');src: url('../_fonts/webfonts/34FCF3_1_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_1_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_1_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_1_0.ttf') format('truetype'); font-weight: 100;} 
-@font-face {font-family: Meltow; src: url('../_fonts/MeltowSan300-Regular.ttf'); font-weight: 300;}
-@font-face {font-family: MrsEavesItalic; src: url('../_fonts/MrsEavesItalic.ttf');}
-@font-face {font-family: Caecilia-Light; src: url('../_fonts/Caecilia-Light.ttf');}
-
-$headline-cap: Meltow;
-$headline-lean: MrsEavesItalic;
-$content-font: Caecilia-Light;
 
 
 /* ==========================================================================

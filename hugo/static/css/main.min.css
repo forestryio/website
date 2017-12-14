@@ -1,3 +1,5 @@
+
+@import url("//hello.myfonts.net/count/34fcf3");
 /* ==========================================================================
    warming up... 
    ========================================================================== */
@@ -384,12 +386,6 @@ textarea {
   padding: 0.2em 0;
 }
 /* ==========================================================================
-   variables (SaSS & CSS custom properties)
-   ========================================================================== */
-/* CSS variables (not actually mutable) */
-/* it's actually the popular default as well */
-/* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
-/* ==========================================================================
    fonts
    ========================================================================== */
 /* Purchased web font: @import must be at top of file, otherwise CSS will not work */
@@ -398,6 +394,12 @@ textarea {
 @font-face {font-family: Meltow; src: url('../_fonts/MeltowSan300-Regular.ttf'); font-weight: 300;}
 @font-face {font-family: MrsEavesItalic; src: url('../_fonts/MrsEavesItalic.ttf');}
 @font-face {font-family: Caecilia-Light; src: url('../_fonts/Caecilia-Light.ttf');}
+/* CSS variables (not actually mutable) */
+/* it's actually the popular default as well */
+/* ==========================================================================
+   Brand Color
+   ========================================================================== */
+/* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
 /* ==========================================================================
    Media Queries and custom media definitions
    ========================================================================== */
@@ -410,7 +412,7 @@ textarea {
    Extends
    ========================================================================== */
 /* usage: @extend vertical-align; */
-.hero-content .arrow-down {
+.hero-content .arrow-down{
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1003,8 +1005,10 @@ body.open .arrow-down:after {
                 transform: translateY(-50%);
       }
 .section-wrapper:before, .section-wrapper:after {
-  content: " ";/* 1 */
-  display: table;/* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 .section-wrapper:after {
   clear: both;
@@ -1329,8 +1333,8 @@ body.in-carousel .hero-carousel .slide.active .main-cta, body.in-carousel .hero-
 /* single-liner works like this */
 body {
 }
-@media (min-width: 359px) {
-  body {
+@media (min-width: 359px){
+  body{
   opacity: 1;
   }
 }
@@ -1478,6 +1482,9 @@ body {
         }
 }
 @media (min-width: 1440px) {
+    .hero-content .news {
+      bottom: 4rem;
+    }
         .hero-carousel .slide-inner .main-content .more-info {
           width: 30rem;
         }
@@ -3174,6 +3181,9 @@ body {
 /* ==========================================================================
    List Page
    ========================================================================== */
+.section-privacy {
+  font-family: Caecilia-Light;
+}
 .section-privacy .front-page .headlines {
       width: 272px;
       width: 17rem;
@@ -3184,6 +3194,7 @@ body {
 .section-privacy .front-page .headlines .headline-lean { font-size: 2em; }
 .section-privacy .front-page .explanation-container {
       background-color: rgb(228, 228, 228);
+      font-size: .8em;
     }
 .section-privacy .front-page .explanation-container .explanation {
         width: 272px;
@@ -3191,7 +3202,6 @@ body {
         margin: 2em auto;
       }
 .section-privacy .front-page .explanation-container .explanation p { 
-          font-size: .8em; 
           line-height: 1.4;
           margin: 0 0 1em 0;
         }
@@ -3364,7 +3374,7 @@ body {
         margin: 1em;
         bottom: 0;
         left: 0;
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
         .section-privacy .front-page .explanation-container .explanation {
@@ -3648,34 +3658,46 @@ body {
    Blog Article Page
    ========================================================================== */
 .blog-page {
+  font-family: Caecilia-Light;
   width: 272px;
   width: 17rem;
   margin: 64px auto 32px auto;
   margin: 4rem auto 2rem auto;
+  font-size: .9em;
 }
 .blog-page .desktop { display: none; }
 .blog-page .category {
-    font-family: Caecilia-Light;
     font-size: 11.2px;
     font-size: .7rem;
     color: rgb(93, 178, 168);
     text-transform: uppercase;
     margin: 1.5em 0;
   }
-.blog-page img.cover {
-    width: 100%;
-  }
 .blog-page .title {
     text-align: left;
     margin: 1em 0;
     font-size: 1.5em;
   }
+.blog-page img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 .blog-page p {
-    font-size: .9em;
     margin: 1em 0;
   }
+.blog-page ul {
+    margin-left: 24px;
+    margin-left: 1.5rem;
+  }
+.blog-page h5 {
+    margin: .5em 0
+  }
+.blog-page h5 + ul {
+  font-size: .8em;
+}
 .blog-page .meta-info {
-    font-family: Caecilia-Light;
+    margin-top: 2em;
   }
 /* ==========================================================================
    Category Activation
@@ -3904,25 +3926,5 @@ body {
         .section-licensedformats .interior-page .match-dark .tiers {
           margin-left: 2rem;
         }
-}
-html::before {
-  display: block;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  font-size: .9em;
-  padding: 1.5em 1em 1.5em 4.5em;
-  color: white;
-  background-color: #DF4F5E;
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248px%22%20height%3D%2248px%22%20viewBox%3D%220%200%20512%20512%22%20enable-background%3D%22new%200%200%20512%20512%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23A82734%22%20id%3D%22warning-4-icon%22%20d%3D%22M228.55%2C134.812h54.9v166.5h-54.9V134.812z%20M256%2C385.188c-16.362%2C0-29.626-13.264-29.626-29.625c0-16.362%2C13.264-29.627%2C29.626-29.627c16.361%2C0%2C29.625%2C13.265%2C29.625%2C29.627C285.625%2C371.924%2C272.361%2C385.188%2C256%2C385.188z%20M256%2C90c91.742%2C0%2C166%2C74.245%2C166%2C166c0%2C91.741-74.245%2C166-166%2C166c-91.742%2C0-166-74.245-166-166C90%2C164.259%2C164.245%2C90%2C256%2C90z%20M256%2C50C142.229%2C50%2C50%2C142.229%2C50%2C256s92.229%2C206%2C206%2C206s206-92.229%2C206-206S369.771%2C50%2C256%2C50z%22%2F%3E%3C%2Fsvg%3E") .5em no-repeat, #DF4F5E linear-gradient(#DF4F5E, #CE3741);
-  border: 1px solid #C64F4B;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 0 #EB8A93, 0 0 .3em rgba(0,0,0, .5);
-  white-space: pre-wrap;
-  font-family: Menlo, Monaco, monospace;
-  text-shadow: 0 1px #A82734;
-  content: "src/css/main.scss\00000a31:1	@import must precede all other statements (besides @charset) [postcss-partial-import]";
 }
 /*# sourceMappingURL=main.scss.map */
