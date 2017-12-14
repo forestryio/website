@@ -43,7 +43,7 @@
     "merge-stream": "^1.0.1",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-clean": "^1.1.0",
-    "postcss-cssnext": "^2.7.0",
+    "postcss-cssnext": "^3.0.2",
     "postcss-if-media": "^1.0.3",
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^5.0.0",

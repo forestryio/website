@@ -150,7 +150,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
 }
 /**
@@ -237,7 +238,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box; /* 1 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 /**
@@ -254,7 +256,8 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
  */
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 2 */
 }
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -309,7 +312,8 @@ td, th {
   Define your resets here or use something like Normalize.css if you like
  */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html, body{
   margin: 0;
@@ -430,10 +434,10 @@ textarea {
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
 .fp-enabled body, html.fp-enabled{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:rgba(0, 0, 0, 0)}
-.fp-section{position:relative;box-sizing:border-box}
+.fp-section{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box}
 .fp-slide{float:left}
 .fp-slide, .fp-slidesContainer{height:100%;display:block}
-.fp-slides{z-index:1;height:100%;overflow:hidden;position:relative;transition:all .3s ease-out}
+.fp-slides{z-index:1;height:100%;overflow:hidden;position:relative;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 .fp-section.fp-table, .fp-slide.fp-table{display:table;table-layout:fixed;width:100%}
 .fp-tableCell{display:table-cell;vertical-align:middle;width:100%;height:100%}
 .fp-slidesContainer{float:left;position:relative}
@@ -443,7 +447,7 @@ textarea {
 .fp-scrollable{overflow:hidden;position:relative}
 .fp-scroller{overflow:hidden}
 .iScrollIndicator{border:0!important}
-.fp-notransition{transition:none!important}
+.fp-notransition{-webkit-transition:none!important;transition:none!important}
 #fp-nav{position:fixed;z-index:100;margin-top:-32px;top:50%;opacity:1;-webkit-transform:translate3d(0,0,0)}
 #fp-nav.right{right:17px}
 #fp-nav.left{left:17px}
@@ -455,10 +459,10 @@ textarea {
 .fp-slidesNav ul li{display:inline-block}
 #fp-nav ul li a, .fp-slidesNav ul li a{display:block;position:relative;z-index:1;width:100%;height:100%;cursor:pointer;text-decoration:none}
 #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{height:12px;width:12px;margin:-6px 0 0 -6px;border-radius:100%}
-#fp-nav ul li a span, .fp-slidesNav ul li a span{border-radius:50%;position:absolute;z-index:1;height:4px;width:4px;border:0;background:#333;left:50%;top:50%;margin:-2px 0 0 -2px;transition:all .1s ease-in-out}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{border-radius:50%;position:absolute;z-index:1;height:4px;width:4px;border:0;background:#333;left:50%;top:50%;margin:-2px 0 0 -2px;-webkit-transition:all .1s ease-in-out;transition:all .1s ease-in-out}
 #fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{width:10px;height:10px;margin:-5px 0 0 -5px}
 #fp-nav ul li .fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:220px;overflow:hidden;display:block;opacity:0;width:0;cursor:pointer}
-#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active+.fp-tooltip{transition:opacity .2s ease-in;width:auto;opacity:1}
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active+.fp-tooltip{-webkit-transition:opacity .2s ease-in;transition:opacity .2s ease-in;width:auto;opacity:1}
 #fp-nav ul li .fp-tooltip.right{right:20px}
 #fp-nav ul li .fp-tooltip.left{left:20px}
 .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell, .fp-auto-height.fp-section{height:auto!important}
@@ -684,6 +688,7 @@ body.open .arrow-down:after {
     display: none;
   }
 .site-navigation {
+  -webkit-transition: -webkit-transform 300ms linear;
   transition: -webkit-transform 300ms linear;
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
@@ -694,7 +699,7 @@ body.open .arrow-down:after {
 .site-navigation .nav-icon span:nth-child(2) { top: .5em; left:0; width: 100%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 .site-navigation .nav-icon span:nth-child(3) { top: .5em; left:0; width: 100%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
 .site-navigation .nav-icon span:nth-child(4) { top: 1em; left:0; width: 100%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }
-.site-navigation .nav-icon span { transition: .3s ease-in-out; }
+.site-navigation .nav-icon span { -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
 .open .site-navigation {
   /* left: 15em; */
   -webkit-transform: translateX(15em);
@@ -705,11 +710,13 @@ body.open .arrow-down:after {
 .open .site-navigation .nav-icon span:nth-child(3) { -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
 .open .site-navigation .nav-icon span:nth-child(4) { top: 1em; left: 50%; width: 0%; }
 .menu-container {
+  -webkit-transition: opacity 300ms, visibility 0ms ease-out 300ms;
   transition: opacity 300ms, visibility 0ms ease-out 300ms;
   visibility: hidden;
   opacity: 0.5;
 }
 .open .menu-container {
+  -webkit-transition: opacity 300ms, visibility 0ms ease-out 0ms;
   transition: opacity 300ms, visibility 0ms ease-out 0ms;
   visibility: visible;
   opacity: 1;
@@ -717,6 +724,7 @@ body.open .arrow-down:after {
 .site-wrapper, .fixed-frame {
   -webkit-transform: translateX(0em);
           transform: translateX(0em);
+  -webkit-transition: -webkit-transform 300ms linear;
   transition: -webkit-transform 300ms linear;
   transition: transform 300ms linear;
   transition: transform 300ms linear, -webkit-transform 300ms linear;
@@ -1312,6 +1320,7 @@ body.open .arrow-down:after {
    Hero Carousel Better Transition
    ========================================================================== */
 .hero-carousel .slick-dots li {
+    -webkit-transition: background-color 600ms;
     transition: background-color 600ms
   }
 .hero-carousel .slick-dots li.slick-active {
@@ -1322,6 +1331,7 @@ body.open .arrow-down:after {
     }
 .hero-carousel .slide .main-cta, .hero-carousel .slide .main-content {
     opacity: 0;
+    -webkit-transition: opacity 1s;
     transition: opacity 1s;
   }
 body.in-carousel .hero-carousel .slide.active .main-cta, body.in-carousel .hero-carousel .slide.active .main-content {
@@ -1713,16 +1723,20 @@ body {
     visibility: hidden;
   }
 .interior-page .match-light .formats-elaboration .format.active {
+    -webkit-transition: opacity 500ms ease-in 100ms;
     transition: opacity 500ms ease-in 100ms;
     visibility: visible;
     opacity: 1;
   }
 /* .stage-showcase  */
 .fixed-frame .part-dark {
+  -webkit-transition: all 600ms;
   transition: all 600ms;
+  -webkit-transition-property: width, height;
   transition-property: width, height;
 }
 .formats-category {
+  -webkit-transition: opacity 300ms;
   transition: opacity 300ms;
 }
 .stage-intro .page-3 .formats-category {
@@ -3482,6 +3496,9 @@ body {
 .section-contact .form-container form .row .right input[type="text"]:-ms-input-placeholder {
   color: rgb(255, 255, 255);
 }
+.section-contact .form-container form .row .right input[type="text"]::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}
 .section-contact .form-container form .row .right input[type="text"]::placeholder {
   color: rgb(255, 255, 255);
 }
@@ -3590,7 +3607,7 @@ body {
           .section-contact .form-container form .row:nth-of-type(2) .left { margin-top: .3em; }
             .section-contact .form-container form .row:nth-of-type(2) .right label {
               display: block;
-              width: calc(0.333 * (100% - 2em));
+              width: calc(33.3% - 0.666em);
               float: left;
               font-size: 1rem;
               margin: 0 0 1em 0
