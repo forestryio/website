@@ -1,11 +1,4 @@
 ---
-pages:
-- resources/blog/engagement-on-the-iphone-x.md
-- resources/blog/measuring-outcomes-and-audiences.md
-- resources/blog/mobile-shoppers-who-are-they.md
-- resources/blog/yieldmo-further-lead-mobile-marketplace.md
-- resources/blog/yieldmo-ranked-top-10.md
-- resources/blog/the-case-for-view-through-attribution.md
 hide_body: false
 fields:
 - name: title
