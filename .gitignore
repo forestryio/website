@@ -1,4 +1,11 @@
+# Don't commit system files or dependencies
+*.DS_Store
 node_modules/
-dist/*
-!dist/css
-!dist/js
+
+# Ensure Hugo builds aren't committed to Git
+public/
+hugo/public/
+dist/
+hugo/dist/
+.tmp/
+hugo/.tmp/

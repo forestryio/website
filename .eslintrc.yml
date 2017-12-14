@@ -7,27 +7,27 @@ plugins: [ "import" ]
 
 # enable ECMAScript features
 ecmaFeatures:
-  arrowFunctions: true
-  binaryLiterals: true
-  blockBindings: true
-  classes: true
-  defaultParams: true
-  destructuring: true
-  forOf: true
-  generators: true
-  jsx: true
-  modules: true
-  objectLiteralShorthandMethods: true
-  objectLiteralShorthandProperties: true
-  octalLiterals: true
-  spread: true
-  templateStrings: true
+arrowFunctions: true
+binaryLiterals: true
+blockBindings: true
+classes: true
+defaultParams: true
+destructuring: true
+forOf: true
+generators: true
+jsx: true
+modules: true
+objectLiteralShorthandMethods: true
+objectLiteralShorthandProperties: true
+octalLiterals: true
+spread: true
+templateStrings: true
 
 rules:
   # Possible Errors
   # https://github.com/eslint/eslint/tree/master/docs/rules#possible-errors
   no-control-regex: 2
-  no-console: 1
+  no-console: 0
   no-debugger: 2
   no-dupe-args: 2
   no-dupe-keys: 2
@@ -62,7 +62,7 @@ rules:
   no-trailing-spaces: 2
   object-curly-spacing: [2, "never"]
   quotes: [2, "double", "avoid-escape"]
-  semi: 2
+  semi: 0
   space-before-blocks: [2, "always"]
   space-before-function-paren: [2, "never"]
   space-in-parens: [2, "never"]
