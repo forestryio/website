@@ -9,6 +9,7 @@ import named from "vinyl-named"
 import path from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename";
+import runsequence from "run-sequence"
 import {spawnSync} from "child_process"
 import webpack from "webpack-stream"
 import webpackConfig from "./webpack.config"
@@ -41,13 +42,33 @@ process.env.HUGO_ENV = env
 // Initialize BrowserSync
 const browserSync = BrowserSync.create()
 
-// Run Hugo
-gulp.task("hugo", ["clean", "css", "js"], (cb) => build(cb))
+// Run development server with BrowserSync
+gulp.task("server", ["build"], () => {
+  browserSync.init({
+    server: {
+      baseDir: (isProduction) ? buildDir : tmpDir
+    }
+  })
 
-// Remove build directories
-gulp.task("clean", (cb) => {
-  return del([tmpDir, buildDir])
+  gulp.watch(path.normalize(srcDir + "/js/**/*.js"), ["js"])
+  gulp.watch(path.normalize(srcDir + "/css/**/*.{css,scss,sass}"), ["css"])
+  gulp.watch(
+    [
+      path.normalize(hugoDir) + "/content/**/*",
+      "!" + path.normalize(hugoDir) + "/static/css/**/*",
+      "!" + path.normalize(hugoDir) + "/static/js/**/*"
+    ],
+    ["hugo"]
+  )
 })
+
+// Runs build tasks
+gulp.task("build", ["clean"], (cb) => {
+  runsequence(["css"], "hugo", cb)
+})
+
+// Run Hugo
+gulp.task("hugo", (cb) => build(cb))
 
 // Compile CSS with PostCSS
 gulp.task("css", (cb) => {
@@ -100,23 +121,9 @@ gulp.task("js", (cb) => {
   return merge(production, development)
 })
 
-// Run development server with BrowserSync
-gulp.task("server", ["hugo", "css", "js"], () => {
-  browserSync.init({
-    server: {
-      baseDir: (isProduction) ? buildDir : tmpDir
-    }
-  })
-
-  gulp.watch(path.normalize(srcDir + "/js/**/*.js"), ["js"])
-  gulp.watch(path.normalize(srcDir + "/css/**/*.css"), ["css"])
-  gulp.watch(
-    [
-      path.normalize(hugoDir + "/**/*"),
-      "!" + path.normalize(hugoDir + "/{js,css}/**/*")
-    ],
-    ["hugo"]
-  )
+// Remove build directories
+gulp.task("clean", (cb) => {
+  return del([tmpDir, buildDir])
 })
 
 /**
