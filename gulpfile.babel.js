@@ -9,6 +9,7 @@ import named from "vinyl-named"
 import path from "path"
 import postcss from "gulp-postcss"
 import rename from "gulp-rename";
+import runsequence from "run-sequence"
 import {spawnSync} from "child_process"
 import webpack from "webpack-stream"
 import webpackConfig from "./webpack.config"
@@ -50,11 +51,12 @@ gulp.task("server", ["build"], () => {
   })
 
   gulp.watch(path.normalize(srcDir + "/js/**/*.js"), ["js"])
-  gulp.watch(path.normalize(srcDir + "/css/**/*.css"), ["css"])
+  gulp.watch(path.normalize(srcDir + "/css/**/*.{css,scss,sass}"), ["css"])
   gulp.watch(
     [
-      path.normalize(hugoDir + "/**/*"),
-      "!" + path.normalize(hugoDir + "/{js,css}/**/*")
+      path.normalize(hugoDir) + "/content/**/*",
+      "!" + path.normalize(hugoDir) + "/static/css/**/*",
+      "!" + path.normalize(hugoDir) + "/static/js/**/*"
     ],
     ["hugo"]
   )
@@ -62,7 +64,7 @@ gulp.task("server", ["build"], () => {
 
 // Runs build tasks
 gulp.task("build", ["clean"], (cb) => {
-  runsequence(["styles", "scripts"], "hugo", cb)
+  runsequence(["css"], "hugo", cb)
 })
 
 // Run Hugo
