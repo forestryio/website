@@ -54,7 +54,8 @@ gulp.task("server", ["build"], () => {
   gulp.watch(path.normalize(srcDir + "/css/**/*.{css,scss,sass}"), ["css"])
   gulp.watch(
     [
-      path.normalize(hugoDir) + "/content/**/*",
+      path.normalize(hugoDir) + "/**/*",
+      path.normalize(hugoDir) + "/**/**/*",
       "!" + path.normalize(hugoDir) + "/static/css/**/*",
       "!" + path.normalize(hugoDir) + "/static/js/**/*"
     ],
