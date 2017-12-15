@@ -40,7 +40,7 @@ Marketers that want to reach these highly technologically-savvy iPhone X custome
 
 * _Scroll Rate - defined by a vertical change in direction of at least 5% of the ad height_
 
-##### **Total Impressions Analyzed: 6126194**
+##### **Total Impressions Analyzed: 6,126,194**
 
 ##### **Impressions, by device**
 
