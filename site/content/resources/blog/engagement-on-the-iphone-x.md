@@ -18,7 +18,7 @@ After analyzing millions of mobile ad impressions over the one-month period in w
 
 ![](/uploads/iphoneXscrollrate.gif)
 
-Let's examine some of the possible explanations. First, the early adopters of the iPhone X could truly be power users and are that much more engrossed in their mobile content and ads. Also, there is a physical reality that must be considered—the iPhone X’s key feature is an edge-to-edge screen that is 5.8” (bigger than even the iPhone 8 Plus). With more vertical space, it's likely that users are scrolling more frequently and actively.
+Let's examine some of the possible explanations. First, the early adopters of the iPhone X could truly be power users and are that much more engrossed in their mobile content and ads. Also, there is a physical reality that must be considered—the iPhone X’s key feature is an edge-to-edge screen that is 5.8” (bigger than even the iPhone 8 Plus). With more vertical space, it's likely that users are scrolling more frequently and actively. Or, perhaps the prevention of intrusive ads via iOS 11’s Intelligent Tracking Prevention is positively changing users’ perceptions of ads and encouraging them to engage more.   
 
 Marketers that want to reach these highly technologically-savvy iPhone X customers should use this higher level of engagement to their advantage. One way is with ad formats that animate as the user scrolls. Yieldmo’s [Hyperscroller](https://formats.yieldmo.com/#/format/hyperplay) is one example of this type of format that will ensure the ad experience is just as engaging as their shiny new device.
 
