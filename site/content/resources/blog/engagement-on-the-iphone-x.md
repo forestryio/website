@@ -22,6 +22,10 @@ Let's examine some of the possible explanations. First, the early adopters of th
 
 Marketers that want to reach these highly technologically-savvy iPhone X customers should use this higher level of engagement to their advantage. One way is with ad formats that animate as the user scrolls. Yieldmo’s [Hyperscroller](https://formats.yieldmo.com/#/format/hyperplay) is one example of this type of format that will ensure the ad experience is just as engaging as their shiny new device.
 
+<br>
+
+<br>
+
 **Methodology**
 
 ##### **Time Frame: 11/3/17-12/3/17**
