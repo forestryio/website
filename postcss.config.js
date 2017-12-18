@@ -10,7 +10,8 @@ module.exports = (ctx) => {
       "postcss-cssnext": {},
       "postcss-if-media": {},
       "postcss-reporter": {},
-      "postcss-browser-reporter": {}
+      "postcss-browser-reporter": {},
+      "postcss-clean": {}
     }
   }
 

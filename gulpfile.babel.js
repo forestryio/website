@@ -1,4 +1,5 @@
 import BrowserSync from "browser-sync"
+import sourcemaps from "gulp-sourcemaps";
 import del from "del"
 import gulp from "gulp"
 import gutil from "gulp-util"
@@ -77,17 +78,21 @@ gulp.task("css", (cb) => {
 
   // Generate production CSS, send to hugo/
   const production = gulp.src(src)
+    .pipe(sourcemaps.init())
     .pipe(postcss({env: "production"}).on("error", (err) => log(err, err.toString(), "PostCSS")))
     .pipe(rename({extname: ".min.css"}))  // rename
     .pipe(gulp.dest(path.normalize(hugoDir + "/static/css")))
+    .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
     .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/css"))))
     .pipe(gulpif(isProduction, browserSync.stream()))
 
   // Generate development CSS, send to .tmp/
   const development = gulp.src(src)
+    .pipe(sourcemaps.init())
     .pipe(gulpif(!isProduction, postcss({env: "development"})
       .on("error", (err) => log(err, err.toString(), "PostCSS"))))
     .pipe(gulpif(!isProduction, rename({extname: ".min.css"})))  // rename
+    .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/css"))))
     .pipe(gulpif(!isProduction, browserSync.stream()))
 

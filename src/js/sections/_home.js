@@ -47,13 +47,9 @@ var home = {
         currentSlide.querySelector('video').load();
         currentSlide.querySelector('video').play();
 
-        // console.log('slide leaving, next is: ', nextSlideIndex);
-
         document.body.classList.add('sliding');
       },
       afterSlideLoad: function(index, slideIndex) {
-        // console.log('after slide loaded', index, slideIndex);
-
         document.body.classList.remove('sliding');
       }
     });
@@ -69,6 +65,8 @@ var home = {
   init: function() {
     this.registerEvents();
     this.activateFullPage();
+
+    console.log('hallo');
   }
 }
 
