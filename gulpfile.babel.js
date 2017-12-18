@@ -112,7 +112,7 @@ gulp.task("js", (cb) => {
   // Generate development JS, send to .tmp/
   const development = gulp.src(src)
     .pipe(gulpif(!isProduction, named()))
-    .pipe(gulpif(!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval-source-maps"}), null, (err, stats) => {
+    .pipe(gulpif(!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval"}), null, (err, stats) => {
       log(err, stats.toString({colors: true, errors: true}), "webpack")
     })))
     .pipe(gulpif(!isProduction, rename({extname: ".min.js"})))  // rename
