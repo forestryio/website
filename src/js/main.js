@@ -11,7 +11,7 @@ $(function() {
     },
 
     sections: {
-      home: require('./sections/_home')
+      home: require('./sections/_home.js')
     },
 
     props: {
