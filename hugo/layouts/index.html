@@ -32,22 +32,5 @@
 
 
 {{ define "section-scripts"}}
-<<<<<<< HEAD:hugo/layouts/index.html
-<!-- NETLIFY IDENTITY WIDGET -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<!-- Netlify identity widget script -->
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-=======
 <script src='{{ "js/plugins/jquery.fullpage.min.js" | absURL }}'></script>
->>>>>>> dev:site/layouts/index.html
 {{ end }}
