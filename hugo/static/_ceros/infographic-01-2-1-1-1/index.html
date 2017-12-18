@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en" class="view html5-player">
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <script type="text/javascript">
+            (function() {
+                var locationWithNoQuery = document.location.href.split('?')[0];
+                if(document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                }
+                else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(p|page)\/[a-z0-9-]*\/?$/, '');
+                }
+                document.write("<base href='" + window.cerosBaseUrl + "' />");
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+        <script type="text/javascript">
+            window.cerosContext = {
+                viewAssetsDomain    : '',
+                publicAssetsBaseUrl : 'assets/',
+                videoJsSwf          : 'assets/player/shared/video/video-js.7caab3b611bb1f129f0e0368fe0ad2e0.swf',
+                isEmbedded          : top != window,
+                isVanityDomain      : location.hostname !== 'view.ceros.com',
+                previewMode         : false,
+                logging: {
+                emitDevWarnings : false,
+                    modes : {
+                            'debug' : false,
+                            'info'  : false,
+                            'warn'  : true,
+                            'error' : true
+                    }
+                },
+                usePageSlugsInNavigation  : false,
+                usePreviewBanner          : false,
+                useDocumentLoadingSpinner : true,
+                analyticsApplicationKey   : 'player',
+                analyticsMaxDwellTime     : 1800,
+                analyticsUrl              : '',
+                apiVersion                : 'v1',
+                revalidateWithCore        : false,
+                ajaxCaching               : true,
+                mediaDomainMap: null,
+                rollbarAccessKey: 'dbaacb75e2744b438d9f73fe01b1a048',
+                deploymentName: 'production',
+                appVersion: '5.61.0',
+                rollbarMaxItems: 5,
+
+                accountSlug         : 'yieldmo',
+                gracePeriodExpired  : 9223372036854775807 < Date.now() / 1000,
+                    appSlug             : 'test',
+                    issueAliasSlug      : 'infographic-01-2-1-1-1',
+                    issue               : {"id":98035,"title":"Infographic_01 Mobile Final","name":"Infographic_01 Mobile Final","slug":"experience-59f386ab8d214","status":"published","projectId":15472,"wipExperienceVersionId":278151,"publishedExperienceVersionId":295630,"createdByMemberId":91,"primaryIssueAliasId":147019,"creationDate":"Fri, 27 Oct 2017 15:19:07 -0400","modifiedDate":"Fri, 1 Dec 2017 08:52:00 -0500","activeDate":"Fri, 1 Dec 2017 08:52:00 -0500","firstPublishedDate":"Wed, 29 Nov 2017 13:29:23 -0500","firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/yieldmo\/studio-thumbnails\/page-59f386ab288b5.jpg","importLinkShared":false},
+                    docVersion          : {"id":295630,"slug":"experience-version-5a215e8075746","loadLowRes":true,"seoNoIndex":false,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/yieldmo\/doc-version-json\/v10\/experience-version-5a215e8075746.js","seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","viewportHeight":1150,"viewportWidth":800,"editorPagesManifest":[{"uri":"\/v1\/account\/yieldmo\/pages\/page-5a215e8075816","initiallyDisabled":false,"thumbnail":"media\/47b1ab668ac9e9ef59e6ed2d590fc34e\/page-thumbnail-crop.jpg"}],"seoNoscriptHtml":"","experienceId":98035,"committedByMemberId":7365,"creationDate":"Fri, 1 Dec 2017 08:52:00 -0500","modifiedDate":"Fri, 1 Dec 2017 08:52:00 -0500","publishedDate":"Fri, 1 Dec 2017 08:52:00 -0500","scaleExperience":false,"carousel":{"enabled":false,"autoTransition":0,"autoTransitionDelay":5},"theming":{"arrowsEnabled":true,"swipeEnabled":true,"menuEnabled":false,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+                    fontManifest        : {"Roboto-regular":{"name":"Roboto-regular","version":18,"familyName":"Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"builtIn":false,"metricsFileURL":"https:\/\/assets-s3-us-east-1.ceros.com\/_lambda-font-metrics\/Roboto-regular-v18.json"}},
+                googleAnalyticsId   : null,
+                showCerosBranding   : false,
+                allowEmbedding      : true,
+                isTrialAccount      : false,
+                noAnalyticsTracking       : false,
+                allowCommerceIntegration  : false,
+                allowLightboxes           : true,
+                allowEmbeddedPlayerSdk    : false,
+                commerceSettings: {
+                panelWidth      : null,
+                panelHeight     : null,
+                    productUrl      : '',
+                    shoppingCartUrl : '',
+                },
+                    themeObj: {
+                    arrowsEnabled    : true,
+                    swipeEnabled     : true,
+                    menuEnabled      : false,
+                        menuFgColor      : '#FFFFFF',
+                        menuBgColor      : '#000000',
+                        menuHoverOpacity : 0.6,
+                        backgroundColor  : '#FFFFFF',
+                    backgroundImage  :
+                            null
+
+                    },
+                googleFontUrl: '',
+            };
+        </script>
+
+        <!--
+          DISPLAY SETTINGS
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="monitor-signature" content="monitor:player:html5" />
+
+        <title> </title>
+
+
+
+        <meta property="og:title" content=""/>
+            <meta property="og:image" content="media/47b1ab668ac9e9ef59e6ed2d590fc34e/page-thumbnail-crop.jpg" />
+        <meta property="og:url"   content="" />
+        <meta property="og:type"  content="object"/>
+
+
+        <script language="Javascript" id="docversion-request-script">
+            window.docVersionRequest = window.jQuery.ajax({
+                url           : "media/experience-version-5a215e8075746.js",
+                dataType      : 'jsonp',
+                jsonp         : false, 
+                cache         : true,  
+                jsonpCallback : "loadDocVersion_v1_account_yieldmo_document_versions_experience_version_5a215e8075746",
+                success       : window.jQuery.noop 
+            });
+        </script>
+
+        <!--
+          FONTS
+        -->
+
+
+
+
+        <script type="text/javascript">
+            window.cerosPlayerLoadStart = new Date();
+        </script>
+
+        <script
+            type="text/javascript"
+            crossorigin="anonymous"
+            src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js" >
+        </script>
+
+        <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.c3e75268e27b0c19e0d20a25f3d7840d.js" >
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="assets/player/applications/html5-player/css/html5-player.04d6b9d290b72709310ea64cced695b2.css" />
+
+        <style>
+            body {
+                background-color: #FFFFFF;
+            }
+            body:-ms-fullscreen::-ms-backdrop {
+                background-color: #FFFFFF;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+
+
+        <noscript>
+            
+                <div id="page-5a215e8075816" class="page"><div id="" class="text-component">business & finance
+
+You can find Mobile Shoppers here, but they are more infrequent visitors.  
+
+</div>
+<img src="media/images/c10aeeebe5f0b3e95f99db5f109380e5/ellipse.png" alt="" id="" class="image-component" />
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<img src="media/images/ce1b7acf06585df264f086675692c706/chart3-line.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">ANDROID</div>
+<div id="" class="text-component">law, gov & politics
+
+You can find Mobile Shoppers here, but they are more infrequent visitors.  
+
+</div>
+<div id="" class="text-component">Fans</div>
+<div id="" class="text-component">1                                 2                                   3                                   4                                  5                              above</div>
+<div id="" class="text-component">HEALTH & FITNESS</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">5th</div>
+<div id="" class="text-component">1st</div>
+<div id="" class="text-component">CONTENT VERTICALS</div>
+<div id="" class="text-component">check-out</div>
+<div id="" class="text-component">Click to reveal additional information</div>
+<div id="" class="text-component">Local News
+
+Looking for shoppers? Checking the news is a part of Mobile Shoppers’ daily routine.
+
+</div>
+<div id="" class="text-component">business & finance</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">SPORTS</div>
+<img src="media/images/20405133be5b3df9e54217b3551ead09/swatches-color.jpg" alt="" id="" class="image-component" />
+<div id="" class="text-component">national news</div>
+<div id="" class="text-component">4th</div>
+<div id="" class="text-component">*Audiences are proprietary Yieldmo segments.</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">National news
+
+Not only do Mobile Shoppers care about their local community, they also stay up-to-date with national and international news. </div>
+<div id="" class="text-component">1</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">CONVERSION RATE</div>
+<img src="media/images/83cee7dbf831c29d452c057e63dd1be4/arrow-icon.svg" alt="" id="" class="image-component" />
+<div id="" class="text-component">CTR</div>
+<img src="media/images/4605d6d8ff1dfff54ac3b78fa194fd81/ios.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">vs</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<img src="media/images/e422b6db3cc3247ce7b90a1bd32b5426/background.jpg" alt="" id="" class="image-component" />
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">Yieldmo collects all the watching, lingering, swiping and scrolling of your mobile customers. This massive amount of data reveals the truth behind these customers' behaviors and makes your campaigns even smarter. 
+
+Take a look for yourself!</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">1st</div>
+<div id="" class="text-component">
+
+
+
+
+Sports
+</div>
+<div id="" class="text-component">Looking to attract new customers? The                                                     
+                                  and 
+             are also all very interested in mobile shopping. * </div>
+<div id="" class="text-component">news lovers,</div>
+<img src="media/images/c10aeeebe5f0b3e95f99db5f109380e5/ellipse.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">health & fitness
+
+You can find Mobile Shoppers here, but they are more infrequent visitors.  
+
+</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<img src="media/images/5766e5922ae2e260051dfb35dfb8b9c9/chart-02-android.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">
+
+
+NEWS
+
+
+</div>
+<div id="" class="text-component">TRANSACT</div>
+<div id="" class="text-component">Local News</div>
+<div id="" class="text-component">law, govt & politics</div>
+<div id="" class="text-component">Sports
+
+Let’s get ready to… shop! Mobile Shoppers frequently check in on their favorite sport’s team latest performance. 
+
+</div>
+<img src="media/images/f20b88a952c62d354560a00715c5ce2c/dotted-line-3.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">They are interested in shopping, but you may have to do some more convincing first.   
+</div>
+<div id="" class="text-component">WOMEN'S LIFESTYLE</div>
+<img src="media/images/8fe19d6d1062c45b7959f06fc7cf88b7/square-2.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">Retail
+
+Of course, Mobile Shoppers are always checking out the latest gadgets and gear. 
+
+</div>
+<div id="" class="text-component">*Mobile Shoppers is a proprietary Yieldmo audience segment.</div>
+<div id="" class="text-component">Mobile Shoppers* do more than just browse products. To connect with these customers, consider also reaching them within               content,                                                        sites, and on                   pages. </div>
+<div id="" class="text-component">arts & entertainment</div>
+<div id="" class="text-component">Arts & Entertainment
+
+You can find Mobile Shoppers reading up on the latest in Arts & Entertainment and they search for the coolest new experiences.</div>
+<div id="" class="text-component">Sports Lovers are always looking to score the latest products, gear, and accessories.  </div>
+<img src="media/images/1d4287748000fc5da30d29e99c4fdb49/chart3.jpg" alt="" id="" class="image-component" />
+<img src="media/images/0c70f5b289cc4c279cace69f36df8e6e/chart-02-complete.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">SECOND</div>
+<div id="" class="text-component">TOTAL VISITORS</div>
+<div id="" class="text-component">Click to reveal additional information</div>
+<div id="" class="text-component">food & drink
+
+You can find Mobile Shoppers here, but they are more infrequent visitors.  
+
+</div>
+<div id="" class="text-component">AUDIENCE SEGMENTS</div>
+<div id="" class="text-component">They may have different ideologies, but they are both interested in shopping around on their mobile phones. 
+</div>
+<div id="" class="text-component">3</div>
+<div id="" class="text-component">Click to reveal additional information</div>
+<div id="" class="text-component">NUMBER OF IMPRESSIONS</div>
+<div id="" class="text-component">2nd</div>
+<div id="" class="text-component">Conversion rate increases 73% between the         and           impression and has diminishing returns after the           impression. </div>
+<div id="" class="text-component">They may have different ideologies, but they are both interested in shopping around on their mobile phones. 
+</div>
+<div id="" class="text-component">family & parenting</div>
+<img src="media/images/090e81c8e6283cdeaf1fed9fb4d72e7b/chart-01.jpg" alt="" id="" class="image-component" />
+<div id="" class="text-component">They may care about the stock market by day, but these investors make purchases by night.</div>
+<div id="" class="text-component">family & parenting
+
+You can find Mobile Shoppers here, but they are more infrequent visitors.  
+
+</div>
+<div id="" class="text-component">When they aren’t at the office, these business-people are searching their phones for the best new products.   </div>
+<div id="" class="text-component">2</div>
+<div id="" class="text-component">Sports</div>
+<div id="" class="text-component">financially-savvy, </div>
+<img src="media/images/9c1e58f50ff40e2a5f75738365f6f0ed/chart-02-ios.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">
+
+
+
+arts & entertainment
+</div>
+<div id="" class="text-component">women's lifestyle
+
+Mobile Shoppers turn toward Women’s Lifestyle content to understand the latest trends and style tips. 
+
+</div>
+<div id="" class="text-component">food & drink</div>
+<div id="" class="text-component">retail</div>
+<div id="" class="text-component">SECOND</div>
+<img src="media/images/c10aeeebe5f0b3e95f99db5f109380e5/ellipse.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">2nd</div>
+<img src="media/images/d3465850196409c29958fcd05cdf85ab/android.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">They are interested in shopping, but you may have to do some more convincing first.   
+</div>
+<img src="media/images/83cee7dbf831c29d452c057e63dd1be4/arrow-icon.svg" alt="" id="" class="image-component" />
+<div id="" class="text-component"> iOS</div>
+<div id="" class="text-component">Conversion rate increases 52% between the           and          impression and has diminishing returns after the          impression. </div>
+<div id="" class="text-component">They are interested in shopping, but you may have to do some more convincing first.   
+</div>
+<div id="" class="text-component">They are interested in shopping, but you may have to do some more convincing first.</div>
+<img src="media/images/83cee7dbf831c29d452c057e63dd1be4/arrow-icon.svg" alt="" id="" class="image-component" />
+<div id="" class="text-component">If they have the latest digital gadgets, you better believe they’re prepared to use them to shop.   
+</div>
+<div id="" class="text-component">Mobile Shoppers:
+Who are they?</div>
+<div id="" class="text-component">Android users may be more likely to                             on mobile, but both iPhone and Android users are most likely to do so after seeing an
+ad for the                    time.  </div></div>
+        </noscript>
+
+
+    <div id="main"></div>
+    <div id="backgroundContainer"></div>
+
+
+
+        <!-- BEGIN CUSTOM HTML -->
+        
+        <!-- END CUSTOM HTML -->
+
+
+
+
+
+    </body>
+</html>

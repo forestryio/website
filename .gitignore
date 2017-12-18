@@ -1,6 +1,7 @@
 # Don't commit system files or dependencies
 *.DS_Store
 node_modules/
+<<<<<<< HEAD
 
 # Ensure Hugo builds aren't committed to Git
 public/
@@ -9,3 +10,6 @@ dist/
 hugo/dist/
 .tmp/
 hugo/.tmp/
+=======
+dist/
+>>>>>>> dev
