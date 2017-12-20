@@ -17,6 +17,8 @@ export default {
     ]
   },
 
+  devtool: "source-map",
+
   plugins: [
     new webpack.ProvidePlugin({
       "fetch": "imports-loader?this=>global!exports?global.fetch!whatwg-fetch"
