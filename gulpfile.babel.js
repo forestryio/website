@@ -9,6 +9,7 @@ import merge from "merge-stream"
 import named from "vinyl-named"
 import path from "path"
 import postcss from "gulp-postcss"
+import cleancss from "gulp-clean-css";
 import rename from "gulp-rename";
 import runsequence from "run-sequence"
 import {spawnSync} from "child_process"
@@ -80,9 +81,10 @@ gulp.task("css", (cb) => {
   const production = gulp.src(src)
     .pipe(sourcemaps.init())
     .pipe(postcss({env: "production"}).on("error", (err) => log(err, err.toString(), "PostCSS")))
+    .pipe(cleancss({compatibility: 'ie8'}))  // minify
     .pipe(rename({extname: ".min.css"}))  // rename
-    .pipe(gulp.dest(path.normalize(hugoDir + "/static/css")))
     .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
+    .pipe(gulp.dest(path.normalize(hugoDir + "/static/css")))
     .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/css"))))
     .pipe(gulpif(isProduction, browserSync.stream()))
 
@@ -91,6 +93,7 @@ gulp.task("css", (cb) => {
     .pipe(sourcemaps.init())
     .pipe(gulpif(!isProduction, postcss({env: "development"})
       .on("error", (err) => log(err, err.toString(), "PostCSS"))))
+    .pipe(cleancss({compatibility: 'ie8'}))  // minify
     .pipe(gulpif(!isProduction, rename({extname: ".min.css"})))  // rename
     .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/css"))))
