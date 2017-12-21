@@ -41,11 +41,13 @@
     color: $primary-white;
     font-size: 1.2rem;
 
-    .ym-logo {
+    img {
       margin: 0 auto;
       display: block;
-      height: 1rem;
     }
+
+    .ym-logo-tagline-yes { display: none; height: 3rem; }
+    .ym-logo-tagline-no { display: block; height: 2rem; }
 
     .subtitle {
       font-size: .8rem;
@@ -178,6 +180,9 @@
     }
 
     .title {
+      .ym-logo-tagline-yes { display: block; }
+      .ym-logo-tagline-no { display: none; }
+
       .subtitle {
         font-size: 1rem;
         margin-top: .8em;
