@@ -65,8 +65,6 @@ var home = {
   init: function() {
     this.registerEvents();
     this.activateFullPage();
-
-    console.log('hallo');
   }
 }
 
