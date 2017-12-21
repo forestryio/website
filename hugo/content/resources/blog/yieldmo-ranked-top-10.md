@@ -17,7 +17,7 @@ cover: "/_images/blog/au-deloitte-logo-black.jpg"
 ---
 Yieldmo ranked number 45 on Deloitte’s Technology Fast 500™, the 500 fastest growing technology, media, telecommunications, life sciences and energy tech companies in North America. Yieldmo grew **3,657%** between 2013 and 2016.
 
-Yieldmo’s Founder and Chief Executive Officer, Michael Yavonditte credits this extraordinary growth to Yieldmo’s highly-engaging, customer-centric approach to advertising. Driven by the world’s only engagement analytics system, Yieldmo delivers its customers deep insights derived from proprietary, user-preferred ad formats. Yieldmo analyzes more than 250 billion data points each month to reveal the truth behind advertisers’ campaign performance.
+Yieldmo’s Founder and Chief Executive Officer, Michael Yavonditte credits this extraordinary growth to Yieldmo’s highly-engaging, customer-centric approach to advertising. Driven by the world’s only engagement analytics system, Yieldmo delivers its customers deep insights derived from proprietary, user-preferred ad formats. Yieldmo analyzes more than 200 billion data points each month to reveal the truth behind advertisers’ campaign performance.
 
 Yavonditte said, “Yieldmo’s engagement data goes beyond the views and clicks to give marketers a deep understanding of how successfully their campaigns connected with target customers. This powerful information translates into higher performance, improved return on ad spend, and many new and repeat customers.”
 
