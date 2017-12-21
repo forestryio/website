@@ -209,6 +209,15 @@
 
 
 @media (--desktop-m) {
+  .section-insights .page-1 {
+    .match-dark {
+      .notes {
+        width: $desktop-m-content-width;
+        font-size: 1.2em;
+      }
+    }
+  }
+
   .section-insights .page-2 {
     .match-dark {
       .data-desc {

@@ -103,3 +103,26 @@
     }
   }
 }
+
+@media (--desktop-m) {
+  .section-engagement .page-1 {
+    .headlines {
+      width: $desktop-m-content-width;
+    }
+  }
+
+  .section-engagement .page-3 {
+    .match-light {
+      .headlines {
+        font-size: 2rem;
+        width: $desktop-m-content-width;
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        width: $desktop-m-content-width;
+      }
+    }
+  }
+}
