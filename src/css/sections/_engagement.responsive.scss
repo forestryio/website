@@ -55,7 +55,6 @@
       top: 50%;
       transform: translateY(-50%);
       width: $desktop-s-content-width;
-      font-size: 1.5rem;
     }
     .hand-held {
       width: 70%;
@@ -68,7 +67,6 @@
 
     .headlines {
       width: 26em;
-      font-size: 1.5rem;
     }
 
     .pattern {
@@ -86,7 +84,7 @@
       .headlines {
         right: auto;
         left: 2em;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         width: $desktop-s-content-width;
 
         .explanation {
