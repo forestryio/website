@@ -67,7 +67,7 @@ gulp.task("server", ["build"], () => {
 
 // Runs build tasks
 gulp.task("build", ["clean"], (cb) => {
-  runsequence(["css"], "hugo", cb)
+  runsequence(["css", "js"], "hugo", cb)
 })
 
 // Run Hugo
@@ -79,12 +79,10 @@ gulp.task("css", (cb) => {
 
   // Generate production CSS, send to hugo/
   const production = gulp.src(src)
-    .pipe(sourcemaps.init())
     .pipe(postcss({env: "production"}).on("error", (err) => log(err, err.toString(), "PostCSS")))
     .pipe(cleancss({compatibility: 'ie8'}))  // minify
     .pipe(rename({extname: ".min.css"}))  // rename
-    .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
-    .pipe(gulp.dest(path.normalize(hugoDir + "/static/css")))
+    .pipe(gulpif(isProduction, gulp.dest(path.normalize(hugoDir + "/static/css"))))
     .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/css"))))
     .pipe(gulpif(isProduction, browserSync.stream()))
 
@@ -96,6 +94,7 @@ gulp.task("css", (cb) => {
     .pipe(cleancss({compatibility: 'ie8'}))  // minify
     .pipe(gulpif(!isProduction, rename({extname: ".min.css"})))  // rename
     .pipe(sourcemaps.write('.'))  // create source map for backwards debugging
+    .pipe(gulpif(!isProduction, gulp.dest(path.normalize(hugoDir + "/static/css"))))
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/css"))))
     .pipe(gulpif(!isProduction, browserSync.stream()))
 
@@ -109,21 +108,20 @@ gulp.task("js", (cb) => {
   // Generate production JS, send to hugo/
   const production = gulp.src(src)
     .pipe(named())
-    .pipe(webpack(Object.assign(webpackConfig, {devtool: "nosource-source-maps"}), null, (err, stats) => {
+    .pipe(webpack(Object.assign(webpackConfig, {devtool: false}), null, (err, stats) => {
       log(err, stats.toString({colors: true, errors: true}), "webpack")
     }))
-    .pipe(rename({extname: ".min.js"}))  // rename
-    .pipe(gulp.dest(path.normalize(hugoDir + "/static/js")))
+    .pipe(gulpif(isProduction, gulp.dest(path.normalize(hugoDir + "/static/js"))))
     .pipe(gulpif(isProduction, gulp.dest(path.normalize(buildDir + "/js"))))
     .pipe(gulpif(isProduction, browserSync.stream()))
 
   // Generate development JS, send to .tmp/
   const development = gulp.src(src)
-    .pipe(gulpif(!isProduction, named()))
-    .pipe(gulpif(!isProduction, webpack(Object.assign(webpackConfig, {devtool: "eval"}), null, (err, stats) => {
+    .pipe(named())
+    .pipe(gulpif(!isProduction, webpack(Object.assign(webpackConfig, {devtool: "source-map"}), null, (err, stats) => {
       log(err, stats.toString({colors: true, errors: true}), "webpack")
     })))
-    .pipe(gulpif(!isProduction, rename({extname: ".min.js"})))  // rename
+    .pipe(gulpif(!isProduction, gulp.dest(path.normalize(hugoDir + "/static/js"))))
     .pipe(gulpif(!isProduction, gulp.dest(path.normalize(tmpDir + "/js"))))
     .pipe(gulpif(!isProduction, browserSync.stream()))
 
