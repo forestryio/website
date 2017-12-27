@@ -20,8 +20,6 @@ In the world of mobile advertising, video continues to dominate. Brand advertise
 
 This demand has spurred tremendous innovation and given advertisers ample opportunities for video campaigns. But it has also created some confusion, namely around which executions make the most sense to achieve brand campaign objectives. So today, we are tackling one of those confusions—pre-roll or outstream?
 
- 
-
 ### Pre-roll v. Outstream: What’s the Difference?
 
 Before we get into the debate, it’s important that we all understand the differences between pre-roll and outstream video.
@@ -30,17 +28,13 @@ Before we get into the debate, it’s important that we all understand the diffe
 
 #### Pre-roll
 
-If you’ve ever watched a video on YouTube, a show on Hulu, or an on-demand movie on HBO GO you have sat suffered through a pre-roll video ad. These units appear “in-line” or “in-stream” with other video content—usually playing before the video content you intended to watch. Oh, and if you’re lucky you’ll find yourself with a “Skip” button after 5 seconds so you can more quickly get passed the interruptive experience.
-
- 
+If you’ve ever watched a video on YouTube, a show on Hulu, or an on-demand movie on HBO GO you have <strikethrough>sat</strikethrough> suffered through a pre-roll video ad. These units appear “in-line” or “in-stream” with other video content—usually playing before the video content you intended to watch. Oh, and if you’re lucky you’ll find yourself with a “Skip” button after 5 seconds so you can more quickly get passed the interruptive experience.
 
 ![](/uploads/Hyperplay_Outstream_Blog_Mar2017.gif)
 
 #### Outstream
 
 Contrasted to pre-roll, outstream video ads are independent from other video content. You’ve seen outstream video placements while scrolling through your Facebook feed (“in-feed” outstream) and as you read articles on your mobile phone from publishers like Fortune (“in-content” outstream). Outstream video ads are viewable by design, meaning they only begin playing once they’ve entered the viewable window and stop playing after they’ve left the frame. And most do not play audio until the user initiates it.
-
- 
 
 ### Which Should I Choose?
 
@@ -49,8 +43,6 @@ What’s the #1 rule of business? The customer is always right. So, if you’re 
 In a study conducted by an independent research partner, Applause, Yieldmo found that 73% of U.S. consumers preferred outstream video ads over pre-roll. As if that is not conclusive enough, consumers also label pre-roll ads as “frustrating” (73%) and “disruptive” (66%). Consumers dislike the interruptive experience of pre-rolls so much that they cited them as the [2nd most common reason](http://www.iab.com/insights/ad-blocking-blocks-ads-win-back/) for using mobile ad blockers. Even YouTube has recognized how frustrating the forced pre-roll experience is and recently [announced](http://www.mediapost.com/publications/article/295439/youtube-nixes-30-second-unskippable-ads-as-mobile.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=100658&hashid=i6Ey-XrdOq7uVE18v83x4GadOMo) they will stop supporting unskippable 30-second pre-roll ads starting in 2018. Contrast that to Yieldmo outstream formats, which were seen as “enjoyable” (67%) and “unique” (72%). How do you want your brand message to be remembered?
 
 In addition to consumer preference, marketers also need to consider the reach of their video campaigns. While it is true that publishers are producing more video content to drive engagement with audiences, pre-roll inventory is still inherently limited because of its dependence on video content. The demand exceeds the pre-roll supply so much so that Facebook is even experimenting with putting ads in the MIDDLE of videos. We’ll let you guess how consumers will react! And if you’re a blue chip brand looking for only premium pre-roll inventory, the scarcity is only more pronounced. Outstream, on the other hand, can offer far greater supply because it is not dependent upon other video content to run.
-
- 
 
 ### How Do I Measure Success?
 
@@ -63,8 +55,6 @@ Now consider outstream ads, which give users far more control over their experie
 ![](/uploads/Outstream_video_chart_03172017.png)
 
 And the end of the day, it’s important for marketers to understand that since outstream does not force users to watch the video ad overall completion rates are likely to be lower than pre-roll. However, in exchange, advertisers get far greater user engagement and satisfaction with outstream video, which should be used as the metrics for success.
-
- 
 
 ### What Outstream Formats are Available?
 
@@ -81,8 +71,6 @@ Complementary brand imagery wraps your brand’s video allowing for immediate an
 #### Hyperplay
 
 Hyperscroller technology gives users the control to fast-forward and rewind your brand’s video frame-by-frame.
-
- 
 
 ### Learn More
 
