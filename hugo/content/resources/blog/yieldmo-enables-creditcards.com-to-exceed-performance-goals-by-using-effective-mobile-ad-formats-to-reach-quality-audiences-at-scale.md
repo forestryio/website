@@ -1,12 +1,12 @@
 +++
 author = "Lucas Piazza, Director of Marketing"
-blurb = "CreditCards.com, a leading credit card comparison and information website, realized an opportunity to increase mobile traffic and subsequent card applications. Yieldmo partnered with CreditCards.com to design a campaign strategy that would produce a positive return on investment and achieve a target application approval rate."
+blurb = "Yieldmo partnered with CreditCards.com to design a campaign that produced a positive return on investment and achieved the target application approval rate."
 category = "case-studies"
 cover = "/uploads/07.jpg"
 date = "2016-12-19T06:41:37-05:00"
 description = ""
 layout = "blog"
-title = "Yieldmo Enables CreditCards.com to Exceed Performance Goals by Using Effective Mobile Ad Formats to Reach Quality Audiences at Scale"
+title = "CreditCards.com Exceeds Performance Goals by Using Effective Mobile Ad Formats to Reach Quality Audiences at Scale"
 weight = ""
 
 +++
