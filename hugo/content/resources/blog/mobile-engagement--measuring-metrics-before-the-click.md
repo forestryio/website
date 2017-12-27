@@ -2,7 +2,7 @@
 author = "Jane Kim, Head of A/B Testing & Optimization"
 blurb = "As brand marketers continue to shift budgets from desktop to mobile, many&nbsp;of them are also porting over the exact same measurement mentality around “the click.” Brand Marketers should optimize for mobile engagement over clicks (and by doing so they’ll actually get both)."
 category = "perspectives"
-cover = "/uploads/32511529711_500f92e9c5_o.jpg"
+cover = "/uploads/04.jpg"
 date = "2016-10-17T09:44:37-04:00"
 description = ""
 layout = "blog"
