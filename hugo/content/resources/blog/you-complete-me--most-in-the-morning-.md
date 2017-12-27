@@ -16,6 +16,6 @@ What does that mean for you, mobile video marketer? Make sure you day-part your 
 
 ![](/uploads/Screen-Shot-2017-05-09-at-5.32.33-PM.png)
 
-###### **Methodology:**
+##### **Methodology:**
 
-###### This performance data was gathered between April 24 and May 8, 2017, and represents 12,506,575 video impressions across 170 publisher placements. Video ad duration was varied and comprised of advertisers ranging from entertainment and automotive to retail and consumer packaged goods.
+##### This performance data was gathered between April 24 and May 8, 2017, and represents 12,506,575 video impressions across 170 publisher placements. Video ad duration was varied and comprised of advertisers ranging from entertainment and automotive to retail and consumer packaged goods.
