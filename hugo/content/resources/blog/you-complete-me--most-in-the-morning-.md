@@ -1,5 +1,5 @@
 +++
-author = "Jane Kim"
+author = "Jane Kim, Head of A/B Testing and Optimization"
 blurb = "Is late night where all the (video) action is? We tackled this question head-on and analyzed more than 12M outstream video impressions from our&nbsp;Hyperplay&nbsp;and&nbsp;Windowplay&nbsp;mobile formats."
 category = "perspectives"
 cover = "/uploads/Screen Shot 2017-12-27 at 1.15.26 PM.png"
