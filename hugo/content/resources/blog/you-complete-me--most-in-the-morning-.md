@@ -1,6 +1,6 @@
 +++
 author = "Jane Kim"
-blurb = "Is late night where all the (video) action is? We tackled this question head-on and analyzed more than 12M outstream video impressions from our&nbsp;<a href=\"http://formatsoldsite.yieldmo.com/#/demo/hyperplay\">Hyperplay</a>&nbsp;and&nbsp;<a href=\"http://formatsoldsite.yieldmo.com/#/demo/windowplay\">Windowplay</a>&nbsp;mobile formats."
+blurb = "Is late night where all the (video) action is? We tackled this question head-on and analyzed more than 12M outstream video impressions from our&nbsp;Hyperplay&nbsp;and&nbsp;Windowplay&nbsp;mobile formats."
 category = "perspectives"
 cover = "/uploads/Screen Shot 2017-12-27 at 1.15.26 PM.png"
 date = "2017-05-09T08:01:07-04:00"
