@@ -2,7 +2,7 @@
 author = "Jane Kim, Head of A/B Testing and Optimization"
 blurb = "With the increase in the number of campaigns utilizing the Pull format, the A|B Testing Lab decided to start experimenting to see if we could improve performance even more."
 category = "perspectives"
-cover = "/uploads/12590661043_22ae7236f1_z.jpg"
+cover = "/uploads/12590661043_22ae7236f1_z-1.jpg"
 date = "2017-03-23T09:19:37-04:00"
 description = ""
 layout = "blog"
