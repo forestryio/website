@@ -28,7 +28,7 @@ Before we get into the debate, it’s important that we all understand the diffe
 
 #### Pre-roll
 
-If you’ve ever watched a video on YouTube, a show on Hulu, or an on-demand movie on HBO GO you have <strikethrough>sat</strikethrough> suffered through a pre-roll video ad. These units appear “in-line” or “in-stream” with other video content—usually playing before the video content you intended to watch. Oh, and if you’re lucky you’ll find yourself with a “Skip” button after 5 seconds so you can more quickly get passed the interruptive experience.
+If you’ve ever watched a video on YouTube, a show on Hulu, or an on-demand movie on HBO GO you have <strike>sat</strike> suffered through a pre-roll video ad. These units appear “in-line” or “in-stream” with other video content—usually playing before the video content you intended to watch. Oh, and if you’re lucky you’ll find yourself with a “Skip” button after 5 seconds so you can more quickly get passed the interruptive experience.
 
 ![](/uploads/Hyperplay_Outstream_Blog_Mar2017.gif)
 
