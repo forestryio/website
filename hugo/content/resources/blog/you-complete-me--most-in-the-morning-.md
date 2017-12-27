@@ -1,6 +1,6 @@
 +++
 author = "Jane Kim, Head of A/B Testing and Optimization"
-blurb = "Is late night where all the (video) action is? We tackled this question head-on and analyzed more than 12M outstream video impressions from our Hyperplay and Windowplay mobile formats. "
+blurb = "Is late night where all the (video) action is? We tackled this question head-on and analyzed more than 12M outstream video impressions from our Hyperplay and Windowplay mobile formats."
 category = "perspectives"
 cover = "/uploads/Screen Shot 2017-12-27 at 1.15.26 PM.png"
 date = "2017-05-09T08:01:07-04:00"
