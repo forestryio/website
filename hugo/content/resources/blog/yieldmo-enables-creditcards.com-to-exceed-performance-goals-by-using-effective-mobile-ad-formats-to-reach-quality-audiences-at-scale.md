@@ -5,7 +5,6 @@ category = "case-studies"
 cover = "/uploads/07.jpg"
 date = "2016-12-19T06:41:37-05:00"
 description = ""
-draft = true
 layout = "blog"
 title = "Yieldmo Enables CreditCards.com to Exceed Performance Goals by Using Effective Mobile Ad Formats to Reach Quality Audiences at Scale"
 weight = ""
