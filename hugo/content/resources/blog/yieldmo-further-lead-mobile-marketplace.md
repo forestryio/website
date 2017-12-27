@@ -1,7 +1,7 @@
 ---
 title: Yieldmo Furthers Its Lead as the Largest Independent Mobile Marketplace in
   the U.S.
-date: 2016-04-12 20:00:00 -0400
+date: 2017-07-26 20:00:00 -0400
 layout: blog
 category: updates
 author: Susan Lietz, CMO
