@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "Mobile outstream video offers a more respectful user experience than pre-roll and demands that success be measured by engagement, not just completed views."
 category = "perspectives"
-cover = "/uploads/36290893792_a8ba52062b_z-1.jpg"
+cover = "/uploads/06.jpg"
 date = "2017-03-23T08:47:45-04:00"
 description = ""
 layout = "blog"
