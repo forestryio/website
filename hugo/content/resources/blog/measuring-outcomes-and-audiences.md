@@ -10,7 +10,7 @@ blurb: Yieldmo Dragonfly™ enables more accurate campaign measurement and effic
   by powering our ability to attribute conversions (via a Yieldmo pixel placed on
   check-out pages, product pages, etc.) to Yieldmo ad exposures and our ability to
   analyze which audience segments...
-cover: "/_images/blog/measuring.jpg"
+cover: "/uploads/02.jpg"
 description: ''
 weight: ''
 
