@@ -20,7 +20,7 @@ As an example, let’s say that I’m creating a Mainstage for Hulu.  I have al
 
 ![](/uploads/Screen-Shot-2015-08-19-at-5.42.06-PM.png)
 
-**_<center>My Example Ad.  The button doesn’t match!</center>_**
+##### **_<center>My Example Ad.  The button doesn’t match!</center>_**
 
 ### **Step 1: Open the Digital Color Meter**
 
@@ -30,13 +30,13 @@ You’ll want to use Apple’s “Spotlight Search” to find a program called �
 
 ![](/uploads/Screen-Shot-2015-08-19-at-5.44.54-PM.png)
 
-**_<center>Spotlight Search is the small magnifying glass in the top right of your screen</center>_**
+##### **_<center>Spotlight Search is the small magnifying glass in the top right of your screen</center>_**
 
 **Action Item 2**: Once inside Spotlight search, type in Digital Color Meter, and hit enter when you see the app icon.
 
 ![](/uploads/Screen-Shot-2015-08-19-at-5.45.28-PM.png)
 
-**_<center>Type in “Digital Color Meter” and hit enter once you see the app icon</center>_**
+##### **_<center>Type in “Digital Color Meter” and hit enter once you see the app icon</center>_**
 
 Note: you’ll now see the Digital Color Meter icon in your menu bar at the bottom of your screen. If you think that you’ll use it often, you can lock it to that menu and find it there next time.  Just right click and select Options > Keep in Dock (pictured below).
 
