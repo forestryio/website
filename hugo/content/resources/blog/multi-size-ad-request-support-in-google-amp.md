@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "Since our early commitment to Google’s AMP project, Yieldmo has continued to contribute to this meaningful initiative in pursuit of offering consumers an optimal experience across the mobile web. Recently, the Yieldmo Delivery and AMP teams partnered together to develop a solution to the problems caused by multi-size ad requests."
 category = "updates"
-cover = "/_images/portraits/2_daniel.jpg"
+cover = "/uploads/2_daniel.jpg"
 date = "2016-09-30T06:10:33-04:00"
 description = ""
 layout = "blog"
