@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "We all know that waiting for slow mobile web pages to load is beyond irritating. Yieldmo has always been focused on improving the user experience of publisher content on mobile."
 category = "updates"
-cover = "/uploads/APM_YIELDMO-03-Featured.png"
+cover = "/uploads/APM_YIELDMO-03-Featured-1.png"
 date = "2016-03-07T08:33:25-05:00"
 description = ""
 layout = "blog"
