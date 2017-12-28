@@ -2,7 +2,7 @@
 author = "Mike Yavonditte, Founder & CEO"
 blurb = "In an era where the revenue and experience of publishers’ owned and operated pages are threatened by ad blocking and walled-garden platforms, better mobile ad products can help keep editorial experience great and raise marketer demand for great publisher pages."
 category = "perspectives"
-cover = "/_videos/Waves.gif"
+cover = "/uploads/03.jpg"
 date = "2016-09-09T07:06:02-04:00"
 description = ""
 layout = "blog"
