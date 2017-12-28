@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "Our mobile devices are with us everywhere we go. We expect to access free content in the moment and on the go. Although being a major part of our content experience, mobile ads rarely make a connection with us."
 category = "perspectives"
-cover = "/uploads/tap-02.png"
+cover = "/uploads/tap-02-1.png"
 date = "2015-09-22T08:58:21-04:00"
 description = ""
 layout = "blog"
