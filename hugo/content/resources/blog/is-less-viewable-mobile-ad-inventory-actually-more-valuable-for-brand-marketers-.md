@@ -2,7 +2,7 @@
 author = "Jane Kim, Head of A/B Testing & Optimization"
 blurb = "Contrary to popular belief, viewability rates in mobile advertising might not be the end-all, be-all metric for advertisers and agencies.&nbsp;"
 category = "perspectives"
-cover = "/_images/blog/gdtography-310706.jpg"
+cover = "/_images/on-engagement.jpg"
 date = "2016-09-19T06:41:46-04:00"
 description = ""
 layout = "blog"
