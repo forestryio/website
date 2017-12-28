@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "We build mobile ads for human beings with the goal of changing the mobile advertising landscape for the better. The first publisher to embrace our philosophy back in 2012 was TheStreet and today we’re thrilled to announce we have expanded that partnership to new heights."
 category = "updates"
-cover = "/_images/on-engagement.jpg"
+cover = "/uploads/33068242380_cb04693153_c.jpg"
 date = "2016-03-08T07:52:57-05:00"
 description = ""
 layout = "blog"
