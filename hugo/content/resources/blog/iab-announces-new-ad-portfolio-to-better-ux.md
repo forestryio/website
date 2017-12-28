@@ -1,6 +1,6 @@
 +++
 author = "Lucas Piazza, Director of Marketing"
-blurb = "This week, the IAB announced a&nbsp;new ad portfolio&nbsp;at IAB MIXX, an annual conference on digital advertising’s new world order. The imbalance between the prevalence of mobile in today’s media mix and the reign of bad ad formats and the subsequent rise of ad blocking has led to an industry reinventing itself."
+blurb = "This week, the IAB announced a new ad portfolio at IAB MIXX, an annual conference on digital advertising’s new world order. The imbalance between the prevalence of mobile in today’s media mix and the reign of bad ad formats and the subsequent rise of ad blocking has led to an industry reinventing itself."
 category = "updates"
 cover = "/uploads/07.jpg"
 date = "2016-09-30T05:53:19-04:00"
