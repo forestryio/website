@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Pages
+   ========================================================================== */
+
+.section-emp .page-1 {
+  height: auto;
+
+  .match-light {
+    height: auto;
+  }
+
+  .match-dark {
+    height: auto;
+    padding: 3rem 0;
+
+    .description,
+    .pattern,
+    .caption {
+      display: block;
+      width: $mobile-s-content-width;
+      margin: 2em auto;
+    }
+
+    .caption {
+      font-size: .9rem;
+
+      b {
+        font-family: $headline-cap;
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+.section-emp .page-2 {
+  .match-light {
+    .headlines {
+      margin: 2em auto;
+    }
+
+    p {
+      width: $mobile-s-content-width;
+      margin: 2em auto;      
+    }
+
+    img { width: 100%; }
+  }
+}

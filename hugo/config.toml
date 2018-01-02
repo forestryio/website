@@ -2,24 +2,35 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Yieldmo"
-[[menu.main]]
-identifier = "resources"
-name = "Resources"
-pre = "<i class='menu-media'></i>"
-url = "/resources/"
-weight = 3
-[[menu.main]]
-identifier = "products"
-name = "Products"
-pre = "<i class='menu-products'></i>"
-url = "/products/"
-weight = 2
+
 [[menu.main]]
 identifier = "company"
 name = "Company"
 pre = "<i class='menu-company'></i>"
 url = "/company/"
 weight = 1
+
+[[menu.main]]
+identifier = "products"
+name = "Products"
+pre = "<i class='menu-products'></i>"
+url = "/products/"
+weight = 2
+
+[[menu.main]]
+identifier = "resources"
+name = "Resources"
+pre = "<i class='menu-media'></i>"
+url = "/resources/"
+weight = 3
+
+[[menu.main]]
+identifier = "tools"
+name = "Tools"
+pre = "<i class='menu-tools'></i>"
+url = "/tools/"
+weight = 4
+
 [params]
 description = "Elevate the digital advertising experience for consumers, advertisers, and publishers."
 subtitle = "DATA BY DESIGN."

@@ -25,9 +25,14 @@
             <h3 class="main-section-name">{{ .Name }}</h3>
             <ul class="sub-sections">
               {{ range .Children }}
-              <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}} data-role="{{ .Name }}" >
-                <a href="{{ .URL }}"> {{ .Name }} </a> 
-              </li>
+                <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}} data-role="{{ .Name }}" >
+                  <a href="{{ .URL }}"> {{ .Name }} </a>
+                </li>
+                {{ if eq .Parent "tools" }}
+                <li>
+                  <a target="_blank" href="https://formats.yieldmo.com/"> Ad Builder </a>
+                </li>
+                {{ end }}
               {{ end }}
             </ul>
           </li>
@@ -39,14 +44,6 @@
           </li>
           {{end}}
         {{end}}
-        <li class="sub-menu">
-          <h3 class="main-section-name">Tools</h3>
-          <ul class="sub-sections">
-            <li>
-              <a target="_blank" href="https://formats.yieldmo.com/"> Ad Builder </a>
-            </li>
-          </ul>
-        </li>
       </ul>
     </div>
     <!-- End of primary menu -->
