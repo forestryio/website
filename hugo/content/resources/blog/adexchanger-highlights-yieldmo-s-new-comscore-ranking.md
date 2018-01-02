@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "comScore’s inaugural Mobile Metrix Mobile Ad Network report results"
 category = "updates"
-cover = "/_images/blog/asoggetti-413830.jpg"
+cover = "/uploads/asoggetti-413830.jpg"
 date = "2015-05-20T07:18:38-04:00"
 description = ""
 layout = "blog"
