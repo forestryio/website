@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "An ambitious effort to reinvent mobile advertising is taking place in the Chelsea section of New York City"
 category = "updates"
-cover = "/_ceros/infographic-01-2-1-1-1/media/c10aeeebe5f0b3e95f99db5f109380e5/ellipse-full.png"
+cover = "/uploads/01.jpg"
 date = "2015-05-10T07:42:01-04:00"
 description = ""
 layout = "blog"
