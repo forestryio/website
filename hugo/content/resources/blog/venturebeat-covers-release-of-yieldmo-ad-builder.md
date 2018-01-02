@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "Barry Levine, senior writer on marketing tech at VentureBeat, has the scoop on Yieldmo Ad Builder."
 category = "updates"
-cover = "/_images/portraits/10_sydney.jpg"
+cover = "/uploads/10_sydney.jpg"
 date = "2015-08-13T05:23:48-04:00"
 description = ""
 layout = "blog"
