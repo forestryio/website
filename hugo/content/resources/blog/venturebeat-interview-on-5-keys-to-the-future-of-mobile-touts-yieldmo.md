@@ -1,8 +1,8 @@
 +++
 author = "Lucas Piazza, Director of Marketing"
-blurb = "Ads:&nbsp;Another area that no one has completely cracked."
+blurb = "Ads: Another area that no one has completely cracked."
 category = "updates"
-cover = "/_images/portraits/1_a_tokponwey.jpg"
+cover = "/uploads/1_a_tokponwey.jpg"
 date = "2015-03-03T11:29:17-05:00"
 description = ""
 layout = "blog"
