@@ -1,6 +1,6 @@
 +++
 author = "Lucas Piazza, Director of Marketing"
-blurb = "Google Ventures just invested in a competitor to AdSense by&nbsp;leading an $8-million financing round&nbsp;in a New York-based mobile advertising startup called YieldMo"
+blurb = "Google Ventures just invested in a competitor to AdSense by leading an $8-million financing round in a New York-based mobile advertising startup called YieldMo"
 category = "updates"
 cover = "/_images/portraits/3_logan.jpg"
 date = "2013-12-06T11:51:37-05:00"
