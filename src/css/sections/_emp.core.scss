@@ -2,6 +2,10 @@
    Pages
    ========================================================================== */
 
+body > div.menu-container > div.primary-menu > ul > li:nth-child(4) > ul > li:nth-child(1) {
+  display: none;
+}
+
 .section-emp .page-1 {
   height: auto;
 
