@@ -1,7 +1,8 @@
 <!-- this goes inside of a range .Data.Pages loop -->
 <div class="blog-excerpt {{ .Params.category }}">
   {{ with .Params.cover }}
-     <img src='{{ . | absURL }}'>
+  <div class="cover-container" style="background-image: url('{{ . | absURL }}');">
+  </div>
   {{ end }}
 
   <div class="preview">
