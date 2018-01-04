@@ -3,50 +3,95 @@
    ========================================================================== */
 
 body > div.menu-container > div.primary-menu > ul > li:nth-child(4) > ul > li:nth-child(1) {
-  display: none;
+  /* display: none; */
 }
 
-.section-emp .page-1 {
-  height: auto;
-
-  .match-light {
-    height: auto;
+.section-emp {
+  .interior-page > div > div {
+    width: $mobile-s-content-width;
+    margin: 0 auto;
   }
 
-  .match-dark {
-    height: auto;
-    padding: 3rem 0;
+  p { font-size: .8rem; }
 
-    .description,
-    .pattern,
-    .caption {
-      display: block;
-      width: $mobile-s-content-width;
-      margin: 2em auto;
+  .page-1 {
+    height: auto;
+
+    .match-light {
+      min-height: 0;
+      height: auto;
+
+      .headlines {
+        position: static;
+        margin: 4rem 0 2rem 0;
+        font-size: 1.3rem;
+      }
     }
 
-    .caption {
-      font-size: .9rem;
+    .match-dark {
+      height: auto;
+      padding: 2rem 0;
 
-      b {
-        font-family: $headline-cap;
-        font-size: 1.1em;
+      .pattern {
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+      }
+
+      .caption {
+        font-size: .7rem;
+
+        b {
+          font-family: $headline-cap;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  .page-2 {
+    .match-light {
+      .headlines,
+      p {
+        margin: 2em auto;
+      }
+
+      img { width: 100%; }
+
+      .emp-process {
+        .headline-cap {
+          color: $medium-green
+        }
+
+        p {
+          margin-top: 1em;
+        }
+      }
+    }
+
+    .match-dark {
+      padding: 2em 0;
+
+      p { margin-top: 2em; }    
+    }
+  }
+
+  .page-3 {
+    .match-light {
+      min-height: 0;
+      padding: 2em 0;
+
+      .headline-cap {
+        margin-bottom: 1em;
+      }
+    }
+
+    .match-dark {
+      .form-container {
+        width: auto;
       }
     }
   }
 }
 
-.section-emp .page-2 {
-  .match-light {
-    .headlines {
-      margin: 2em auto;
-    }
 
-    p {
-      width: $mobile-s-content-width;
-      margin: 2em auto;      
-    }
-
-    img { width: 100%; }
-  }
-}
