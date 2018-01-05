@@ -18,17 +18,17 @@ url = "/products/"
 weight = 2
 
 [[menu.main]]
-identifier = "resources"
-name = "Resources"
-pre = "<i class='menu-media'></i>"
-url = "/resources/"
-weight = 3
-
-[[menu.main]]
 identifier = "tools"
 name = "Tools"
 pre = "<i class='menu-tools'></i>"
 url = "/tools/"
+weight = 3
+
+[[menu.main]]
+identifier = "resources"
+name = "Resources"
+pre = "<i class='menu-media'></i>"
+url = "/resources/"
 weight = 4
 
 [params]
