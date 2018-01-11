@@ -82,6 +82,10 @@ fields:
   name: description
   label: Description
   description: Metadata Information
+- type: file
+  label: Filed Download
+  name: filed_download
+  description: Document available to download
 - type: number
   label: Weight
   name: weight
