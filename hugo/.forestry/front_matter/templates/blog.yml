@@ -85,7 +85,7 @@ fields:
 - type: file
   label: Filed Download
   name: filed_download
-  description: Document available to download
+  description: Document available for download
 - type: number
   label: Weight
   name: weight
