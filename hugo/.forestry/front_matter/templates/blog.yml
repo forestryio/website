@@ -1,8 +1,8 @@
 ---
 pages:
+- resources/blog/apple-ios-8-early-adopters-are-43--more-likely-to-complete-a-mobile-ad-transaction.md
 - resources/blog/gigaom-covers-our--8m-series-b-round.md
 - resources/blog/re/code-covers-our--10m-series-c-round.md
-- resources/blog/apple-ios-8-early-adopters-are-43--more-likely-to-complete-a-mobile-ad-transaction.md
 - resources/blog/designing-for-small.md
 - resources/blog/alleywatch-ranks-yieldmo-s-founder-among-nyc-startup-founders-to-watch-for-in-2015.md
 - resources/blog/holiday-season-advertising-101.md
@@ -82,6 +82,10 @@ fields:
   name: description
   label: Description
   description: Metadata Information
+- type: file
+  label: Filed Download
+  name: filed_download
+  description: Document available for download
 - type: number
   label: Weight
   name: weight

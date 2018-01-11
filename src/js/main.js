@@ -7,11 +7,13 @@ window.$ = window.jQuery = $;
 $(function() {
   var yieldmo = {
     modules: {
-      navigation: require('./modules/_navigation.js')
+      navigation: require('./modules/_navigation.js'),
+      download: require('./modules/_download.js')
     },
 
     sections: {
-      home: require('./sections/_home.js')
+      home: require('./sections/_home.js'),
+      blog: require('./sections/_blog.js')
     },
 
     props: {
@@ -102,15 +104,9 @@ $(function() {
         });
       }
 
-      if (window.section === 'blog') {
-        $('#blogTabs').on('click', function(e) {
-          $('#blogTabs > a').removeClass('active');
-          $(e.target).addClass('active');
-
-          $('.section-blog').attr('class', 'section-wrapper section-blog');
-          $('.section-blog').addClass('activate-' + e.target.dataset.category);
-        })
-      }      
+      if (window.feature === 'download') {
+        this.modules.download.init();
+      }
     }
   };
 
