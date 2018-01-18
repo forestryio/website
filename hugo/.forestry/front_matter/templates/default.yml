@@ -1,4 +1,6 @@
 ---
+pages:
+- resources/blog/evidence-that-engagement-drives-performance-and-efficiency.md
 hide_body: false
 fields:
 - name: title
