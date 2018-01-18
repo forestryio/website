@@ -12,7 +12,16 @@
   {{ .Content }}
 
   <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
-  
-  <script type="text/javascript">window.feature = "download"</script>
+
+  {{ if .Params.file_download }}
+    <a class="file-download" href="" data-featherlight="#leadForm">Download Attachment</a>
+
+
+    <form id="leadForm">
+      
+    </form>
+
+    <script type="text/javascript">window.feature = "download"</script>
+  {{ end }}
 </div>
 {{ end }}

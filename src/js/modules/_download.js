@@ -6,11 +6,13 @@ var download = {
   },
 
   registerEvents: function() {
-    // console.log('register events here');
+    console.log('download stuff');
   },
 
   init: function() {
     this.registerEvents();
+
+    $('.file-download').featherlight($content, configuration);
   }
 }
 
