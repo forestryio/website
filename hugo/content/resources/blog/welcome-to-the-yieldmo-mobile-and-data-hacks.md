@@ -1,6 +1,6 @@
 +++
 author = "Jane Kim, Head of A/B Testing & Optimization"
-blurb = "Welcome to the Yieldmo Mobile and Data Hackathon! We all know that the content that we consume via our mobile devices are often subsidized by the advertising revenue. But people hate ads…but want their content for free. Yieldmo is working to solve this problem by creating a better ad experience through design and data."
+blurb = "We all know that the content that we consume via our mobile devices are often subsidized by the advertising revenue. But people hate ads…but want their content for free. Yieldmo is working to solve this problem by creating a better ad experience through design and data."
 category = "tutorials"
 cover = "/uploads/new-piktochart_25607733.png"
 date = "2015-09-15T09:42:54-04:00"
