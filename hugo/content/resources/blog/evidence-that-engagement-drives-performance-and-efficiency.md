@@ -20,7 +20,7 @@ Here's how it worked:
 
          
 
-            ![](/uploads/graph1.jpg)
+            ![](/uploads/graph1-2.png)
 2. Machine learning mines our vast dataset for combinations of metrics and data points that reveal a propensity to click, play, convert, etc.
 
    ![](/uploads/Screen Shot 2018-01-18 at 10.50.32 AM.png)
