@@ -99,7 +99,7 @@ fields:
     maxSize: '1024'
 - type: text
   label: Download Label Text (if applicable)
-  name: download_label_text__if_applicable_
+  name: download_label_text
   default: ''
 - type: text
   hidden: true
