@@ -14,11 +14,45 @@
   <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
 
   {{ if .Params.file_download }}
-    <a class="file-download" href="" data-featherlight="#leadForm">Download Attachment</a>
+    <a id="fileDownload" class="file-download" href="" data-featherlight="#leadForm">Download Attachment</a>
 
+    <iframe id='jla' name='jla' src='about:blank' style='display:none'></iframe>
 
-    <form id="leadForm">
-      
+    <form target="jla" id="leadForm" class="lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+      <input type=hidden name="oid" value="00Di0000000hZnF">
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">Hi, I’m</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="first_name" name="first_name" placeholder="Type your first name here*" />
+          <input required type="text" id="last_name" name="last_name" placeholder="Type your last name here*" />
+        </div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">I WORK FOR</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="company" name="company" placeholder="Your company name here*" />
+        </div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">I CAN BE REACHED AT</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="email" name="email" placeholder="Your business email here*" />
+          <input type="text" id="phone" name="phone" placeholder="Your phone number here" />
+        </div>
+      </div>
+
+      <button id="download" class="download active">Download Now</button>
+      <a id="downloadAction" href="{{ .Params.file_download | absURL }}" download>
     </form>
 
     <script type="text/javascript">window.feature = "download"</script>
