@@ -14,7 +14,7 @@
   <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
 
   {{ if .Params.file_download }}
-    <a id="fileDownload" class="file-download" href="" data-featherlight="#leadForm">Download Attachment</a>
+    <a id="fileDownload" class="file-download" href="" data-featherlight="#leadForm">{{ .Params.download_label_text }}</a>
 
     <iframe id='jla' name='jla' src='about:blank' style='display:none'></iframe>
 
