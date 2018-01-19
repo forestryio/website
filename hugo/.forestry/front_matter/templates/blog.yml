@@ -83,10 +83,6 @@ fields:
   name: description
   label: Description
   description: Metadata Information
-- type: file
-  label: Filed Download
-  name: filed_download
-  description: Document available for download
 - type: number
   label: Weight
   name: weight
@@ -95,6 +91,16 @@ fields:
     step: '1'
     required: false
   description: " Leave this field empty if the content is not prioritized"
+- type: file
+  label: File Download (Optional)
+  name: file_download
+  description: Document available for download
+  config:
+    maxSize: '1024'
+- type: text
+  label: Download Label Text (if applicable)
+  name: download_label_text__if_applicable_
+  default: ''
 - type: text
   hidden: true
   config:
