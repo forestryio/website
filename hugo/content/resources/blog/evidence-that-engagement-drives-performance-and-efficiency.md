@@ -21,7 +21,7 @@ Here's how it worked:
    ![](/uploads/graph1-2.png)
 2. Machine learning mines our vast dataset for combinations of metrics and data points that reveal a propensity to click, play, convert, etc.
 
-   ![](/uploads/Screen Shot 2018-01-18 at 10.50.32 AM.png)
+   ![](/uploads/graph2.png)
 3. Each customer is given a proprietary Yieldmo Engagement ScoreTM  based on exposure, engagement, and other conditions of their interaction with the ad.
 
    ![](/uploads/Screen Shot 2018-01-18 at 11.01.19 AM.png)
