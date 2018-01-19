@@ -100,7 +100,7 @@ fields:
 - type: text
   label: Download Label Text (if applicable)
   name: download_label_text
-  default: ''
+  default: Download Document
 - type: text
   hidden: true
   config:
