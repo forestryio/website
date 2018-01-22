@@ -2,7 +2,7 @@
 author = "Alex Fu, Sr. Director of Insights"
 blurb = "66% of consumers preferred Yieldmo’s mobile-specific ad formats over standard mobile formats. Further, standard, non-Yieldmo mobile formats were found to be far more&nbsp;<em>frustrating</em>,&nbsp;<em>disruptive</em>&nbsp;and&nbsp;<em>annoying</em>&nbsp;(interstitial and pre-roll video formats), as well as&nbsp;<em>boring</em>&nbsp;and&nbsp;<em>uninteresting</em>&nbsp;(static 300×250 and adhesion banners)."
 category = "case-studies"
-cover = ""
+cover = "/uploads/ConsumerResearch_BlogSquare_v2.png"
 date = "2016-12-13T00:00:00-05:00"
 description = ""
 download_label_text = "Download Whitepaper"
