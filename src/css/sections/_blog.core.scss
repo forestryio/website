@@ -109,6 +109,83 @@
   .meta-info {
     margin-top: 2em;
   }
+
+  .file-download {
+    display: inline-block;
+    font-size: .85rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: $primary-black;
+  }
+
+  .lead-form {
+    display: none;
+  }
 }
 
 
+/* ==========================================================================
+   Lightbox for file download
+   ========================================================================== */
+
+.featherlight {
+  .featherlight-content {
+    background-color: $deep-blue;
+    padding: 1rem;
+
+    .row {
+      color: $primary-white;
+      margin: 1em 0;
+
+      .left  { float: left; }
+      .right { float: right; }
+
+      .col-1 {
+        width: 25%;
+        margin-top: .75rem;
+      }
+
+      .col-3 {
+        width: 75%;
+        padding: 0 1rem;
+
+        input {
+          background-color: $deep-blue;
+          border: none;
+          border-bottom: 1px solid $primary-white;
+          width: 100%;
+          padding: .5rem 0;
+
+          &::placeholder {
+            color: rgba(255, 255, 255, .8);
+            font-size: .85rem;
+            font-family: $content-font;
+          }
+        }
+      }
+    }
+
+    .download {
+      background-color: $deep-blue;
+      border: 1px solid rgba(255, 255, 255, .5);
+      color: rgba(255, 255, 255, .5);
+      font-family: $headline-cap;
+      border-radius: 0;
+      font-size: .85rem;
+      padding: .4rem 0 .2rem 0;
+      margin: 2rem auto 1rem auto;
+      width: 10rem;
+      display: block;
+
+      &.active {
+        border-color: $primary-white;
+        color: $primary-white;
+      }
+    }
+
+    .featherlight-close {
+      background: transparent;
+      color: $primary-white;
+    }
+  }
+}
