@@ -1,6 +1,6 @@
 +++
 author = "Alex Fu, Sr. Director of Insights"
-blurb = "66% of consumers preferred Yieldmo’s mobile-specific ad formats over standard mobile formats. Further, standard, non-Yieldmo mobile formats were found to be far more&nbsp;<em>frustrating</em>,&nbsp;<em>disruptive</em>&nbsp;and&nbsp;<em>annoying</em>&nbsp;(interstitial and pre-roll video formats), as well as&nbsp;<em>boring</em>&nbsp;and&nbsp;<em>uninteresting</em>&nbsp;(static 300×250 and adhesion banners)."
+blurb = "Our research shows two-thirds of consumers prefer better-designed mobile ad experiences and find the current state of mobile ads to be frustrating, disruptive and boring."
 category = "case-studies"
 cover = "/uploads/ConsumerResearch_BlogSquare_v2.png"
 date = "2016-12-13T00:00:00-05:00"
@@ -24,17 +24,17 @@ Given these critical industry initiatives, Yieldmo set out to research what con
 
 Specifically, the study found the following:
 
-1. **Two-thirds of consumers prefer better-designed mobile ad experiences and find the current state of mobile ads to be frustrating, disruptive and boring  
-   **66% of consumers preferred Yieldmo’s mobile-specific ad formats over standard mobile formats. Further, standard, non-Yieldmo mobile formats were found to be far more _frustrating_, _disruptive_ and _annoying_ (interstitial and pre-roll video formats), as well as _boring_ and _uninteresting_ (static 300×250 and adhesion banners).
-2. **User-friendly mobile ads drive higher unaided advertiser brand recall  
-   **The majority of respondents (63%) who saw the Yieldmo mobile ad formats correctly recalled the advertiser brand in an unaided test, compared to only 48% who correctly recalled the advertiser brand after seeing standard, non-Yieldmo ads.
-3. **The common static 300×250 mobile ad is also the most forgettable  
-   **An overwhelming 86% of respondents who saw the static 300×250 ad incorrectly recalled the advertiser brand, making it the worst performing format in terms of unaided brand recall.
-4. **Preferred mobile ads produce higher advertiser brand favorability  
-   **Four-fifths of respondents (79%) found the advertiser brand favorable after seeing a Yieldmo ad, compared to only 63% who found the advertiser brand favorable after seeing a standard, non-Yieldmo ad format.
-5. **Publishers can also garner higher brand favorability with better-designed mobile ad experiences  
-   **Perceptions of publishers increased for 22% of consumers as a result of seeing a Yieldmo ad, compared to only 11% of consumers who could say the same after seeing a standard, non-Yieldmo ad format.
+1. **Two-thirds of consumers prefer better-designed mobile ad experiences and find the current state of mobile ads to be frustrating, disruptive and boring**  
+   66% of consumers preferred Yieldmo’s mobile-specific ad formats over standard mobile formats. Further, standard, non-Yieldmo mobile formats were found to be far more _frustrating_, _disruptive_ and _annoying_ (interstitial and pre-roll video formats), as well as _boring_ and _uninteresting_ (static 300×250 and adhesion banners).
+2. **User-friendly mobile ads drive higher unaided advertiser brand recall**  
+   The majority of respondents (63%) who saw the Yieldmo mobile ad formats correctly recalled the advertiser brand in an unaided test, compared to only 48% who correctly recalled the advertiser brand after seeing standard, non-Yieldmo ads.
+3. **The common static 300×250 mobile ad is also the most forgettable**  
+   An overwhelming 86% of respondents who saw the static 300×250 ad incorrectly recalled the advertiser brand, making it the worst performing format in terms of unaided brand recall.
+4. **Preferred mobile ads produce higher advertiser brand favorability**  
+   Four-fifths of respondents (79%) found the advertiser brand favorable after seeing a Yieldmo ad, compared to only 63% who found the advertiser brand favorable after seeing a standard, non-Yieldmo ad format.
+5. **Publishers can also garner higher brand favorability with better-designed mobile ad experiences**  
+   Perceptions of publishers increased for 22% of consumers as a result of seeing a Yieldmo ad, compared to only 11% of consumers who could say the same after seeing a standard, non-Yieldmo ad format.
 
-To read the entire results of this research study, download the full whitepaper below. 
+To read the entire results of this research study, download the full whitepaper below.
 
 Sources: \[1\] eMarketer, \[2\] IAB
