@@ -11,8 +11,6 @@
 
   {{ .Content }}
 
-  <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
-
   {{ if .Params.file_download }}
     <a id="fileDownload" class="file-download" href="" data-featherlight="#leadForm">{{ .Params.download_label_text }}</a>
 
@@ -52,10 +50,12 @@
       </div>
 
       <button id="download" class="download active">Download Now</button>
-      <a id="downloadAction" href="{{ .Params.file_download | absURL }}" download>
+      <a id="downloadAction" href="{{ .Params.file_download | absURL }}" download></a>
     </form>
 
     <script type="text/javascript">window.feature = "download"</script>
   {{ end }}
+
+  <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
 </div>
 {{ end }}
