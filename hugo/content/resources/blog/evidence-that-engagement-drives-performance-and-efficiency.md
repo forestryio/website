@@ -18,7 +18,7 @@ On behalf of a Top 3 U.S. health insurance brand, Yieldmo's data science team a
 
 Here's how it worked:
 
-1. Yieldmo captures dozens of proprietary exposure and engagement metrics, along with environmental and contextual data. For the first time, this provides a multi-dimensional view of customers’ interaction with ads
+1. Yieldmo captures dozens of proprietary exposure and engagement metrics, along with environmental and contextual data. For the first time, this provides a multi-dimensional view of customers’ interaction with ads.
 
    ![](/uploads/graph1-2.png)
 2. Machine learning mines our vast dataset for combinations of metrics and data points that reveal a propensity to click, play, convert, etc.
