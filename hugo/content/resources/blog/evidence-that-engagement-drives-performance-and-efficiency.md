@@ -1,6 +1,6 @@
 +++
-author = "Lucas Piazza "
-blurb = "Significantly higher click-through rate? Entirely within reach."
+author = "Lucas Piazza, Director of Marketing "
+blurb = "Significantly higher click-through rate? Entirely within reach with the Yieldmo Engagement Score."
 category = "case-studies"
 cover = "/uploads/Screen Shot 2018-01-18 at 11.58.10 AM.png"
 date = "2018-01-18T05:41:09-05:00"
@@ -24,7 +24,7 @@ Here's how it worked:
 2. Machine learning mines our vast dataset for combinations of metrics and data points that reveal a propensity to click, play, convert, etc.
 
    ![](/uploads/graph2.png)
-3. Each customer is given a proprietary Yieldmo Engagement ScoreTM  based on exposure, engagement, and other conditions of their interaction with the ad.
+3. Each customer is given a proprietary Yieldmo Engagement Score™ based on exposure, engagement, and other conditions of their interaction with the ad.
 
    ![](/uploads/resized.png)
 4. Users with a high score are isolated for re-targeting, while users with a low score are dropped from the campaign to prevent wasted spend.
