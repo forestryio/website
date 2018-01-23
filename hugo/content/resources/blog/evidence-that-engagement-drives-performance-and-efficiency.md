@@ -6,7 +6,6 @@ cover = "/uploads/Screen Shot 2018-01-18 at 11.58.10 AM.png"
 date = "2018-01-18T05:41:09-05:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 filed_download = ""
 layout = "blog"
