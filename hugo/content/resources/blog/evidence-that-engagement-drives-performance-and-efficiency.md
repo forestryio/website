@@ -5,7 +5,9 @@ category = "case-studies"
 cover = "/uploads/Screen Shot 2018-01-18 at 11.58.10 AM.png"
 date = "2018-01-18T05:41:09-05:00"
 description = ""
+download_label_text = "Download Document"
 draft = true
+file_download = ""
 filed_download = ""
 layout = "blog"
 title = "Evidence that engagement drives performance and efficiency"
@@ -24,7 +26,7 @@ Here's how it worked:
    ![](/uploads/graph2.png)
 3. Each customer is given a proprietary Yieldmo Engagement ScoreTM  based on exposure, engagement, and other conditions of their interaction with the ad.
 
-   ![](/uploads/Screen Shot 2018-01-18 at 11.01.19 AM.png)
+   ![](/uploads/resized.png)
 4. Users with a high score are isolated for re-targeting, while users with a low score are dropped from the campaign to prevent wasted spend.
 
-![](/uploads/Screen Shot 2018-01-18 at 11.04.23 AM.png)
+![](/uploads/resized2.png)
