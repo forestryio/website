@@ -27,7 +27,8 @@ Here's how it worked:
 
 3. Each customer is given a proprietary Yieldmo Engagement Score™ based on exposure, engagement, and other conditions of their interaction with the ad.
 
-   ![](/uploads/resized.png)
+![](/uploads/resized.png)
+
 4. Users with a high score are isolated for re-targeting, while users with a low score are dropped from the campaign to prevent wasted spend.
 
 ![](/uploads/resized2.png)
