@@ -6,7 +6,6 @@ cover = "/uploads/Screen Shot 2018-01-29 at 9.12.49 AM.png"
 date = "2018-01-29T09:10:11+00:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 layout = "blog"
 title = "Delivering Ad Engagement Data in Milliseconds with AWS"
