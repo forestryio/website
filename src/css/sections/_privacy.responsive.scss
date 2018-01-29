@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-privacy {
+    .front-page {
+      .headlines {
+        width: $mobile-m-content-width;
+      }
+
+      .explanation-container .explanation {
+        width: $mobile-m-content-width;
+      }   
+    }
+
+    .toc {
+      width: $mobile-m-content-width;
+    }
+
+    .content {
+      width: $mobile-m-content-width;
+    }
+
+    .privacy-opt-container {
+      width: $mobile-m-content-width;
+      margin: 0 auto;
+    }    
+  }
+}
+
+
+@media (--mobile-l) {
+  .section-privacy {
+    .front-page {
+      .headlines {
+        width: $mobile-l-content-width;
+      }
+
+      .explanation-container .explanation {
+        width: $mobile-l-content-width;
+      }   
+    }
+
+    .toc {
+      width: $mobile-l-content-width;
+    }    
+
+    .privacy-opt-container {
+      width: $mobile-l-content-width;
+      margin: 0 auto;
+    }  
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-privacy {
+    .front-page {
+      min-height: 100vh;
+      position: relative;
+
+      .headlines-container {
+        height: 40vh;
+        position: relative;
+
+        .headlines {
+          position: absolute;
+          padding: 0;
+          font-size: 1.5rem;
+          left: 2em;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .explanation-container {
+        min-height: calc(60vh - 6em);
+        position: absolute;
+        margin: 1em;
+        bottom: 0;
+        left: 0;
+        font-size: 1rem;
+
+        .explanation {
+          width: auto;
+          margin: 3em 2em;
+        }
+      }
+    }
+
+    .toc {
+      min-height: 100vh;
+      position: relative;
+      width: auto;
+      padding: 4em 2em;
+      font-size: 1.2rem;
+
+      .headline-cap {
+      }
+
+      ol {
+        li {
+          float: left;
+          width: calc(50% - 2em);
+          margin: 0 1em;
+
+          &:nth-child(15) { border-bottom: 1px solid $medium-green; }
+        }
+      } 
+    }
+
+    .content {
+      width: auto;
+      padding: 4em;
+    }
+  }
+}
+
+@media (--desktop-m) {
+  .section-privacy {
+    .front-page {
+      .headlines-container {
+        .headlines {
+          font-size: 2rem;
+        }
+      }
+
+      .explanation-container {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  {{ partial "head" . }}
+
+  <body class="{{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+    {{ block "navigation" . }}{{ partial "site-navigation" .}}{{ end }}
+
+    <!-- beginning of "main" -->
+    <div id="siteWrapper" class="site-wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+    <!-- end of "main" -->
+
+    {{ block "frame" . }}{{ end }}
+
+    <!-- {{ block "footer" . }}{{ partial "site-footer" . }}{{ end }} -->
+
+    <!-- site-wide scripts and optional scripts -->
+    {{ partial "site-scripts" . }}
+    {{ block "section-scripts" . }}{{ end }}
+  </body>
+</html>

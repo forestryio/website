@@ -1,0 +1,211 @@
+.hero-content,
+.hero-carousel {
+  position: relative;
+  min-height: calc(100vh - 4rem);
+  background-color: $primary-white;
+}
+
+.fp-tableCell {
+  position: relative;
+}
+
+/* ==========================================================================
+   Hero Landing Page
+   ========================================================================== */
+
+.hero-content {
+  .news {
+    background-color: $medium-green;
+    position: absolute;
+    padding: .5em 1em;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    font-family: $headline-cap;
+    font-weight: 200;
+    line-height: 1;
+    font-size: .85em;
+    z-index: 999;
+
+    a { color: $primary-white; }
+  }
+
+  .humans {
+    position: absolute;
+    height: 14rem;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+
+    img { 
+      position: absolute;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .main-message {
+    background-color: $ocean-deep;
+    color: $primary-white;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: calc(100vh - 20rem);
+    bottom: 0;
+    left: 0;
+
+    .headlines {
+      position: relative;
+      margin-top: 1.5em;
+    }
+  }
+
+  .arrow-down {
+    @extend horizontal-align;
+    position: absolute;
+    bottom: .8em;
+    font-size: 1.5em;
+    transform: translateX(-50%) rotate(-45deg);
+    z-index: 100;
+  }
+}
+
+
+/* ==========================================================================
+   Hero Carousel
+   ========================================================================== */
+
+.hero-carousel {
+  .slide-inner {
+    height: 100%;
+    position: relative;
+    background-color: $primary-white;
+    overflow: hidden;
+
+    .main-cta {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 1rem;
+      margin: auto;
+      z-index: 999;
+    }
+
+    .main-content {
+      position: absolute;
+      width: 100%;
+      top: 4rem;
+      bottom: 0;
+      z-index: 999;
+
+      .headlines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: $ocean-deep;
+      }
+
+      .more-info {
+        position: absolute;
+        width: $mobile-s-content-width;
+        bottom: 3rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        .description {
+          font-size: .9em;
+          line-height: 1.5;
+          color: $primary-white;
+        }
+
+        .inline-cta { color: $medium-green; }
+      }
+    }
+
+    .visual-pattern { 
+      position: absolute;
+      width: 100%;
+      height: 50vh;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+        display: none;
+      }
+
+      img {
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+
+      /* experimental technique */
+      .canvas-container {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding-bottom: 100%;
+
+        canvas { 
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          top: 0;
+          transform: translateY(-33%);
+        }
+      }
+    }
+  }
+
+  .fp-slidesNav {
+    &.bottom { bottom: 1em !important; }
+     ul {
+      text-align: center;
+      li a span { background-color: $tangerine; }
+    }    
+  }
+}
+
+
+/* ==========================================================================
+   Individual Slides
+   ========================================================================== */
+
+.hero-carousel .slide-formats {
+  .visual-pattern {
+    background-color: #161e2b;
+
+    img { transform: translateY(-30%); }
+  }
+}
+
+.hero-carousel .slide-insights {
+  .visual-pattern {
+    background-color: #161e2b;
+
+    img { transform: translateY(-15%); }
+  }
+}
+
+.hero-carousel .slide-marketplace {
+  .main-content .more-info .description {
+    color: $primary-black;
+  }
+
+  .visual-pattern {
+    background-color: #eaeaea;
+
+    img { transform: translateY(-50%); }
+  }
+}

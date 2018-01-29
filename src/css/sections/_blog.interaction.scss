@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Category Activation
+   ========================================================================== */
+
+.section-blog {
+  .blog-previews {
+    .blog-excerpt {
+      display: none;
+    }
+  }
+
+  &.activate-all {
+    .blog-previews .blog-excerpt {
+      display: block;
+    }
+  }
+
+  &.activate-tutorials {
+    .blog-previews .tutorials {
+      display: block;
+    }
+  }
+
+  &.activate-perspectives {
+    .blog-previews .perspectives {
+      display: block;
+    }
+  }
+
+  &.activate-case-studies {
+    .blog-previews .case-studies {
+      display: block;
+    }
+  }
+
+  &.activate-updates {
+    .blog-previews .updates {
+      display: block;
+    }
+  }
+}

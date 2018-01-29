@@ -1,0 +1,250 @@
+/* ==========================================================================
+   Pages
+   ========================================================================== */
+
+.section-insights .page-1 {
+  .match-light {
+    .headlines {
+    }
+  }
+
+  .match-dark {
+    .explanation {
+      background-color: rgba(8, 84, 115, 0.95);
+      color: $primary-white;
+      padding: 1.5em;
+
+      span {
+        font-family: $headline-cap;
+        font-weight: 300;
+        font-size: 1.5em;
+        line-height: 1;
+      }
+    }
+
+    .notes { 
+      width: $mobile-s-content-width;
+      margin: auto;
+      position: absolute;
+      bottom: 1em;
+      left: 0;
+      right: 0;
+      font-size: .9em;
+    }
+  }
+}
+
+.section-insights .page-2 {
+  min-height: 0;
+
+  .match-light {
+    .headlines {
+      padding: 3em 0;
+      text-align: center;
+
+      h6 { font-family: $content-font; font-size: 0.6em; line-height: 2; }
+
+      .truth-mask {
+        margin-top: 1em;
+        overflow: hidden;
+
+        .insights-roll {
+          width: 600%;
+
+          .insight {
+            font-size: .8em;
+            text-align: center;
+            float: left;
+            width: 16.666%;
+
+            strong {
+              display: block;
+              font-family: $headline-cap;
+              font-size: 4em;
+              line-height: .8;
+              color: $medium-green;
+              margin-top: .2em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .match-dark {
+    background-color: $medium-blue;
+    color: $primary-white;
+
+    .data-desc {
+      width: $mobile-s-content-width;
+      padding: 4em 0;
+      margin: 0 auto;
+    }
+
+    .headline-cap {
+      line-height: 1;
+      font-size: 1.5em;
+    }
+
+    .explanation {
+      margin: 2em 0;
+      font-size: .6em;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    .notes {
+      padding: .5em 1em;
+      border: 1px dotted $primary-white;
+
+      h5 {
+        font-family: $content-font;
+        font-size: .6em;
+      }
+
+      ul {
+        list-style: none;
+        margin: .5em 0;
+
+        li {
+          font-size: .5em;
+          font-family: $content-font;
+          margin: 1em 0;
+
+          strong {
+            font-family: $menu-cap;
+            margin-left: .6em;
+            color: rgb(93, 178, 164);
+            font-size: 1.3em;
+
+            &:before {
+              content: '❯❯';
+              position: relative;
+              top: 0;
+              left: -0.6em;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-insights .page-3 {
+  min-height: 0;
+
+  .match-light {
+    height: 16em;
+
+    .callout {
+      position: relative;
+      text-align: center;
+      width: $mobile-s-content-width;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .headline-cap {
+        font-size: 2em;
+        line-height: 1;
+
+        i { display: block; }
+      }
+    }
+  }
+
+  .match-dark {
+    .credit-mask {
+      margin: 3em 1em;
+      height: 30em;
+      overflow: hidden;
+
+      .credit-roll {
+        .whatwemeasure {
+          text-align: center;
+
+          span {
+            display: block;
+            font-family: $headline-cap;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-insights .page-4 {
+  .match-dark {
+    background-color: $medium-blue;
+
+    .headlines {
+      padding: 4em 0;
+      color: $primary-white;
+
+      .headline-cap { line-height: 1; }
+      .explanation {
+        font-size: .8em;
+        margin-top: 1em;
+        text-align: left;
+      }
+    }
+  }
+
+  .match-light {
+    .partners-info {
+      padding: 3em 0;
+      width: $mobile-s-content-width;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: $medium-blue;
+
+      .headline-cap {
+        font-size: 1.4em;
+        font-size: 1.1em;
+        line-height: 1;
+        text-align: left;
+        margin-bottom: .5em;
+      }
+
+      .logos-data-partners {
+        margin: 0 0 1em 0;
+
+        img {
+          height: 1em;
+          margin: .5em;
+        }
+      }
+
+      .logos-measurement-partners {
+        padding-left: 1em;
+
+        h3 {
+          font-family: $headline-cap;
+          font-size: .8em;
+          margin-left: .6em;
+
+          &:before {
+            content: '❯❯';
+            position: relative;
+            top: 0;
+            left: -0.6em;
+            font-size: 0.8em;
+          }
+        }
+
+        > div {
+          margin-bottom: 1em;
+
+          img {
+            height: 1em;
+            margin: .5em;
+          }
+        }
+      }
+
+   
+    }
+  }
+}

@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-insights .page-1 {
+    .match-dark {
+      .notes {
+        width: $mobile-m-content-width;
+        bottom: 2em;
+      }      
+    }
+  }
+
+  .section-insights .page-2 {
+    .match-light {
+      .headlines {
+        font-size: 1.2rem;
+        width: $mobile-m-content-width;
+      }
+    }
+
+    .match-dark {
+      font-size: 1.1rem;
+
+      .data-desc {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
+
+  .section-insights .page-4 {
+    .match-dark {
+      .headlines {
+        width: $mobile-m-content-width;
+      }
+    }
+
+    .match-light {
+      .partners-info {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-insights .page-1 {
+    .match-light {
+      .headlines {
+        width: 15em;
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        left: auto;
+        right: 3em;
+      }
+
+      .notes {
+        position: absolute;
+        width: $desktop-s-content-width;
+        padding: 0;
+        font-size: 1em;
+        right: auto;
+        bottom: auto;
+        left: $desk-s-side-margin;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .section-insights .page-2 {
+    min-height: 100vh;
+
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      top: auto;
+
+
+      .data-desc {
+        font-size: 1.3rem;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: $desktop-s-content-width;
+
+        .headline-cap { font-size: 1.8em; }
+
+        .explanation {
+          text-align: left;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .match-light {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+
+      .headlines {
+        position: absolute;
+        width: $desktop-s-content-width;
+        left: 0;
+        right: 0;
+        padding: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-size: 1.8rem;
+
+        .headline-lean { text-align: center; }
+        .info { 
+          text-align: center; 
+
+          strong { font-size: 6em; }
+        }
+      }
+    }
+  }
+
+  .section-insights .page-3 {
+    min-height: 100vh;
+
+    .match-light {
+      width: 50%;
+      height: 100vh;
+
+      .callout {
+        padding: 0 2em;
+        width: $desktop-s-content-width;
+
+        .headline-cap {
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        svg {
+          position: absolute;
+          transform: rotateZ(-90deg);
+          top: 50%;
+        }
+      }
+    }
+
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+      top: auto;
+
+      .credit-mask {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .section-insights .page-4 {
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      top: auto;
+
+      .headlines {
+        position: absolute;
+        right: 0;
+        left: 0;
+        padding: 0;
+        margin: 0 auto;
+        width: $desktop-s-content-width;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        .explanation { text-align: left; }
+      }
+    }
+
+    .match-light {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+
+      .partners-info {
+        position: relative;
+        font-size: 1.2rem;
+        width: 20em;
+        padding: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+
+@media (--desktop-m) {
+  .section-insights .page-1 {
+    .match-dark {
+      .notes {
+        width: $desktop-m-content-width;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .section-insights .page-2 {
+    .match-dark {
+      .data-desc {
+        width: $desktop-m-content-width;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+

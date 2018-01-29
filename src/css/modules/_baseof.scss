@@ -1,0 +1,60 @@
+/**
+ * 1. Always use rem for font size, this is the "trigger" for any component
+ * 1. Size in em if the property scales with its component's font-size
+ * 2. Size everything else in rem. (such as fixed grid gutter, etc)
+ */
+
+
+/*
+  Or add your statements here:
+ */
+/* The :root selector matches the document's root element. */
+:root { 
+  /* do something */
+}
+
+body {
+  font-size: $base-size;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-family: $content-font;
+    text-align: left;
+  }
+
+  [data-role="headline-cap"] { font-family: $headline-cap; }
+  [data-role="headline-lean"] { font-family: $headline-lean; }
+  [data-role="content"] { font-family: $content-font; }
+}
+
+.site-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0; /* the fullPage plugin will create padding for fixed header */
+  z-index: 1;
+  background-color: $primary-white;
+}
+
+
+
+/* ==========================================================================
+   Interactions
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   Responsiveness
+   ========================================================================== */
+
+
+@media (--desktop-s) {
+  .site-wrapper {
+    margin: 0 0 0 10em;
+  }
+}

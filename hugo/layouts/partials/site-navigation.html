@@ -1,0 +1,61 @@
+<!-- <h6>site header partial (/partials/site-header.html) | <a href="{{ .Site.BaseURL }}">home</a></h6> -->
+
+<aside id="siteNavigation" class="site-navigation">
+  <div id="navIcon" class="nav-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <a href="{{ .Site.BaseURL }}" class="title" data-role="headline-cap">
+    <img class="ym-logo-tagline-yes" src='{{ "_images/YM_LOGO_TAG_WHITE_ORANGE.png" | absURL }}'>
+    <img class="ym-logo-tagline-no" src='{{ "_images/YIELDMO_LOGO_WHITEORANGE.png" | absURL }}'>
+  </a>
+</aside>
+
+  <div class="menu-container">
+    <!-- Begining of primary menu -->
+    <div class="primary-menu">
+      <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="sub-menu {{if $currentPage.HasMenuCurrent "main" . }}active{{end}}">
+            <h3 class="main-section-name">{{ .Name }}</h3>
+            <ul class="sub-sections">
+              {{ range .Children }}
+                <li{{if $currentPage.IsMenuCurrent "main" . }} class="active"{{end}} data-role="{{ .Name }}" >
+                  <a href="{{ .URL }}"> {{ .Name }} </a>
+                </li>
+                {{ if eq .Parent "tools" }}
+                <li>
+                  <a target="_blank" href="https://formats.yieldmo.com/"> Ad Builder </a>
+                </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+          </li>
+          {{else}}
+          <li>
+            <a href="{{ .URL }}">
+              <span>{{ .Name }}</span>
+            </a>
+          </li>
+          {{end}}
+        {{end}}
+      </ul>
+    </div>
+    <!-- End of primary menu -->
+    
+    <!-- Begining of secondary menu -->
+    <div class="secondary-menu">
+      <ul>
+        <li> <a target="_blank" href="https://admin.yieldmo.com/"> Login </a></li>
+        {{ range .Site.Menus.secondary }}
+        <li> <a href="{{ .URL }}"> {{ .Name }} </a> </li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- End of secondary menu -->
+  </div>

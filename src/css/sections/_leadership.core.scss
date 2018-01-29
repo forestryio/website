@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Smallest mobile first
+   ========================================================================== */
+
+.section-leadership {
+  img { width: 100%; }
+  a { display: block; }
+
+  .namecard {
+    display: block;
+    font-size: 1rem;
+    padding: .5em 0;
+
+    h6 {
+      color: $deep-blue;
+      font-family: $headline-cap;
+      font-size: 1.1em;
+      line-height: 1.2;
+    }
+
+    p {
+      color: $medium-green;
+      font-size: 1em;
+    }
+  }
+
+  .team-list {
+    width: $mobile-s-content-width;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    a {
+      text-align: center;
+      cursor: pointer;
+
+      p { text-align: center; }
+    }
+  }
+
+  .team-bios {    
+    .more-info {
+      width: $mobile-s-content-width;
+      margin: 0 auto;
+      padding: 1.5em 0;
+
+      p {
+        font-size: .8em;
+        margin-top: 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+/* single-liner works like this */
+body {
+  opacity: 1 ?if media (min-width: $mobile-m-width);
+}
+
+
+@media (--mobile-m) {
+  .hero-content {
+    .humans {
+      height: 18rem;
+    }
+
+    .main-message {
+      height: calc(100vh - 24rem);
+
+      .headlines {
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        .more-info {
+          width: $mobile-m-content-width;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (--mobile-l) {
+  .hero-content {
+    .humans {
+      height: 22rem;
+    }
+
+    .main-message {
+      height: calc(100vh - 28rem);
+
+      .headlines {
+        margin-top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        top: 6rem;
+
+        .more-info {
+          width: $mobile-l-content-width;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media (--tablet) {
+  .hero-content {
+    .news {
+      padding: .6rem 1rem;
+    }
+
+    .humans {
+      height: 26rem;
+    }
+
+    .main-message {
+      height: calc(100vh - 32rem);
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .hero-content,
+  .hero-carousel {
+    height: 100vh;
+  }
+
+  .hero-content {
+    .news {
+      width: $desktop-s-content-width;
+      left: $desk-s-side-margin;
+      padding: 1em;
+      bottom: 6rem;
+      top: auto;
+    }
+
+    .humans {
+      height: 100vh;
+      width: 50%;
+      left: auto;
+      right: 0;
+      top: 0;
+    }
+
+    .main-message {
+      height: 100vh;
+      width: 50%;
+      background-color: transparent;
+      color: $primary-black;
+    }
+
+    .arrow-down {
+      font-size: 3rem;
+      bottom: .5em;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-cta {
+        width: auto;
+        right: auto;
+        top: calc( $desk-s-side-margin / 2 );
+        left: calc( $desk-s-side-margin / 2 );
+      }
+
+      .main-content {
+        bottom: auto;
+        width: auto;
+        right: $desk-s-side-margin;
+        top: 25%;
+        transform: translateY(-50%);
+
+        .headlines { position: static; }
+        .more-info {
+          position: static; 
+          width: $desktop-s-content-width;
+          margin-top: .5em;
+
+          .description { color: $ocean-deep; }
+        }
+      }
+
+      .visual-pattern {
+        img { display: none; }
+        video { display: block; z-index: 1; }
+
+        .canvas-container {
+          display: none;
+        }
+      }
+    }
+
+    .slide-formats {
+      .visual-pattern {
+        video {
+          transform: translateY(-25%);
+        }
+      }
+    }
+
+    .slide-insights {
+      .main-content {
+        .headlines,
+        .more-info {
+          font-size: 1.2rem; /* too much text for this so make font smaller */
+        }
+      }
+
+      .visual-pattern {
+        video {
+          transform: translateY(-45%);        
+        }
+      }
+    }
+
+    .slide-marketplace {
+      .main-content {
+        left: $desk-s-side-margin;
+        right: auto;
+        top: calc(25% + 2rem);
+      }
+
+      .visual-pattern {
+        video {
+          top: auto;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (--desktop-m) {  
+  .hero-content {
+    .news {
+      bottom: 4rem;
+    }
+  }
+
+  .hero-carousel {
+    .slide-inner {
+      .main-content {
+        .more-info {
+          width: $desktop-m-content-width;
+        }
+      }
+    }
+
+    .slide-insights {
+      .main-content {
+        .headlines,
+        .more-info {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

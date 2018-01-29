@@ -1,0 +1,146 @@
+/* ==========================================================================
+   List Page
+   ========================================================================== */
+
+.section-privacy {
+  font-family: $content-font;  
+
+  .front-page {
+    .headlines {
+      width: $mobile-s-content-width;
+      margin: 0 auto;
+      padding: 3em 0 2em 0;
+
+      .headline-cap { font-size: 3em; }
+      .headline-lean { font-size: 2em; }
+    }
+
+    .explanation-container {
+      background-color: $gray;
+      font-size: .8em;
+
+      .explanation {
+        width: $mobile-s-content-width;
+        margin: 2em auto;
+
+        p { 
+          line-height: 1.4;
+          margin: 0 0 1em 0;
+        }
+      }
+    }    
+  }  
+
+  .toc {
+    width: $mobile-s-content-width;
+    margin: 0 auto;
+    padding: 2em 0;
+
+    .headline-cap {
+      font-size: 1.3em;
+      color: $medium-green;
+    }
+
+    ol {
+      padding: 0;
+      list-style-position: inside;
+      counter-reset: item;
+
+      li {
+        counter-increment: item;
+        list-style: none;
+        font-family: $content-font;
+        font-size: .9em;
+        padding: .75em 0 .5em 1.5em;
+        border-top: 1px solid $medium-green;
+
+        a {
+          color: $primary-black;
+          position: relative;
+          top: 1px;
+          left: 4px;
+        }
+
+        &:before {
+          display: inline-block;
+          margin-left: -1.5em;
+          font-weight: bold;
+          text-align: left;
+          content: counter(item) ".";
+        }
+
+        &:last-child { border-bottom: 1px solid $medium-green; }
+      }
+    }
+  }
+
+  .content {
+    width: $mobile-s-content-width;
+    margin: 0 auto;
+
+    div,
+    a { 
+      /* display: block; */
+
+      .headline-cap {
+        padding: 1em 0;
+        color: $medium-green;
+        font-size: 1.3em;
+      }
+
+      p {
+        font-size: .8rem;
+        margin: 1em 0;
+
+        strong {
+          display: block;
+          margin-bottom: .5em;
+          text-decoration: underline;
+        }
+      }
+
+      ol {
+        font-family: $content-font;
+        font-size: .8em;
+        padding-left: 3em;
+
+        li { margin-bottom: .5em; }
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Opt Page
+   ========================================================================== */
+
+.section-privacy {
+  .privacy-opt-container {
+    width: $mobile-s-content-width;
+    margin: 0 auto;
+
+    .headline-cap {
+      margin: 2rem 0;
+    }
+
+    p {
+      font-size: .8rem;
+      margin-top: 1em;
+    }
+
+    form {
+      margin: 2em 0;
+
+      input {
+        font-family: $headline-cap;
+        font-weight: 100;
+        white-space: normal;
+        border: 1px solid $primary-black;
+        padding: .5em 0 .3em 0;
+        width: 17rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}

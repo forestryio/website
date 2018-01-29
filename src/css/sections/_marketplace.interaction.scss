@@ -1,0 +1,18 @@
+.section-marketplace .page-2 {
+  .match-dark {
+    .publishers-mask {
+      .credit-roll {
+        animation: publisherRoll 180s linear 0s infinite;
+      }
+    }
+  }
+}
+
+
+@keyframes publisherRoll {
+  0% {
+    transform: translateX(0);
+  } 100% {
+    transform: translateX(-50%);
+  }
+}

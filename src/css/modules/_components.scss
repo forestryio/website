@@ -1,0 +1,160 @@
+/* ==========================================================================
+   For components, Media Queries are defined within the component
+   ========================================================================== */
+
+.arrow-down {
+  transform: translateX(-50%) rotate(-45deg);
+  color: $tangerine;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0;
+}
+
+.breadcrumbs {
+  position: absolute;
+  z-index: 1;
+  top: 1rem; 
+  left: 1rem;
+  font-size: .6rem;
+  text-align: left;
+  color: $tangerine;
+  font-family: $content-font;
+  text-transform: uppercase;
+
+  @media (--mobile-l) { font-size: .7rem; }
+  @media (--tablet) { font-size: .75rem; top: 1.5rem; left: 1.5rem; }
+  @media (--desktop-s) { font-size: .8rem; top: 2rem; left: 2rem; }
+}
+
+.main-cta {
+  font-family: $headline-cap;
+  line-height: 1;
+  padding: .3em .3em .1em .3em;
+  border: 1px dotted $tangerine;
+  color: $tangerine;
+  text-align: center;
+  width: 8em;
+
+  @media (--mobile-m) { font-size: 1.2rem; }
+  @media (--mobile-l) { font-size: 1.5rem; }
+  @media (--desktop-s) { font-size: 1.8rem; padding: .3em .6em .1em .6em; }
+}
+
+.headline-cap {
+  font-family: $headline-cap;
+  text-align: center;
+  line-height: 1;
+
+  @media (--desktop-s) { text-align: left; }
+}
+
+.headline-lean {
+  font-family: $headline-lean;
+  font-weight: 100;
+  line-height: 1.1;
+  text-align: center;
+
+  @media (--desktop-s) { text-align: left; }
+}
+
+.headlines {
+  width: $mobile-s-content-width;
+  margin: 0 auto;
+  font-size: .9rem;
+
+  .headline-cap { font-size: 1.7em; }
+  .headline-lean { font-size: 1.4em; }
+
+  .headline-lean ~ .headline-cap { margin-top: .25em; }
+  .headline-cap ~ .headline-lean { margin-top: .25em; }
+
+  @media (--mobile-m) { width: $mobile-m-content-width; font-size: 1rem; }
+  @media (--mobile-l) { width: $mobile-l-content-width; font-size: 1.1rem; }
+  @media (--tablet) { font-size: 1.3rem; }
+
+  @media (--desktop-s) { 
+    width: $desktop-s-content-width;
+    position: absolute;
+    margin: 0;
+    left: $desk-s-side-margin;
+    font-size: 1.5rem;
+  }
+
+  @media (--desktop-m) { width: $desktop-m-content-width; font-size: 2rem; }
+}
+
+.inline-cta {
+  font-family: $headline-cap;
+  display: inline-block;
+  margin: .5em;
+
+  &:before {
+    content: '❯';
+    position: relative;
+    top: 0;
+    left: -.5em;
+    font-size: 0.8em;
+  }
+}
+
+.anchor-locator {
+  display: block;
+  position: relative;
+  top: -4rem;
+
+  @media (--desktop-s) { top: 0; }
+}
+
+
+
+/* ==========================================================================
+   Interaction
+   ========================================================================== */
+
+.arrow-down {
+  animation: scroll-down 2s ease-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translate3d(-50%,0,0) rotate(-45deg);;
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate3d(-50%,.2em,0) rotate(-45deg);
+    opacity: 0.8;
+  }
+}
+
+
+/* ==========================================================================
+   Utility helper classes
+   ========================================================================== */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.v-align {
+  top: 50%;
+  transform: translateY(-50%);
+}

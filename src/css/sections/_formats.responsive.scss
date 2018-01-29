@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-formats .page-1 {
+    .match-light .headlines { width: $mobile-m-content-width; }
+    .match-dark .explanation { width: $mobile-m-content-width; }
+  }
+
+  .section-formats .page-2 {
+    .match-light .headlines { width: $mobile-m-content-width; }
+  }
+
+  .section-formats .page-3 {
+    .match-light {
+      .headlines { width: $mobile-m-content-width; }
+      .question { width: $mobile-m-content-width; }
+    }
+
+    .match-dark {
+      .formats-category { width: $mobile-m-content-width; }
+      .formats-category .headline-cap { font-size: 1rem; }
+    }
+  }
+
+  .section-formats .page-4 {
+    .match-light {
+      .formats-elaboration .format { 
+        width: $mobile-m-content-width; 
+
+        .header {
+          .label { margin-top: 3em; }
+          .headlines { font-size: .9rem; }
+        } 
+      }
+    }
+  }
+}
+
+@media (--mobile-l) {
+  .section-formats .page-1 {
+    .match-light .headlines { width: $mobile-l-content-width; }
+    .match-dark .explanation { width: $mobile-l-content-width; }
+  }
+
+  .section-formats .page-2 {
+    .match-light .headlines { font-size: 1.1rem; width: $mobile-l-content-width; }
+  }
+
+  .section-formats .page-3 {
+    .match-light {
+      .headlines { width: $mobile-l-content-width; }
+      .question { width: $mobile-l-content-width; }
+    }
+
+    .match-dark {
+      .formats-category { width: $mobile-l-content-width; }
+    }
+  }
+
+  .section-formats .page-4 {
+    .match-light {
+      .formats-elaboration .format { 
+        width: $mobile-l-content-width; 
+
+        .header {
+          .label { margin-top: 4em; }
+          .headlines { font-size: 1rem; }
+        } 
+      } 
+    }
+  }
+}
+
+
+@media (--tablet) {
+  .section-formats .page-4 {
+    .match-light {
+      .formats-elaboration .format { 
+        width: $tablet-content-width;
+
+        .header {
+          .headlines { 
+            /* TODO: incease width for tablet section in general */
+            font-size: 1rem; 
+          }
+        } 
+      } 
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-formats {
+    .interior-page {
+      height: 100vh;
+
+      .match-light { height: 50vh; }
+      .match-dark { height: 50vh; }
+    }
+  }
+
+  .section-formats .page-1 {
+    .match-light {
+      .headlines {
+        width: auto;
+        right: auto;
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        width: $desktop-s-content-width;
+      }
+
+      img.hand-held {
+        display: block;
+      }
+    }
+  }
+
+  .section-formats .page-2 {
+    .ceros-content-mobile { display: none; }
+    .ceros-content-desktop { display: block; }
+
+    .match-light .headlines {
+      position: absolute;
+      padding: 0;
+      right: auto;
+      left: 3rem;
+      width: 28rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  .section-formats .page-3 {
+    .match-light {
+      .headlines {
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        left: 3rem;
+        right: auto;
+        transform: translateY(-50%);
+        width: 24rem;
+        font-size: 1.2rem;
+      }
+
+      .question {
+        margin: 0 auto;
+        width: 20em;
+        bottom: 1em;
+
+        .headline-lean { font-size: 1.6rem; }
+      }
+        
+    }
+
+    .match-dark {
+      background-color: $gray;
+
+      .formats-category {
+        position: absolute;
+        width: 48em;
+        left: 0;
+        right: 0;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .headline-cap {
+          float: left;
+          width: calc(50% - 2em);
+          height: 8em;
+          margin: 1em;
+          padding: 0;
+          line-height: 8em;
+        }
+      }
+    }
+  }
+
+  .section-formats .page-4 {
+    .match-dark {
+      display: block;
+      height: 100%;
+      width: 18em;
+      left: 0;
+      top: 0;
+      padding: 0;
+      background-color: $primary-white;
+
+      .formats-category {
+        position: relative;
+        text-align: left;
+        padding: 0 2em;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .main-cta {
+          margin: 0;
+          border: none;
+          padding: 0;
+        }
+
+        .inner-nav {
+          height: auto;
+          overflow-x: hidden;
+
+          .x-scroll-container {
+            width: auto;
+            top: 0;
+            transform: none;
+            padding: 1em 0;
+
+            .headline-cap {
+              width: auto;
+              float: none;
+              text-align: left;
+              line-height: 1.8;
+
+              &:before {
+                position: relative;
+                content: '❯';
+                left: -0.5em;
+                margin-left: .5em;
+              }
+
+              span {
+                display: inline;
+              }
+            }
+          }      
+        }
+      }
+    }
+
+    .match-light {
+      height: 100%;
+      left: 18em;
+      right: 0;
+      top: 0;
+      width: auto;
+
+      .formats-elaboration {
+        height: calc(100% - 4em);
+        margin: 2em;
+        width: auto;
+        position: relative;
+
+        .format {
+          width: auto;
+
+          .header {
+            .headlines {
+              position: static;
+              width: auto;
+              font-size: 1.4rem;
+            }
+
+            .label {
+              margin-top: 2em;
+            }
+          }
+
+          .videos {
+            position: absolute;
+            left: 0;
+            top: 9em;
+            bottom: 0;
+            padding: 0;
+            overflow-y: scroll;
+
+            .video-container {
+              margin-bottom: 2em;
+
+              img { display: none; }
+              video { display: block; }
+              .name { font-size: .8rem; }
+            }               
+          }
+        }
+      }
+    }    
+  }
+}
+
+@media (--desktop-m) {
+  .section-formats .page-2 {
+    .match-light {
+      .headlines { font-size: 1.5rem; width: 40rem; }
+    }
+  }
+
+  .section-formats .page-3 {
+    .match-light {
+      .headlines { font-size: 1.5rem; width: 40rem; }
+      .question { font-size: 1.2rem; }
+    }
+
+    .match-dark {
+      .formats-category {
+        width: 64em;
+        
+        .headline-cap { font-size: 1.2rem; }       
+      }
+    }
+  }  
+}

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" class="view html5-player">
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <script type="text/javascript">
+            (function() {
+                var locationWithNoQuery = document.location.href.split('?')[0];
+                if(document.location.pathname.match(/\.html$/)) {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/[^\/]*\.html$/, '');
+                }
+                else {
+                    window.cerosBaseUrl = locationWithNoQuery.replace(/(p|page)\/[a-z0-9-]*\/?$/, '');
+                }
+                document.write("<base href='" + window.cerosBaseUrl + "' />");
+            })();
+        </script>
+
+
+        <script type="text/javascript" src="assets/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="assets/webfont-1.6.3.js"></script>
+
+        <script type="text/javascript">
+            window.cerosContext = {
+                viewAssetsDomain    : '',
+                publicAssetsBaseUrl : 'assets/',
+                videoJsSwf          : 'assets/player/shared/video/video-js.7caab3b611bb1f129f0e0368fe0ad2e0.swf',
+                isEmbedded          : top != window,
+                isVanityDomain      : location.hostname !== 'view.ceros.com',
+                previewMode         : false,
+                logging: {
+                emitDevWarnings : false,
+                    modes : {
+                            'debug' : false,
+                            'info'  : false,
+                            'warn'  : true,
+                            'error' : true
+                    }
+                },
+                usePageSlugsInNavigation  : false,
+                usePreviewBanner          : false,
+                useDocumentLoadingSpinner : true,
+                analyticsApplicationKey   : 'player',
+                analyticsMaxDwellTime     : 1800,
+                analyticsUrl              : '',
+                apiVersion                : 'v1',
+                revalidateWithCore        : false,
+                ajaxCaching               : true,
+                mediaDomainMap: null,
+                rollbarAccessKey: 'dbaacb75e2744b438d9f73fe01b1a048',
+                deploymentName: 'production',
+                appVersion: '5.61.0',
+                rollbarMaxItems: 5,
+
+                accountSlug         : 'yieldmo',
+                gracePeriodExpired  : 9223372036854775807 < Date.now() / 1000,
+                    appSlug             : 'website',
+                    issueAliasSlug      : 'chart-1-1',
+                    issue               : {"id":99091,"title":"Chart_1_Mobile","name":"Chart_1_Mobile","slug":"experience-59fca6e76754a","status":"published","projectId":16438,"wipExperienceVersionId":281626,"publishedExperienceVersionId":297289,"createdByMemberId":7372,"primaryIssueAliasId":148316,"creationDate":"Fri, 3 Nov 2017 13:27:03 -0400","modifiedDate":"Tue, 5 Dec 2017 12:55:57 -0500","activeDate":"Tue, 5 Dec 2017 12:55:57 -0500","firstPublishedDate":"Mon, 6 Nov 2017 16:44:58 -0500","firstPageThumbnailUrl":"\/\/media-s3-us-east-1.ceros.com\/yieldmo\/studio-thumbnails\/page-59fca6e733da0.jpg","importLinkShared":false},
+                    docVersion          : {"id":297289,"slug":"experience-version-5a26ddad189a3","loadLowRes":true,"seoNoIndex":false,"committedJsonUrl":"http:\/\/media-s3-us-east-1.ceros.com\/yieldmo\/doc-version-json\/v10\/experience-version-5a26ddad189a3.js","seoTitleKeywords":"","seoMetaKeywords":"","seoMetaDescription":"","canonicalUrlOverride":"","viewportHeight":1060,"viewportWidth":751,"editorPagesManifest":[{"uri":"\/v1\/account\/yieldmo\/pages\/page-5a26ddad18a75","initiallyDisabled":false,"thumbnail":"media\/6f5e257bac77fb9d9106e6389719f8e4\/page-thumbnail-crop.jpg"}],"seoNoscriptHtml":"","experienceId":99091,"committedByMemberId":7372,"creationDate":"Tue, 5 Dec 2017 12:55:57 -0500","modifiedDate":"Tue, 5 Dec 2017 12:55:57 -0500","publishedDate":"Tue, 5 Dec 2017 12:55:57 -0500","scaleExperience":false,"carousel":{"enabled":false,"autoTransition":0,"autoTransitionDelay":5},"theming":{"arrowsEnabled":true,"swipeEnabled":true,"menuEnabled":false,"backgroundColor":"#FFFFFF","menuFgColor":"#FFFFFF","menuBgColor":"#000000","backgroundImage":null}},
+                    fontManifest        : {"Roboto-regular":{"name":"Roboto-regular","version":18,"familyName":"Roboto","fontWeight":400,"fontStyle":"normal","unitsPerEm":2048,"ascent":1536,"builtIn":false,"metricsFileURL":"https:\/\/assets-s3-us-east-1.ceros.com\/_lambda-font-metrics\/Roboto-regular-v18.json"}},
+                googleAnalyticsId   : null,
+                showCerosBranding   : false,
+                allowEmbedding      : true,
+                isTrialAccount      : false,
+                noAnalyticsTracking       : false,
+                allowCommerceIntegration  : false,
+                allowLightboxes           : true,
+                allowEmbeddedPlayerSdk    : false,
+                commerceSettings: {
+                panelWidth      : null,
+                panelHeight     : null,
+                    productUrl      : '',
+                    shoppingCartUrl : '',
+                },
+                    themeObj: {
+                    arrowsEnabled    : true,
+                    swipeEnabled     : true,
+                    menuEnabled      : false,
+                        menuFgColor      : '#FFFFFF',
+                        menuBgColor      : '#000000',
+                        menuHoverOpacity : 0.6,
+                        backgroundColor  : '#FFFFFF',
+                    backgroundImage  :
+                            null
+
+                    },
+                googleFontUrl: '',
+            };
+        </script>
+
+        <!--
+          DISPLAY SETTINGS
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="monitor-signature" content="monitor:player:html5" />
+
+        <title> </title>
+
+
+
+        <meta property="og:title" content=""/>
+            <meta property="og:image" content="media/6f5e257bac77fb9d9106e6389719f8e4/page-thumbnail-crop.jpg" />
+        <meta property="og:url"   content="" />
+        <meta property="og:type"  content="object"/>
+
+
+        <script language="Javascript" id="docversion-request-script">
+            window.docVersionRequest = window.jQuery.ajax({
+                url           : "media/experience-version-5a26ddad189a3.js",
+                dataType      : 'jsonp',
+                jsonp         : false, 
+                cache         : true,  
+                jsonpCallback : "loadDocVersion_v1_account_yieldmo_document_versions_experience_version_5a26ddad189a3",
+                success       : window.jQuery.noop 
+            });
+        </script>
+
+        <!--
+          FONTS
+        -->
+
+
+
+
+        <script type="text/javascript">
+            window.cerosPlayerLoadStart = new Date();
+        </script>
+
+        <script
+            type="text/javascript"
+            crossorigin="anonymous"
+            src="assets/player/shared/libs/require/require-min.b03b66057d7df9b2cc9aa9c4c18aa569.js" >
+        </script>
+
+        <script
+            type="text/javascript"
+            async
+            crossorigin="anonymous"
+            charset="UTF-8"
+            src="assets/player/applications/html5-player/bootstrap-optimized.c3e75268e27b0c19e0d20a25f3d7840d.js" >
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="assets/player/applications/html5-player/css/html5-player.04d6b9d290b72709310ea64cced695b2.css" />
+
+        <style>
+            body {
+                background-color: #FFFFFF;
+            }
+            body:-ms-fullscreen::-ms-backdrop {
+                background-color: #FFFFFF;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+
+
+        <noscript>
+            
+                <div id="page-5a26ddad18a75" class="page"><div id="" class="text-component">(Applause Consumer Research Study, September 2016) </div>
+<div id="" class="text-component">                           of U.S. consumers prefer Yieldmo’s
+ ad formats over standard mobile formats.</div>
+<div id="" class="text-component">79%</div>
+<img src="media/images/5846aed57c95018f8e09827504136b05/chart-v1-base-01.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">(Applause Consumer Research Study, September 2016) </div>
+<img src="media/images/f86e75a42aaf622f1dfdc5edd85be361/chart-v1-chart2-green-01.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">63%</div>
+<img src="media/images/f86e75a42aaf622f1dfdc5edd85be361/chart-v1-chart2-green-01.png" alt="" id="" class="image-component" />
+<img src="media/images/5768347461c6b485c6639c6b6eb5edcb/chart-v1-white-01.png" alt="" id="" class="image-component" />
+<img src="media/images/5846aed57c95018f8e09827504136b05/chart-v1-base-01.png" alt="" id="" class="image-component" />
+<img src="media/images/5768347461c6b485c6639c6b6eb5edcb/chart-v1-white-01.png" alt="" id="" class="image-component" />
+<img src="media/images/12258e776b17fca3a03aff6645de7a96/chart-v1-darkblue-01.png" alt="" id="" class="image-component" />
+<img src="media/images/12258e776b17fca3a03aff6645de7a96/chart-v1-darkblue-01.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">                           of U.S. consumers were favorable  toward an advertiser after seeing a Yieldmo ad—25%  higher than the favorability from standard mobile ads.</div>
+<div id="" class="text-component">(Applause Consumer Research Study, September 2016) </div>
+<img src="media/images/5768347461c6b485c6639c6b6eb5edcb/chart-v1-white-01.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">                           of U.S. consumers correctly recalled  the advertiser after seeing a Yieldmo ad—31% higher  than the recall rate from standard mobile ads.</div>
+<img src="media/images/ba528e097f60af32ff30908fc61278dc/chart-v1-blue-01.png" alt="" id="" class="image-component" />
+<div id="" class="text-component">66%</div>
+<img src="media/images/5846aed57c95018f8e09827504136b05/chart-v1-base-01.png" alt="" id="" class="image-component" />
+<img src="media/images/ba528e097f60af32ff30908fc61278dc/chart-v1-blue-01.png" alt="" id="" class="image-component" /></div>
+        </noscript>
+
+
+    <div id="main"></div>
+    <div id="backgroundContainer"></div>
+
+
+
+        <!-- BEGIN CUSTOM HTML -->
+        
+        <!-- END CUSTOM HTML -->
+
+
+
+
+
+    </body>
+</html>

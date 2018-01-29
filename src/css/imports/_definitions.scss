@@ -1,23 +1,44 @@
 /* ==========================================================================
-   variables (SaSS & CSS custom properties)
+   fonts
    ========================================================================== */
+
+/* Purchased web font: @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/34fcf3");
+@font-face {font-family: Meltow; src: url('../_fonts/webfonts/34FCF3_0_0.eot');src: url('../_fonts/webfonts/34FCF3_0_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_0_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_0_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_0_0.ttf') format('truetype'); font-weight: 200;}
+@font-face {font-family: Meltow;src: url('../_fonts/webfonts/34FCF3_1_0.eot');src: url('../_fonts/webfonts/34FCF3_1_0.eot?#iefix') format('embedded-opentype'),url('../_fonts/webfonts/34FCF3_1_0.woff2') format('woff2'),url('../_fonts/webfonts/34FCF3_1_0.woff') format('woff'),url('../_fonts/webfonts/34FCF3_1_0.ttf') format('truetype'); font-weight: 100;} 
+@font-face {font-family: Meltow; src: url('../_fonts/MeltowSan300-Regular.ttf'); font-weight: 300;}
+@font-face {font-family: MrsEavesItalic; src: url('../_fonts/MrsEavesItalic.ttf');}
+@font-face {font-family: Caecilia-Light; src: url('../_fonts/Caecilia-Light.ttf');}
 
 /* CSS variables (not actually mutable) */
 $base-size: 16px; /* it's actually the popular default as well */
 
+$headline-cap: Meltow;
+$headline-lean: MrsEavesItalic;
+$content-font: Caecilia-Light;
+
+
+
+/* ==========================================================================
+   Brand Color
+   ========================================================================== */
 
 /* https://github.com/postcss/postcss-color-function#list-of-color-adjuster */
-$pink: #ffbfca;
+$primary-white: rgb(255, 255, 255);
+$primary-black: rgb(0, 0, 0);
+$ocean-deep: rgb(30, 39, 45);
+$tangerine: rgb(235, 150, 47);
+$gray: rgb(228, 228, 228);
+
+$light-green: rgb(150, 205, 198);
+$medium-green: rgb(93, 178, 168);
 
 
-/* CSS custom properties (nicknamed CSS variables) */
+$medium-blue: rgba(8, 84, 115);
+$deep-blue: rgb(10, 82, 104);
 
-/* they actually should be declared in responsive.scss since it's easier to refer to */
-
-:root {
-  /* --gutter: 8px; */
-  /* --column-num: 1; */
-}
+$first: rgb(159, 190, 192);
+$second: rgb(64, 153, 143);
 
 
 
@@ -25,15 +46,34 @@ $pink: #ffbfca;
    Media Queries and custom media definitions
    ========================================================================== */
 
-$mobile-s-width: 320px;
-$mobile-m-width: 480px;
-$mobile-l-width: 640px;
-$desktop-width: 1024px;
+$mobile-s-width: 280px;
+$mobile-m-width: 359px;
+$mobile-l-width: 408px;
+$tablet-width: 640px;
+$desktop-width-s: 960px;
+$desktop-width-m: 1440px;
 
-@custom-media --mobile-s (width > 320px) and (width <= 480px);
-@custom-media --mobile-m (width > 480px) and (width <= 640px);
-@custom-media --mobile-l (width > 640px) and (width <= 1024px);
-@custom-media --desktop  (width >= 1024px);
+/* @custom-media --mobile-s (width <= 359px); */
+@custom-media --mobile-m  (width >= 359px);
+@custom-media --mobile-l  (width >= 408px);
+@custom-media --tablet    (width >= 640px);
+@custom-media --desktop-s (width >= 960px);
+@custom-media --desktop-m (width >= 1440px);
+@custom-media --desktop-l (width >= 1920px);
+
+$arrow-right: '∟';
+
+$mobile-s-content-width: 17rem;
+$mobile-m-content-width: 20rem;
+$mobile-l-content-width: 22rem;
+
+$tablet-content-width: 30rem;
+
+$desktop-s-content-width: 24rem;
+$desktop-m-content-width: 30rem;
+$desktop-l-content-width: 36rem;
+
+$desk-s-side-margin: 4rem;
 
 
 /* ==========================================================================
@@ -54,4 +94,10 @@ $desktop-width: 1024px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@define-extend horizontal-align {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-blog {
+    .blog-tabs {
+      width: $mobile-m-content-width;
+    }
+
+    .blog-previews {
+      width: $mobile-m-content-width;
+    }    
+  }
+
+  .blog-page {
+    width: $mobile-m-content-width;
+  }  
+}
+
+@media (--mobile-l) {
+  .section-blog {
+    .blog-tabs {
+      width: $mobile-l-content-width;
+    }
+
+    .blog-previews {
+      width: $mobile-l-content-width;
+    }    
+  }
+
+  .blog-page {
+    width: $mobile-l-content-width;
+  }  
+}
+
+@media (--tablet) {
+  .section-blog {
+    padding: 3rem 3rem 0 3rem;
+
+    .blog-tabs {
+      width: auto;
+      font-size: 1.3rem;
+    }
+
+    .blog-previews {
+      width: auto;
+
+      .blog-excerpt {
+        font-size: 1.2rem;
+      }
+    }    
+  }
+
+  .blog-page {
+    width: auto;
+    padding: 0 3rem;
+
+    .mobile { display: none; }
+    .desktop { display: block; }
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-blog {
+    .blog-tabs {
+      padding: 0 .5em;
+    }
+
+    .blog-previews {
+      .blog-excerpt {
+        width: 33.333%;
+        float: left;
+        font-size: 1rem;
+        padding: 0 .5em;
+
+        .preview {
+          height: 16rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .blog-page {
+    margin: 0 0 2em 0;
+    font-size: 1.2rem;
+
+    .category {
+      margin: 3em 0 2em 0;
+    }
+  }
+}
+
+
+@media (--desktop-m) {
+  .section-blog {
+    .blog-previews {
+      max-width: 72rem;
+      margin: 1em 0;
+
+      .blog-excerpt {
+        font-size: 1.2rem;
+        height: 41rem;
+
+        .preview {
+          height: 17rem;
+        }
+      }
+    }
+  }
+
+  .blog-page {
+    max-width: 72rem;
+  }
+}
+
+

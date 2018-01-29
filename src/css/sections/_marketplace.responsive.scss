@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-marketplace .page-1 {
+    .match-dark {
+      .footnote {
+        width:  $mobile-m-content-width;
+        font-size: .7rem;
+      }
+    }
+  }
+
+  .section-marketplace .page-2 {
+    .match-light {
+      .marketplace-desc {
+        width: $mobile-m-content-width;
+        padding: 2em 0;
+      }
+    }
+
+    .match-dark {
+      .publishers-mask {
+        width:  $mobile-m-content-width;
+      }
+    }
+  }
+}
+
+
+@media (--mobile-l) {
+  .section-marketplace .page-1 {
+    .match-light {
+      min-height: 18rem;
+    }
+
+    .match-dark {
+      min-height: 20rem;
+      
+      .footnote {
+        width:  $mobile-l-content-width;
+        font-size: .75rem;
+      }
+    }
+  }
+
+  .section-marketplace .page-2 {
+    .match-light {
+      .marketplace-desc {
+        width: $mobile-l-content-width;
+      }
+    }
+
+    .match-dark {
+      .publishers-mask {
+        width:  $mobile-l-content-width;
+      }
+    }
+  }
+}
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-marketplace .page-1 {
+    .match-light {
+      .headlines { }
+    }
+
+    .match-dark {
+      .explanation {
+        left: auto;
+        right: 2em;
+      }
+
+      .footnote {
+        position: absolute;
+        width: $desktop-s-content-width;
+        padding: 0;
+        font-size: .8rem;
+        right: auto;
+        bottom: auto;
+        left: $desk-s-side-margin;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .section-marketplace .page-2 {
+    .match-light {
+      width: 50%;
+      height: 100vh;
+
+      .marketplace-desc {
+        padding: 0;
+        width: $desktop-s-content-width;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .explanation {
+          text-align: left;
+        }
+
+        .notes {
+          font-size: 1.5rem;
+
+          strong { margin-bottom: .5em; }
+          li span { margin-left: 1.8em; }
+        }
+      }
+    }
+
+    .match-dark {
+      width: 50%;
+      height: 100vh;
+      left: 50%; 
+      top: auto;
+
+      .stat-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .statline { font-size: 1.5rem; padding: 0; }
+        .info { font-size: 1.8rem; }
+        .publishers-mask { margin: 3em auto; }
+      }
+    }
+  }
+}
+
+@media (--desktop-m) {
+  .section-marketplace .page-1 {
+    .match-dark {
+      .footnote {
+        width: $desktop-m-content-width;
+
+      }
+    }
+  }
+}
+

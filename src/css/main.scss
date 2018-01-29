@@ -1,10 +1,68 @@
-/**
- * You can use import statements to include partials:
- */
+/* ==========================================================================
+   warming up... 
+   ========================================================================== */
+@import "imports/_normalize.scss";
 @import "imports/_reset.scss";
 @import "imports/_definitions.scss";
 
 
-@import "modules/_core.scss";
-@import "modules/_responsive.scss";
+/* ==========================================================================
+   import plugins
+   ========================================================================== */
+@import "plugins/jquery.fullpage.min.css";
+@import "plugins/featherlight.css";
 
+
+/* ==========================================================================
+   modular components & common stuff among everything
+   ========================================================================== */
+
+@import "modules/_baseof.scss";
+@import "modules/_navigation.scss";
+@import "modules/_components.scss";
+
+
+/* ==========================================================================
+   different sections
+   ========================================================================== */
+@import "sections/_common.scss";
+
+@import "sections/_home.core.scss";
+@import "sections/_home.interaction.scss";
+@import "sections/_home.responsive.scss";
+
+@import "sections/_formats.core.scss";
+@import "sections/_formats.interaction.scss";
+@import "sections/_formats.responsive.scss";
+
+@import "sections/_insights.core.scss";
+@import "sections/_insights.interaction.scss";
+@import "sections/_insights.responsive.scss";
+
+@import "sections/_marketplace.core.scss";
+@import "sections/_marketplace.interaction.scss";
+@import "sections/_marketplace.responsive.scss";
+
+@import "sections/_engagement.core.scss";
+@import "sections/_engagement.responsive.scss";
+
+@import "sections/_emp.core.scss";
+@import "sections/_emp.responsive.scss";
+
+@import "sections/_leadership.core.scss";
+@import "sections/_leadership.responsive.scss";
+
+@import "sections/_about.core.scss";
+@import "sections/_about.responsive.scss";
+
+@import "sections/_privacy.core.scss";
+@import "sections/_privacy.responsive.scss";
+
+@import "sections/_contact.core.scss";
+@import "sections/_contact.responsive.scss";
+
+@import "sections/_blog.core.scss";
+@import "sections/_blog.interaction.scss";
+@import "sections/_blog.responsive.scss";
+
+@import "sections/_licensedformats.scss";

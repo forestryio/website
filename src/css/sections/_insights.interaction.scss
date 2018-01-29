@@ -1,0 +1,75 @@
+.section-insights .page-2 {
+  .match-light {
+    .truth-mask {
+      .insights-roll {
+        animation: insightsRoll 45s linear 0s infinite;
+      }
+    }
+  }
+}
+
+
+.section-insights .page-3 {
+  .match-dark {
+    .credit-mask {
+      .credit-roll {
+        animation: creditRoll 15s linear 0s infinite;
+      }
+    }
+  }
+}
+
+
+
+/* for 6 insights, 5 slides each direction, so 10 intotal, 10 intervals */
+@keyframes insightsRoll {
+  0% {
+    transform: translateX(0);
+  } 2% {
+    transform: translateX(-16.666%);
+  } 10% {
+    transform: translateX(-16.666%);
+  } 12% {
+    transform: translateX(-33.333%);
+  } 20% {
+    transform: translateX(-33.333%);
+  } 22% {
+    transform: translateX(-50%);
+  } 30% {
+    transform: translateX(-50%);
+  } 32% {
+    transform: translateX(-66.666%);
+  } 40% {
+    transform: translateX(-66.666%);
+  } 42% {
+    transform: translateX(-83.333%);
+  } 50% {
+    transform: translateX(-83.333%);
+  } 52% {
+    transform: translateX(-66.666%);
+  } 60% {
+    transform: translateX(-66.666%);
+  } 62% {
+    transform: translateX(-50%);
+  } 70% {
+    transform: translateX(-50%);
+  } 72% {
+    transform: translateX(-33.333%);
+  } 80% {
+    transform: translateX(-33.333%);
+  } 82% {
+    transform: translateX(-16.666%);
+  } 90% {
+    transform: translateX(-16.666%);
+  } 92% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes creditRoll {
+  0% {
+    transform: translateY(0);
+  } 100% {
+    transform: translateY(-50%);
+  }
+}

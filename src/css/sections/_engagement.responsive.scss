@@ -1,0 +1,128 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-engagement .page-1 {
+    .headlines {
+      width: $mobile-m-content-width;
+    }
+  }
+
+  .section-engagement .page-2 {
+    min-height: calc(100vh - 4em);
+
+    .headlines {
+      width: $mobile-m-content-width;
+    }
+  }
+
+  .section-engagement .page-3 {
+    .match-light .headlines {
+      width: $mobile-m-content-width;
+    }
+
+    .match-dark .explanation {
+      width: $mobile-m-content-width;
+    }
+  }  
+}
+
+
+@media (--mobile-l) {
+  .section-engagement .page-3 {
+    .match-light {
+      .headlines {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }  
+}
+
+
+
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-engagement .page-1 {
+    .headlines {
+      right: auto;
+      left: 2em;
+      top: 50%;
+      transform: translateY(-50%);
+      width: $desktop-s-content-width;
+    }
+    .hand-held {
+      width: 70%;
+      transform: translateX(20%);
+    }
+  }
+
+  .section-engagement .page-2 {
+    min-height: 100vh;
+
+    .headlines {
+      width: 26em;
+    }
+
+    .pattern {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-30%);
+    }
+
+    img { display: none; }
+    video { display: block; }
+  }
+
+  .section-engagement .page-3 {
+    .match-light {
+      .headlines {
+        right: auto;
+        left: 2em;
+        font-size: 1.7rem;
+        width: $desktop-s-content-width;
+
+        .explanation {
+          font-size: .6em;
+        }
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        width: $desktop-s-content-width;
+        left: auto;
+        right: 2em;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (--desktop-m) {
+  .section-engagement .page-1 {
+    .headlines {
+      width: $desktop-m-content-width;
+    }
+  }
+
+  .section-engagement .page-3 {
+    .match-light {
+      .headlines {
+        font-size: 2rem;
+        width: $desktop-m-content-width;
+      }
+    }
+
+    .match-dark {
+      .explanation {
+        width: $desktop-m-content-width;
+      }
+    }
+  }
+}

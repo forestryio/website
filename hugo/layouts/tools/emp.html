@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="section-wrapper section-emp">
+  <div class="interior-page page-1">
+    <ul class="breadcrumbs"><span>Tools</span><span> > EMP™ Beta</span></ul>
+
+    <div class="match-light">
+      <div>
+        <div class="headlines">
+          <h2 class="headline-lean">Capture, and keep,</h2>     
+          <h1 class="headline-cap">CUSTOMERS'<br>ATTENTION.</h1>   
+        </div>  
+      </div>
+    </div>
+
+    <div class="match-dark">
+      <div>
+        <p class="description">46% of marketers report that "the current metrics (clicks, viewability, etc.) used to mea- sure performance aren’t effective." How can you expect to know your customers with in- adequate metrics? Our highly-engaging and reader-preferred ad formats elicit more than just clicks and views. Our formats track billions of micro-engagements—every swipe, scroll, tilt, play—so you can really understand customers’ intentions. Only then can you truly connect.</p>
+
+        <!-- <img class="pattern" src='{{ "_videos/dots.gif" | absURL }}'> -->
+        <video class="pattern" playsinline autoplay loop src='{{ "_videos/emp.mp4" | absURL }}'></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="interior-page page-2">
+    <div class="match-light">
+      <div>
+        <div class="headlines">
+          <h3 class="headline-cap">SEE THE FULL POWER OF YIELDMO ENGAGEMENT METRICS:</h3>
+        </div>
+        <p class="description"> As the world's first Engagement Management Platform (EMPTM) our data reveals the truth about what matters to people, what piques curiosity, what triggers a second—even third—glance. For the first time, you can see how engagement—every nuanced interac- tion—leads to performance gains. You get smarter campaigns, and a much greater return on your ad spend.</p>
+        <img class="" src='{{ "_images/emp-screenshot.png" | absURL }}'>
+        <p>The Yieldmo EMP is a self-service system for creating, managing, and analyzing engaging advertising campaigns at scale. It’s a quick process:</p>
+        <div class="emp-process">
+          <h3 class="headline-cap">>> BUILD</h3>
+          <p>Generate an eye-catching campaign by placing your creative assets within our proven ad formats.</p>
+          <h3 class="headline-cap">>> MANAGE</h3>
+          <p>Prepare your ads for debut by adding tags and tracking pixels.</p>
+          <h3 class="headline-cap">>> ANALYZE</h3>
+          <p>Learn how engagement drives performance with our advanced, easy-to-use, data visualization tools.</p>
+          <h3 class="headline-cap">>> CONNECT</h3>
+          <p>Reach highly engaged customers who are likely to convert, while suppressing those that won’t.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="interior-page page-3">
+    <div class="match-dark">
+      <div>
+        <h2 class="headline-cap">the Yieldmo emp works everywhere.</h2>
+        <p>We’ve built the Yieldmo Engagement Manage- ment Platform (EMP) to integrate seamlessly into existing programmatic workflows. Using leading DSPs — including The Trade Desk and Google DBM— you can incorporate Yieldmo’s proprietary engagement data, analytics, and proven formats into your existing systems to achieve the scale your brands need.</p>
+      </div>
+    </div>
+    <div class="match-light section-contact">
+      <div>
+        <h2 class="headline-cap">READY TO ENGAGE?</h2>
+        <p>The Yieldmo EMP will be available for private beta customers starting in early January. To add your name to the waitlist, contact us here:</p>  
+      </div>
+      <div class="form-container clearfix">
+        {{ partial "form" . }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

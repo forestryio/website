@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Interaction
+   ========================================================================== */
+
+.interior-page .match-light .formats-elaboration {
+  .format {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .format.active {
+    transition: opacity 500ms ease-in 100ms;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+
+
+/* .stage-showcase  */
+.fixed-frame .part-dark {
+  transition: all 600ms;
+  transition-property: width, height;
+}
+
+.formats-category {
+  transition: opacity 300ms;
+}
+
+.stage-intro {
+  .page-3 .formats-category {
+    opacity: 1;
+  }
+
+  .page-4 .formats-category {
+    opacity: 0;
+  }
+}
+
+/* from page 3 to page 4 */
+.stage-showcase {
+  .page-3 .formats-category {
+    opacity: 0;
+  }
+
+  .page-4 .formats-category {
+    opacity: 1;
+  }
+}
+
+
+

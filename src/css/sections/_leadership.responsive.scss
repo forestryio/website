@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-leadership {
+    .team-bios {
+      .more-info {
+        width: $mobile-m-content-width;
+      }
+    }
+  }
+}
+
+@media (--mobile-l) {
+  .section-leadership {
+    .team-bios {
+      .more-info {
+        width: $mobile-l-content-width;
+      }
+    }
+  }
+}
+
+@media (--desktop-s) {
+  .section-leadership {
+    .cover-shot {
+      min-height: 100vh;
+    }
+
+    .leadership {
+      padding: 5rem 4rem 0 4rem;
+    }
+
+    .team-list {
+      width: auto;
+      margin: 0;
+      padding: 2rem 4rem;
+      text-align: center;
+
+      a.namecard { 
+        display: inline-block; 
+        margin-right: 1em;
+        padding: .2em 0;
+
+        h6, p { display: inline-block; }
+      }
+    }
+
+    .team-bios {
+      > div { position: relative; min-height: 100vh; }
+
+      .mask {
+        position: absolute;
+        height: 100%;
+        width: 50%; 
+        left: 0;
+        top: 0;
+        overflow: hidden;
+
+        img {
+          position: relative;
+          height: 100%;
+          width: auto;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+
+      .more-info {
+        padding: 2em;
+        width: 50%;
+        float: right;
+
+        .namecard { font-size: 1.2rem; }
+      }
+
+      a:before,
+      a:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+      }
+
+      a:after {
+        clear: both;
+      }
+    }
+  }
+}
+
+@media (--desktop-m) {
+  .section-leadership {
+    .team-bios {
+      .more-info {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
