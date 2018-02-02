@@ -6,7 +6,6 @@ cover = "/uploads/Screen Shot 2018-02-02 at 12.08.11 PM.png"
 date = "2018-02-02T11:15:23+00:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 layout = "blog"
 title = "Understanding Fans' Excitement Through Engagement Data "
