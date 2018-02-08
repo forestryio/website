@@ -1,9 +1,10 @@
 ---
-title: "About"
+title: "Ad Format Lab"
 menu:
   main:
     parent: "company"
-layout: about
-weight: 1
+layout: afl
+code: afl
+weight: 3
 draft: false
 ---

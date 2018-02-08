@@ -1,0 +1,25 @@
+.section-afl .page-1 {
+  .charts .for { transition: top 600ms; }
+  .stats .for { transition: opacity 300ms; }
+
+  &.init-con {
+    .charts .for.con { top: 34%; opacity: 1 !important; }
+    .stats .for.con { opacity: 1; }
+  }
+
+  &.init-adv {
+    .charts .for.adv { top: 69%; opacity: 1 !important; }
+    .stats .for.adv { opacity: 1; }
+  }
+
+  &.init-pub {
+    .charts .for.pub { top: 7%; opacity: 1 !important; }
+    .stats .for.pub { opacity: 1; }
+  }
+
+  &.all-charts {
+    .charts .for.con { top: 34%; opacity: .4;  }
+    .charts .for.adv { top: 69%; opacity: .4 }
+    .charts .for.pub { top: 7%; opacity: .4 }
+  }
+}
