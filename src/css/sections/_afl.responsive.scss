@@ -1,3 +1,113 @@
-html {
-  
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-l) {
+  .section-afl .interior-page .match-light .headlines {
+    padding: 4rem 0 2rem 0;
+  }
 }
+
+@media (--tablet) {
+  .section-afl .interior-page .match-light .headlines {
+    width: $tablet-content-width;
+  }
+
+  .section-afl .page-1 .match-dark .stats {
+    width: $tablet-content-width;
+  }
+
+  .section-afl .page-2 .match-dark video {
+    padding: 4rem;
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-afl .page-1 {
+    .match-light {
+      height: 60vh;
+
+      .headlines {
+        padding: 0;
+        right: auto;
+        width: 32rem;
+
+        .explanation {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .match-dark {
+      top: 60vh;
+      bottom: 0;
+
+      .stats {
+        width: 50%;
+        max-width: 30rem;
+        position: absolute;
+        left: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .for {
+          h5 {
+            text-align: left;
+            margin-bottom: 1rem;
+          }
+          
+          p b {
+            display: inline;
+          }
+        }
+      }
+
+      .charts {
+        position: absolute;
+        right: 4rem;
+        bottom: 50%;
+        height: 15em;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .section-afl .page-2 {
+    .match-light {
+      position: relative;
+
+      .headlines .explanation {
+        font-size: 1rem;
+      }
+    }
+
+
+    .match-dark {
+      position: relative;
+      min-height: 50vh;
+      height: auto;
+      top: 0;
+    }
+  }
+}
+
+
+@media (--desktop-m) {
+  .section-afl .interior-page .match-light .headlines {
+    width: 45rem;
+  }
+
+  .section-afl .page-1 {
+    .match-dark .charts {
+      font-size: 1.5rem;
+      right: 12rem;
+      height: 20em;
+    }
+  }
+}
+
+

@@ -17,16 +17,16 @@ var afl = {
     setTimeout(function() {
       $('.interior-page.page-1').removeClass('init-con');
       $('.interior-page.page-1').addClass('init-adv');
-    }, 2500);
+    }, 3000);
 
     setTimeout(function() {
       $('.interior-page.page-1').removeClass('init-adv');
       $('.interior-page.page-1').addClass('init-pub');
-    }, 4000);
+    }, 5000);
 
     setTimeout(function() {
       $('.interior-page.page-1').addClass('all-charts');
-    }, 5000);
+    }, 6000);
   },
 
   init: function() {

@@ -32,17 +32,17 @@
       position: relative;
       display: inline-block;
       border-bottom: .5rem solid $primary-white;
-      margin-bottom: 2rem;
-      width: 12rem;
-      height: 12rem;
+      margin-bottom: 0 auto 2em auto;
+      width: 12em;
+      height: 12em;
       overflow: hidden;
+      font-size: 1rem;
 
       .for {
         position: absolute;
         width: 3.5em;
         bottom: 1em;
         top: 100%;
-        font-size: 1rem;
 
         &.con { background-color: $medium-green; }
         &.adv { background-color: $light-green; left: 4.25em; }
@@ -53,7 +53,8 @@
     .stats {
       position: relative;
       width: 100%;
-      height: 12rem;
+      height: 12em;
+      margin: 0 auto;
 
       .for {
         position: absolute;
