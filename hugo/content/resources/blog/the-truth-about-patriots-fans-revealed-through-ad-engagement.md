@@ -1,6 +1,6 @@
 +++
 author = "Lucas Piazza, Director of Marketing"
-blurb = "Last Sunday, the Philadelphia Eagles claimed their first Super Bowl victory. While many doubted the underdog, they were able to hold onto the lead long enough for the big win. We showed you that Philadelphia's traffic and engagement with ads surged..."
+blurb = "Last Sunday, the Philadelphia Eagles claimed their first Super Bowl victory. While many doubted the underdog, they were able to hold onto the lead long enough for the big win. We showed you that Philadelphia's traffic and engagement with ads surged on Sports sites leading up to the game, but what were fans' mobile behaviors during the game?"
 category = "updates"
 cover = "/uploads/2018-02-09.png"
 date = "2018-02-09T13:54:11+00:00"
