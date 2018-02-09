@@ -9,7 +9,7 @@ download_label_text = "Download Whitepaper"
 file_download = "/uploads/BetterMobileAdvertisingExperiences_YieldmoWhitepaper_December2016.pdf"
 layout = "blog"
 title = "Study: 66% of Consumers Want Better-Designed Mobile Ad Formats (and Your Brand Should Too)"
-weight = 4
+weight = ""
 
 +++
 When Motorola’s Martin Cooper made the very first mobile phone call in 1973 from a midtown Manhattan street corner, he never imagined what the world would be like 43 years later, with the majority of us carrying around tiny computers that enable access to all the world’s information in the palm of our hands.

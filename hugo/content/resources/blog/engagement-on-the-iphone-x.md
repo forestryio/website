@@ -7,7 +7,7 @@ date = "2017-12-12T16:00:39-05:00"
 description = "Mobile ad engagement is highest on iPhone X compared to all previous iPhone models. "
 layout = "blog"
 title = "Just How Engaging Is The iPhone X?"
-weight = 2
+weight = ""
 
 +++
 Despite its $1,000+ price tag, Apple’s iPhone X is flying off the shelves. From the moment it launched, Apple sold close to [3 million iPhone X devices in just 20 minutes](https://www.computerworld.com/article/3236414/apple-ios/this-is-why-iphone-x-is-apples-most-important-product.html), 2,500 units per second. With iPhone X devices flooding the market, we wanted to understand how the users of these devices are behaving and what this means for advertisers.
