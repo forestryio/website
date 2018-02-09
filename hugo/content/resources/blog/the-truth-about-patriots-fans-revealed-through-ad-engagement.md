@@ -6,7 +6,6 @@ cover = "/uploads/2018-02-09.png"
 date = "2018-02-09T13:54:11+00:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 layout = "blog"
 title = "The Truth About Patriots Fans Revealed through Ad Engagement"
