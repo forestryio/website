@@ -6,7 +6,6 @@ cover = "/uploads/image-10.jpg"
 date = "2018-02-12T11:24:40+00:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 layout = "blog"
 title = "Google Chrome Ad Blocker: Rest Assured with Yieldmo"
