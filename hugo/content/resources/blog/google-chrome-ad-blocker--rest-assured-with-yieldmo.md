@@ -2,7 +2,7 @@
 author = "Lucas Piazza, Director of Marketing"
 blurb = "On February 15th, Google Chrome will release a built-in ad blocker that works across both desktop and mobile devices and that will automatically block any ad that violates the standards released by the CBA. Rest assured. 100% of Yieldmo’s ad formats are fully compliant with these standards. Always have been. Always will be."
 category = "perspectives"
-cover = "/uploads/version2.jpg"
+cover = "/uploads/chrome-image-2.png"
 date = "2018-02-12T11:24:40+00:00"
 description = ""
 download_label_text = "Download Document"
