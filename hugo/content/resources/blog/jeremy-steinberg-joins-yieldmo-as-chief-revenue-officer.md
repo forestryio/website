@@ -6,7 +6,6 @@ cover = "/uploads/Jeremy Steinberg Headshot-bw.jpg"
 date = "2018-02-21T12:35:24+00:00"
 description = ""
 download_label_text = "Download Document"
-draft = true
 file_download = ""
 layout = "blog"
 title = "Jeremy Steinberg Joins Yieldmo as Chief Revenue Officer"
