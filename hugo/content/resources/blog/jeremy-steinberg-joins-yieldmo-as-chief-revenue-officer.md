@@ -24,4 +24,4 @@ Steinberg added, “Yieldmo is known for their innovative mobile ad formats, but
 Effective immediately, Steinberg will be based out of the company’s New York headquarters and will report directly to Yavonditte.  
 
   
-Read the full press release here.
+Read the full press release [here](https://www.businesswire.com/news/home/20180221006007/en).
