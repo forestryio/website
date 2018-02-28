@@ -79,12 +79,17 @@
   .section-afl .page-2 {
     .match-light {
       position: relative;
+      height: auto;
 
-      .headlines .explanation {
-        font-size: 1rem;
+      .headlines {
+        position: static;
+        padding: 4rem;
+
+        .explanation {
+          font-size: 1rem;
+        }  
       }
     }
-
 
     .match-dark {
       position: relative;
