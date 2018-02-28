@@ -154,4 +154,22 @@
 }
 
 @media (--desktop-m) {
+  .section-emp .page-1 {
+    .match-dark {
+      .description {
+        font-size: 1rem;
+      }
+
+      .pattern {
+        width: 45rem;
+      }
+    }
+  }
+
+  .section-emp .page-3 {
+    .match-dark {
+      .headline-cap { font-size: 2rem; }
+      p { font-size: 1rem; }
+    }
+  }
 }

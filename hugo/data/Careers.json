@@ -1,0 +1,119 @@
+{
+  "pageOne": {
+    "headlineCap": "TRANSFORM AN INDUSTRY",
+    "subHeadline1": "A radical idea: Put the consumer first.",
+    "paragraph1": "Since 2012, putting humans front-and-center when creating our proprietary ad formats has resulted in designs that engage, not enrage. But it’s not just consumers who win. The experience of our clients’ creative is elevated. And when those ads appear within our <a href=\"/products/marketplace\">premium publisher marketplace</a>, we ensure the context is as powerful as the message.",
+    "subHeadline2": "Evolving through innovation: Data by Design.",
+    "paragraph2": "Today, we keep building on that founding idea. As our engaging formats continue to thrive, we have realized they have a deeper story to tell. The countless micro-interactions humans have with digital ads—all the scrolls, swipes...even the lingers—generate billions of data points, that we alone can see. That massive data set, paired with the right algorithms, is revealing the truth behind consumer intent for the first time. These insights are the driving force behind our every innovation. Welcome to the next generation of consumer marketing."
+  },
+  "pageTwo": {
+    "headlineCap": "AMBITIOUS GOALS",
+    "subHeadline": "demand sharp, diverse minds.",
+    "paragraph": "Evolving an industry requires relentless problem solving by some really sharp folks. At Yieldmo, you’ll find a spirit- ed team from diverse backgrounds united by a common passion for finding, and delivering, the truth to our clients. It marks an evolution of this space, where everyone—from client to consumer—benefits. We work fast, constantly imagine what could be, and all bring our talents to the table in pursuit of the best idea.",
+    "highlights": [
+      {
+        "headshot": "_images/careers/Jeremy_Steinberg.jpg",
+        "name": "MATEO",
+        "title": "Director of Operations",
+        "funfact": "Globe-Trotter",
+        "quote": "As a fast-growing company, Yieldmo has given me the freedom to take on a variety of challenges and grow as a professional."
+      },
+      {
+        "headshot": "_images/careers/Jeremy_Steinberg.jpg",
+        "name": "SUE",
+        "title": "Sales Director",
+        "funfact": "Soccer Superstar",
+        "quote": "Our products solve real business challenges for clients. I love being able to bring true value to the market."
+      },
+      {
+        "headshot": "_images/careers/Jeremy_Steinberg.jpg",
+        "name": "KAREEM",
+        "title": "Senior Front-end Engineer",
+        "funfact": "Carolina Reaper Pepper Survivor",
+        "quote": "With opportunities to deepen my skills and endless peer support, Yieldmo actively invests in growing its developers."
+      },
+      {
+        "headshot": "_images/careers/Jeremy_Steinberg.jpg",
+        "name": "JORDAN",
+        "title": "Account Manager",
+        "funfact": "Sneaker Head",
+        "quote": "I love getting to work at a company that is push- ing the boundaries of media and technology every day."
+      },
+      {
+        "headshot": "_images/careers/Jeremy_Steinberg.jpg",
+        "name": "SUSAN",
+        "title": "Graphic Designer",
+        "funfact": "Black Belt",
+        "quote": "A flexible vacation policy lets us take the time we need and, more impor- tantly, shows how much trust Yieldmo places in every employee."
+      }
+    ]
+  },
+  "pageThree": {
+    "scenes": [
+      "_images/careers/Workplace-1.jpg",
+      "_images/careers/Workplace-2.jpg",
+      "_images/careers/Workplace-3.jpg",
+      "_images/careers/Workplace-4.jpg",
+      "_images/careers/Workplace-5.jpg",
+      "_images/careers/Workplace-6.jpg",
+      "_images/careers/Workplace-7.jpg"
+    ],
+    "benefits": [
+      {
+        "title": "EXPAND YOUR MIND",
+        "description": "Ongoing lectures and seminars, plus an annual educational stipend for every employee keeps us all on the cutting edge."
+      },
+      {
+        "title": "TAKE THE REINS",
+        "description": "As a rapidly-growing company, there are countless opportu- nities for do-ers to shine. Here, the best idea—respectfully shared—rules the day."
+      },
+      {
+        "title": "MAINTAIN FLEXIBILITY",
+        "description": "A flexible vacation policy lets you recharge outside of work. Our varied workspaces, communal meals, standing desks, and numerous events ensure a healthy work-life balance."
+      },
+      {
+        "title": "STAY FUELED",
+        "description": "In addition to a daily lunch menu of rotating cuisines, we have endless snacks on hand, cold brew on tap, and more. Kombucha and candy, anyone?"
+      },
+      {
+        "title": "BRING YOUR POOCH",
+        "description": "With dog-friendly offices, you’ll get proven stress-relief bene- fits, courtesy of some of the finest quadrupeds on the planet. Said without bias, of course!"
+      }      
+    ]
+  },
+  "pageFour": {
+    "headlineCap": "READY TO RE-DEFINE THE RULES?",
+    "subHeadline": "Explore some of our current openings >>>",
+    "paragraph": "Don’t see a position that matches your talents but think you’d make a great fit? We’re a fast growing company with new opportunities becoming available all the time, so drop us a line: <a href=\"mailto:careers@yieldmo.com\" target=\"_top\">careers@yieldmo.com</a>.",
+    "jobs": [
+      {
+        "categoryName": "DESIGN:",
+        "postings": [
+          {
+            "name": "SENIOR GRAPHIC DESIGNER",
+            "location": "NEW YORK, NY",
+            "description": "This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "url": "https://boards.greenhouse.io/yieldmo/jobs/1054851#.WpXBL5M-fUI"
+          },
+          {
+            "name": "UI Designer",
+            "location": "NEW YORK, NY",
+            "description": "..tempor incididunt ut labore et dolore magna aliqua.",
+            "url": "https://www.yieldmo.com"
+          }          
+        ]
+      }, 
+      {
+        "categoryName": "ENGINEERING:",
+        "postings": [
+          {
+            "name": "SENIOR DATA ENGINEER",
+            "location": "NEW YORK, NY",
+            "description": "This role will be ....",
+            "url": "https://www.yieldmo.com"
+          }
+        ]
+      }
+    ]
+  }
+}

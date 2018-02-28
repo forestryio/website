@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Pages
+   ========================================================================== */
+
+.section-careers .page-1 {
+  height: auto;
+
+  .match-light {
+    height: auto;
+
+    .headline-cap {
+      padding: 1em 2rem;
+    }
+
+    .explanation {
+      width: $mobile-s-content-width;
+      margin: 0 auto;
+      font-size: 1rem;
+
+      .headline-lean {
+        text-align: left;
+        font-size: 1.4em;
+        color: $deep-blue;
+      }
+
+      p {
+        font-size: .9em;
+        margin: .5em 0 2em 0;
+      }
+
+      a {
+        color: $primary-black;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .match-dark {
+    height: auto;
+    min-height: 0;
+    text-align: center;
+
+    .headline-cap {
+      display: inline-block;
+      margin: 2em 0 4em 0;
+      padding: .5em 1em .2em 1em;
+      background-color: $tangerine;
+      color: $primary-white;
+    }
+
+    .arrow-down {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      font-size: 2rem;
+    }
+  }
+}
+
+.section-careers .page-2 {
+  .match-dark {
+    .headlines {
+      p {
+        margin: 2em 0;
+      }
+    }
+  }
+
+  .match-light {
+    .spotlights-container {
+      margin: 2em auto;
+      width: $mobile-s-content-width;
+
+      .spotline {
+        color: $deep-blue;
+        text-align: center;
+
+        svg {
+          width: 16rem;
+          margin-top: -1.5rem;
+          g { fill: $deep-blue; }
+        }
+      }
+
+      .spotlights {
+        .individual-spotlight {
+          text-align: center;
+          margin: 1rem 0;
+
+          .headshot {
+            width: 10rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+
+            img { width: 100%; }
+          }
+
+          .namecard {
+            margin: 1em 0;
+
+            .headline-cap { color: $medium-green; }
+            .title { font-family: $content-font; color: $medium-green;  }
+            .funfact { font-family: $content-font; }
+          }
+
+          .quote {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-careers .page-3 {
+  .match-dark {
+    min-height: 0;
+
+    .scenes-mask {
+      overflow: hidden;
+
+      .scenes-roll {
+        width: 700%;
+
+        .scene {
+          width: 14.285%;
+          float: left;
+
+          img { width: 100%; }
+        }
+      }
+    }
+  }
+
+  .match-light {
+    .benefits-container {
+      margin: 2em auto;
+      width: $mobile-s-content-width;
+
+      .benefitline {
+        color: $deep-blue;
+        text-align: center;
+
+        svg {
+          width: 16rem;
+          margin-top: -1.5rem;
+          g { fill: $deep-blue; }
+        }
+      }
+
+      .benefits {
+        .benefit-item {
+          margin: 2rem 0;
+
+          .headline-cap {
+            color: $medium-green;
+          }
+
+          p {
+            font-size: .9em;
+            margin-top: .5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-careers .page-4 {
+  .match-dark {
+    background-color: $medium-blue;
+
+    .headlines {
+      width: $mobile-s-content-width;
+      margin: 3em auto;
+      color: $primary-white;
+
+      p {
+        font-size: .8rem;
+        margin-top: 2em;
+
+        a {
+          color: $primary-white;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .match-light {
+    .job-category {
+      width: $mobile-s-content-width;
+      margin: 3em auto;
+      text-align: center;
+
+      .category-name {
+        font-family: $content-font;
+
+      }
+
+      .job-post {
+        margin: 1.5em 0;
+
+        a {
+          h4 {
+            font-family: $headline-cap;
+            color: $medium-green;
+          }
+        }
+
+        p {
+          font-size: .8em;
+          margin-top: .5em;
+        }
+      }
+    }
+  }
+}

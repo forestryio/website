@@ -1,0 +1,62 @@
+.section-careers .page-3 {
+  .match-dark {
+    .scenes-mask {
+      .scenes-roll {
+        animation: scenessRoll 45s linear 0s infinite;
+      }
+    }
+  }
+}
+
+/* for 7 scenes, 6 slides each direction, so 12 intotal, 12 intervals */
+@keyframes scenessRoll {
+  0% {
+    transform: translateX(0);
+  } 3.3% {
+    transform: translateX(-14.285%);
+  } 8.3% {
+    transform: translateX(-14.285%);
+  } 11.6% {
+    transform: translateX(-28.57%);
+  } 16.6% {
+    transform: translateX(-28.57%);
+  } 19.9% {
+    transform: translateX(-42.855%);
+  } 24.9% {
+    transform: translateX(-42.855%);
+  } 28.2% {
+    transform: translateX(-57.14%);
+  } 33.2% {
+    transform: translateX(-57.14%);
+  } 36.5% {
+    transform: translateX(-71.425%);
+  } 41.5% {
+    transform: translateX(-71.425%);
+  } 44.8% {
+    transform: translateX(-85.71%);
+  } 49.8% {
+    transform: translateX(-85.71%);
+  } 53.1% {
+    transform: translateX(-71.425%);
+  } 58.1% {
+    transform: translateX(-71.425%);
+  } 61.4% {
+    transform: translateX(-57.14%);
+  } 66.4% {
+    transform: translateX(-57.14%);
+  } 69.7% {
+    transform: translateX(-42.855%);
+  } 74.7% {
+    transform: translateX(-42.855%);
+  } 78% {
+    transform: translateX(-28.57%);
+  } 83% {
+    transform: translateX(-28.57%);
+  } 86.3% {
+    transform: translateX(-14.285%%);
+  } 91.3% {
+    transform: translateX(-14.285%%);
+  } 94.6% {
+    transform: translateX(0);
+  }
+}

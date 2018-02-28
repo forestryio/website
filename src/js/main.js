@@ -13,7 +13,8 @@ $(function() {
 
     sections: {
       home: require('./sections/_home.js'),
-      blog: require('./sections/_blog.js')
+      blog: require('./sections/_blog.js'),
+      afl: require('./sections/_afl.js')
     },
 
     props: {

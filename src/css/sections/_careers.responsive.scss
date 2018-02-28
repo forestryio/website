@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Medium to Large Phones
+   ========================================================================== */
+
+@media (--mobile-m) {
+  .section-careers .page-1 .match-light .explanation,
+  .section-careers .page-2 .match-light .spotlights-container,
+  .section-careers .page-3 .match-light .benefits-container,
+  .section-careers .page-4 .match-dark  .headlines,
+  .section-careers .page-4 .match-light .job-category {
+    width: $mobile-m-content-width;
+  }
+
+  .section-careers .page-3 .match-light .benefits-container .benefitline svg {
+    width: 100%;
+    max-width: 32rem;
+  }
+}
+
+@media (--mobile-l) {
+  .section-careers .page-1 .match-light .explanation,
+  .section-careers .page-2 .match-light .spotlights-container,
+  .section-careers .page-3 .match-light .benefits-container,
+  .section-careers .page-4 .match-dark  .headlines,
+  .section-careers .page-4 .match-light .job-category {
+    width: $mobile-l-content-width;
+  }
+
+  .section-careers .page-1 .match-light .explanation {
+    font-size: 1.1rem;
+  }
+
+  .section-careers .page-2 .match-dark .headlines p {
+    font-size: 1rem;
+  }
+}
+
+@media (--tablet) {
+  .section-careers .page-1 .match-light .explanation,
+  .section-careers .page-2 .match-light .spotlights-container,
+  .section-careers .page-3 .match-light .benefits-container,
+  .section-careers .page-4 .match-dark  .headlines,
+  .section-careers .page-4 .match-light .job-category {
+    width: $tablet-content-width;
+  }
+}
+
+/* ==========================================================================
+   iPad Landscape and Beyond
+   ========================================================================== */
+
+@media (--desktop-s) {
+  .section-careers .page-1 {
+    min-height: 0;
+
+    .match-light {
+      position: static;
+
+      .headline-cap {
+        width: 50%;
+        font-size: 3rem;
+        padding: 5rem 3rem;
+        float: left;
+      }
+
+      .explanation {
+        width: 50%;
+        padding: 5rem 3rem 3rem 0;
+        float: left;
+      }
+    }
+
+    .match-dark {
+      position: relative;
+      top: 0;
+
+      .headline-cap {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .section-careers .page-2 {
+    .match-dark {
+      position: static;
+    }
+
+    .match-light {
+      position: static;
+      height: auto;
+      
+      .headline-cap { text-align: center; }
+
+      .spotlights-container {
+        width: 100%;
+
+        .spotline {
+          font-size: 1.5rem;
+          
+          svg { width: 20rem; }
+        }
+
+        .spotlights {
+          padding: 0 2rem;
+
+          .individual-spotlight {
+            width: 33%;
+            float: left;
+            padding: 0 1rem;
+            height: 24rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section-careers .page-3 {
+    .match-dark {
+      top: 0;
+      width: 50%;
+      height: 100vh;
+
+      .scenes-mask .scenes-roll .scene {
+        height: 100vh;
+        overflow: hidden;
+
+        img {
+          position: relative;
+          height: 100%;
+          width: auto;
+          transform: translateX(-50%);
+          left: 50%;
+        }
+      }
+    }
+
+    .match-light {
+      left: 50%;
+      height: 100vh;
+      width: 50%;
+
+      .headline-cap { text-align: center; }
+
+      .benefits-container {
+        width: 100%;
+        padding: 0 2rem;
+
+        .benefitline {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .section-careers .page-4 {
+    .match-dark {
+      top: 0;
+      height: 100vh;
+      width: 50%;
+
+      .headlines {
+        margin: 0;
+        width: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2rem;
+        right: 2rem;
+      }
+    }
+
+    .match-light {
+      left: 50%;
+      width: 50%;
+      height: 100vh;
+
+      .jobs-container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .job-category {
+          margin: 3em 2rem;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+
+@media (--desktop-m) {
+  .section-careers .page-1 {
+    .match-light {
+      .explanation {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .section-careers .page-2 {
+    min-height: 0;
+
+    .match-dark {
+      height: auto;
+      top: 0;
+
+      .headlines {
+        position: static;
+        margin: 4rem;
+      }
+    }
+
+    .match-light {
+      .spotlights-container {
+        margin: 4rem auto 2rem auto;
+
+        .spotlights .individual-spotlight {
+          width: 20%;
+        }
+      }
+    }
+  }
+
+  .section-careers .page-3 {
+    .match-light .benefits-container {
+      width: 32rem;
+      padding: 0;
+      margin: 0 auto;
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+
+      .benefitline svg {
+        max-width: none;
+      }
+
+      .benefits .benefit-item {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .section-careers .page-4 {
+    .match-dark {
+      .headlines {
+        width: 32rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        .headline-lean { font-size: 1.2em; }
+        p { font-size: 1rem; }
+      }
+    }
+
+    .match-light {
+      .jobs-container {
+        width: 32rem;
+        margin: 0 auto;
+      }
+
+      .job-category {
+        width: 32rem;
+        margin: 3rem 0;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+
