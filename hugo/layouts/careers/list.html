@@ -1,113 +1,33 @@
-{{ define "main" }}
-<div class="section-wrapper section-careers">
-  <div class="interior-page page-1">
-    <div class="match-light clearfix">
-      <h1 class="headline-cap">{{ .Site.Data.Careers.pageOne.headlineCap }}</h1>
-      <div class="explanation clearfix">
-        <h3 class="headline-lean">{{ .Site.Data.Careers.pageOne.subHeadline1 }}</h3>
-        <p>{{ .Site.Data.Careers.pageOne.paragraph1 | safeHTML }}</p>
-        <h3 class="headline-lean">{{ .Site.Data.Careers.pageOne.subHeadline2 }}</h3>
-        <p>{{ .Site.Data.Careers.pageOne.paragraph2 | safeHTML }}</p>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <!-- <base href="{{ $.Site.BaseURL }}"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta http-equiv="refresh" content="0; URL='https://boards.greenhouse.io/yieldmo'"; />
 
-    <div class="match-dark">
-      <h3 class="headline-cap">VIEW CURRENT OPENINGS</h3>
-      <p id="arrowDown" class="arrow-down">∟</p>
-    </div>
-  </div>
+    <link href='{{ "_images/favicon.ico" | absURL }}' rel="shortcut icon">
+    <link rel='stylesheet' type="text/css" href='{{ "css/main.min.css" | absURL }}' />
 
-  <div class="interior-page page-2">
-    <div class="match-dark clearfix">
-      <div class="headlines">
-        <h2 class="headline-cap">{{ .Site.Data.Careers.pageTwo.headlineCap }}</h2>
-        <h2 class="headline-lean">{{ .Site.Data.Careers.pageTwo.subHeadline }}</h2>
-        <p>{{ .Site.Data.Careers.pageTwo.paragraph }}</p>
-      </div>
-    </div>
-    <div class="match-light clearfix">
-      <div class="spotlights-container">
-        <div class="spotline">
-          <h3 class="headline-cap">EMPLOYEE SPOTLIGHT</h3>
-          {{ partial "svg/parenthesis.svg" . }}
-        </div>
-        <div class="spotlights clearfix">
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
 
-          {{ range .Site.Data.Careers.pageTwo.highlights }}
-          <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ .headshot | absURL }}'></div>
-            <div class="namecard">
-              <h2 class="headline-cap">{{ .name }}</h2>
-              <h5 class="title">{{ .title }}</h5>
-              <h5 class="funfact">{{ .funfact }}</h5>
-            </div>
-            <p class="quote">"{{ .quote }}"</p>
-          </div>
-          {{ end }}
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="interior-page page-3">
-    <div class="match-dark">
-      <div class="scenes-mask">
-        <div class="scenes-roll clearfix">
-          {{ range .Site.Data.Careers.pageThree.scenes }}
-            <div class="scene"><img src='{{ . | absURL }}'></div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-    <div class="match-light">
-      <div class="benefits-container">
-        <div class="benefitline">
-          <h3 class="headline-cap">A SAMPLING OF PERKS & BENEFITS</h3>
-          {{ partial "svg/parenthesis.svg" . }}
-        </div>
-        <div class="benefits">
-
-          {{ range .Site.Data.Careers.pageThree.benefits }}
-          <div class="benefit-item">
-            <h3 class="headline-cap">{{ .title }}</h3>
-            <p>{{ .description }}</p>
-          </div>
-          {{ end }}
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="interior-page page-4">
-    <div class="match-dark clearfix">
-      <div class="headlines">
-        <h3 class="headline-cap">{{ .Site.Data.Careers.pageFour.headlineCap }}</h3>
-        <h4 class="headline-lean">{{ .Site.Data.Careers.pageFour.subHeadline | safeHTML }}</h4>
-        <p>{{ .Site.Data.Careers.pageFour.paragraph | safeHTML }}</p>
-      </div>
-    </div>
-    <div class="match-light">
-      <div class="jobs-container clearfix">
-        
-        {{ range .Site.Data.Careers.pageFour.jobs }}
-        <div class="job-category">
-          <h4 class="category-name">{{ .categoryName }}</h4>
-          {{ range .postings }}
-          <div class="job-post">
-            <a href="{{ .url }}">
-              <h4 class="title"> >> {{ .name }} </h4>
-              <h4 class="location">{{ .location }}</h4>
-            </a>
-            <p>{{ .description }}</p>
-          </div>
-          {{ end }}
-        </div>
-        {{ end }}   
-
-      </div>
-    </div>
-  </div>
-</div>
-{{ end }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65004035-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-65004035-7');
+      ga('create', 'UA-65004035-7', 'auto');
+    </script>
+  </head>
+</html>
