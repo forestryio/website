@@ -20,9 +20,9 @@
   <div class="interior-page page-2">
     <div class="match-dark clearfix">
       <div class="headlines">
-        <h2 class="headline-cap">AMBITIOUS GOALS</h2>
-        <h2 class="headline-lean">demand sharp, diverse minds.</h2>
-        <p>Evolving an industry requires relentless problem solving by some really sharp folks. At Yieldmo, you’ll find a spirit- ed team from diverse backgrounds united by a common passion for finding, and delivering, the truth to our clients. It marks an evolution of this space, where everyone—from client to consumer—benefits. We work fast, constantly imagine what could be, and all bring our talents to the table in pursuit of the best idea.</p>
+        <h2 class="headline-cap">{{ .Site.Data.Careers.pageTwo.headlineCap }}</h2>
+        <h2 class="headline-lean">{{ .Site.Data.Careers.pageTwo.subHeadline }}</h2>
+        <p>{{ .Site.Data.Careers.pageTwo.paragraph }}</p>
       </div>
     </div>
     <div class="match-light clearfix">
@@ -32,51 +32,19 @@
           {{ partial "svg/parenthesis.svg" . }}
         </div>
         <div class="spotlights clearfix">
+
+          {{ range .Site.Data.Careers.pageTwo.highlights }}
           <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="headshot"><img src='{{ .headshot | absURL }}'></div>
             <div class="namecard">
-              <h2 class="headline-cap">MATEO</h2>
-              <h5 class="title">Director of Operations</h5>
-              <h5 class="funfact">Globe-Trotter</h5>
+              <h2 class="headline-cap">{{ .name }}</h2>
+              <h5 class="title">{{ .title }}</h5>
+              <h5 class="funfact">{{ .funfact }}</h5>
             </div>
-            <p class="quote">"As a fast-growing company, Yieldmo has given me the freedom to take on a variety of challenges and grow as a professional."</p>
+            <p class="quote">"{{ .quote }}"</p>
           </div>
-          <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
-            <div class="namecard">
-              <h2 class="headline-cap">SUE</h2>
-              <h5 class="title">Sales Director</h5>
-              <h5 class="funfact">Soccer Superstar</h5>
-            </div>
-            <p class="quote">"Our products solve real business challenges for clients. I love being able to bring true value to the market."</p>
-          </div>
-          <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
-            <div class="namecard">
-              <h2 class="headline-cap">KAREEM</h2>
-              <h5 class="title">Senior Front-end Engineer</h5>
-              <h5 class="funfact">Carolina Reaper Pepper Survivor</h5>
-            </div>
-            <p class="quote">"With opportunities to deepen my skills and endless peer support, Yieldmo actively invests in growing its developers."</p>
-          </div>
-          <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
-            <div class="namecard">
-              <h2 class="headline-cap">JORDAN</h2>
-              <h5 class="title">Account Manager</h5>
-              <h5 class="funfact">Sneaker Head</h5>
-            </div>
-            <p class="quote">"I love getting to work at a company that is push- ing the boundaries of media and technology every day."</p>
-          </div>
-          <div class="individual-spotlight">
-            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
-            <div class="namecard">
-              <h2 class="headline-cap">SUSAN</h2>
-              <h5 class="title">Graphic Designer</h5>
-              <h5 class="funfact">Black Belt</h5>
-            </div>
-            <p class="quote">"A flexible vacation policy lets us take the time we need and, more impor- tantly, shows how much trust Yieldmo places in every employee."</p>
-          </div>
+          {{ end }}
+
         </div>
       </div>
     </div>
@@ -86,13 +54,9 @@
     <div class="match-dark">
       <div class="scenes-mask">
         <div class="scenes-roll clearfix">
-          <div class="scene"><img src='{{ "_images/careers/Workplace-1.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-2.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-3.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-4.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-5.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-6.jpg" | absURL }}'></div>
-          <div class="scene"><img src='{{ "_images/careers/Workplace-7.jpg" | absURL }}'></div>
+          {{ range .Site.Data.Careers.pageThree.scenes }}
+            <div class="scene"><img src='{{ . | absURL }}'></div>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -103,26 +67,14 @@
           {{ partial "svg/parenthesis.svg" . }}
         </div>
         <div class="benefits">
+
+          {{ range .Site.Data.Careers.pageThree.benefits }}
           <div class="benefit-item">
-            <h3 class="headline-cap">EXPAND YOUR MIND</h3>
-            <p>Ongoing lectures and seminars, plus an annual educational stipend for every employee keeps us all on the cutting edge.</p>
+            <h3 class="headline-cap">{{ .title }}</h3>
+            <p>{{ .description }}</p>
           </div>
-          <div class="benefit-item">
-            <h3 class="headline-cap">TAKE THE REINS</h3>
-            <p>As a rapidly-growing company, there are countless opportu- nities for do-ers to shine. Here, the best idea—respectfully shared—rules the day.</p>
-          </div>
-          <div class="benefit-item">
-            <h3 class="headline-cap">MAINTAIN FLEXIBILITY</h3>
-            <p>A flexible vacation policy lets you recharge outside of work. Our varied workspaces, communal meals, standing desks, and numerous events ensure a healthy work-life balance.</p>
-          </div>
-          <div class="benefit-item">
-            <h3 class="headline-cap">STAY FUELED</h3>
-            <p>In addition to a daily lunch menu of rotating cuisines, we have endless snacks on hand, cold brew on tap, and more. Kombucha and candy, anyone?</p>
-          </div>
-          <div class="benefit-item">
-            <h3 class="headline-cap">BRING YOUR POOCH</h3>
-            <p>With dog-friendly offices, you’ll get proven stress-relief bene- fits, courtesy of some of the finest quadrupeds on the planet. Said without bias, of course!</p>
-          </div>
+          {{ end }}
+
         </div>
       </div>
     </div>
@@ -131,9 +83,9 @@
   <div class="interior-page page-4">
     <div class="match-dark clearfix">
       <div class="headlines">
-        <h3 class="headline-cap">READY TO RE-DEFINE THE RULES?</h3>
-        <h4 class="headline-lean">Explore some of our current openings >>> </h4>
-        <p>Don’t see a position that matches your talents but think you’d make a great fit? We’re a fast growing company with new opportunities becoming available all the time, so drop us a line: <a href="mailto:careers@yieldmo.com" target="_top">careers@yieldmo.com</a>.</p>
+        <h3 class="headline-cap">{{ .Site.Data.Careers.pageFour.headlineCap }}</h3>
+        <h4 class="headline-lean">{{ .Site.Data.Careers.pageFour.subHeadline | safeHTML }}</h4>
+        <p>{{ .Site.Data.Careers.pageFour.paragraph | safeHTML }}</p>
       </div>
     </div>
     <div class="match-light">
