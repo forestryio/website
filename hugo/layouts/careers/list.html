@@ -2,12 +2,12 @@
 <div class="section-wrapper section-careers">
   <div class="interior-page page-1">
     <div class="match-light clearfix">
-      <h1 class="headline-cap">TRANSFORM AN INDUSTRY</h1>
+      <h1 class="headline-cap">{{ .Site.Data.Careers.pageOne.headlineCap }}</h1>
       <div class="explanation clearfix">
-        <h3 class="headline-lean">A radical idea: Put the consumer first.</h3>
-        <p>Since 2012, putting humans front-and-center when creating our proprietary ad formats has resulted in designs that engage, not enrage. But it’s not just consumers who win. The experience of our clients’ creative is elevated. And when those ads appear within our <a href="/products/marketplace">premium publisher marketplace</a>, we ensure the context is as powerful as the message.</p>
-        <h3 class="headline-lean">Evolving through innovation: Data by Design.</h3>
-        <p>Today, we keep building on that founding idea. As our engaging formats continue to thrive, we have realized they have a deeper story to tell. The countless micro-interactions humans have with digital ads—all the scrolls, swipes...even the lingers—generate billions of data points, that we alone can see. That massive data set, paired with the right algorithms, is revealing the truth behind consumer intent for the first time. These insights are the driving force behind our every innovation. Welcome to the next generation of consumer marketing.</p>
+        <h3 class="headline-lean">{{ .Site.Data.Careers.pageOne.subHeadline1 }}</h3>
+        <p>{{ .Site.Data.Careers.pageOne.paragraph1 | safeHTML }}</p>
+        <h3 class="headline-lean">{{ .Site.Data.Careers.pageOne.subHeadline2 }}</h3>
+        <p>{{ .Site.Data.Careers.pageOne.paragraph2 | safeHTML }}</p>
       </div>
     </div>
 
@@ -138,40 +138,22 @@
     </div>
     <div class="match-light">
       <div class="jobs-container clearfix">
+        
+        {{ range .Site.Data.Careers.pageFour.jobs }}
         <div class="job-category">
-          <h4 class="category-name">DESIGN:</h4>
+          <h4 class="category-name">{{ .categoryName }}</h4>
+          {{ range .postings }}
           <div class="job-post">
-            <a href="#">
-              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
-              <h4 class="location">NEW YORK, NY</h4>
+            <a href="{{ .url }}">
+              <h4 class="title"> >> {{ .name }} </h4>
+              <h4 class="location">{{ .location }}</h4>
             </a>
-            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>{{ .description }}</p>
           </div>
-          <div class="job-post">
-            <a href="#">
-              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
-              <h4 class="location">NEW YORK, NY</h4>
-            </a>
-            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
+          {{ end }}
         </div>
-        <div class="job-category">
-          <h4 class="category-name">DESIGN:</h4>
-          <div class="job-post">
-            <a href="#">
-              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
-              <h4 class="location">NEW YORK, NY</h4>
-            </a>
-            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <div class="job-post">
-            <a href="#">
-              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
-              <h4 class="location">NEW YORK, NY</h4>
-            </a>
-            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>        
+        {{ end }}   
+
       </div>
     </div>
   </div>
