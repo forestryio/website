@@ -1,33 +1,179 @@
-<!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
-  <head>
-    <meta charset="utf-8">
-    <!-- <base href="{{ $.Site.BaseURL }}"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta http-equiv="refresh" content="0; URL='https://boards.greenhouse.io/yieldmo'"; />
+{{ define "main" }}
+<div class="section-wrapper section-careers">
+  <div class="interior-page page-1">
+    <div class="match-light clearfix">
+      <h1 class="headline-cap">TRANSFORM AN INDUSTRY</h1>
+      <div class="explanation clearfix">
+        <h3 class="headline-lean">A radical idea: Put the consumer first.</h3>
+        <p>Since 2012, putting humans front-and-center when creating our proprietary ad formats has resulted in designs that engage, not enrage. But it’s not just consumers who win. The experience of our clients’ creative is elevated. And when those ads appear within our <a href="/products/marketplace">premium publisher marketplace</a>, we ensure the context is as powerful as the message.</p>
+        <h3 class="headline-lean">Evolving through innovation: Data by Design.</h3>
+        <p>Today, we keep building on that founding idea. As our engaging formats continue to thrive, we have realized they have a deeper story to tell. The countless micro-interactions humans have with digital ads—all the scrolls, swipes...even the lingers—generate billions of data points, that we alone can see. That massive data set, paired with the right algorithms, is revealing the truth behind consumer intent for the first time. These insights are the driving force behind our every innovation. Welcome to the next generation of consumer marketing.</p>
+      </div>
+    </div>
 
-    <link href='{{ "_images/favicon.ico" | absURL }}' rel="shortcut icon">
-    <link rel='stylesheet' type="text/css" href='{{ "css/main.min.css" | absURL }}' />
+    <div class="match-dark">
+      <h3 class="headline-cap">VIEW CURRENT OPENINGS</h3>
+      <p id="arrowDown" class="arrow-down">∟</p>
+    </div>
+  </div>
 
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
+  <div class="interior-page page-2">
+    <div class="match-dark clearfix">
+      <div class="headlines">
+        <h2 class="headline-cap">AMBITIOUS GOALS</h2>
+        <h2 class="headline-lean">demand sharp, diverse minds.</h2>
+        <p>Evolving an industry requires relentless problem solving by some really sharp folks. At Yieldmo, you’ll find a spirit- ed team from diverse backgrounds united by a common passion for finding, and delivering, the truth to our clients. It marks an evolution of this space, where everyone—from client to consumer—benefits. We work fast, constantly imagine what could be, and all bring our talents to the table in pursuit of the best idea.</p>
+      </div>
+    </div>
+    <div class="match-light clearfix">
+      <div class="spotlights-container">
+        <div class="spotline">
+          <h3 class="headline-cap">EMPLOYEE SPOTLIGHT</h3>
+          {{ partial "svg/parenthesis.svg" . }}
+        </div>
+        <div class="spotlights clearfix">
+          <div class="individual-spotlight">
+            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="namecard">
+              <h2 class="headline-cap">MATEO</h2>
+              <h5 class="title">Director of Operations</h5>
+              <h5 class="funfact">Globe-Trotter</h5>
+            </div>
+            <p class="quote">"As a fast-growing company, Yieldmo has given me the freedom to take on a variety of challenges and grow as a professional."</p>
+          </div>
+          <div class="individual-spotlight">
+            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="namecard">
+              <h2 class="headline-cap">SUE</h2>
+              <h5 class="title">Sales Director</h5>
+              <h5 class="funfact">Soccer Superstar</h5>
+            </div>
+            <p class="quote">"Our products solve real business challenges for clients. I love being able to bring true value to the market."</p>
+          </div>
+          <div class="individual-spotlight">
+            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="namecard">
+              <h2 class="headline-cap">KAREEM</h2>
+              <h5 class="title">Senior Front-end Engineer</h5>
+              <h5 class="funfact">Carolina Reaper Pepper Survivor</h5>
+            </div>
+            <p class="quote">"With opportunities to deepen my skills and endless peer support, Yieldmo actively invests in growing its developers."</p>
+          </div>
+          <div class="individual-spotlight">
+            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="namecard">
+              <h2 class="headline-cap">JORDAN</h2>
+              <h5 class="title">Account Manager</h5>
+              <h5 class="funfact">Sneaker Head</h5>
+            </div>
+            <p class="quote">"I love getting to work at a company that is push- ing the boundaries of media and technology every day."</p>
+          </div>
+          <div class="individual-spotlight">
+            <div class="headshot"><img src='{{ "_images/careers/Jeremy_Steinberg.jpg" | absURL }}'></div>
+            <div class="namecard">
+              <h2 class="headline-cap">SUSAN</h2>
+              <h5 class="title">Graphic Designer</h5>
+              <h5 class="funfact">Black Belt</h5>
+            </div>
+            <p class="quote">"A flexible vacation policy lets us take the time we need and, more impor- tantly, shows how much trust Yieldmo places in every employee."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65004035-7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      
-      gtag('config', 'UA-65004035-7');
-      ga('create', 'UA-65004035-7', 'auto');
-    </script>
-  </head>
-</html>
+  <div class="interior-page page-3">
+    <div class="match-dark">
+      <div class="scenes-mask">
+        <div class="scenes-roll clearfix">
+          <div class="scene"><img src='{{ "_images/careers/Workplace-1.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-2.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-3.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-4.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-5.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-6.jpg" | absURL }}'></div>
+          <div class="scene"><img src='{{ "_images/careers/Workplace-7.jpg" | absURL }}'></div>
+        </div>
+      </div>
+    </div>
+    <div class="match-light">
+      <div class="benefits-container">
+        <div class="benefitline">
+          <h3 class="headline-cap">A SAMPLING OF PERKS & BENEFITS</h3>
+          {{ partial "svg/parenthesis.svg" . }}
+        </div>
+        <div class="benefits">
+          <div class="benefit-item">
+            <h3 class="headline-cap">EXPAND YOUR MIND</h3>
+            <p>Ongoing lectures and seminars, plus an annual educational stipend for every employee keeps us all on the cutting edge.</p>
+          </div>
+          <div class="benefit-item">
+            <h3 class="headline-cap">TAKE THE REINS</h3>
+            <p>As a rapidly-growing company, there are countless opportu- nities for do-ers to shine. Here, the best idea—respectfully shared—rules the day.</p>
+          </div>
+          <div class="benefit-item">
+            <h3 class="headline-cap">MAINTAIN FLEXIBILITY</h3>
+            <p>A flexible vacation policy lets you recharge outside of work. Our varied workspaces, communal meals, standing desks, and numerous events ensure a healthy work-life balance.</p>
+          </div>
+          <div class="benefit-item">
+            <h3 class="headline-cap">STAY FUELED</h3>
+            <p>In addition to a daily lunch menu of rotating cuisines, we have endless snacks on hand, cold brew on tap, and more. Kombucha and candy, anyone?</p>
+          </div>
+          <div class="benefit-item">
+            <h3 class="headline-cap">BRING YOUR POOCH</h3>
+            <p>With dog-friendly offices, you’ll get proven stress-relief bene- fits, courtesy of some of the finest quadrupeds on the planet. Said without bias, of course!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="interior-page page-4">
+    <div class="match-dark clearfix">
+      <div class="headlines">
+        <h3 class="headline-cap">READY TO RE-DEFINE THE RULES?</h3>
+        <h4 class="headline-lean">Explore some of our current openings >>> </h4>
+        <p>Don’t see a position that matches your talents but think you’d make a great fit? We’re a fast growing company with new opportunities becoming available all the time, so drop us a line: <a href="mailto:careers@yieldmo.com" target="_top">careers@yieldmo.com</a>.</p>
+      </div>
+    </div>
+    <div class="match-light">
+      <div class="jobs-container clearfix">
+        <div class="job-category">
+          <h4 class="category-name">DESIGN:</h4>
+          <div class="job-post">
+            <a href="#">
+              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
+              <h4 class="location">NEW YORK, NY</h4>
+            </a>
+            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="job-post">
+            <a href="#">
+              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
+              <h4 class="location">NEW YORK, NY</h4>
+            </a>
+            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="job-category">
+          <h4 class="category-name">DESIGN:</h4>
+          <div class="job-post">
+            <a href="#">
+              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
+              <h4 class="location">NEW YORK, NY</h4>
+            </a>
+            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="job-post">
+            <a href="#">
+              <h4 class="title"> >> SENIOR GRAPHIC DESIGNER </h4>
+              <h4 class="location">NEW YORK, NY</h4>
+            </a>
+            <p>This role will be responsible for lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
