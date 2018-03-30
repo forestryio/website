@@ -104,7 +104,7 @@
           padding: 0 2rem;
 
           .individual-spotlight {
-            width: 33%;
+            width: 20%;
             float: left;
             padding: 0 1rem;
             height: 24rem;
@@ -155,13 +155,13 @@
   .section-careers .page-4 {
     .match-dark {
       top: 0;
-      height: 100vh;
+      height: 150vh;
       width: 50%;
 
       .headlines {
         margin: 0;
         width: auto;
-        top: 50%;
+        top: 35%;
         transform: translateY(-50%);
         left: 2rem;
         right: 2rem;
@@ -177,6 +177,7 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        
 
         .job-category {
           margin: 3em 2rem;
