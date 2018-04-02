@@ -153,9 +153,12 @@
   }
 
   .section-careers .page-4 {
+
+   
+
     .match-dark {
       top: 0;
-      height: 150vh;
+      height: 180vh;
       width: 50%;
 
       .headlines {
@@ -172,11 +175,13 @@
       left: 50%;
       width: 50%;
       height: 100vh;
+      overflow:auto;
 
       .jobs-container {
         position: relative;
-        top: 50%;
+        top: 90%;
         transform: translateY(-50%);
+       
         
 
         .job-category {
