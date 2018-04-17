@@ -1,5 +1,5 @@
 +++
-author = "Rahul Rao, Director of Engineering"
+author = "Nook Harquail, Technical Lead"
 blurb = "This post describes the tools we use to build and debug JavaScript, and how our development workflow has evolved over time."
 category = "Engineering Blog"
 cover = "/_images/blog/eng_blog01_cover.png"
@@ -54,12 +54,12 @@ For full details on the protocol, visit [https://chromedevtools.github.io/devtoo
 
 Putting all the puzzle pieces together; the basic steps for getting debugging to work with VSCode and Chrome are:
 
-1. 1)Install the Debugger for Chrome extension
-2. 2)Set up an appropriate Launch Configuration in Code
-3. 3)Enable Chrome in debugging mode
-4. 4)Serve local build artifact
-5. 5)Attach Code to the Chrome debugger by choosing Start Debugging from the Debug menu in Code; Select the tab that is running
-6. 6)Debug!
+1. Install the Debugger for Chrome extension <br>
+2. Set up an appropriate Launch Configuration in Code <br>
+3. Enable Chrome in debugging mode <br>
+4. Serve local build artifact<br>
+5. Attach Code to the Chrome debugger by choosing Start Debugging from the Debug menu in Code; Select the tab that is running<br>
+6. Debug!
 
 Let&#39;s dive into the details and configurations for each of these steps.
 

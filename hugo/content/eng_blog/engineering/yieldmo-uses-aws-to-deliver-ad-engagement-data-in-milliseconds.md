@@ -1,13 +1,13 @@
 +++
 author = "Indu Narayan, Director of Data"
 blurb = "Yieldmo partners with Amazon Kinesis to capture, process, and deliver hundreds of billions of data points a month in real time. This technology enables in-depth insights into customer engagements, more effective campaigns for advertisers, higher profits for publishers, and, ultimately, greater relevance for consumers."
-category = "perspectives"
+category = "Engineering Blog"
 cover = "/uploads/Screen Shot 2018-01-29 at 9.12.49 AM.png"
 date = "2018-01-29T09:10:11+00:00"
 description = ""
 download_label_text = "Download Document"
 file_download = ""
-layout = "blog"
+layout = "engineering_blog"
 title = "Delivering Ad Engagement Data in Milliseconds with AWS"
 weight = ""
 
