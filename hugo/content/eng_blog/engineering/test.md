@@ -5,7 +5,7 @@ category = "updates"
 cover = "/uploads/asoggetti-413830.jpg"
 date = "2015-05-20T07:18:38-04:00"
 description = ""
-layout = "blog"
+layout = "engineering_blog"
 title = "AdExchanger Highlights Yieldmo’s New comScore Ranking"
 weight = ""
 
