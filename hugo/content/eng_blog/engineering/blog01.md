@@ -1,5 +1,5 @@
 +++
-author = "Nook Harquail, Technical Lead"
+author = "Nook Harquail, Technical Lead and Rahul Rao, Director of Engineering"
 blurb = "This post describes the tools we use to build and debug JavaScript, and how our development workflow has evolved over time."
 category = "Engineering Blog"
 cover = "/_images/blog/eng_blog01_cover.png"
@@ -121,7 +121,7 @@ Note, that we use port: 9222. In the next step, we&#39;ll be instructing Chrome 
 
 Chrome needs to be restarted in debugger mode. Here&#39;s the command that we run to do that:
 
-&#39;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#39; --remote-debugging-port=9222 --user-agent=&#39;Mozilla/5.0 (iPhone; CPU iPhone OS 11\_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1&#39; --auto-open-devtools-for-tabs &#39;https://testpage.com&#39;
+&#39;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#39; --remote-debugging-port=9222 --user-agent=&#39;Mozilla/5.0 (iPhone; CPU iPhone OS 11\_0 like Mac OS X) AppleWebKit/604.1.34 (KHTML, like Gecko) Version/11.0 Mobile/15A5341f Safari/604.1&#39; --auto-open-devtools-for-tabs 'https://testpage.com'
 
 Note that the --remote-debugging-port flag has a value of 9222, which is the same port that we asked VSCode to attach the debugger on, in the previous step.
 
@@ -134,7 +134,7 @@ Here&#39;s the command we use to run the webpack dev server:
 
 We&#39;ve added a &quot;serve&quot; command to the script section of our package.json which combines to above two steps to do the following:
 
-&quot;serve&quot;: &quot;&#39;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#39; --remote-debugging-port=9222 --user-agent=iPhone --auto-open-devtools-for-tabs &#39;https://testpage.com&#39; &amp; ./node\_modules/webpack-dev-server/bin/webpack-dev-server.js --https --hot -d --lazy&quot;
+&quot;serve&quot;: &quot;&#39;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#39; --remote-debugging-port=9222 --user-agent=iPhone --auto-open-devtools-for-tabs 'https://testpage.com' &amp; ./node\_modules/webpack-dev-server/bin/webpack-dev-server.js --https --hot -d --lazy&quot;
 
 ### Attach Code to the Chrome debugger
 
