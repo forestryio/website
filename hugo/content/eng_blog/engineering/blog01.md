@@ -73,7 +73,7 @@ You’ll need to reload your VSCode once you’ve installed the extension.
     
 P.S.: You can download and install VSCode from https://code.visualstudio.com/.
 
-##Set up an appropriate Launch Configuration in Code
+## Set up an appropriate Launch Configuration in Code
 VSCode allows you to build launch configurations. A launch configuration is a JSON file that lets you save debugging details and set up. You can read more about launch configurations here: https://code.visualstudio.com/docs/editor/debugging#_launch-configurations.
 
 You can store all VSCode IDE related configs in a directory named .vscode at the root level of your project, and commit that directory to your VCS. That way, every engineer on your team ends up using the same set of IDE configs and settings. You can always do user level overrides if need be.
@@ -117,7 +117,7 @@ Here&#39;s the launch configuration that we use:
 
 Note, that we use port: 9222. In the next step, we&#39;ll be instructing Chrome DevTools to expose the API on the same port as well.
 
-#Enable Chrome in Debugger Mode
+# Enable Chrome in Debugger Mode
 
 Chrome needs to be restarted in debugger mode. Here&#39;s the command that we run to do that:
 
