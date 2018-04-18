@@ -1,5 +1,5 @@
 ---
-title: EMP™ Beta
+title: EMP™
 menu:
   main:
     parent: "tools"

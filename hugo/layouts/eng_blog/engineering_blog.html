@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="section-wrapper blog-page">
+  <h6 class="category"> >> {{ .Params.category }}</h6>
+
+  {{ with .Params.images }}
+    {{ $featureImageURL := index . 0 }}
+     <!-- <img class="cover" src="/_images/blog/{{ $featureImageURL }}"> -->
+  {{ end }}
+
+  <h3 class="headline-cap title">{{ .Title }}</h3>
+
+  {{ .Content }}
+<!-- 
+  {{ if .Params.file_download }}
+    <a id="fileDownload" class="file-download" href="" data-featherlight="#leadForm">{{ .Params.download_label_text }}</a>
+
+    <iframe id='jla' name='jla' src='about:blank' style='display:none'></iframe>
+
+    <form target="jla" id="leadForm" class="lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+      <input type=hidden name="oid" value="00Di0000000hZnF">
+      <input type=hidden name="retURL" value="http://www.yieldmo.com">
+      <input type=hidden name="lead_source" value="Website Contact">
+      <input type=hidden id="00N5A00000H39QT" name="00N5A00000H39QT" value="{{ .Params.file_download }}">
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">Hi, I’m</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="first_name" name="first_name" placeholder="Type your first name here*" />
+          <input required type="text" id="last_name" name="last_name" placeholder="Type your last name here*" />
+        </div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">I WORK FOR</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="company" name="company" placeholder="Your company name here*" />
+        </div>
+      </div>
+
+      <div class="row clearfix">
+        <div class="col-1 left">
+          <h4 class="headline-cap">I CAN BE REACHED AT</h4>
+        </div>
+        <div class="col-3 right">
+          <input required type="text" id="email" name="email" placeholder="Your business email here*" />
+          <input type="text" id="phone" name="phone" placeholder="Your phone number here" />
+        </div>
+      </div>
+
+      <button id="download" class="download active">Download Now</button>
+      <a id="downloadAction" href="{{ .Params.file_download | absURL }}" download></a>
+    </form>
+
+    <script type="text/javascript">window.feature = "download"</script>
+  {{ end }} -->
+
+  <h6 class="meta-info">Posted by: {{ .Params.author }}</h6>
+</div>
+{{ end }}

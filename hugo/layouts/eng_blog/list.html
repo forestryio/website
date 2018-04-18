@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="section-wrapper section-blog activate-all">
+  <ul class="breadcrumbs"><span>Resources</span><span> > Engineering Blog</span></ul>
+
+<!--   <div id="blogTabs" class="blog-tabs">
+    <a data-category="all" id="all" data-category="all" class="tab headline-cap active">ALL</a>
+    <a data-category="tutorials" id="tutorials" class="tab headline-cap">TUTORIALS</a>
+    <a data-category="perspectives" id="perspectives" class="tab headline-cap">PERSPECTIVES</a>
+    <a data-category="case-studies" id="caseStudies" class="tab headline-cap">CASE STUDIES</a>
+    <a data-category="updates" id="updates" class="tab headline-cap">UPDATES</a>
+  </div>
+   -->
+  <div class="blog-previews clearfix">
+  {{ range .Data.Pages }}
+    {{ .Render "excerpt"}}
+  {{ end }}    
+  </div>
+
+</div>
+{{ end }}

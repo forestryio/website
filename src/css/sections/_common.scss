@@ -11,7 +11,7 @@
   .interior-page {
     min-height: calc(100vh - 4rem);
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 
     .match-light {
       background-color: $primary-white;

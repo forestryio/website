@@ -1,0 +1,64 @@
+---
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- name: author
+  label: Author
+  type: text
+  hidden: false
+  default: Lucas Piazza, Director of Marketing
+- type: file
+  name: cover
+  hidden: false
+  label: Cover image
+- type: textarea
+  name: blurb
+  label: Blurb
+  config:
+    wysiwyg: true
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Metadata Information
+- type: number
+  label: Weight
+  name: weight
+  config:
+    min: '1'
+    step: '1'
+    required: false
+  description: " Leave this field empty if the content is not prioritized"
+- type: file
+  label: File Download (Optional)
+  name: file_download
+  description: Document available for download
+  config:
+    maxSize: '1024'
+- type: text
+  label: Download Label Text (if applicable)
+  name: download_label_text
+  default: Download Document
+- type: text
+  hidden: true
+  config:
+    required: true
+  label: Type
+  name: type
+  default: resources
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
+  default: blog
