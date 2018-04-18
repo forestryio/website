@@ -17,6 +17,10 @@
       min-height: 0;
       height: auto;
 
+      .button-engage{
+        margin-right: 10px;
+      }
+
       .headlines {
         position: static;
         margin: 4rem auto 2rem auto;
@@ -31,12 +35,54 @@
       .pattern {
         display: block;
         width: 100%;
-        margin: 1rem 0;
+        margin: 1rem 0;   
+        margin-bottom:-31px;    
       }
+
+      .headline-cap {
+      display: inline-block;
+      padding: .5em 1em .2em 1em;
+      background-color: $tangerine;
+      color: $primary-white;
+      float:right;
+      margin-top:-59px;
+      margin-right:207px;
+      &.engage-button{
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 200px;
+      float: none;
+      font-weight: 300;
+      text-align:center;
+      }
+     }
+     
+    }
+
+    .graphic{
+      .headline-cap{
+        margin-bottom: 1rem;
+        margin-top:40px;
+        font-size:2em;
+      }
+
+      video {
+        width:90%;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:auto;
+        padding-top:30px;
+        }
+
     }
   }
 
+
   .page-2 {
+    &.overflow-fix {
+      overflow: auto !important;
+    }
     .match-light {
       .headlines,
       p {
@@ -64,6 +110,7 @@
   }
 
   .page-3 {
+    margin-top:50px;
     .match-dark {
       min-height: 0;
       padding: 2em 0;

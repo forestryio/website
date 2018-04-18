@@ -6,25 +6,33 @@
     <div class="match-light">
       <div>
         <div class="headlines">
-          <h2 class="headline-lean">Customers are<br>signaling their interest.</h2>
-          <h1 class="headline-cap">Act on it.</h1>   
+          <h2 class="headline-lean">Customers are signaling<br>their interest.</h2>
+          <h1 class="headline-cap">Now you can<br>act on it.</h1>   
         </div>  
       </div>
     </div>
 
     <div class="match-dark">
       <div>
-        <p class="description">There’s a world of undiscovered information between the view and the click—the campaign metrics you rely on today. It’s called engagement and it’s full of powerful signals of customer interest. <br><br>
+        <p class="description">The vast majority of mobile transactions occur without a single click. So, just how did your marketing influence all those “viewable impressions?” <br><br>There’s a world of undiscovered information between the view and the click—the campaign metrics you rely on today. It’s called engagement and it’s full of powerful signals of customer interest. <br><br>
         Our highly-engaging ad formats elicit intentional interactions—swipes, scrolls, tilts, plays, lingers, and more. This previously unavailable gestural data delivers the truth about where customers are on their path-to-purchase. And when it’s paired with your existing customer dataset, it reveals a universe of possibilities. <br><br>
-        Welcome to the engagement revolution.</p>
-
-        <!-- <img class="pattern" src='{{ "_videos/dots.gif" | absURL }}'> -->
-        <video class="pattern" playsinline autoplay loop src='{{ "_videos/EMP.mp4" | absURL }}'></video>
-      </div>
+        Welcome to the engagement revolution.
+        <br><br>
+        <a href="#form"><span class="headline-cap engage-button">I'm Ready To Engage</span></a>
+        </p>
+     </div> 
+        <video class="pattern" playsinline autoplay loop src='{{ "_videos/EMP(customers).mov" | absURL }}'></video>
     </div>
+
+    <div class="graphic">
+        <h2 class="headline-cap">How it works</h2>
+        <video class="graphic-desktop" playsinline autoplay loop src='{{ "_videos/emp-animation-desktop.mp4" | absURL }}'></video>
+        <img class="graphic-mobile" src='{{ "_images/emp-placeholder-mobile.png" | absURL }}'>
+      </div>
+
   </div>
 
-  <div class="interior-page page-2">
+  <div class="interior-page page-2 overflow-fix" >
     <div class="match-light">
       <div>
         <div class="headlines">
@@ -33,22 +41,22 @@
         <p class="description">The world’s first Engagement Management Platform (EMP™) reveals what matters to people, what piques curiosity, what triggers a second—even third—glance. But the EMP does more than just show you how interested people are—it uses this truth to drive more impactful marketing.</p>
 
         <img class="" src='{{ "_images/emp-screenshot.png" | absURL }}'>
-        <p>The Yieldmo EMP is a self-service system for creating, managing, and analyzing human intent—at scale. Here are just a few ways our data can make your marketing more effective:</p>
+        <p>The Yieldmo EMP is a self-service system for creating, managing, and analyzing human intent—at scale. Here are just a few ways our data can boost your campaign performance:</p>
         <div class="emp-process">
           <h3 class="headline-cap">>> Campaigns, Optimized</h3>
-          <p>Increase performance across all targeted campaigns. Take action to activate the highly engaged customers who are likely to convert and suppress those who will never push play.</p>
-          <h3 class="headline-cap">>> Audiences, Re-defined</h3>
-          <p>Get meaningful analysis and understanding of audiences’ true engagement with your brand. Create segments that scale and significantly increase your relevancy.</p>
-          <h3 class="headline-cap">>> Attribution, Enriched</h3>
-          <p>Understand the path-to-purchase all the way back to a series of micro-interactions with your digital ad. From there, take your multi-touch attribution models to a whole new level.</p>
-          <h3 class="headline-cap">>> Business-strategy, Informed</h3>
-          <p>Get the truth about who is interested in your products and make more informed decisions about everything from resource allocation to product innovation.</p>
+          <p>From viewability to sales, your users’ engagements power our machine learning models and let you reach just the right people—the people that will take action.</p>
+          <h3 class="headline-cap">>> Viewability, Activated</h3>
+          <p>The EMP does more than just report on viewability—it lets you act on it. Our data deconstructs viewability down to the pixel, giving you the power to reconnect with fractional viewers.</p>
+          <h3 class="headline-cap">>> Attention, Captured</h3>
+          <p>With formats designed for intentional interaction, you’re able to maximize time spent with your brand. Yieldmo’s machine learning optimization puts your message in the right audiences’ hands.</p>
+          <h3 class="headline-cap">>> Frequency, Managed</h3>
+          <p>When you know the details of customer interest, you can do away with arbitrary frequency caps. The Yieldmo EMP reaches audiences that are ready to see another ad while suppressing those who will never push play.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="interior-page page-3">
+  <div id="form" class="interior-page page-3">
     <div class="match-dark">
       <div>
         <h2 class="headline-cap">Take your existing marketing tools to<br>the next level.</h2>
@@ -61,7 +69,7 @@
         <p>The Yieldmo EMP is currently available for private alpha customers only. To schedule your demo contact us here:</p>  
       </div>
       <div class="form-container clearfix">
-        {{ partial "form" . }}
+        {{ partial "form_emp" . }}
       </div>
     </div>
   </div>

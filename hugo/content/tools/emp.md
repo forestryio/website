@@ -1,5 +1,5 @@
 ---
-title: EMP™
+title: "EMP"
 menu:
   main:
     parent: "tools"
