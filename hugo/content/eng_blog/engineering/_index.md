@@ -1,5 +1,5 @@
 ---
-title: Engineering Blog
+title: Dev Blog
 menu:
   main:
     parent: "resources"
