@@ -93,21 +93,21 @@ Here&#39;s the launch configuration that we use:
 
 		 // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 
- 		&quot;version&quot;: &quot;0.2.0&quot;,
+ 		"version": "0.2.0",
 
-		 &quot;configurations&quot;: [
+		 "configurations": [
 
 	   {
 
-	     &quot;type&quot;: &quot;chrome&quot;,
+	     "type": "chrome",
 
-	     &quot;request&quot;: &quot;attach&quot;,
+	     "request": "attach",
 
-	     &quot;name&quot;: &quot;Attach to Chrome&quot;,
+	     "name": "Attach to Chrome",
 
-	     &quot;port&quot;: 9222,
+	     "port": 9222,
 
-	     &quot;webRoot&quot;: &quot;${workspaceFolder}&quot;
+	     "webRoot": "${workspaceFolder}"
 
 	   },
 
