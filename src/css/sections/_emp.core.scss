@@ -2,6 +2,10 @@
    Pages
    ========================================================================== */
 
+body > div.menu-container > div.primary-menu > ul > li:nth-child(3) > ul > li:nth-child(1) {
+  display: none;
+}
+
 .section-emp {
   .interior-page > div > div {
     width: $mobile-s-content-width;
@@ -80,6 +84,9 @@
 
 
   .page-2 {
+    &.overflow-fix {
+      overflow: auto !important;
+    }
     .match-light {
       .headlines,
       p {
