@@ -4,7 +4,7 @@
 
 
 @media all and (max-width: 568px) {
-  .section-formats .page-1 {
+  .section-patents .page-1 {
     min-height: 240vmax;
     .match-light .headlines { width: $mobile-m-content-width; }
     .match-dark .explanation { width: $mobile-m-content-width; 
@@ -27,7 +27,7 @@
   }
 }
 @media (--mobile-m) {
-  .section-formats .page-1 {
+  .section-patents .page-1 {
     min-height: 200vmax;
     .match-light .headlines { width: $mobile-m-content-width; }
     .match-dark .explanation { width: $mobile-m-content-width; 
@@ -48,7 +48,7 @@
 }
 
 @media (--mobile-l) {
-  .section-formats .page-1 {
+  .section-patents .page-1 {
     min-height: 180vmax;
     .match-light .headlines { width: $mobile-l-content-width; }
     .match-dark .explanation { width: $mobile-l-content-width; 
@@ -66,7 +66,7 @@
 
 
 @media (--tablet) {
-  .section-formats .page-1 {
+  .section-patents .page-1 {
       min-height: 175vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 175vmax;
@@ -90,7 +90,7 @@
   }
 }
 @media (width: 375px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 170vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 170vmax;
@@ -114,7 +114,7 @@
   }
 }
 @media (width: 568px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 230vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 230vmax;
@@ -138,7 +138,7 @@
   }
 }
 @media (width: 640px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 190vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 190vmax;
@@ -162,7 +162,7 @@
   }
 }
 @media (width: 667px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 190vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 190vmax;
@@ -186,7 +186,7 @@
   }
 }
 @media (width: 731px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 170vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 170vmax;
@@ -210,7 +210,7 @@
   }
 }
 @media (width: 736px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 170vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 170vmax;
@@ -234,7 +234,7 @@
   }
 }
 @media (width: 768px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 135vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 135vmax;
@@ -258,7 +258,7 @@
   }
 }
 @media (width: 823px) {
-.section-formats .page-1 {
+.section-patents .page-1 {
       min-height: 155vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 155vmax;
@@ -287,19 +287,18 @@
    ========================================================================== */
   
    @media (--desktop-s) {
-  .section-formats {
+  .section-patents {
     .interior-page {
       height: 110vh; 
       overflow: auto;
       .match-light { height: 50vh; }
       .match-dark { 
         height: 50vh;
-        top: 22rem;
         min-height: 60vmax;
       }
     }
   }
-  .section-formats .page-1 {
+  .section-patents .page-1 {
     min-height: 100vh;
     .match-light {
       .headlines {
@@ -308,6 +307,7 @@
       }
     }
     .match-dark {
+    /*  top:22rem;*/
       .explanation {
         width: 20rem;
         transform: translateY(-50%);
@@ -333,14 +333,14 @@
 }
 
 @media (--desktop-m) {
- .section-formats {
+ .section-patents {
     .interior-page {
       height: 100vh; 
       .match-light { height: 50vh; }
       .match-dark { height: 50vh; }
     }
   }
-  .section-formats .page-1 {
+  .section-patents .page-1 {
     min-height: 100vh;
     .match-light {
       .headlines {

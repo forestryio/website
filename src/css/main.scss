@@ -35,10 +35,6 @@
 @import "sections/_afl.interaction.scss";
 @import "sections/_afl.responsive.scss";
 
-@import "sections/_formats.core.scss";
-@import "sections/_formats.interaction.scss";
-@import "sections/_formats.responsive.scss";
-
 @import "sections/_insights.core.scss";
 @import "sections/_insights.interaction.scss";
 @import "sections/_insights.responsive.scss";
@@ -46,6 +42,10 @@
 @import "sections/_marketplace.core.scss";
 @import "sections/_marketplace.interaction.scss";
 @import "sections/_marketplace.responsive.scss";
+
+@import "sections/_formats.core.scss";
+@import "sections/_formats.interaction.scss";
+@import "sections/_formats.responsive.scss";
 
 @import "sections/_patent.core.scss";
 @import "sections/_patent.responsive.scss";
