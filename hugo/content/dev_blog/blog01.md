@@ -5,7 +5,7 @@ category = "Engineering Blog"
 cover = "/_images/blog/eng_blog01_cover.png"
 date = "2018-04-17T07:18:38-04:00"
 description = ""
-layout = "engineering_blog"
+layout = "dev_blog"
 title = "Debugging with VSCode and Chrome"
 weight = ""
 

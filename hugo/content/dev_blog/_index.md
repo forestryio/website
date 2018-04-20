@@ -3,6 +3,6 @@ title: Dev Blog
 menu:
   main:
     parent: "resources"
-layout: engineering_blog
+layout: dev_blog
 weight: 2
 ---

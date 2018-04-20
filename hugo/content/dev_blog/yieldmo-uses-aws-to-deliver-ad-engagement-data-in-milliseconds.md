@@ -7,7 +7,7 @@ date = "2018-01-29T09:10:11+00:00"
 description = ""
 download_label_text = "Download Document"
 file_download = ""
-layout = "engineering_blog"
+layout = "dev_blog"
 title = "Delivering Ad Engagement Data in Milliseconds with AWS"
 weight = ""
 

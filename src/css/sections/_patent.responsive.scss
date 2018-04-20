@@ -91,13 +91,14 @@
 }
 @media (width: 375px) {
 .section-patents .page-1 {
-      min-height: 170vmax;
+      min-height: 200vmax;
       .match-dark { width: $tablet-l-content-width; 
       min-height: 170vmax;
       } 
       .match-dark .explanation {
       transform: translateY(-50%);
       font-size: 1.1rem;
+      margin-top:40px;
       }
       .match-dark {
       min-height: 230vmax;

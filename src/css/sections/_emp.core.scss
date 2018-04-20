@@ -85,7 +85,8 @@ body > div.menu-container > div.primary-menu > ul > li:nth-child(3) > ul > li:nt
 
   .page-2 {
     &.overflow-fix {
-      overflow: auto !important;
+      min-height:700px;
+      height: auto;
     }
     .match-light {
       .headlines,
