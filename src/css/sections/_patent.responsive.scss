@@ -28,7 +28,7 @@
 }
 @media (--mobile-m) {
   .section-patents .page-1 {
-    min-height: 200vmax;
+    min-height: 1300px;
     .match-light .headlines { width: $mobile-m-content-width; }
     .match-dark .explanation { width: $mobile-m-content-width; 
     transform: translateY(-30%);
@@ -49,7 +49,7 @@
 
 @media (--mobile-l) {
   .section-patents .page-1 {
-    min-height: 1700px;
+    min-height: 1300px;
     .match-light .headlines { width: $mobile-l-content-width; }
     .match-dark .explanation { width: $mobile-l-content-width; 
     transform: translateY(-40%);
