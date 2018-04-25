@@ -11,6 +11,7 @@
     video.graphic-desktop {
     display: none !important;
     }
+
     video.graphic-mobile {
     display: block;
     width: 90%;
@@ -29,6 +30,7 @@
     video.graphic-desktop {
     display: none !important;
     }
+
     video.graphic-mobile {
     display: block;
     width: 90%;
@@ -113,9 +115,12 @@
         margin-top:50px;
         display: block !important;
       }
+     
+
       video.graphic-mobile {
       display: none !important;
       }
+
     }
 
   }

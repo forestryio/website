@@ -26,9 +26,15 @@
 
     <div class="graphic">
         <h2 class="headline-cap">How it works</h2>
-              <video class="graphic-desktop" playsinline autoplay loop crossorigin="anonymous" preload="auto"><source src='{{ "_videos/EMP-Desktop.mp4" | absURL }}' type='video/mp4'></video>
+           <div class="videos">
+              <div class="video-container">
+               <!--  <img class="graphic-desktop" src='{{ "_images/emp-placeholder-desktop.png" | absURL }}'> -->
+                <video class="graphic-desktop" playsinline autoplay loop crossorigin="anonymous" preload="auto"><source src='{{ "_videos/EMP-Desktop.mp4" | absURL }}' type='video/mp4'></video>
+              <!--   <img class="graphic-mobile" src='{{ "_images/emp-placeholder-mobile.png" | absURL }}'> -->
+                <video class="graphic-mobile" playsinline autoplay loop crossorigin="anonymous" preload="auto"><source src='{{ "_videos/EMP-Mobile.mp4" | absURL }}' type='video/mp4'></video>
 
-              <video class="graphic-mobile" playsinline autoplay loop crossorigin="anonymous" preload="auto"><source src='{{ "_videos/EMP-Mobile.mp4" | absURL }}' type='video/mp4'></video>
+              </div>
+            </div>
       </div>
 
   </div>
