@@ -1,6 +1,22 @@
 /* ==========================================================================
    Medium to Large Phones
    ========================================================================== */
+@media all and (max-width: 358px) {
+  .section-emp {
+    .interior-page > div > div {
+      width: $mobile-m-content-width;
+    }
+    video.graphic-desktop {
+    display: none !important;
+    }
+    video.graphic-mobile {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    }
+  }
+}
+
 
 @media (--mobile-m) {
   .section-emp {
@@ -10,13 +26,12 @@
     video.graphic-desktop {
     display: none !important;
     }
-    img.graphic-mobile {
+    video.graphic-mobile {
     display: block;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     }
   }
-
 }
 
 @media (--mobile-l) {
@@ -94,7 +109,7 @@
         margin-top:50px;
         display: block !important;
       }
-      img.graphic-mobile {
+      video.graphic-mobile {
       display: none !important;
       }
     }
